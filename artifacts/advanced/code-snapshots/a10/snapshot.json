@@ -1,0 +1,8 @@
+{
+  "kind": "A10 development pilot, before row/coverage refinements",
+  "files": {
+    "src/day07/catalog_agent.py": "d4522b304437f64658738bdbd44bcb2f9b6de796ea162706c760b67b47044bf4",
+    "scripts/catalog_release.py": "f7eff69d12293c6ae7456e46ff84feed2c645465bea682e6600cfc6c647ae19f",
+    "configs/catalog-v3.json": "8d941241d85093df688599ea13767a6c6e4642f9424041ec70265265eb7029fd"
+  }
+}

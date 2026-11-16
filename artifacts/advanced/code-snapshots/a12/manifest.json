@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-11-16T05:13:37.299583+00:00",
+  "kind": "Exact selected A12 source snapshot",
+  "files": {
+    "src/day07/catalog_agent.py": "d87a78b6745f2cdd2444fb347ae4789f29e46a0b5fee7d283c35d784566bfc48",
+    "scripts/catalog_release.py": "f7eff69d12293c6ae7456e46ff84feed2c645465bea682e6600cfc6c647ae19f",
+    "configs/catalog-v3.json": "7413d7c80245f3169e08f77b0d9f1640bc023a6da624aa5c09b1d2e68924c186"
+  }
+}

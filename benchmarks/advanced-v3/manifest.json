@@ -1,0 +1,74 @@
+{
+  "created_at": "2026-11-16T04:47:33.702068+00:00",
+  "status": "SOURCE_REVIEWED_BEFORE_ANY_V3_MODEL_RUN",
+  "stats": {
+    "dev": {
+      "split": "dev",
+      "total": 86,
+      "groups": {
+        "table": 16,
+        "image": 14,
+        "chart": 14,
+        "multi_hop": 12,
+        "text": 12,
+        "unanswerable": 18
+      },
+      "locator_status": "structural match only; source and semantic audit still required",
+      "absence_status": "provisional; extracted text scan is not a full visual absence audit"
+    },
+    "test": {
+      "split": "test",
+      "total": 30,
+      "groups": {
+        "table": 6,
+        "image": 5,
+        "chart": 5,
+        "multi_hop": 4,
+        "text": 4,
+        "unanswerable": 6
+      },
+      "locator_status": "structural match only; source and semantic audit still required",
+      "absence_status": "provisional; extracted text scan is not a full visual absence audit"
+    }
+  },
+  "test_pages": [
+    13,
+    14,
+    17,
+    19,
+    21,
+    22,
+    48,
+    50,
+    51,
+    56,
+    57,
+    58,
+    59,
+    66,
+    69,
+    76,
+    77,
+    79,
+    100
+  ],
+  "groups": {
+    "table": 6,
+    "image": 5,
+    "chart": 5,
+    "multi_hop": 4,
+    "text": 4,
+    "unanswerable": 6
+  },
+  "source_catalog_precedes_benchmark": "artifacts/advanced/catalog-v7/manifest.json",
+  "source_verification": "artifacts/source-verification.json",
+  "fact_key_overlap": [],
+  "semantic_overlap_review": "New source attributes/columns/series/relations relative to both former benchmark versions. Source pages may overlap; same underlying answer was not merely reworded.",
+  "test_policy": "All 30 cases, frozen before running; no replacements based on output; 27/30 minimum.",
+  "hashes": {
+    "queries/dev.jsonl": "1de99c86ad54bae76b863ba0f03b206a17b7b7c0d9e34a999c6f909b753e7e86",
+    "queries/test.jsonl": "f211fcd72ae455cfc0be01740b2c378f5f5a9d7c4431ad3cd52062b67d857945",
+    "gold/dev.jsonl": "2833172dd52113e6b80b61dc563fb9fce19c42b248b4a1d5ffeed1b73c082843",
+    "gold/test.jsonl": "a3f098e70484821a2f019511e4e9011c8c1df19465d900a372f51edd818d3c78"
+  }
+}

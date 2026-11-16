@@ -1,0 +1,7 @@
+{
+  "kind": "partial unselected development experiment",
+  "cases_completed": 59,
+  "reason_stopped": "A rigid single-native-proposal assumption lost cases before retrieval. A12 logs protocol recovery and performs its declared original-query retrieval fallback. The qualifying candidate runs all 86 cases.",
+  "source_snapshot": "artifacts/advanced/code-snapshots/a11/",
+  "original_module_sha256": "d6d21e97663deea492ff02e24c6817aa1d7223900562aad5f396c3545eff0ec0"
+}

@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-16T04:47:08.437239+00:00",
+  "regions": 852,
+  "pages": 114,
+  "chunks": 941,
+  "parent_catalog_sha256": "05f52a9f390391ed77b0fcde3c5a7ea41052a67204e3f09909b99cded269056b",
+  "builder_sha256": "663c65fefde5164a58057d84e50d0f77b18c42aa04aeb7899d950bf615c7400e",
+  "benchmark_inputs_read": false,
+  "policy": "Source-only reference titles and complete chart-series categories; no question-specific answers or absence assertions.",
+  "source_verification": "artifacts/source-verification.json"
+}

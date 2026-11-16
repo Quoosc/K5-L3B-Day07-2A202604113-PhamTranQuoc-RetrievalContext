@@ -11,6 +11,7 @@ from src.day07.__main__ import code_hashes
 from src.day07.advanced_eval import validate as advanced_validate
 from src.day07.common import now, read_json, read_jsonl, sha256, write_json
 from src.day07.evaluation import validate as base_validate
+from scripts.advanced_release import reviewed_score, runtime_signature
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -74,17 +75,39 @@ def audit():
             'repository_public_for_grader':access['private'] is False},
             ['docs/REPRODUCE.md','requirements-lock.txt','artifacts/base/qdrant-snapshot.zip','artifacts/clean-checkout-check.json'])]
     bonus={'maximum_points':15,'status':'not_yet_verified','all_or_nothing':True}
-    summary=ROOT/'artifacts/advanced/v2-test-summary.json'
+    catalog=(ROOT/'artifacts/advanced/v3-test-summary.json').is_file()
+    version='v3' if catalog else 'v2'
+    summary=ROOT/f'artifacts/advanced/{version}-test-summary.json'
     if summary.is_file():
         score=read_json(summary)
+        benchmark=ROOT/f'benchmarks/advanced-{version}'
         elements=read_jsonl(ROOT/'artifacts/advanced/elements.jsonl')
-        stats=advanced_validate(read_jsonl(ROOT/'benchmarks/advanced-v2/queries/test.jsonl'),
-              read_jsonl(ROOT/'benchmarks/advanced-v2/gold/test.jsonl'),elements,'test')
-        bonus.update(passed=score['passed'],total=score['total'],required=score['required_passes'],
+        stats=advanced_validate(read_jsonl(benchmark/'queries/test.jsonl'),
+              read_jsonl(benchmark/'gold/test.jsonl'),elements,'test')
+        bonus.update(version=version,passed=score['passed'],total=score['total'],required=score['required_passes'],
             checks={'threshold':score['meets_90_percent'],'all_30_covered':score['total']==stats['total']==30,
                     'source_confirmed':confirmation['status']=='AUTHOR_SOURCE_VERIFICATION_CONFIRMED',
                     'index_audit':(ROOT/'artifacts/advanced/index-audit-author-confirmed.json').is_file(),
-                    'pre_test_freeze':(ROOT/'artifacts/advanced/freeze-v2.json').is_file()})
+                    'pre_test_freeze':(ROOT/('artifacts/advanced/freeze-catalog-v3.json' if catalog else 'artifacts/advanced/freeze-v2.json')).is_file()})
+        if catalog:
+            run=ROOT/'artifacts/advanced/runs/catalog-v3-test'
+            frozen=read_json(ROOT/'artifacts/advanced/freeze-catalog-v3.json')
+            manifest=read_json(run/'manifest.json')
+            rescored=reviewed_score(benchmark,'test',run/'traces.jsonl',ROOT/'artifacts/advanced/v3-test-review.jsonl')
+            source=read_json(ROOT/'artifacts/advanced/catalog-v7/manifest.json')
+            bonus['checks'].update({
+                'exact_trace_reviews_rescore':all(score[k]==rescored[k] for k in ('passed','total','groups','meets_90_percent')),
+                'lock_precedes_test':frozen['frozen_at']<manifest['started_at'],
+                'run_uses_exact_frozen_inputs':manifest['hashes']==frozen['hashes'],
+                'actual_runtime_matches_freeze':runtime_signature(manifest['runtime'])==frozen['runtime'],
+                'run_records_lock_digest':manifest['lock_sha256']==sha256(ROOT/'artifacts/advanced/freeze-catalog-v3.json'),
+                'complete_source_catalog':source['pages']==114 and source['regions']==852 and source['chunks']==941,
+                'source_catalog_audit_pass':read_json(ROOT/'artifacts/advanced/catalog-v7-source-audit.json')['all_checks_pass'] is True,
+                'snapshot_payloads_verified':read_json(ROOT/'artifacts/advanced/qdrant-v7-snapshot.json')['payloads_compared']==941,
+                'catalog_precedes_fresh_benchmark':source['created_at']<read_json(benchmark/'manifest.json')['created_at'],
+                'restorable_index_archive':(ROOT/'artifacts/advanced/qdrant-v7-snapshot.zip').is_file(),
+                'latest_clean_checkout':clean.get('all_checks_pass') is True and any(c['name']=='catalog_release_bytes_and_restored_index' for c in clean.get('checks',[])),
+            })
         bonus['all_checks_pass']=all(bonus['checks'].values())
         bonus['status']='evidence_supports_bonus_gate' if bonus['all_checks_pass'] else 'bonus_gate_not_met'
     return {'checked_at':now(),'audit_kind':'rubric evidence completeness; not an instructor-awarded grade',

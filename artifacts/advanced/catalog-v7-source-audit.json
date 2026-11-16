@@ -1,0 +1,242 @@
+{
+  "checked_at": "2026-11-16T05:15:14.876321+00:00",
+  "checks": {
+    "original_pdf_digest": true,
+    "all_114_pages": true,
+    "all_852_original_regions": true,
+    "original_locators_preserved": true,
+    "locators_inside_original_page": true,
+    "every_region_has_search_chunk": true,
+    "941_unique_chunks": true,
+    "all_49_images_described": true,
+    "all_31_table_candidates_retained": true,
+    "source_precedes_benchmark": true,
+    "builder_digests_match": true,
+    "source_only_builder_declaration": true,
+    "author_source_confirmation": true
+  },
+  "all_checks_pass": true,
+  "source_counts": {
+    "text": 744,
+    "image": 49,
+    "vector_page": 28,
+    "table_candidate": 31
+  },
+  "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756",
+  "catalog_regions_sha256": "ab6841b63713643d8a2bf7f88d4cc4ff738f458965e008d46e55c8bc3e1448e0",
+  "catalog_chunks_sha256": "301aead3ab58201c8820c1ea80f73891218ff37735b4ddcb17a35b65f31576bd",
+  "index_policy": "All source regions retained; source-only descriptions/transcriptions, not benchmark answer injection. This script reads gold solely for a separate audit and does not write the retrieval corpus or index.",
+  "limits": [
+    "Some automatic table candidates are reference paragraphs, not actual tables.",
+    "Complex unverified table cells are retained explicitly as raw cells; original region remains available.",
+    "Visual descriptions and numeric digitization have documented approximation; original PDF is authoritative."
+  ],
+  "absence_audits": [
+    {
+      "query_id": "adv3-test-025",
+      "reason": "The handbook describes TIRS sensing and electronics, but supplies no processor clock frequency in MHz.",
+      "original_text_hits": {
+        "TIRS": [
+          3,
+          5,
+          6,
+          7,
+          8,
+          10,
+          12,
+          13,
+          14,
+          16,
+          17,
+          18,
+          21,
+          22,
+          23,
+          24,
+          26,
+          27,
+          28,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          41,
+          42,
+          43,
+          47,
+          48,
+          50,
+          51,
+          52,
+          54,
+          56,
+          57,
+          58,
+          59,
+          62,
+          63,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          89,
+          90,
+          91,
+          92,
+          93,
+          96,
+          97,
+          102,
+          103,
+          104,
+          106,
+          107,
+          108,
+          110,
+          114
+        ],
+        "MHz": [],
+        "processor": [],
+        "clock": []
+      },
+      "review_scope": "All 114 original pages and OCR regions; relevant instrument, access, office and CFMask sections.",
+      "source_verification": "artifacts/source-verification.json",
+      "limit": "Literal term hits only assist locating source sections; author source verification and original-source review are recorded separately."
+    },
+    {
+      "query_id": "adv3-test-026",
+      "reason": "The access chapter describes interactive search/download interfaces, not a numeric API request rate limit.",
+      "original_text_hits": {
+        "EarthExplorer": [
+          6,
+          7,
+          14,
+          68,
+          69,
+          70,
+          71,
+          85,
+          110,
+          111
+        ],
+        "API": [
+          5,
+          13
+        ],
+        "rate limit": [],
+        "requests per second": []
+      },
+      "review_scope": "All 114 original pages and OCR regions; relevant instrument, access, office and CFMask sections.",
+      "source_verification": "artifacts/source-verification.json",
+      "limit": "Literal term hits only assist locating source sections; author source verification and original-source review are recorded separately."
+    },
+    {
+      "query_id": "adv3-test-027",
+      "reason": "EROS responsibilities and location are described; a dated employee headcount is not supplied.",
+      "original_text_hits": {
+        "EROS": [
+          2,
+          3,
+          9,
+          12,
+          14,
+          16,
+          17,
+          18,
+          25,
+          52,
+          58,
+          59,
+          69,
+          88,
+          109,
+          111
+        ],
+        "employees": [],
+        "headcount": []
+      },
+      "review_scope": "All 114 original pages and OCR regions; relevant instrument, access, office and CFMask sections.",
+      "source_verification": "artifacts/source-verification.json",
+      "limit": "Literal term hits only assist locating source sections; author source verification and original-source review are recorded separately."
+    },
+    {
+      "query_id": "adv3-test-028",
+      "reason": "The GloVis interface is described, without monthly service-availability statistics.",
+      "original_text_hits": {
+        "GloVis": [
+          6,
+          7,
+          14,
+          71,
+          110,
+          112
+        ],
+        "uptime": [],
+        "availability": [
+          5,
+          13,
+          46,
+          80,
+          81,
+          82
+        ]
+      },
+      "review_scope": "All 114 original pages and OCR regions; relevant instrument, access, office and CFMask sections.",
+      "source_verification": "artifacts/source-verification.json",
+      "limit": "Literal term hits only assist locating source sections; author source verification and original-source review are recorded separately."
+    },
+    {
+      "query_id": "adv3-test-029",
+      "reason": "The CFMask description explains masking and validation limits, not a training-image count.",
+      "original_text_hits": {
+        "CFMask": [
+          56,
+          111
+        ],
+        "training": [],
+        "decision trees": [
+          56
+        ]
+      },
+      "review_scope": "All 114 original pages and OCR regions; relevant instrument, access, office and CFMask sections.",
+      "source_verification": "artifacts/source-verification.json",
+      "limit": "Literal term hits only assist locating source sections; author source verification and original-source review are recorded separately."
+    },
+    {
+      "query_id": "adv3-test-030",
+      "reason": "The handbook describes a web viewer and does not specify an Android minimum-version requirement.",
+      "original_text_hits": {
+        "LandsatLook": [
+          6,
+          7,
+          8,
+          14,
+          66,
+          68,
+          71,
+          72,
+          110
+        ],
+        "Android": [],
+        "operating system": []
+      },
+      "review_scope": "All 114 original pages and OCR regions; relevant instrument, access, office and CFMask sections.",
+      "source_verification": "artifacts/source-verification.json",
+      "limit": "Literal term hits only assist locating source sections; author source verification and original-source review are recorded separately."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-11-16T05:13:39.850048+00:00",
+  "archive": "artifacts\\advanced\\qdrant-v7-snapshot.zip",
+  "archive_sha256": "fcd8f677c1a9afcd99febd90f6f5e97982480bb2029a160a50a200d9e87ead09",
+  "file_sha256": {
+    "meta.json": "448a707f35f04708179706c23d5e5e754e9098617eb7497ed928d4161d171fa0",
+    "collection/lab7_landsat_v5/storage.sqlite": "617feb0965f7e532b2196732252bedb7436ab5202e54b725e9a4c1215e9809a9"
+  },
+  "payloads_compared": 941,
+  "search_chunks_sha256": "301aead3ab58201c8820c1ea80f73891218ff37735b4ddcb17a35b65f31576bd",
+  "source": "USGS Landsat 8 handbook v5, extracted text/OCR and AI visual observations",
+  "contents": "Only Qdrant metadata and SQLite; no PDF images, model weights or credentials.",
+  "warning": "USGS page states Public Domain; third-party image rights must be checked separately."
+}

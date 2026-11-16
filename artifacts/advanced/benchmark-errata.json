@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-11-16T05:13:17.877407+00:00",
+  "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756",
+  "errata": [
+    {
+      "case": "adv2-test-017 / adv3-dev-adv2-test-017",
+      "issue": "The inherited question says Section 2.1; the 98.9-minute orbital-period statement is in the Section 2 overview immediately before Section 2.1.",
+      "correct_source": "landsat-v5-p016-text-003, PDF page 16, printed 8",
+      "original_incorrect_section_source": "landsat-v5-p016-text-004",
+      "policy": "Historical questions/gold, outputs and failed verdicts remain unchanged. This case is dev in v3 and is not part of the fresh v3 test."
+    }
+  ]
+}

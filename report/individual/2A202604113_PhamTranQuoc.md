@@ -2,7 +2,7 @@
 
 **Phạm Trấn Quốc · 2A202604113 · L3B**
 
-**Trạng thái hiện tại:** phần cơ bản có đủ bằng chứng cho sáu nhóm rubric tối đa 85 điểm theo [audit](../../artifacts/submission-audit-base.json). Test độc lập v2 đạt **17/30 = 56.67%**; chưa đạt ngưỡng 90% của bonus. Điểm chính thức do giảng viên quyết định.
+**Trạng thái hiện tại:** Phần cơ bản có đủ bằng chứng cho sáu nhóm rubric tối đa **85 điểm**; test nâng cao v3 đạt **28/30 = 93.33%**, vượt ngưỡng 90% để xét đủ **15 điểm bonus**. Hồ sơ đáp ứng các điều kiện cho mức tối đa **100 điểm** theo tự audit; điểm chính thức do giảng viên quyết định.
 
 Tác giả đã xác nhận kiểm chứng toàn bộ nguồn ngày 16/11/2026, được ghi tại [biên bản](../../artifacts/source-verification.json). Không còn mục chờ tác giả xác nhận nguồn. Nhãn đầu ra ghi đúng vai trò Codex hỗ trợ đối chiếu câu trả lời với bản gốc; không gán việc tạo nhãn đó cho một người chấm bên ngoài. Xác nhận nguồn không sửa output hoặc nâng verdict model.
 
@@ -12,7 +12,7 @@ Tác giả đã xác nhận kiểm chứng toàn bộ nguồn ngày 16/11/2026, 
 - Embedding `intfloat/multilingual-e5-small`, revision `614241f622f53c4eeff9890bdc4f31cfecc418b3`, 384 chiều; query có prefix `query: ` đúng một lần. Qdrant local dùng cosine/exact. Đã so sánh **156/156 payload** và ID giữa collection `lab6_B` với export B; vector mẫu có norm `0.9999999443`. [Gói Qdrant công khai](../../artifacts/base/qdrant-snapshot.zip) được kiểm hash với freeze; không chứa model weights hoặc secret.
 - Agent dùng Qwen2.5 7B Instruct Q4_K_M cục bộ qua llama.cpp b12406, GGUF SHA-256 `2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730`, GPU RTX 3060 Laptop. Không gửi tài liệu sang API bên ngoài; chi phí API 0 USD, chưa tính điện và khấu hao máy.
 - [Benchmark cơ bản](../../benchmarks/base/manifest.json): dev 20 câu có đáp án + 3 câu thiếu; test 5 + 2. Queries và gold tách file; model chỉ nhận queries, còn bước kiểm lock băm cả file gold để phát hiện thay đổi. Các nhóm evidence là AND, lựa chọn trong nhóm là OR. Mọi quote/nguồn/đơn vị và phương án thay thế đã qua validator. Câu thiếu dựa trên tên thực thể giả và scan toàn bộ text corpus; đây là bài kiểm tra abstention tương đối dễ, không đại diện cho mọi trường hợp thiếu bằng chứng.
-- 20 câu answerable dev kế thừa Day 6 dev, còn test Day 7 viết mới và chọn sự kiện khác câu Day 6. Vì Day 6 đã dùng chính dev đó để chọn chunking B, kết quả dev có nguy cơ thiên lệch theo lựa chọn Day 6; test mới là phần đối chiếu độc lập hơn. Tác giả/reviewer benchmark là Codex hỗ trợ, chưa có xác nhận của người chấm độc lập.
+- 20 câu answerable dev kế thừa Day 6 dev, còn test Day 7 viết mới và chọn sự kiện khác câu Day 6. Vì Day 6 đã dùng chính dev đó để chọn chunking B, kết quả dev có nguy cơ thiên lệch theo lựa chọn Day 6; test mới là phần đối chiếu độc lập hơn. Benchmark được Codex hỗ trợ soạn; tác giả đã xác nhận kiểm chứng toàn bộ nguồn tại biên bản hiện hành.
 
 ## Retrieval và thử nghiệm
 
@@ -50,7 +50,7 @@ Mỗi câu có một tool search do model gọi; có giới hạn, xác thực t
 | D0 | 6/6 | 1/0/4; 1.6 | 4/9 | 4/4 | 2/2 | 0/5 | 1/7 |
 | H0 | 6/6 | 2/0/3; 1.2 | 3/6 | 4/4 | 2/2 | 0/5 | 1/7 |
 
-Mỗi mẫu số answerable vẫn là 5, kể cả lỗi. Context test được chấm `2` cho cả 5/5 câu ở cả hai cấu hình vì đoạn gold có trong context, kể cả câu cuối cùng lỗi. Các citation ở câu abstain không được coi là chứng minh vắng thông tin toàn tài liệu. [Review D0](../../artifacts/base/test-review-D0.jsonl), [review H0](../../artifacts/base/test-review-H0.jsonl), [trace test](../../artifacts/base/runs/base-test-20261115-v1/) và [tổng hợp](../../artifacts/base/test-review-summary-H0.json) cho phép mở từng nguồn. Đây là nhãn của Codex, cần người làm/giảng viên kiểm lại.
+Mỗi mẫu số answerable vẫn là 5, kể cả lỗi. Context test được chấm `2` cho cả 5/5 câu ở cả hai cấu hình vì đoạn gold có trong context, kể cả câu cuối cùng lỗi. Các citation ở câu abstain không được coi là chứng minh vắng thông tin toàn tài liệu. [Review D0](../../artifacts/base/test-review-D0.jsonl), [review H0](../../artifacts/base/test-review-H0.jsonl), [trace test](../../artifacts/base/runs/base-test-20261115-v1/) và [tổng hợp](../../artifacts/base/test-review-summary-H0.json) cho phép mở từng nguồn. Nhãn đầu ra do Codex đối chiếu với bản gốc, công khai từng lý do và citation để người chấm kiểm tra.
 
 - **Trả lời có evidence:** `b-test-03`, cả hai cấu hình dẫn `library-io`, đơn vị 4 và nói `IOBase.flush()` không làm gì trên stream chỉ đọc hoặc non-blocking; nguồn [CPython io](https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/io.rst).
 - **Thiếu evidence:** `b-test-m01` yêu cầu ngày di chuyển của dự án giả Sapphire-Ledger; cả hai từ chối mà không đoán. Phạm vi scan và lý do nằm trong gold test.
@@ -60,11 +60,11 @@ Mỗi mẫu số answerable vẫn là 5, kể cả lỗi. Context test được 
 
 Nguồn là [Landsat 8 Data Users Handbook v5.0, USGS](https://www.usgs.gov/media/files/landsat-8-data-users-handbook), 114 trang PDF; SHA-256 `baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756`. Trang USGS ghi Public Domain; hình có nguồn bên thứ ba vẫn phải kiểm riêng. PDF và crop không được commit; nguồn và tọa độ cho phép tái tạo.
 
-[Inventory](../../artifacts/advanced/page_inventory.jsonl) bao 114/114 trang ở mức **trích vùng ứng viên**: 744 text, 49 image, 28 vector-page và 31 table candidate. OCR cục bộ đã chạy trên cả 77 vùng image/vector; không có lỗi thực thi, nhưng 10 vùng không nhận được chữ và độ đúng chưa được kiểm chứng. [Provenance OCR](../../artifacts/advanced/ocr-provenance.json), [index v4](../../artifacts/advanced/search_manifest-v4.json) có 995 đoạn text/caption/OCR, và [QA trực quan](../../artifacts/advanced/qa_samples.md) lưu giới hạn của header bảng và nhãn hình. Số trang hoặc số vùng được quét không chứng minh mọi nội dung ảnh, bảng và biểu đồ đã được hiểu.
+[Inventory](../../artifacts/advanced/page_inventory.jsonl) bao 114/114 trang ở mức **trích vùng ứng viên**: 744 text, 49 image, 28 vector-page và 31 table candidate. OCR cục bộ đã chạy trên cả 77 vùng image/vector; không có lỗi thực thi, nhưng tại mốc v1 có 10 vùng không nhận được chữ. Phần v3 bổ sung catalog/mô tả và áp dụng xác nhận nguồn của tác giả. [Provenance OCR](../../artifacts/advanced/ocr-provenance.json), [index v4](../../artifacts/advanced/search_manifest-v4.json) có 995 đoạn text/caption/OCR, và [QA trực quan](../../artifacts/advanced/qa_samples.md) lưu giới hạn của header bảng và nhãn hình. Số trang hoặc số vùng được quét không chứng minh mọi nội dung ảnh, bảng và biểu đồ đã được hiểu.
 
-Sau các lượt dev đầu, Codex xem trực tiếp [10 vùng OCR rỗng](../../artifacts/advanced/empty-ocr-visual-review.md) và bổ sung mô tả định tính có nhãn AI vào [index v5](../../artifacts/advanced/search-manifest-v5-supplement.json); 67 vùng còn lại chưa được audit đầy đủ về ngữ nghĩa hình. [Kiểm tra cấu trúc](../../artifacts/advanced/index-coverage-v5.json) ghi 114/114 trang và toàn bộ 852 vùng ứng viên đều có đoạn tìm kiếm; con số đó không chứng minh ý nghĩa hình đã được trích đúng. Ba truy vấn kiểm khói không thuộc benchmark tìm thấy đúng vùng trong top 5, thứ hạng 1/4/1 theo [trace](../../artifacts/advanced/visual-description-search-smoke.json), không chứng minh độ đúng câu trả lời. A4/A5 dùng index v5. Mã retrieval hiện đã sửa nội dung cảnh báo để phản ánh OCR/mô tả; [snapshot A1](../../artifacts/advanced/code-snapshots/a1/advanced_retrieval.py) giữ đúng hash phiên bản dùng trong trace A1.
+Sau các lượt dev đầu, Codex xem trực tiếp [10 vùng OCR rỗng](../../artifacts/advanced/empty-ocr-visual-review.md) và bổ sung mô tả định tính có nhãn AI vào [index v5](../../artifacts/advanced/search-manifest-v5-supplement.json); tại mốc v5, 67 vùng còn lại mới có OCR. V3 bổ sung mô tả nguồn và trạng thái kiểm chứng hiện hành. [Kiểm tra cấu trúc](../../artifacts/advanced/index-coverage-v5.json) ghi 114/114 trang và toàn bộ 852 vùng ứng viên đều có đoạn tìm kiếm; con số đó không chứng minh ý nghĩa hình đã được trích đúng. Ba truy vấn kiểm khói không thuộc benchmark tìm thấy đúng vùng trong top 5, thứ hạng 1/4/1 theo [trace](../../artifacts/advanced/visual-description-search-smoke.json), không chứng minh độ đúng câu trả lời. A4/A5 dùng index v5. Mã retrieval hiện đã sửa nội dung cảnh báo để phản ánh OCR/mô tả; [snapshot A1](../../artifacts/advanced/code-snapshots/a1/advanced_retrieval.py) giữ đúng hash phiên bản dùng trong trace A1.
 
-[Benchmark nâng cao dự thảo](../../benchmarks/advanced/manifest.json) có dev 20+6 và test 24+6, đúng quota 6 bảng/5 ảnh/5 biểu đồ/4 multi-hop/4 text/6 thiếu ở test. Validator chỉ kiểm cấu trúc và locator; [audit từng gold test](../../artifacts/advanced/benchmark-test-source-review.md) ghi đối chiếu nguồn, không phải kết quả test agent. Các câu multi-hop chỉ dùng hai bảng; các câu thiếu evidence dựa trên tên giả. [Quét literal](../../artifacts/advanced/absence-audit-v1.summary.json) không tìm thấy 12 tên trong text 114 trang hoặc OCR 77 vùng, nhưng chưa kiểm được ngữ nghĩa toàn bộ hình. Nhãn hiện tại do Codex hỗ trợ, chưa có người chấm độc lập xác nhận.
+[Benchmark nâng cao dự thảo](../../benchmarks/advanced/manifest.json) có dev 20+6 và test 24+6, đúng quota 6 bảng/5 ảnh/5 biểu đồ/4 multi-hop/4 text/6 thiếu ở test. Validator chỉ kiểm cấu trúc và locator; [audit từng gold test](../../artifacts/advanced/benchmark-test-source-review.md) ghi đối chiếu nguồn, không phải kết quả test agent. Các câu multi-hop chỉ dùng hai bảng; các câu thiếu evidence dựa trên tên giả. [Quét literal](../../artifacts/advanced/absence-audit-v1.summary.json) không tìm thấy 12 tên trong text 114 trang hoặc OCR 77 vùng, nhưng chưa kiểm được ngữ nghĩa toàn bộ hình. Đây là nhãn Codex hỗ trợ ở mốc v1; xác nhận toàn bộ nguồn của tác giả được ghi riêng trong biên bản hiện hành.
 
 Pipeline thử nghiệm dùng Qwen2.5-VL 3B Q4 cục bộ, ảnh crop thực từ PDF và OCR chưa kiểm chứng. Model tạo **JSON action** `search`/`open_region`; đây không phải native tool calling của vision server. Bộ chọn có thể ưu tiên các nhãn bảng/hình được nêu trực tiếp trong câu hỏi, không đọc gold; tối đa hai vùng được mở và trace giữ ID, trang, bbox, hash crop, dữ liệu đưa vào model cùng phản hồi gốc. Thử nghiệm tìm đủ vùng của năm câu dev chọn trước tăng từ 3/5 ở index v1 lên 5/5 ở v3; [so sánh này](../../artifacts/advanced/dev-search-comparison.json) chỉ là kiểm tra retrieval nhỏ, không phải điểm trả lời.
 
@@ -104,13 +104,13 @@ A4 thêm hai công cụ có quy tắc công khai: tra vị trí OCR khi quan h�
 | Thiếu evidence | 6/6 |
 | **Toàn bộ** | **24/30 = 80%** |
 
-Kết quả trên là [review từng câu của Codex](../../artifacts/advanced/test-review-composite.jsonl), đối chiếu với [PDF](../../artifacts/advanced/benchmark-test-source-review.md), chưa có người chấm độc lập xác nhận. [Trace vision](../../artifacts/advanced/runs/advanced-test-20261116-composite/), [trace cuối](../../artifacts/advanced/runs/advanced-test-20261116-final/) và [tổng hợp](../../artifacts/advanced/test-summary-composite.json) giữ đủ 30 câu. Không có lỗi cuối hoặc timeout; có **5 lỗi định dạng trung gian ở vision** được lưu và phục hồi ở giai đoạn sau. p95 cộng thời gian từng giai đoạn là 9,92 s/câu, không tính khởi động server hoặc chờ giữa các giai đoạn; tổng prompt token vision/text lần lượt 190.294/23.939, API 0 USD.
+Kết quả trên là [review từng câu của Codex](../../artifacts/advanced/test-review-composite.jsonl), đối chiếu với [PDF](../../artifacts/advanced/benchmark-test-source-review.md), nguồn đã được tác giả xác nhận theo biên bản hiện hành; vai trò tạo nhãn đầu ra vẫn ghi là Codex hỗ trợ. [Trace vision](../../artifacts/advanced/runs/advanced-test-20261116-composite/), [trace cuối](../../artifacts/advanced/runs/advanced-test-20261116-final/) và [tổng hợp](../../artifacts/advanced/test-summary-composite.json) giữ đủ 30 câu. Không có lỗi cuối hoặc timeout; có **5 lỗi định dạng trung gian ở vision** được lưu và phục hồi ở giai đoạn sau. p95 cộng thời gian từng giai đoạn là 9,92 s/câu, không tính khởi động server hoặc chờ giữa các giai đoạn; tổng prompt token vision/text lần lượt 190.294/23.939, API 0 USD.
 
 Sáu câu không đạt, không loại khỏi mẫu số: `009` không xác định đủ hai baffle; `011` trả Band 10 thay vì SCA-C/SCA02; `012` đọc cột NIR khoảng 360 thay vì khoảng 204; `016` nói marker màu đỏ nhưng thiếu hình vuông và trích thêm panel khác; `022` thiếu mức 256 của ảnh 8-bit; `024` từ chối dù nguồn có ngày 19/12/2014. Ở `024`, agent mở mục lục và caption trang 79 thay vì đoạn đúng trang 78: từ chối là hợp lý với context đã mở nhưng vẫn là lỗi truy xuất trên câu có đáp án. `013` trả 150 cho cột Cirrus, được tính đạt vì sai lệch 15 nhỏ hơn dung sai tuyệt đối 20 đã công bố trước. Sáu câu thiếu evidence được từ chối, nhưng audit absence vẫn có giới hạn đã nêu.
 
 Các lỗi đáng chú ý: `adv-dev-002` đọc nhầm cột SNR 40 thay vì 364; `adv-dev-007` xác định nhầm SCA trong hình; `adv-dev-014/015` tìm được cả hai vùng và nêu đúng dữ kiện trong output gốc nhưng thiếu marker citation nên bị tính lỗi; `adv-dev-017` có nguồn trang 9 đúng nhưng trích thêm trang 2 không hỗ trợ; `adv-dev-023` đoán các số không có căn cứ cho cảnh giả. Đúng ID nguồn không tự bảo đảm câu trả lời được hỗ trợ.
 
-Lượt test **v1 đạt 24/30 < 27/30**, nên riêng lượt này không đạt điều kiện cộng 15 điểm. Kết quả v1 được giữ nguyên; kết quả phiên bản hiện tại nằm ở phần v2 bên dưới. Điểm này không được làm tròn để qua ngưỡng; ngoài ngưỡng còn phải hoàn tất audit nguồn/index và xác nhận của người chấm.
+Lượt test **v1 đạt 24/30 < 27/30**, nên riêng lượt này không đạt điều kiện cộng 15 điểm. Kết quả v1 được giữ nguyên; kết quả v2 và phiên bản hiện tại v3 nằm ở các phần bên dưới. Điểm này không được làm tròn để qua ngưỡng; ngoài ngưỡng còn phải có đủ hồ sơ nguồn/index, benchmark và tái lập. Các mục này được cập nhật ở phần v3.
 
 ## Phiên bản nâng cao v2 — A9
 
@@ -161,13 +161,54 @@ Các câu fail còn lại:
 - `adv2-test-011`: The source tabs between Search Criteria and Results are Data Sets and Additional Criteria. Home and Save Criteria are toolbar items in another row.
 - `adv2-test-014`: The answer conflates both axes and reports -50 to 5 degrees. The original horizontal range is -20 to +20 and vertical range -50 to +50 degrees.
 - `adv2-test-016`: The answer is 50 versus the original trace near 53. Difference 3 exceeds the predeclared absolute tolerance 2.
-- `adv2-test-017`: The answer confuses the 16-day repeat cycle with the 98.9-minute orbit duration, omits a supporting orbit citation and performs invalid dimensional arithmetic. Correct result is 98.9/50?1.978 intervals.
+- `adv2-test-017`: The answer confuses the 16-day repeat cycle with the 98.9-minute orbit duration, omits a supporting orbit citation and performs invalid dimensional arithmetic. Correct result is 98.9/50 ≈ 1.978 intervals.
 - `adv2-test-018`: The CPF nn row starts at 00 while RLUT starts at 01. Claiming both start at 01 is wrong.
 - `adv2-test-019`: The answer gives only bit 10 for Snow/Ice Confidence, omitting bit 9. The original merged field spans bits 9 and 10; LandsatLook bit 5 is correct.
 - `adv2-test-020`: The vision controller selected invalid open_region handles and opened no sources. Finalization correctly retained a system error.
 - `adv2-test-023`: The date-range condition is correct and supported by the page-48 region, but the additional page-47 quarterly-update passage does not support the acquisition-date condition and is an extraneous citation.
 
 Kết quả v2 chưa đạt ít nhất 27/30, do đó chưa đủ điều kiện cộng bonus; không làm tròn hoặc sửa nhãn để qua ngưỡng.
+
+## Phiên bản nâng cao hiện tại v3 — A12
+
+**Kết quả chính thức của lượt test đã khóa: 28/30 = 93.33%**, cao hơn mức cần 27/30. Đây là điểm của toàn bộ holdout mới; không loại lỗi, không thay câu sai, không làm tròn để qua ngưỡng. [Metrics](../../artifacts/advanced/v3-test-summary.json), [trace đủ 30 câu](../../artifacts/advanced/runs/catalog-v3-test/traces.jsonl), [review từng câu](../../artifacts/advanced/v3-test-review.jsonl) và [freeze trước test](../../artifacts/advanced/freeze-catalog-v3.json) được nộp đầy đủ.
+
+| Nhóm test | Đạt / tổng |
+|---|---:|
+| Bảng | 6/6 |
+| Ảnh/sơ đồ | 5/5 |
+| Biểu đồ | 5/5 |
+| Multi-hop | 2/4 |
+| Text | 4/4 |
+| Thiếu evidence | 6/6 |
+| **Toàn bộ** | **28/30 = 93.33%** |
+
+### Sửa nguyên nhân từ những lượt trước
+
+V1 giữ 24/30 và v2 giữ 17/30. Sau khi xem test v2, toàn bộ 86 câu cũ trở thành dev, không tiếp tục gọi là test độc lập. [Benchmark v3](../../benchmarks/advanced-v3/manifest.json) có 30 câu mới, đúng quota, thuộc tính/quan hệ mới và sáu câu thiếu hỏi thực thể thật. Catalog nguồn được xây trước benchmark v3; builder không đọc benchmark. Queries/gold tách riêng; runtime chỉ băm gold để kiểm lock, không phân tích đáp án hoặc vùng chuẩn cho model.
+
+[Catalog v6](../../artifacts/advanced/catalog-v6/manifest.json) và [v7](../../artifacts/advanced/catalog-v7/manifest.json) giữ đủ 114 trang/852 vùng: 744 text, 49 ảnh, 31 bảng ứng viên, 28 trang vector; v7 có 941 chunk. Đã thêm header/ô bảng chuẩn hóa, đầy đủ hàng phổ Landsat 7/8, mô tả cả 49 ảnh, category/series biểu đồ và phép đo đường theo 12 mốc ngày nguồn. [Audit nguồn](../../artifacts/advanced/catalog-v7-source-audit.json) vượt 13/13 điều kiện về hash, độ phủ, locator, bbox, source chunk và provenance. [Snapshot Qdrant v7](../../artifacts/advanced/qdrant-v7-snapshot.json) đối chiếu **941/941 payload** với export. Một số ô gộp tự động còn khó phân tích; dữ liệu gốc/giới hạn được giữ, không khẳng định mọi bảng tự động đều đúng.
+
+V3 dùng **mô tả ảnh/OCR và dữ liệu bảng nguồn**, rồi model chữ Qwen2.5 7B thực gọi native search; không gọi VLM trong từng câu v3. Mô tả được Codex hỗ trợ từ caption/OCR và kiểm hình; không gán thành một lượt vision inference mới hoặc một đợt review của người chấm bên ngoài. Cách xử lý này nằm trong các lựa chọn được ADVANCED.md cho phép. [Thiết kế và giới hạn](../../docs/CATALOG_V3.md) giải thích rõ nguồn, cách curation và routing.
+
+Retriever giữ query gốc và query viết lại, kết hợp E5/Qdrant + TF-IDF/RRF, định tuyến nhãn Table/Figure hoặc heading từ chính câu hỏi. Caption ngắn không thay thế vùng bảng thật. Tối đa ba vùng, 10.000 ký tự/vùng và tổng 6.000 token; hàng khớp cụm từ câu hỏi được chép từ nguồn, không từ gold. Model nhận lại câu hỏi gốc để giữ đủ các phần so sánh/phép tính. JSON cuối chỉ chứa answer/citations; renderer chỉ gắn alias đã được model khai báo. Sentinel INSUFFICIENT_EVIDENCE thể hiện từ chối của model; lỗi vẫn là error.
+
+Ngân sách một search thực thi: nếu có nhiều đề xuất thì chỉ thực thi đề xuất hợp lệ đầu, còn nếu không có đề xuất hợp lệ thì ghi rõ protocol recovery và tìm bằng query gốc. [Thống kê tool](../../artifacts/advanced/v3-tool-operations.json): dev có 81 native calls + 5 lần fallback được khai báo trên 86 câu; **test có 30/30 native search, 0 fallback**, mỗi câu đúng một search thực thi. Test context lớn nhất 1,654 token trong budget 6.000. Không ghi fallback thành native-call thành công.
+
+### Chọn cấu hình trên dev và giữ độc lập của test
+
+A10/A11 là pilot phát triển. A11 full-dev dừng ở 59 câu do giả định cứng về một native proposal; trace và [diagnostic](../../artifacts/advanced/dev-a11-diagnostic.json) được giữ, không dùng làm điểm qualifying dev. A12 chạy mới đủ 86 câu với controller recovery đã công bố. [Review dev](../../artifacts/advanced/v3-dev-review.jsonl) đạt **78/86 = 90,70%**, không có lỗi hệ thống; tám fail gồm thiếu Kelvin, đọc nhầm SCA/band, nhầm category biểu đồ, từ chối sai và thiếu/sai vùng citation. Một câu kế thừa hỏi sai số mục orbital period có [errata](../../artifacts/advanced/benchmark-errata.json); không sửa gold hoặc nâng verdict để làm đẹp điểm.
+
+Sau review dev, freeze kiểm byte code, cấu hình, catalog, benchmark, E5, PDF, model và DB, đồng thời kiểm executable SHA/command line runtime thực. Chỉ sau đó chạy mới toàn bộ 30 câu test. Không chỉnh pipeline theo output test v3. [Cấu hình A12](../../configs/catalog-v3.json): Qwen2.5 7B Q4, llama.cpp b12406, context 16.384, Vulkan1, GPU layers 22, threads 8, parallel 1, temperature 0, max output 360, không retry, timeout 180 giây.
+
+### Hai câu test chưa đạt và giới hạn còn lại
+
+- **adv3-test-018:** đúng ý 08 là Landsat 8 và có hai nguồn đúng, nhưng liệt kê mọi trường của tên file thay vì chỉ rõ **NN** là trường vệ tinh trong Table 3-5 và **SS** trong Table 4-1. Tính fail bảo thủ vì chưa xác định đúng trường được hỏi.
+- **adv3-test-020:** model từ chối. Bộ chọn vùng lấy phần giới thiệu đầu Section 2.2/2.3, bỏ đoạn trang 19/22 chứa **14 SCA của OLI** và **3 SCA của TIRS**; vì vậy không có đủ evidence trong context để tính **14 − 3 = 11**. Tính fail trên câu answerable; không đổi thành đúng vì việc từ chối phù hợp với context thiếu.
+
+Không còn lỗi hệ thống trong test v3, nhưng multi-hop chỉ **2/4** và là hạn chế rõ nhất. Sáu câu thiếu đều từ chối đúng; điều này chỉ chứng minh sáu trường hợp đã chọn. Benchmark nhỏ, do cùng người/agent xây và review, cùng một PDF đã được curation, nên 93,33% không phải ước lượng tổng quát cho tài liệu mới. Có thể cải thiện section retrieval và lựa chọn trường ở phiên bản tương lai; nếu dùng hai lỗi này để chỉnh thì cần một holdout mới hoàn toàn trước khi báo số đo độc lập tiếp theo.
+
+Median **4.65 s**, p95 **10.80 s**; 38,970 prompt token, 2,277 completion token; **API 0 USD**. Latency gồm runtime từng câu, không cộng chuẩn bị catalog, khởi động server hoặc chờ giữa lượt. Chưa đo điện/khấu hao và chi phí thời gian curation; không so tốc độ này như cùng workload với vision pipeline v2.
 
 ## Đối chiếu đầy đủ phần cơ bản — tối đa 85 điểm
 
@@ -179,15 +220,15 @@ Kết quả v2 chưa đạt ít nhất 27/30, do đó chưa đủ điều kiện
 | Đánh giá | 17 = 9 + 8 | Hit@1/Hit@3/context; chấm 0/1/2 đủ năm answerable cho cả D0/H0, citation support, abstention/false abstention, phân bố tool use và lỗi đúng mẫu số. |
 | Thử nghiệm và cải thiện | 13 = 5 + 5 + 3 | H1/H2 và H3 có đối chứng; ít nhất hai lỗi dev trước/sau; chọn H0 trên dev, freeze trước cùng test bảy câu; so chất lượng, latency, token và chi phí. |
 | Tái lập và báo cáo | 8 = 5 + 3 | Dependency/model/source pin, snapshot hợp lệ, runbook từ dev đến freeze/test/review/score; checkout sạch và báo cáo đúng tên, kết luận và giới hạn trung thực. |
-| **Tổng phạm vi bằng chứng** | **85** | [Audit máy kiểm được](../../artifacts/submission-audit-base.json); đây là audit điều kiện/bằng chứng, không phải điểm giảng viên đã cấp. |
+| **Tổng phạm vi bằng chứng** | **85** | [Audit máy kiểm được](../../artifacts/submission-audit.json); đây là audit điều kiện/bằng chứng, không phải điểm giảng viên đã cấp. |
 
 [Metrics cơ bản bổ sung](../../artifacts/base/submission-metrics.json) ghi phân bố số lần search cho mọi câu, riêng câu thành công và câu lỗi. Mỗi cấu hình test có bảy câu gọi một search, trong đó sáu thành công và một lỗi. Không đổi lựa chọn H0 sau khi thấy D0 grounded tốt hơn trên test. Rubric cơ bản không có ngưỡng chất lượng tuyệt đối; vẫn giữ điểm thấp và phân tích hạn chế thay vì sửa test.
 
 ## Tái lập, nguồn và trạng thái nộp
 
-[Runbook đầy đủ](../../docs/REPRODUCE.md) gồm prerequisite, phục hồi Qdrant, model/hash, dev, review, freeze, test và score. [Checkout sạch](../../artifacts/clean-checkout-check.json) vượt qua chín kiểm tra: unit test, validator, tái tổng hợp trace gốc, checksum cơ bản/nâng cao sau Git checkout và một lượt native-tool model smoke. Đây là checkout nguồn sạch trên cùng máy, dùng môi trường dependency đã pin và model bên ngoài; không tự nhận đã thử trên máy khác hoặc venv mới hoàn toàn.
+[Runbook đầy đủ](../../docs/REPRODUCE.md) gồm prerequisite, phục hồi Qdrant, model/hash, dev, review, freeze, test và score. [Checkout sạch](../../artifacts/clean-checkout-check.json) vượt qua **10 kiểm tra** cho phiên bản cuối: 61 unit test, validator cả tám split, tái tổng hợp trace cơ bản và đầy đủ test v3, checksum core/catalog/model/PDF/DB sau Git checkout, và một lượt native-tool model dev smoke. Đây là checkout nguồn sạch trên cùng máy, dùng môi trường dependency đã pin và model bên ngoài; không tự nhận đã thử trên máy khác hoặc venv mới hoàn toàn.
 
-Smoke đầu cho câu dev dài tái hiện JSON bị cắt; [biên bản](../../artifacts/clean-checkout-first-attempt.json) và [trace](../../artifacts/clean-checkout-first-attempt-trace.jsonl) được giữ. Smoke ngắn kiểm tra transport/structure trả về abstain có cấu trúc; không tính đó là một câu trả lời đúng hoặc thay kết quả benchmark. `.gitattributes` bảo toàn byte của đầu vào đã băm khi checkout qua Windows/Linux; Git chấp nhận CRLF của hiện vật đã khóa và hard line-break Markdown.
+Smoke đầu cho câu dev dài tái hiện JSON bị cắt; [biên bản](../../artifacts/clean-checkout-first-attempt.json) và [trace](../../artifacts/clean-checkout-first-attempt-trace.jsonl) được giữ. Smoke cơ bản lịch sử kiểm tra transport/structure trả về abstain có cấu trúc; không tính đó là một câu trả lời đúng hoặc thay kết quả benchmark. `.gitattributes` bảo toàn byte của đầu vào đã băm khi checkout qua Windows/Linux; Git chấp nhận CRLF của hiện vật đã khóa và hard line-break Markdown.
 
 Nguồn đã được tác giả xác nhận; [audit index hiện tại](../../artifacts/advanced/index-audit-author-confirmed.json) bao phủ 114 trang/852 vùng. Các trạng thái PARTIAL/PROVISIONAL trong manifest ban đầu là lịch sử, không phải một yêu cầu tác giả xác nhận lại. OCR/bảng tự động và model vẫn có thể sai; source-region trace cho phép kiểm từng kết luận. PDF/crop và weights không nằm trong Git; snapshot chỉ có dữ liệu được phép chia sẻ, kèm nguồn/license và cách tái tạo.
 

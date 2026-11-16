@@ -1,0 +1,665 @@
+{
+  "adv3-dev-adv2-dev-dev-001": {
+    "pass": true,
+    "reason": "The Landsat 7 SSR cell is 378 Gbits, block-based; the cited Table 1-1 region supports both parts.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-002": {
+    "pass": true,
+    "reason": "The OLI Band 2 performance column is 364 in the cited Table 2-2.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-003": {
+    "pass": true,
+    "reason": "The TIRS 10 NEDT@240 cell is 0.069 in Table 2-3.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-004": {
+    "pass": false,
+    "reason": "The numerical offset and uncertainty match, but the answer omits the required Kelvin unit. The source explicitly says -2.1 +/- 0.8 K at 300 K.",
+    "failure_type": "missing_unit",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-005": {
+    "pass": true,
+    "reason": "The upper-left arrow in Figure 2-1 labels TIRS.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-006": {
+    "pass": false,
+    "reason": "The original odd-SCA stack starts with Band 8 Panchromatic. Coastal/Aerosol is below it; the cited figure does not support the answer.",
+    "failure_type": "wrong_visual_relation",
+    "citation_support": {
+      "e1": false
+    }
+  },
+  "adv3-dev-adv2-dev-dev-007": {
+    "pass": true,
+    "reason": "The right-hand SCA beside SCA-3 in Figure 2-7 is SCA-1.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-008": {
+    "pass": true,
+    "reason": "The arrow after Radiometric Processing System goes to Geometric Processing System in Figure 4-1.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-009": {
+    "pass": true,
+    "reason": "The Coastal/Aerosol OLI Performance red bar is about 238, within the declared absolute tolerance 20.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-010": {
+    "pass": true,
+    "reason": "The source distinguishes blue ghost-producing lunar positions from gray positions without ghosts; both meanings are present.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-011": {
+    "pass": true,
+    "reason": "The yellow limit line is 80 on the original Figure A-6 scale, within tolerance 1; no unprinted unit is invented.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-012": {
+    "pass": true,
+    "reason": "Figure 4-3 labels horizontal Wavelength (nm) and vertical Atmospheric Transmission (%). Both axes and units are correct.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-013": {
+    "pass": true,
+    "reason": "Table 2-1 identifies Band 1 at 0.435–0.451 micrometers; Table 2-2 gives its performance SNR 238. Both original regions are cited.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-014": {
+    "pass": true,
+    "reason": "Table 2-1 identifies Band 2 at 0.452–0.512 micrometers; Table 2-2 gives performance SNR 364. Both regions support the answer.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-015": {
+    "pass": true,
+    "reason": "Table 2-1 identifies Band 3 Green; the independent Table 2-2 row gives performance SNR 302. Both sources are cited.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-016": {
+    "pass": true,
+    "reason": "Band 4 spans 0.636–0.673 micrometers in Table 2-1 and has performance SNR 227 in Table 2-2; both required sources are cited.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-017": {
+    "pass": true,
+    "reason": "The cited introduction paragraph states Landsat 8 was launched in 2013.",
+    "failure_type": null,
+    "citation_support": {
+      "e3": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-018": {
+    "pass": true,
+    "reason": "The spacecraft paragraph states a specified five-year design life and fuel for ten years; the additional cited mission-objectives paragraph supports the same pair.",
+    "failure_type": null,
+    "citation_support": {
+      "e2": true,
+      "e3": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-019": {
+    "pass": true,
+    "reason": "The QA-band paragraph states 16 bits and the same dimensions as the standard L1T scene. The additional product paragraph supports the 16-bit mask statement.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-020": {
+    "pass": true,
+    "reason": "The cited SSM paragraph explicitly says the encoder converts angular positions to digital codes representing SSM orientation.",
+    "failure_type": null,
+    "citation_support": {
+      "e2": true
+    }
+  },
+  "adv3-dev-adv2-dev-dev-021": {
+    "pass": true,
+    "reason": "The model clearly declines the fictional campaign cost, without an invented number; the absence audit finds no such campaign in the source.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-dev-dev-022": {
+    "pass": true,
+    "reason": "The model declines the unsupported fictional station IP address and adds no unsupported claim.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-dev-dev-023": {
+    "pass": true,
+    "reason": "The model declines the fictional scene cloud percentage rather than inventing it.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-dev-dev-024": {
+    "pass": true,
+    "reason": "The model declines the fictional engineer approval; no unsupported engineer name is supplied.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-dev-dev-025": {
+    "pass": true,
+    "reason": "The model declines the fictional processing invoice and supplies no amount.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-dev-dev-026": {
+    "pass": true,
+    "reason": "The model declines the fictional sensor serial number and supplies no invented identifier.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-dev-test-001": {
+    "pass": true,
+    "reason": "Table 1-1 gives Landsat 8 SSR 3.14 Terabit, file-based; both value and organization are present.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-002": {
+    "pass": true,
+    "reason": "OLI Band 7 performance SNR is 334 in the cited Table 2-2 row.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-003": {
+    "pass": true,
+    "reason": "Table 2-3 gives TIRS 11 NEDT@280 as 0.059.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-004": {
+    "pass": true,
+    "reason": "Table A-1 gives Band 11 offset -4.4 +/- 1.75 K at 300 K; the answer keeps the value, uncertainty and unit under the question condition.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-005": {
+    "pass": true,
+    "reason": "The original Table 2-1 row lists Band 5 wavelength 0.851–0.879 micrometers; both endpoints and the unit are correct.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-006": {
+    "pass": true,
+    "reason": "The Landsat 8 Image D/L cell in Table 1-1 is X-Band Earth Coverage.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-007": {
+    "pass": true,
+    "reason": "The lower-right label in Figure 2-1 points to the Solar Panel.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-008": {
+    "pass": true,
+    "reason": "The even-SCA stack has 12–14 Blind at its top in Figure 2-5.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-009": {
+    "pass": true,
+    "reason": "The Figure 2-8 left baffle is nadir-view and the right baffle is spaceview, matching both sides of the answer.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-010": {
+    "pass": true,
+    "reason": "The bottom label in the original TIRS cutaway Figure A-5 is Focal Plane Array (FPA).",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-011": {
+    "pass": true,
+    "reason": "The lower SCA row in Figure B-2 is SCA-C/SCA02, distinct from upper SCA-A and SCA-B.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-012": {
+    "pass": true,
+    "reason": "The Figure 2-3 red NIR bar is about 204; the answer is within the predeclared tolerance 20.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-013": {
+    "pass": false,
+    "reason": "The red Cirrus bar is about 165. The answer 227 reads the Red-band series entry instead and is outside tolerance 20.",
+    "failure_type": "wrong_chart_category",
+    "citation_support": {
+      "e1": false
+    }
+  },
+  "adv3-dev-adv2-dev-test-014": {
+    "pass": true,
+    "reason": "The red Figure A-6 limit line is 85 on the source scale, within tolerance 1.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-015": {
+    "pass": true,
+    "reason": "The thermal bars beyond 10,000 nm are TIRS Bands 10 and 11 in Figure 4-3.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-016": {
+    "pass": true,
+    "reason": "Band 11 is drawn as red square markers in the left panel of Figure A-3.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-017": {
+    "pass": true,
+    "reason": "Table 2-1 identifies Band 5 for 0.851–0.879 micrometers, and Table 2-2 gives SNR 204; both regions are cited.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-018": {
+    "pass": true,
+    "reason": "Table 2-1 identifies Band 6 for 1.566–1.651 micrometers; Table 2-2 gives performance SNR 265. Both regions support the conclusion.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-019": {
+    "pass": true,
+    "reason": "The source spectral row identifies Band 7 for 2.107–2.294 micrometers, and the SNR table gives 334. Both source regions are cited.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-020": {
+    "pass": true,
+    "reason": "Band 8 Pan spans 0.503–0.676 micrometers in Table 2-1; its performance SNR is 149 in Table 2-2. Both inputs are correct.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-021": {
+    "pass": true,
+    "reason": "The cited Global Survey Mission paragraph states that the entire world comes within sensor view once every 16 days; the additional WRS/archive claims are supported there.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-022": {
+    "pass": true,
+    "reason": "The cited radiometric-resolution paragraph gives 4,096 levels for 12-bit and 256 for previous 8-bit instruments; both values are present.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-023": {
+    "pass": true,
+    "reason": "The QA-band discussion supports lowered NDVI, later apparent phenology and the risks of misinterpreting cloud contamination. All additional clauses come from the same cited paragraph.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-dev-test-024": {
+    "pass": false,
+    "reason": "The source Appendix A.2 paragraph contains December 19, 2014, but the model refuses an answerable date question. This remains a retrieval/false-abstention failure.",
+    "failure_type": "false_abstention",
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-dev-test-025": {
+    "pass": true,
+    "reason": "The model declines the fictional Granite project acquisition date and supplies no invented date.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-dev-test-026": {
+    "pass": true,
+    "reason": "The model declines the fictional station telemetry password and supplies no invented credential.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-dev-test-027": {
+    "pass": true,
+    "reason": "The model declines the fictional scene QA value rather than inventing it.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-dev-test-028": {
+    "pass": true,
+    "reason": "The model declines the fictional calibration operator; no unsupported name is supplied.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-dev-test-029": {
+    "pass": true,
+    "reason": "The model declines the fictional archive storage price and supplies no amount.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-dev-test-030": {
+    "pass": true,
+    "reason": "The model declines the fictional receiver IP address rather than inventing one.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-test-001": {
+    "pass": true,
+    "reason": "The integration-time-sweeps row gives detector/focal-plane-electronics linearity monitoring and the need to update linearity coefficients. Both requested columns are present without the old unsupported relative-gain claim.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-002": {
+    "pass": true,
+    "reason": "The Band Alignment Calibration row gives band-to-band registration assessment and OLI LOS parameter adjustment. Both clauses match Table 3-2.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-003": {
+    "pass": true,
+    "reason": "Table 3-3 defines Cc as Collection number starting with 01; both meaning and start value are correct.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-004": {
+    "pass": true,
+    "reason": "Table 3-4 defines HH1 as two-digit effective starting hours and MM1 as two-digit effective starting minutes; no actual timestamp is invented.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-005": {
+    "pass": true,
+    "reason": "The product-name example encodes acquisition 2015-12-09 and processing 2016-01-31. The returned YYYYMMDD strings retain both correct dates and labels.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-006": {
+    "pass": true,
+    "reason": "Table 5-4 identifies Cloud Shadow at bit 4 and Cirrus at bit 6.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-007": {
+    "pass": true,
+    "reason": "The two bottom assemblies in Figure 2-2 are Instrument Support Electronics (left) and Focal Plane Electronics (right).",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-008": {
+    "pass": true,
+    "reason": "The enlarged Figure 4-2 scene is Row 17, 190 km horizontal and 180 km vertical; the answer includes all requested dimensions and units.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-009": {
+    "pass": true,
+    "reason": "Figure A-4 labels the dotted arc as stray-light positions and the highlighted central point as the direct line of sight for the detector/frame; both relations are correct.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-010": {
+    "pass": true,
+    "reason": "Figure B-6 has the Z axis upward and Height along the slanted distance above the ellipsoid.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-011": {
+    "pass": true,
+    "reason": "The screenshot top tabs between Search Criteria and Results are Data Sets and Additional Criteria; unrelated toolbar controls are not substituted.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-012": {
+    "pass": false,
+    "reason": "The blue OLI Requirement Pan bar is about 80. The answer 130 exceeds tolerance 10 and reads a different category.",
+    "failure_type": "wrong_chart_category",
+    "citation_support": {
+      "e1": false
+    }
+  },
+  "adv3-dev-adv2-test-013": {
+    "pass": true,
+    "reason": "The top OLI Band 9 bar is centered near 1375 nm in Figure 4-3, within tolerance 50 nm.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-014": {
+    "pass": true,
+    "reason": "Band 11 Figure A-2 axes run -20 to +20 degrees horizontally and -50 to +50 vertically; both ranges and units are present.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-015": {
+    "pass": true,
+    "reason": "The right Figure A-3 yellow annotation gives B10 0.29 and B11 0.51 W/m²/µm/sr removed. Both amounts and the full unit are correct.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-016": {
+    "pass": true,
+    "reason": "The original green trace starts near 53; 52.8 is within tolerance 2. The answer explicitly avoids inventing a current unit absent from the axis.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-017": {
+    "pass": false,
+    "reason": "The answer invents 98.8 minutes; the original overview states 98.9, and the cited Section 2.1 region does not state an orbit duration. Although 50 minutes and the approximate quotient are plausible, the required source input/citation is unsupported. The inherited question also has a section-number erratum, recorded separately without changing its verdict.",
+    "failure_type": "unsupported_source_input_and_citation",
+    "citation_support": {
+      "e1": false,
+      "e2": true
+    }
+  },
+  "adv3-dev-adv2-test-018": {
+    "pass": true,
+    "reason": "Table 3-3 starts CPF nn at 00, while Table 3-5 starts RLUT nn at 01. Both distinct conventions and original table citations are included.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-dev-adv2-test-019": {
+    "pass": true,
+    "reason": "The original Level 1 QA diagram assigns Snow/Ice Confidence to both bits 9 and 10; LandsatLook Table 5-4 assigns Snow/Ice to bit 5. Both source regions are cited.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-dev-adv2-test-020": {
+    "pass": false,
+    "reason": "The arithmetic (700-450)*950/1000 = 237.5 GB/day is correct, but the only cited/retrieved region is Table 1-1. The separate Section 6 product-size source required for this multi-hop case is absent, so source evidence is incomplete.",
+    "failure_type": "missing_required_multihop_source",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-021": {
+    "pass": true,
+    "reason": "The Section 6.1 paragraph supports registration before downloading, the exact registration URL and successful login for some functions; all clauses are supported.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-022": {
+    "pass": true,
+    "reason": "The cited Section 4.1.4.3 paragraph identifies CFMask/C Function of Mask and explicitly lists building tops and beaches among difficult bright targets.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-023": {
+    "pass": false,
+    "reason": "The wording is correct for CPF, but the cited page-51 paragraph is specifically about RLUT effective dates. The CPF paragraph is on page 48. Similar wording about another parameter-file type does not establish the requested CPF condition.",
+    "failure_type": "wrong_entity_citation",
+    "citation_support": {
+      "e1": false
+    }
+  },
+  "adv3-dev-adv2-test-024": {
+    "pass": true,
+    "reason": "The cited Section B.8 paragraph gives Earth center of mass as origin and the mean north celestial pole at epoch J2000.0 as the Z-axis; both parts are correct.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-dev-adv2-test-025": {
+    "pass": true,
+    "reason": "The model declines the unsupported OLI hardware serial number without inventing one; the instrument descriptions do not supply it.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-test-026": {
+    "pass": true,
+    "reason": "The model declines the EarthExplorer production-server IP address; the source supplies website URLs, not a numeric production IP.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-test-027": {
+    "pass": true,
+    "reason": "The model declines the 2018 EROS electricity bill; the handbook supplies no annual utility cost.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-test-028": {
+    "pass": true,
+    "reason": "The model declines the requested individual BPF approval signer/date; calibration-file descriptions do not identify such a signer.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-test-029": {
+    "pass": true,
+    "reason": "The model declines the July 2013 CPF SHA-256 checksum; the source describes naming and versioning but gives no such cryptographic digest.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-dev-adv2-test-030": {
+    "pass": true,
+    "reason": "The model declines a 2025 Landsat 9 Level 2 subscription price absent from this 2019 handbook.",
+    "failure_type": null,
+    "citation_support": {}
+  }
+}

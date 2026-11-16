@@ -19,18 +19,15 @@ $Py = (Resolve-Path '.venv/Scripts/python.exe').Path
 $Day6Root = (Resolve-Path '../K5-L3B-DAY06-2A202604113-DataIngestion').Path
 $E5Model = Join-Path $Day6Root '.local/model-snapshot'
 $Pdf = (Resolve-Path '.local/downloads/landsat8-v5.pdf').Path
-$VisionModel = (Resolve-Path '.local/downloads/qwen2.5-vl-3b-q4.gguf').Path
-$Projector = (Resolve-Path '.local/downloads/qwen2.5-vl-3b-mmproj-q8.gguf').Path
 $TextModel = Join-Path $env:USERPROFILE '.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730'
 Expand-Archive -LiteralPath 'artifacts/base/qdrant-snapshot.zip' -DestinationPath '.local/base-restored'
-Expand-Archive -LiteralPath 'artifacts/advanced/qdrant-v5-snapshot.zip' -DestinationPath '.local/advanced-restored'
+Expand-Archive -LiteralPath 'artifacts/advanced/qdrant-v7-snapshot.zip' -DestinationPath '.local/catalog-restored'
 $Qdrant = (Resolve-Path '.local/base-restored').Path
-$AdvancedQdrant = (Resolve-Path '.local/advanced-restored').Path
+$CatalogQdrant = (Resolve-Path '.local/catalog-restored').Path
 & $Py -m unittest discover -s tests -v
 & $Py -m src.day07 validate --split dev
 & $Py -m src.day07 validate --split test
-& $Py -m scripts.advanced_release validate --split dev
-& $Py -m scripts.advanced_release validate --split test
+& $Py -m scripts.validate_submission_benchmarks --output .local/benchmark-validation.json
 ```
 
 Đích giải nén phải chưa tồn tại. Không có writer khác mở cùng Qdrant local. Snapshot đã đối chiếu payload với export; xây lại SQLite từ đầu có thể có hash byte khác dù cùng nội dung.
@@ -57,7 +54,55 @@ Lệnh freeze đầy đủ (chỉ dùng nhãn khớp đúng run và lựa chọn
 
 Muốn chạy lại đúng pipeline đã nộp, dùng `artifacts/base/freeze.json`. Test đã công bố không được dùng để chọn lại cấu hình; rerun chỉ là tái lập, không chọn kết quả đẹp hơn thay kết quả gốc. Năm câu answerable và hai câu thiếu đều phải được chấm cho cả D0 và H0; lỗi vẫn nằm trong mẫu số. Metrics bổ sung của các trace gốc nằm tại `artifacts/base/submission-metrics.json`.
 
-## Nâng cao v2: dev → review → freeze → toàn bộ test → review → score
+## Nâng cao hiện tại v3: catalog nguồn → native agent → freeze → test
+
+Xem [thiết kế và giới hạn](CATALOG_V3.md). V3 chỉ cần text model 7B, không cần tải vision weights/projector. 86 câu cũ làm dev; test mới đủ 30 câu và không dùng để chọn cấu hình. Không chạy builder lên benchmark/catalog đã tồn tại. Snapshot giữ byte DB khớp lock; rebuild tạo DB tương đương về nội dung có thể có hash SQLite khác và cần freeze riêng.
+
+Khởi động server text với đúng cấu hình v3: context 16.384, GPU layers 22, Vulkan1, threads 8, parallel 1. Helper chạy nền và trả PID do nó tạo. Không chạy hai server trùng port; chờ `/health` sẵn sàng trước runner.
+
+```powershell
+$CatalogCommon = @('--day6-root', $Day6Root, '--model-path', $E5Model, '--qdrant', $CatalogQdrant, '--pdf', $Pdf, '--text-model', $TextModel)
+$CatalogPid = & ./scripts/start_model_server.ps1 -Stage text -ModelPath $TextModel -ConfigPath configs/catalog-v3.json -LogPrefix .local/my-catalog-server
+Invoke-RestMethod 'http://127.0.0.1:8085/health'
+# Kiểm lại toàn bộ điểm đã nộp, không gọi model:
+& $Py -m scripts.catalog_release score --split dev --traces artifacts/advanced/runs/catalog-a12-dev/traces.jsonl --reviews artifacts/advanced/v3-dev-review.jsonl --output .local/submitted-v3-dev-score.json
+& $Py -m scripts.catalog_release score --split test --traces artifacts/advanced/runs/catalog-v3-test/traces.jsonl --reviews artifacts/advanced/v3-test-review.jsonl --output .local/submitted-v3-test-score.json
+# Chạy lại đúng release đã khóa, dùng output mới; không thay kết quả test chính thức:
+& $Py -m scripts.catalog_release run @CatalogCommon --split test --lock artifacts/advanced/freeze-catalog-v3.json --output artifacts/advanced/runs/my-v3-reproduction
+```
+
+Khi phát triển một phiên bản mới, chạy đủ dev và chấm output mới với bản gốc. Các nhãn đã nộp chỉ áp dụng cho đúng SHA trace đã nộp. File annotations chứa verdict, lý do, loại lỗi và audit tất cả alias; script ghép review không tự quyết định đúng/sai.
+
+```powershell
+& $Py -m scripts.catalog_release run @CatalogCommon --split dev --output artifacts/advanced/runs/my-v3-dev
+& $Py -m scripts.write_source_review --queries benchmarks/advanced-v3/queries/dev.jsonl --gold benchmarks/advanced-v3/gold/dev.jsonl --traces artifacts/advanced/runs/my-v3-dev/traces.jsonl --annotations .local/my-v3-dev-annotations.json --output .local/my-v3-dev-review.jsonl
+& $Py -m scripts.catalog_release score --split dev --traces artifacts/advanced/runs/my-v3-dev/traces.jsonl --reviews .local/my-v3-dev-review.jsonl --output .local/my-v3-dev-score.json
+& $Py -m scripts.catalog_release freeze @CatalogCommon --dev-run artifacts/advanced/runs/my-v3-dev --reviews .local/my-v3-dev-review.jsonl --output .local/my-v3-freeze.json
+& $Py -m scripts.catalog_release run @CatalogCommon --split test --lock .local/my-v3-freeze.json --output artifacts/advanced/runs/my-v3-test
+& $Py -m scripts.write_source_review --queries benchmarks/advanced-v3/queries/test.jsonl --gold benchmarks/advanced-v3/gold/test.jsonl --traces artifacts/advanced/runs/my-v3-test/traces.jsonl --annotations .local/my-v3-test-annotations.json --output .local/my-v3-test-review.jsonl
+& $Py -m scripts.catalog_release score --split test --traces artifacts/advanced/runs/my-v3-test/traces.jsonl --reviews .local/my-v3-test-review.jsonl --output .local/my-v3-test-score.json
+Stop-Process -Id $CatalogPid
+```
+
+Test chạy toàn bộ 30 câu, không có `--limit`; `--dev-ids` bị cấm trên test. Nếu thay phần cứng/runtime, source hoặc code, cần chạy dev và freeze mới; không sửa lock cũ để vượt kiểm hash. Nếu chỉnh từ kết quả test, phải tạo một holdout hoàn toàn mới trước lượt đo chính thức tiếp theo.
+
+Để xây lại catalog nguồn thay vì phục hồi snapshot, dùng đích mới. Builder v7 đọc bản v6 đã nộp; lệnh v6 bên dưới cho phép so nội dung tái tạo độc lập trước đó. Không đưa benchmark vào builder.
+
+```powershell
+& $Py -m scripts.build_catalog_v6 --pdf $Pdf --day6-root $Day6Root --model-path $E5Model --output .local/rebuilt-catalog-v6 --qdrant .local/rebuilt-qdrant-v6
+& $Py -m scripts.enrich_catalog_v7 --day6-root $Day6Root --model-path $E5Model --output .local/rebuilt-catalog-v7 --qdrant .local/rebuilt-qdrant-v7
+```
+
+## Nâng cao v2 lịch sử: dev → review → freeze → toàn bộ test → review → score
+
+Tái lập chính xác v2 tại commit `eec9a4278c5ed1838e3ca3266696f28158db2c51` trong checkout/worktree khác. Fingerprint v2 quét mọi module runtime, vì vậy các module v3 mới ở HEAD làm hash tổng khác dù code v2 được giữ. Core dùng danh sách hash cố định và tiếp tục khớp freeze gốc. Chỉ phần lịch sử v2 cần thêm vision model và projector:
+
+```powershell
+$VisionModel = (Resolve-Path '.local/downloads/qwen2.5-vl-3b-q4.gguf').Path
+$Projector = (Resolve-Path '.local/downloads/qwen2.5-vl-3b-mmproj-q8.gguf').Path
+Expand-Archive -LiteralPath 'artifacts/advanced/qdrant-v5-snapshot.zip' -DestinationPath '.local/advanced-restored'
+$AdvancedQdrant = (Resolve-Path '.local/advanced-restored').Path
+```
 
 V1 giữ nguyên kết quả 24/30. V2 dùng 56 câu cũ làm dev, 30 câu mới làm holdout; quota, giá trị nguồn, điều kiện, phép tính và dung sai được công bố trước chạy model. Không chạy lại builder lên benchmark đã tồn tại.
 
@@ -112,3 +157,13 @@ Cờ này bị cấm trên test. Lượt test chính thức chạy mới cả vi
 ## Kiểm bài nộp
 
 Chạy kiểm tra submission, kiểm `git diff --check`, thêm file được phép chia sẻ và kiểm `git ls-files`. Không add `.local`, weights, PDF/crop, cache, secret hay dữ liệu không được phép. Commit/push repo cá nhân và kiểm người chấm truy cập được. Báo cáo phải giữ kết quả thí nghiệm không thành công và ghi rõ phạm vi tái lập đã thực hiện.
+
+```powershell
+& $Py -m scripts.audit_catalog_sources --pdf $Pdf --output .local/source-catalog-audit.json
+& $Py -m scripts.audit_submission --output .local/submission-audit.json
+git diff --check
+# Sau khi đã đưa thay đổi được phép vào Git index; server text v3 phải sẵn sàng:
+& $Py -m scripts.check_clean_checkout --python $Py --day6-root $Day6Root --model-path $E5Model --pdf $Pdf --text-model $TextModel --checkout .local/new-clean-export --output .local/new-clean-check.json
+```
+
+Helper xuất Git index sang một thư mục mới, khôi phục snapshot, chạy unit/validator, chấm lại trace đã nộp, so hash core/catalog/model/PDF/DB và gọi model thật cho **một câu dev**. Smoke mới được lưu cạnh output kiểm tra với hậu tố `-smoke`; không ghi đè smoke đã nộp. Đây là checkout nguồn sạch trên cùng máy, sử dụng dependency và model đã pin đang có sẵn, không phải kiểm chứng trên một máy độc lập.

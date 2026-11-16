@@ -1,3 +1,5 @@
+> Cập nhật hoàn tất 16/11/2026: Phần cơ bản có đủ bằng chứng cho sáu nhóm rubric tối đa **85 điểm**; test nâng cao v3 đạt **28/30 = 93.33%**, vượt ngưỡng 90% để xét đủ **15 điểm bonus**. Hồ sơ đáp ứng các điều kiện cho mức tối đa **100 điểm** theo tự audit; điểm chính thức do giảng viên quyết định. Xem [review chốt bài](report/individual/REVIEW_DAY07_2A202604113.md). Các phát hiện bên dưới là mốc lập kế hoạch 15/11, được giữ làm lịch sử.
+
 # Kế hoạch Day 7 — Agentic RAG | mục tiêu 100/100
 
 **Phạm Trấn Quốc · 2A202604113 · L3B**  
@@ -157,13 +159,13 @@ Khi viết phần triển khai, README phải có các lệnh thật để: ki�
 
 ### Checklist chốt bài
 
-- [ ] **13/13:** đã kết nối E5/Qdrant Day 6 thật, ghi nguồn và quyền; 30 câu cơ bản theo phương án §4 hoặc ít nhất 24 đúng tỉ lệ, gold và split được kiểm.
-- [ ] **17/17:** có 3 phương pháp thực sự khác nhau, báo top-3 của query gốc trên cùng dev, score/rank và filter/lỗi có trace.
-- [ ] **17/17:** model thật gọi tool; context, citation, abstain, giới hạn lượt và trường hợp lỗi kiểm được.
-- [ ] **17/17:** đủ bảng retrieval/context/agent. Người làm đã chấm ≥5 case answerable và ≥2 case thiếu evidence trên cùng test cho D0 và cấu hình chọn; có nhãn từng citation.
-- [ ] **13/13:** đo ≥2 cải tiến, ≥2 lỗi dev trước/sau, công bố tiêu chí, lock trước test và nêu đánh đổi chất lượng, thời gian, chi phí.
-- [ ] **8/8:** có lệnh tái lập, model/data version và báo cáo đúng tên; kiểm artifact và quyền xem repo.
-- [ ] **15/15 nâng cao:** index một PDF ≥100 trang và audit độ phủ; dev/test riêng đúng quota; nhãn/trace đối chiếu bản gốc cho **mọi** câu; lỗi nằm trong mẫu số và đạt **≥27/30** nếu `N=30`.
+- [x] **13/13:** đã kết nối E5/Qdrant Day 6 thật, ghi nguồn và quyền; 30 câu cơ bản theo phương án §4 hoặc ít nhất 24 đúng tỉ lệ, gold và split được kiểm.
+- [x] **17/17:** có 3 phương pháp thực sự khác nhau, báo top-3 của query gốc trên cùng dev, score/rank và filter/lỗi có trace.
+- [x] **17/17:** model thật gọi tool; context, citation, abstain, giới hạn lượt và trường hợp lỗi kiểm được.
+- [x] **17/17:** đủ bảng retrieval/context/agent. Người làm đã chấm ≥5 case answerable và ≥2 case thiếu evidence trên cùng test cho D0 và cấu hình chọn; có nhãn từng citation.
+- [x] **13/13:** đo ≥2 cải tiến, ≥2 lỗi dev trước/sau, công bố tiêu chí, lock trước test và nêu đánh đổi chất lượng, thời gian, chi phí.
+- [x] **8/8:** có lệnh tái lập, model/data version và báo cáo đúng tên; kiểm artifact và quyền xem repo.
+- [x] **15/15 nâng cao:** index một PDF ≥100 trang và audit độ phủ; dev/test riêng đúng quota; nhãn/trace đối chiếu bản gốc cho **mọi** câu; lỗi nằm trong mẫu số và đạt **≥27/30** nếu `N=30`.
 
 ### Kết luận review và thứ tự ưu tiên
 

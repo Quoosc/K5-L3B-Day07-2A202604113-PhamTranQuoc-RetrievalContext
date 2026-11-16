@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-11-16T05:18:05.673137+00:00",
+  "config": "A12",
+  "policy": "Count actual retrieval execution, native proposals and protocol recovery separately. No vision inference is performed by v3.",
+  "dev": {
+    "cases": 86,
+    "actual_search_executions": 86,
+    "native_call_executions": 81,
+    "original_query_protocol_recoveries": 5,
+    "native_proposal_distribution": {
+      "1": 81,
+      "0": 5
+    },
+    "search_execution_distribution": {
+      "1": 86
+    },
+    "context_tokens": {
+      "maximum": 2166,
+      "budget": 6000
+    },
+    "trace_sha256": "a8265a26f49f58439b2ad6e7ccd4c771ca060caf0491ec3c4d3b8067ef3ec2a3"
+  },
+  "test": {
+    "cases": 30,
+    "actual_search_executions": 30,
+    "native_call_executions": 30,
+    "original_query_protocol_recoveries": 0,
+    "native_proposal_distribution": {
+      "1": 30
+    },
+    "search_execution_distribution": {
+      "1": 30
+    },
+    "context_tokens": {
+      "maximum": 1654,
+      "budget": 6000
+    },
+    "trace_sha256": "74b19ee27af42fed29f583199e68a574070d0155f8a54d1c9dd8a422bbcbc9c7"
+  }
+}

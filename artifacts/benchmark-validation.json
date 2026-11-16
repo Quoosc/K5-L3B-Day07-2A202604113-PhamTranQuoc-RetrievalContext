@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-16T03:57:33.311479+00:00",
+  "checked_at": "2026-11-16T05:18:05.118147+00:00",
   "source_verification": {
     "schema_version": 1,
     "confirmed_at": "2026-11-16T03:30:51.965624+00:00",
@@ -28,7 +28,9 @@
             "evidence_validation": "all alternatives resolved"
           },
           "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
-          "source_verification_record": "artifacts/source-verification.json"
+          "source_verification_record": "artifacts/source-verification.json",
+          "effective_status": "STRUCTURE_VALIDATED_AND_AUTHOR_SOURCE_CONFIRMED",
+          "historical_warning_policy": "Generic structural-validator warnings and old benchmark reviewer labels do not supersede the explicit author confirmation."
         },
         "test": {
           "structural_validation": {
@@ -39,7 +41,9 @@
             "evidence_validation": "all alternatives resolved"
           },
           "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
-          "source_verification_record": "artifacts/source-verification.json"
+          "source_verification_record": "artifacts/source-verification.json",
+          "effective_status": "STRUCTURE_VALIDATED_AND_AUTHOR_SOURCE_CONFIRMED",
+          "historical_warning_policy": "Generic structural-validator warnings and old benchmark reviewer labels do not supersede the explicit author confirmation."
         }
       },
       "fact_overlap": []
@@ -62,7 +66,9 @@
             "absence_status": "provisional; extracted text scan is not a full visual absence audit"
           },
           "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
-          "source_verification_record": "artifacts/source-verification.json"
+          "source_verification_record": "artifacts/source-verification.json",
+          "effective_status": "STRUCTURE_VALIDATED_AND_AUTHOR_SOURCE_CONFIRMED",
+          "historical_warning_policy": "Generic structural-validator warnings and old benchmark reviewer labels do not supersede the explicit author confirmation."
         },
         "test": {
           "structural_validation": {
@@ -80,7 +86,9 @@
             "absence_status": "provisional; extracted text scan is not a full visual absence audit"
           },
           "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
-          "source_verification_record": "artifacts/source-verification.json"
+          "source_verification_record": "artifacts/source-verification.json",
+          "effective_status": "STRUCTURE_VALIDATED_AND_AUTHOR_SOURCE_CONFIRMED",
+          "historical_warning_policy": "Generic structural-validator warnings and old benchmark reviewer labels do not supersede the explicit author confirmation."
         }
       },
       "fact_overlap": []
@@ -103,7 +111,9 @@
             "absence_status": "provisional; extracted text scan is not a full visual absence audit"
           },
           "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
-          "source_verification_record": "artifacts/source-verification.json"
+          "source_verification_record": "artifacts/source-verification.json",
+          "effective_status": "STRUCTURE_VALIDATED_AND_AUTHOR_SOURCE_CONFIRMED",
+          "historical_warning_policy": "Generic structural-validator warnings and old benchmark reviewer labels do not supersede the explicit author confirmation."
         },
         "test": {
           "structural_validation": {
@@ -121,7 +131,54 @@
             "absence_status": "provisional; extracted text scan is not a full visual absence audit"
           },
           "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
-          "source_verification_record": "artifacts/source-verification.json"
+          "source_verification_record": "artifacts/source-verification.json",
+          "effective_status": "STRUCTURE_VALIDATED_AND_AUTHOR_SOURCE_CONFIRMED",
+          "historical_warning_policy": "Generic structural-validator warnings and old benchmark reviewer labels do not supersede the explicit author confirmation."
+        }
+      },
+      "fact_overlap": []
+    },
+    "advanced-v3": {
+      "splits": {
+        "dev": {
+          "structural_validation": {
+            "split": "dev",
+            "total": 86,
+            "groups": {
+              "table": 16,
+              "image": 14,
+              "chart": 14,
+              "multi_hop": 12,
+              "text": 12,
+              "unanswerable": 18
+            },
+            "locator_status": "structural match only; source and semantic audit still required",
+            "absence_status": "provisional; extracted text scan is not a full visual absence audit"
+          },
+          "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
+          "source_verification_record": "artifacts/source-verification.json",
+          "effective_status": "STRUCTURE_VALIDATED_AND_AUTHOR_SOURCE_CONFIRMED",
+          "historical_warning_policy": "Generic structural-validator warnings and old benchmark reviewer labels do not supersede the explicit author confirmation."
+        },
+        "test": {
+          "structural_validation": {
+            "split": "test",
+            "total": 30,
+            "groups": {
+              "table": 6,
+              "image": 5,
+              "chart": 5,
+              "multi_hop": 4,
+              "text": 4,
+              "unanswerable": 6
+            },
+            "locator_status": "structural match only; source and semantic audit still required",
+            "absence_status": "provisional; extracted text scan is not a full visual absence audit"
+          },
+          "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
+          "source_verification_record": "artifacts/source-verification.json",
+          "effective_status": "STRUCTURE_VALIDATED_AND_AUTHOR_SOURCE_CONFIRMED",
+          "historical_warning_policy": "Generic structural-validator warnings and old benchmark reviewer labels do not supersede the explicit author confirmation."
         }
       },
       "fact_overlap": []

@@ -19,8 +19,10 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def main():
     p=argparse.ArgumentParser()
-    for flag in ('python','day6-root','model-path','pdf','vision-model','projector','text-model','checkout','output'):
+    for flag in ('python','day6-root','model-path','pdf','text-model','checkout','output'):
         p.add_argument('--'+flag,type=Path,required=True)
+    for flag in ('vision-model','projector'):
+        p.add_argument('--'+flag,type=Path,help='Required only for the historical v2 checkout')
     args=p.parse_args();target=args.checkout.resolve()
     if not target.is_relative_to((ROOT/'.local').resolve()) or target.exists():
         raise ValueError('Clean export must be a new directory inside this workspace .local')
@@ -37,7 +39,9 @@ def main():
         print(name,proc.returncode,flush=True)
         if proc.returncode:raise RuntimeError('Clean checkout check failed: '+name)
     try:
-        for name,archive in [('base','artifacts/base/qdrant-snapshot.zip'),('advanced','artifacts/advanced/qdrant-v5-snapshot.zip')]:
+        catalog=(target/'artifacts/advanced/freeze-catalog-v3.json').is_file()
+        advanced_archive='artifacts/advanced/qdrant-v7-snapshot.zip' if catalog else 'artifacts/advanced/qdrant-v5-snapshot.zip'
+        for name,archive in [('base','artifacts/base/qdrant-snapshot.zip'),('advanced',advanced_archive)]:
             dest=target/'.local'/name;dest.mkdir(parents=True)
             with zipfile.ZipFile(target/archive) as z:
                 if any(not (dest/n).resolve().is_relative_to(dest.resolve()) for n in z.namelist()):
@@ -56,7 +60,44 @@ def main():
             "assert code_hashes(Path('configs/base.json'),Path('artifacts/base/chunks.jsonl'),Path('benchmarks/base'))==read_json('artifacts/base/freeze.json')['hashes']; "
             "print('Frozen base source, benchmark and corpus bytes preserved in checkout')")
         run('frozen_bytes_survive_git_checkout',['-c',source_check])
+        if catalog:
+            values={'day6_root':str(args.day6_root.resolve()),'model_path':str(args.model_path.resolve()),
+                    'qdrant':str(target/'.local/advanced'),'pdf':str(args.pdf.resolve()),
+                    'text_model':str(args.text_model.resolve()),'config':'configs/catalog-v3.json',
+                    'chunks':'artifacts/advanced/catalog-v7/chunks.jsonl',
+                    'regions':'artifacts/advanced/catalog-v7/regions.jsonl','benchmark':'benchmarks/advanced-v3'}
+            expression=', '.join(k+'=Path('+repr(v)+')' for k,v in values.items())
+            check=("from argparse import Namespace; from pathlib import Path; "
+                   "from scripts.catalog_release import fingerprints; from src.day07.common import read_json; "
+                   "inputs=Namespace("+expression+"); "
+                   "assert fingerprints(inputs)==read_json('artifacts/advanced/freeze-catalog-v3.json')['hashes']; "
+                   "print('Catalog release code, source, benchmark, model, PDF and restored index bytes match the pre-test lock')")
+            run('catalog_release_bytes_and_restored_index',['-c',check])
+            run('catalog_saved_full_test_score',['-m','scripts.catalog_release','score','--split','test',
+                '--traces','artifacts/advanced/runs/catalog-v3-test/traces.jsonl',
+                '--reviews','artifacts/advanced/v3-test-review.jsonl','--output','.local/catalog-test-score.json'])
+            run('catalog_real_model_dev_smoke',['-m','scripts.catalog_release','run','--split','dev',
+                '--day6-root',str(args.day6_root.resolve()),'--model-path',str(args.model_path.resolve()),
+                '--qdrant',str(target/'.local/advanced'),'--pdf',str(args.pdf.resolve()),
+                '--text-model',str(args.text_model.resolve()),'--dev-ids','adv3-dev-adv2-dev-dev-001',
+                '--output','artifacts/advanced/runs/clean-catalog-smoke'])
+            smoke=target/'artifacts/advanced/runs/clean-catalog-smoke/traces.jsonl'
+            rows=read_jsonl(smoke)
+            if len(rows)!=1 or rows[0]['status']=='error' or not rows[0].get('context',{}).get('entries'):
+                raise ValueError('Clean catalog model smoke did not produce a valid sourced response')
+            smoke_out=args.output.parent/(args.output.stem+'-smoke');smoke_out.mkdir(exist_ok=False)
+            shutil.copy2(smoke,smoke_out/'traces.jsonl')
+            shutil.copy2(smoke.parent/'manifest.json',smoke_out/'manifest.json')
+            result['model_smoke']={'status':rows[0]['status'],'query_id':rows[0]['query_id'],
+                'trace':(smoke_out/'traces.jsonl').as_posix(),'trace_sha256':sha256(smoke),
+                'note':'One development transport/context/answer smoke; not a new test quality estimate.'}
+            result['all_checks_pass']=all(c['exit_code']==0 for c in result['checks'])
+            write_json(args.output,result)
+            print('Clean source checkout checks passed:',len(result['checks']))
+            return
         if (target/'artifacts/advanced/freeze-v2.json').is_file():
+            if args.vision_model is None or args.projector is None:
+                raise ValueError('Historical v2 checkout requires --vision-model and --projector')
             values={'day6_root':str(args.day6_root.resolve()),'model_path':str(args.model_path.resolve()),
                     'qdrant':str(target/'.local/advanced'),'pdf':str(args.pdf.resolve()),
                     'vision_model':str(args.vision_model.resolve()),'projector':str(args.projector.resolve()),

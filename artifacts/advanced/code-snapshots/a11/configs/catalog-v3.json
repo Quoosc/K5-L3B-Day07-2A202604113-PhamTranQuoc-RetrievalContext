@@ -1,0 +1,16 @@
+{
+  "id": "A11",
+  "description": "Source-derived canonical table/visual catalog with a real native-tool 7B agent and answer-first output protocol.",
+  "branch_pool": 30,
+  "max_regions": 3,
+  "region_text_chars": 10000,
+  "prefer_canonical": true,
+  "context_budget_tokens": 6000,
+  "max_output_tokens": 360,
+  "temperature": 0,
+  "retry_count": 0,
+  "timeout_seconds": 180,
+  "runtime": {
+    "text": {"port": 8085, "alias": "qwen2.5-7b-local", "ctx_size": 16384, "threads": 8, "parallel": 1, "device": "Vulkan1", "n_gpu_layers": 22}
+  }
+}

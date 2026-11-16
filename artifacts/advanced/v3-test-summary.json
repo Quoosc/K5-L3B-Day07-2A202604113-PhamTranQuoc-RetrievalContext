@@ -1,0 +1,493 @@
+{
+  "total": 30,
+  "passed": 28,
+  "errors_or_missing": 0,
+  "groups": {
+    "table": {
+      "n": 6,
+      "N": 6,
+      "rate": 1.0
+    },
+    "image": {
+      "n": 5,
+      "N": 5,
+      "rate": 1.0
+    },
+    "chart": {
+      "n": 5,
+      "N": 5,
+      "rate": 1.0
+    },
+    "multi_hop": {
+      "n": 2,
+      "N": 4,
+      "rate": 0.5
+    },
+    "text": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "unanswerable": {
+      "n": 6,
+      "N": 6,
+      "rate": 1.0
+    }
+  },
+  "rate": 0.9333333333333333,
+  "required_passes": 27,
+  "meets_90_percent": true,
+  "split": "test",
+  "trace_sha256": "74b19ee27af42fed29f583199e68a574070d0155f8a54d1c9dd8a422bbcbc9c7",
+  "review_sha256": "6c7c3fb9c74ed61bb9e29a7ecbb70bb0c528cd41fafb40e62db580cd541ff1a9",
+  "operations": {
+    "cases": 30,
+    "errors": 0,
+    "vision_protocol_errors": 0,
+    "latency_seconds": {
+      "median": 4.646697600001062,
+      "p95": 10.798568400001386
+    },
+    "prompt_tokens": 38970,
+    "completion_tokens": 2277,
+    "api_cost_usd": 0
+  },
+  "operations_by_group": {
+    "table": {
+      "cases": 6,
+      "errors": 0,
+      "vision_protocol_errors": 0,
+      "latency_seconds": {
+        "median": 4.21388129999832,
+        "p95": 4.755507000008947
+      },
+      "prompt_tokens": 7025,
+      "completion_tokens": 400,
+      "api_cost_usd": 0
+    },
+    "image": {
+      "cases": 5,
+      "errors": 0,
+      "vision_protocol_errors": 0,
+      "latency_seconds": {
+        "median": 4.160242899990408,
+        "p95": 5.724064499998349
+      },
+      "prompt_tokens": 4442,
+      "completion_tokens": 351,
+      "api_cost_usd": 0
+    },
+    "chart": {
+      "cases": 5,
+      "errors": 0,
+      "vision_protocol_errors": 0,
+      "latency_seconds": {
+        "median": 4.1277407000015955,
+        "p95": 5.323091600002954
+      },
+      "prompt_tokens": 6282,
+      "completion_tokens": 320,
+      "api_cost_usd": 0
+    },
+    "multi_hop": {
+      "cases": 4,
+      "errors": 0,
+      "vision_protocol_errors": 0,
+      "latency_seconds": {
+        "median": 9.58520404999581,
+        "p95": 18.324573999998393
+      },
+      "prompt_tokens": 6254,
+      "completion_tokens": 623,
+      "api_cost_usd": 0
+    },
+    "text": {
+      "cases": 4,
+      "errors": 0,
+      "vision_protocol_errors": 0,
+      "latency_seconds": {
+        "median": 4.792954999997164,
+        "p95": 5.302557099988917
+      },
+      "prompt_tokens": 3635,
+      "completion_tokens": 293,
+      "api_cost_usd": 0
+    },
+    "unanswerable": {
+      "cases": 6,
+      "errors": 0,
+      "vision_protocol_errors": 0,
+      "latency_seconds": {
+        "median": 4.940010700003768,
+        "p95": 5.516950999997789
+      },
+      "prompt_tokens": 11332,
+      "completion_tokens": 290,
+      "api_cost_usd": 0
+    }
+  },
+  "cases": [
+    {
+      "query_id": "adv3-test-001",
+      "group": "table",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 4.755507000008947,
+      "prompt_tokens": 1295,
+      "completion_tokens": 75,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-002",
+      "group": "table",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 4.655217699997593,
+      "prompt_tokens": 1338,
+      "completion_tokens": 74,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-003",
+      "group": "table",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 3.887821199998143,
+      "prompt_tokens": 1004,
+      "completion_tokens": 64,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-004",
+      "group": "table",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 3.664503699998022,
+      "prompt_tokens": 1186,
+      "completion_tokens": 51,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-005",
+      "group": "table",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 4.122698199993465,
+      "prompt_tokens": 1151,
+      "completion_tokens": 67,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-006",
+      "group": "table",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 4.305064400003175,
+      "prompt_tokens": 1051,
+      "completion_tokens": 69,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-007",
+      "group": "image",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 4.160242899990408,
+      "prompt_tokens": 918,
+      "completion_tokens": 83,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-008",
+      "group": "image",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 3.0821455999976024,
+      "prompt_tokens": 879,
+      "completion_tokens": 50,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-009",
+      "group": "image",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 5.724064499998349,
+      "prompt_tokens": 931,
+      "completion_tokens": 95,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-010",
+      "group": "image",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 3.4420787999988534,
+      "prompt_tokens": 849,
+      "completion_tokens": 49,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-011",
+      "group": "image",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 4.696806499996455,
+      "prompt_tokens": 865,
+      "completion_tokens": 74,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-012",
+      "group": "chart",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 4.797456299987971,
+      "prompt_tokens": 1456,
+      "completion_tokens": 69,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-013",
+      "group": "chart",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 4.1277407000015955,
+      "prompt_tokens": 1463,
+      "completion_tokens": 54,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-014",
+      "group": "chart",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 4.065174899995327,
+      "prompt_tokens": 1495,
+      "completion_tokens": 58,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-015",
+      "group": "chart",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 5.323091600002954,
+      "prompt_tokens": 884,
+      "completion_tokens": 80,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-016",
+      "group": "chart",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 3.7518654000014067,
+      "prompt_tokens": 984,
+      "completion_tokens": 59,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-017",
+      "group": "multi_hop",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 8.371839699990232,
+      "prompt_tokens": 1611,
+      "completion_tokens": 99,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-018",
+      "group": "multi_hop",
+      "pass": false,
+      "status": "answered",
+      "failure_type": "incomplete_requested_field_identification",
+      "latency_seconds": 10.798568400001386,
+      "prompt_tokens": 1540,
+      "completion_tokens": 164,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-019",
+      "group": "multi_hop",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 18.324573999998393,
+      "prompt_tokens": 1409,
+      "completion_tokens": 305,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-020",
+      "group": "multi_hop",
+      "pass": false,
+      "status": "abstain",
+      "failure_type": "false_abstention",
+      "latency_seconds": 4.638177500004531,
+      "prompt_tokens": 1694,
+      "completion_tokens": 55,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-021",
+      "group": "text",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 5.082249300001422,
+      "prompt_tokens": 909,
+      "completion_tokens": 82,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-022",
+      "group": "text",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 4.503660699992906,
+      "prompt_tokens": 961,
+      "completion_tokens": 67,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-023",
+      "group": "text",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 4.0071472999989055,
+      "prompt_tokens": 895,
+      "completion_tokens": 56,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-024",
+      "group": "text",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 5.302557099988917,
+      "prompt_tokens": 870,
+      "completion_tokens": 88,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-025",
+      "group": "unanswerable",
+      "pass": true,
+      "status": "abstain",
+      "failure_type": null,
+      "latency_seconds": 3.6130606999940937,
+      "prompt_tokens": 1318,
+      "completion_tokens": 45,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-026",
+      "group": "unanswerable",
+      "pass": true,
+      "status": "abstain",
+      "failure_type": null,
+      "latency_seconds": 4.577550200003316,
+      "prompt_tokens": 1731,
+      "completion_tokens": 47,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-027",
+      "group": "unanswerable",
+      "pass": true,
+      "status": "abstain",
+      "failure_type": null,
+      "latency_seconds": 4.879706299994723,
+      "prompt_tokens": 2014,
+      "completion_tokens": 54,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-028",
+      "group": "unanswerable",
+      "pass": true,
+      "status": "abstain",
+      "failure_type": null,
+      "latency_seconds": 5.0868762000027345,
+      "prompt_tokens": 1849,
+      "completion_tokens": 50,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-029",
+      "group": "unanswerable",
+      "pass": true,
+      "status": "abstain",
+      "failure_type": null,
+      "latency_seconds": 5.000315100012813,
+      "prompt_tokens": 2014,
+      "completion_tokens": 48,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv3-test-030",
+      "group": "unanswerable",
+      "pass": true,
+      "status": "abstain",
+      "failure_type": null,
+      "latency_seconds": 5.516950999997789,
+      "prompt_tokens": 2406,
+      "completion_tokens": 46,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    }
+  ],
+  "source_verification": "artifacts/source-verification.json",
+  "latency_note": "Sum of model-stage per-case times, excluding server startup and inter-stage waiting. Local hardware/electricity cost is not measured."
+}

@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-11-16T04:41:19.697329+00:00",
+  "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756",
+  "source_elements_sha256": "91ed9c1d543a5c0e68e849725e744268ecf13b494d7923e57f220aea6c32c548",
+  "regions": 852,
+  "pages": 114,
+  "chunks": 925,
+  "image_observations": 49,
+  "table_candidates": 31,
+  "benchmark_inputs_read": false,
+  "builder_sha256": "6f001571102e6524028d9f1d629d6cdf9db179c993a6b766d0033f66c8c8bc7c",
+  "limits": [
+    "Some automatic table candidates are reference paragraphs, not actual tables.",
+    "Complex unverified table cells are retained explicitly as raw cells; original region remains available.",
+    "Visual descriptions and numeric digitization have documented approximation; original PDF is authoritative."
+  ],
+  "source_verification": "artifacts/source-verification.json"
+}

@@ -1,0 +1,30 @@
+{"id": "adv3-test-001", "split": "test", "question": "Compare the compression entries for Landsat 7 and Landsat 8 in Table 1-1."}
+{"id": "adv3-test-002", "split": "test", "question": "For the OLI Band 4 row of Table 2-2, what ETM+ band and ETM+ performance SNR are listed?"}
+{"id": "adv3-test-003", "split": "test", "question": "What NEDT value is listed for TIRS Band 10 at 320 in Table 2-3?"}
+{"id": "adv3-test-004", "split": "test", "question": "In Table 3-4, what does the SS2 field mean in the effective ending timestamp?"}
+{"id": "adv3-test-005", "split": "test", "question": "According to Table 4-1, expand the RT, T1 and T2 codes in the TX collection-category field."}
+{"id": "adv3-test-006", "split": "test", "question": "Read the color cells in Table 5-4: which colors denote Cloud Shadow and Snow/Ice respectively?"}
+{"id": "adv3-test-007", "split": "test", "question": "In Figure 2-2, which baffle is at the front-left viewing opening, and which is labeled on the side of the OLI instrument?"}
+{"id": "adv3-test-008", "split": "test", "question": "In Figure 2-6, what bracket is labeled below the center of the TIRS instrument?"}
+{"id": "adv3-test-009", "split": "test", "question": "In the Figure 6-2 dataset screenshot, which sensor families are listed for Landsat 4-5 and Landsat 1-5 respectively?"}
+{"id": "adv3-test-010", "split": "test", "question": "What width in km is printed alongside the TIRS path in Figure A-4?"}
+{"id": "adv3-test-011", "split": "test", "question": "In Figure B-5, name the meridian shown and the axis aligned with the Earth axis of rotation."}
+{"id": "adv3-test-012", "split": "test", "question": "In Figure 2-3, approximately what ETM+ performance SNR does the green NIR bar show?"}
+{"id": "adv3-test-013", "split": "test", "question": "In Figure 2-3, approximately what OLI requirement SNR does the blue Coastal/Aerosol bar show?"}
+{"id": "adv3-test-014", "split": "test", "question": "Approximately what encoder-current value is shown by the green trace at November 1, 2014 in Figure A-6? Do not assume a current unit that is not printed."}
+{"id": "adv3-test-015", "split": "test", "question": "In the left panel of Figure A-3, what does the thin light-blue diagonal reference line represent?"}
+{"id": "adv3-test-016", "split": "test", "question": "From the spectral bars in Figure 4-3, give the approximate lower and upper wavelengths in nm of the ETM+ panchromatic Band 8."}
+{"id": "adv3-test-017", "split": "test", "question": "Using Table 3-3 and Table 3-4, compare how the CPF and BPF naming conventions encode the sensor: what does CPF C mean, and which O/T values can BPF S take?"}
+{"id": "adv3-test-018", "split": "test", "question": "Compare the satellite-field symbols in Table 3-5 and Table 4-1. What are the field letters in each, and which satellite does 08 denote in both?"}
+{"id": "adv3-test-019", "split": "test", "question": "Using Section 3.3.3 and Section 4.1.4.2, contrast the storage format for the large RLUT parameters with the delivered Level 1 band images."}
+{"id": "adv3-test-020", "split": "test", "question": "Using the instrument descriptions in Section 2.2 and Section 2.3, how many SCAs do OLI and TIRS have, and how many more does OLI have?"}
+{"id": "adv3-test-021", "split": "test", "question": "According to Section 1.4, which two project science offices prepared the handbook, and in which cities are they located?"}
+{"id": "adv3-test-022", "split": "test", "question": "In what format is the human-readable Level 1 metadata (MTL) file described in Section 4.1.4?"}
+{"id": "adv3-test-023", "split": "test", "question": "According to Section 1.3.4, within how many hours of acquisition are Landsat 8 data downlinked and processed into standard products?"}
+{"id": "adv3-test-024", "split": "test", "question": "In Section 4.1.5, what do Image_Quality_OLI values 9, 0 and -1 mean?"}
+{"id": "adv3-test-025", "split": "test", "question": "What is the onboard TIRS processor clock frequency in MHz specified in this handbook?"}
+{"id": "adv3-test-026", "split": "test", "question": "What exact EarthExplorer API rate limit in requests per second is specified here?"}
+{"id": "adv3-test-027", "split": "test", "question": "How many employees worked at the USGS EROS Center on November 1, 2019, according to this handbook?"}
+{"id": "adv3-test-028", "split": "test", "question": "What monthly uptime percentage for GloVis during August 2018 is reported in the handbook?"}
+{"id": "adv3-test-029", "split": "test", "question": "How many training images were used to train CFMask, as specified in this handbook?"}
+{"id": "adv3-test-030", "split": "test", "question": "What is the minimum Android operating-system version required by the LandsatLook Viewer according to this handbook?"}

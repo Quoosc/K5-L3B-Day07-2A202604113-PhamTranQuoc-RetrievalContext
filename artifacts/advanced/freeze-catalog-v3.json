@@ -1,0 +1,221 @@
+{
+  "kind": "catalog-v3",
+  "frozen_at": "2026-11-16T05:13:52.432405+00:00",
+  "hashes": {
+    "repository": {
+      "src/day07/catalog_agent.py": "d87a78b6745f2cdd2444fb347ae4789f29e46a0b5fee7d283c35d784566bfc48",
+      "src/day07/advanced_retrieval.py": "3e9d501dc34fbeba32c8d9b7b157042b1b78cc0c138bd1c64e88f8e39d34724c",
+      "src/day07/agent.py": "3377fa1fec5ea751fe815c655d3f525f8f651287fc76c782f3788bd4cff924a3",
+      "src/day07/retrieval.py": "000430a686b8ff49721423aac71ef5b430bf8e593784eebbc69c45774a430fe4",
+      "src/day07/common.py": "b53946ebb71a25faebd6cfeaf4aa8c83d9d4aa8675035b4bb6b5e383ffa9d8fb",
+      "src/day07/day6.py": "660de046591d566f69ff0fb76022ae80aa4922a9829750a0bac3ae91d06da529",
+      "src/day07/context.py": "18419c62817dadea4cad55dd840ba9072d18f28fcf01536b3fdc2ccaed1ba299",
+      "src/day07/advanced_eval.py": "7b0feae5c6d280625c3e60bf0236f8339302edd93d8182d48934c573edf2a77c",
+      "src/day07/__main__.py": "786737423bdcd46b6b259349d5435ff9fa4b00c917fc3b4a0097e53cde3eac58",
+      "scripts/advanced_release.py": "2642954329854187522a901f76835d29bfbd1536b0bea9f6570e1a7f692c3b1a",
+      "scripts/catalog_release.py": "f7eff69d12293c6ae7456e46ff84feed2c645465bea682e6600cfc6c647ae19f",
+      "scripts/build_catalog_v6.py": "6f001571102e6524028d9f1d629d6cdf9db179c993a6b766d0033f66c8c8bc7c",
+      "scripts/enrich_catalog_v7.py": "663c65fefde5164a58057d84e50d0f77b18c42aa04aeb7899d950bf615c7400e",
+      "scripts/build_advanced_v3.py": "4fdfd24a4ea10ead294d9687b9cf06bd589fbad7b7d9ed91295f76ffd963cd89",
+      "scripts/start_model_server.ps1": "1af97d7dcf9e913f5dd2f9aafa4b5bb2cda88b56562a6995779f9ce7f16229c8",
+      "requirements-lock.txt": "dfb0292a532a900fd6179de1cb2ef604ee20555a5f693b77a2890120961dc097",
+      "configs/catalog-v3.json": "7413d7c80245f3169e08f77b0d9f1640bc023a6da624aa5c09b1d2e68924c186",
+      "artifacts/advanced/catalog-v7/chunks.jsonl": "301aead3ab58201c8820c1ea80f73891218ff37735b4ddcb17a35b65f31576bd",
+      "artifacts/advanced/catalog-v7/regions.jsonl": "ab6841b63713643d8a2bf7f88d4cc4ff738f458965e008d46e55c8bc3e1448e0",
+      "artifacts/advanced/catalog-v7/manifest.json": "35360dd8f801559026d7b7d9aa0b45043712acadb7a968d2c4dc9c451b6736b9",
+      "artifacts/advanced/catalog-v6/manifest.json": "5fcfb77c2bd5d5323ac7e691669998564d3a96e0c152b08c52a1271f07ad3625",
+      "artifacts/advanced/elements.jsonl": "91ed9c1d543a5c0e68e849725e744268ecf13b494d7923e57f220aea6c32c548",
+      "benchmarks/advanced-v3/queries/dev.jsonl": "1de99c86ad54bae76b863ba0f03b206a17b7b7c0d9e34a999c6f909b753e7e86",
+      "benchmarks/advanced-v3/queries/test.jsonl": "f211fcd72ae455cfc0be01740b2c378f5f5a9d7c4431ad3cd52062b67d857945",
+      "benchmarks/advanced-v3/gold/dev.jsonl": "2833172dd52113e6b80b61dc563fb9fce19c42b248b4a1d5ffeed1b73c082843",
+      "benchmarks/advanced-v3/gold/test.jsonl": "a3f098e70484821a2f019511e4e9011c8c1df19465d900a372f51edd818d3c78"
+    },
+    "external": {
+      "pdf": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756",
+      "text_model": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+      "day6_embeddings": "f3039fd1b0b50b294dd74c01b1a9ffbf858a8d255a3b95ed4379d3be466f461e",
+      "qdrant_meta": "448a707f35f04708179706c23d5e5e754e9098617eb7497ed928d4161d171fa0",
+      "qdrant_collection": "617feb0965f7e532b2196732252bedb7436ab5202e54b725e9a4c1215e9809a9",
+      "embedding/config.json": "69137736cab8b8903a07fe8afaafdda25aac55415a12a55d1bffa9f581abf959",
+      "embedding/model.safetensors": "1a55775f53449dac10a2bcbc312469fac40b96d53198c407081a831f81c98477",
+      "embedding/modules.json": "c6e29747481e8b5dd2b58401966aeac910de39092f90cda9a704b1545f902b04",
+      "embedding/README.md": "0038de97aee16258cecbad7ffda4b4febd6953e747a00e0ddbc8e6ed241e9c1c",
+      "embedding/sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+      "embedding/sentence_bert_config.json": "948201d8329907aae938fa62f9ceeed53f5694dacc2b87b9f3b78b37ee986529",
+      "embedding/special_tokens_map.json": "d05497f1da52c5e09554c0cd874037a083e1dc1b9cfd48034d1c717f1afc07a7",
+      "embedding/tokenizer.json": "0b44a9d7b51c3c62626640cda0e2c2f70fdacdc25bbbd68038369d14ebdf4c39",
+      "embedding/tokenizer_config.json": "a1d6bc8734a6f635dc158508bef000f8e2e5a759c7d92f984b2c86e5ff53425b",
+      "embedding/1_Pooling/config.json": "987f7a67a38fa564c849bb5d277c52ab9088a84368fc0be31a354125aebb12a0"
+    }
+  },
+  "runtime": {
+    "binary_sha256": "68e8cace4369a1f94c25f1f92c62c5e7299b6bf993f3ad802c9bb146c33bea7e",
+    "model_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+    "projector_sha256": null,
+    "normalized_arguments": [
+      "-m",
+      "sha256:2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "8085",
+      "--alias",
+      "qwen2.5-7b-local",
+      "--ctx-size",
+      "16384",
+      "--threads",
+      "8",
+      "--parallel",
+      "1",
+      "--device",
+      "Vulkan1",
+      "--n-gpu-layers",
+      "22",
+      "--jinja"
+    ],
+    "contract": {
+      "port": 8085,
+      "alias": "qwen2.5-7b-local",
+      "ctx_size": 16384,
+      "threads": 8,
+      "parallel": 1,
+      "device": "Vulkan1",
+      "n_gpu_layers": 22
+    }
+  },
+  "dev_trace_sha256": "a8265a26f49f58439b2ad6e7ccd4c771ca060caf0491ec3c4d3b8067ef3ec2a3",
+  "dev_review_sha256": "fcb9fb38149a948c844befa60f3040b34e0cbfc754bbff58a40962006ba0a8c6",
+  "dev_score": {
+    "total": 86,
+    "passed": 78,
+    "errors_or_missing": 0,
+    "groups": {
+      "table": {
+        "n": 15,
+        "N": 16,
+        "rate": 0.9375
+      },
+      "image": {
+        "n": 13,
+        "N": 14,
+        "rate": 0.9285714285714286
+      },
+      "chart": {
+        "n": 12,
+        "N": 14,
+        "rate": 0.8571428571428571
+      },
+      "multi_hop": {
+        "n": 10,
+        "N": 12,
+        "rate": 0.8333333333333334
+      },
+      "text": {
+        "n": 10,
+        "N": 12,
+        "rate": 0.8333333333333334
+      },
+      "unanswerable": {
+        "n": 18,
+        "N": 18,
+        "rate": 1.0
+      }
+    },
+    "rate": 0.9069767441860465,
+    "required_passes": 78,
+    "meets_90_percent": true,
+    "split": "dev",
+    "trace_sha256": "a8265a26f49f58439b2ad6e7ccd4c771ca060caf0491ec3c4d3b8067ef3ec2a3",
+    "review_sha256": "fcb9fb38149a948c844befa60f3040b34e0cbfc754bbff58a40962006ba0a8c6",
+    "operations": {
+      "cases": 86,
+      "errors": 0,
+      "vision_protocol_errors": 0,
+      "latency_seconds": {
+        "median": 5.812979649999761,
+        "p95": 11.769314200006193
+      },
+      "prompt_tokens": 131720,
+      "completion_tokens": 6159,
+      "api_cost_usd": 0
+    },
+    "operations_by_group": {
+      "table": {
+        "cases": 16,
+        "errors": 0,
+        "vision_protocol_errors": 0,
+        "latency_seconds": {
+          "median": 5.423267099999066,
+          "p95": 11.393848799998523
+        },
+        "prompt_tokens": 19389,
+        "completion_tokens": 1085,
+        "api_cost_usd": 0
+      },
+      "image": {
+        "cases": 14,
+        "errors": 0,
+        "vision_protocol_errors": 0,
+        "latency_seconds": {
+          "median": 5.5339416499991785,
+          "p95": 7.5779086999973515
+        },
+        "prompt_tokens": 12445,
+        "completion_tokens": 915,
+        "api_cost_usd": 0
+      },
+      "chart": {
+        "cases": 14,
+        "errors": 0,
+        "vision_protocol_errors": 0,
+        "latency_seconds": {
+          "median": 5.661259100001189,
+          "p95": 8.143542599995271
+        },
+        "prompt_tokens": 16730,
+        "completion_tokens": 882,
+        "api_cost_usd": 0
+      },
+      "multi_hop": {
+        "cases": 12,
+        "errors": 0,
+        "vision_protocol_errors": 0,
+        "latency_seconds": {
+          "median": 8.946897549998539,
+          "p95": 14.493606499992893
+        },
+        "prompt_tokens": 27504,
+        "completion_tokens": 1371,
+        "api_cost_usd": 0
+      },
+      "text": {
+        "cases": 12,
+        "errors": 0,
+        "vision_protocol_errors": 0,
+        "latency_seconds": {
+          "median": 6.384978249996493,
+          "p95": 14.618590499987477
+        },
+        "prompt_tokens": 19212,
+        "completion_tokens": 990,
+        "api_cost_usd": 0
+      },
+      "unanswerable": {
+        "cases": 18,
+        "errors": 0,
+        "vision_protocol_errors": 0,
+        "latency_seconds": {
+          "median": 5.548122699998203,
+          "p95": 7.564033100003144
+        },
+        "prompt_tokens": 36440,
+        "completion_tokens": 916,
+        "api_cost_usd": 0
+      }
+    },
+    "source_verification": "artifacts/source-verification.json",
+    "latency_note": "Sum of model-stage per-case times, excluding server startup and inter-stage waiting. Local hardware/electricity cost is not measured."
+  },
+  "test_policy": "All 30 fresh cases, >=27 required; no replacements or tuning based on test outputs.",
+  "source_policy": "Catalog covers all 114 pages/852 regions and was built without reading any benchmark."
+}

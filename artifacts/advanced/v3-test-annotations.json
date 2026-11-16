@@ -1,0 +1,231 @@
+{
+  "adv3-test-001": {
+    "pass": true,
+    "reason": "The original Table 1-1 compression row gives No for Landsat 7 and approximately 2:1 Variable Rice Compression for Landsat 8. Both sides and the source region are correct.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-002": {
+    "pass": true,
+    "reason": "In Table 2-2 the OLI Band 4 row maps to ETM+ Band 3 and ETM+ performance SNR 28. Both requested columns are correct.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-003": {
+    "pass": true,
+    "reason": "The TIRS Band 10 NEDT@320 cell in the original Table 2-3 is 0.046.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-004": {
+    "pass": true,
+    "reason": "Table 3-4 defines SS2 as two-digit effective ending seconds. The answer supplies the field meaning rather than inventing an actual timestamp.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-005": {
+    "pass": true,
+    "reason": "Table 4-1 defines RT as Real-Time, T1 as Tier 1 and T2 as Tier 2. All three code expansions are present and correct.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-006": {
+    "pass": true,
+    "reason": "The original Table 5-4 color swatches show Cloud Shadow in blue and Snow/Ice in cyan. The answer keeps the requested order.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-007": {
+    "pass": true,
+    "reason": "Figure 2-2 labels Earth-View Baffle at the front-left viewing opening and Solar-View Baffle on the side; both spatial relations are correct.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-008": {
+    "pass": true,
+    "reason": "The bracket below the TIRS center in Figure 2-6 is labeled Interconnecting Harness Bracket.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-009": {
+    "pass": true,
+    "reason": "The Figure 6-2 dataset screenshot lists Landsat 4-5 TM and Landsat 1-5 MSS. The additional C1 Level-1 strings are also visible in the cited screenshot.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-010": {
+    "pass": true,
+    "reason": "Figure A-4 prints 185 km beside the TIRS path. The value and kilometer unit are correct.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-011": {
+    "pass": true,
+    "reason": "Figure B-5 labels Greenwich Meridian and aligns the Z axis with the Earth rotation axis. Both requested items are present.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-012": {
+    "pass": true,
+    "reason": "The original green ETM+ NIR bar in Figure 2-3 is approximately 35 SNR, within the declared absolute tolerance 5.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-013": {
+    "pass": true,
+    "reason": "The original blue OLI Requirement Coastal/Aerosol bar is approximately 130 SNR, within tolerance 10.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-014": {
+    "pass": true,
+    "reason": "The green Figure A-6 trace at November 1, 2014 is approximately 70 on the plotted scale. The answer 70.0 is within tolerance 2 and does not invent an unprinted current unit.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-015": {
+    "pass": true,
+    "reason": "The thin light-blue diagonal in the left Figure A-3 panel is labeled 1x1, representing equality of OBC and vicarious radiances. The answer identifies both the 1x1 line and equality.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-016": {
+    "pass": true,
+    "reason": "The ETM+ Band 8 bar in Figure 4-3 runs approximately 500–900 nm. Both endpoints and the nm unit are within the predeclared absolute tolerance 70 nm per endpoint.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-017": {
+    "pass": true,
+    "reason": "Table 3-3 defines CPF C as combined OLI and TIRS; Table 3-4 defines BPF S as O for OLI or T for TIRS. The answer includes all values and cites both original table regions.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-test-018": {
+    "pass": false,
+    "reason": "The answer correctly says 08 denotes Landsat 8, but lists every filename field instead of identifying the requested satellite fields NN (Table 3-5) and SS (Table 4-1). Including NN/SS among many unselected symbols does not answer which fields encode the satellite. This incomplete field-identification answer is conservatively failed despite correct citations.",
+    "failure_type": "incomplete_requested_field_identification",
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-test-019": {
+    "pass": true,
+    "reason": "The original RLUT paragraph states HDF; the delivered-product paragraph states GeoTIFF and 16-bit grayscale band images. Both source regions are cited. The extra descriptions of organization, effective dates and TIFF metadata come from those same original paragraphs.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    }
+  },
+  "adv3-test-020": {
+    "pass": false,
+    "reason": "The original instrument descriptions contain OLI 14 SCAs and TIRS 3 SCAs, hence 14-3=11. The model instead refuses this answerable comparison. The failure is retained; the pipeline and test are not changed after this output.",
+    "failure_type": "false_abstention",
+    "citation_support": {}
+  },
+  "adv3-test-021": {
+    "pass": true,
+    "reason": "The Section 1.4 paragraph identifies the USGS Landsat Project Science Office at EROS in Sioux Falls, SD, and the NASA Landsat Project Science Office at GSFC in Greenbelt, Maryland. Both offices and locations are complete.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-022": {
+    "pass": true,
+    "reason": "The cited original Level 1 metadata paragraph explicitly describes the human-readable MTL file as ODL format.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-023": {
+    "pass": true,
+    "reason": "The original Rapid Data Availability paragraph states downlink and processing into standard products within 24 hours of acquisition. The answer gives the requested hour count under that question condition.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-024": {
+    "pass": true,
+    "reason": "The cited original image-quality block defines 9 as Best, 0 as Worst and -1 as not calculated or assessed. All three meanings are present.",
+    "failure_type": null,
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv3-test-025": {
+    "pass": true,
+    "reason": "The model clearly declines the TIRS processor clock frequency without inventing MHz. Source instrument/electronics descriptions do not supply this attribute.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-test-026": {
+    "pass": true,
+    "reason": "The model clearly declines an EarthExplorer API requests-per-second limit; the access section describes interfaces without specifying that numeric API limit.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-test-027": {
+    "pass": true,
+    "reason": "The model declines the EROS employee headcount on the specified 2019 date; the source describes responsibilities/location rather than a dated staffing count.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-test-028": {
+    "pass": true,
+    "reason": "The model declines a GloVis monthly uptime percentage for August 2018. The interface discussion supplies no service-availability statistic.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-test-029": {
+    "pass": true,
+    "reason": "The model declines a CFMask training-image count. The original algorithm discussion describes decision trees/masking and validation limits, not such a count.",
+    "failure_type": null,
+    "citation_support": {}
+  },
+  "adv3-test-030": {
+    "pass": true,
+    "reason": "The model declines the LandsatLook minimum Android version. The source describes a web viewer and supplies no Android operating-system requirement.",
+    "failure_type": null,
+    "citation_support": {}
+  }
+}
