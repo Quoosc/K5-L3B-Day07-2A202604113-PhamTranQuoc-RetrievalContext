@@ -3,7 +3,7 @@
 ## Điều kiện và nguồn
 
 - Python 3.12.10; cài `requirements-lock.txt`. OCR chỉ cần nếu tái tạo OCR: cài thêm `requirements-ocr-lock.txt`.
-- Repo Day 6 có `src/embeddings.py`, `src/store.py`; E5 snapshot `intfloat/multilingual-e5-small`, revision `614241f622f53c4eeff9890bdc4f31cfecc418b3`. Manifest và license nằm trong `artifacts/base/`.
+- [Repo Day 6 cá nhân](https://github.com/Quoosc/K5-L3B-DAY06-2A202604113-DataIngestion) public tại commit **19a54c590f2c89198225592f2be9b1a926abdffd**, cung cấp `src/embeddings.py`, `src/store.py`; E5 snapshot `intfloat/multilingual-e5-small`, revision `614241f622f53c4eeff9890bdc4f31cfecc418b3`. [Provenance code](../artifacts/day6-code-provenance.json) đối chiếu byte của hai module với lock. Manifest và license nằm trong `artifacts/base/`.
 - llama.cpp b12406 Windows Vulkan. Dùng các model và projector đúng digest trong các lock. README chỉ rõ nguồn tải; weights, PDF, venv và `.env` không được commit.
 - PDF Landsat 8 v5.0: 114 trang, SHA-256 `baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756`.
 - Tác giả đã xác nhận kiểm chứng toàn bộ nguồn: [biên bản](../artifacts/source-verification.json). Đây là xác nhận nguồn; kết quả model vẫn được chấm theo trace thực tế.
@@ -13,11 +13,20 @@
 
 Chạy tại root của một checkout. Đặt các đường dẫn phù hợp với máy; không sửa mã để đổi đường dẫn.
 
+Nếu chưa có Day 6, clone vào một thư mục mới cạnh Day 7 và dùng đúng commit. Không chạy lại test Day 6 để tạo số liệu cho Day 7.
+
+```powershell
+git -c core.autocrlf=false clone https://github.com/Quoosc/K5-L3B-DAY06-2A202604113-DataIngestion.git ../K5-L3B-DAY06-2A202604113-DataIngestion
+git -C ../K5-L3B-DAY06-2A202604113-DataIngestion checkout --detach 19a54c590f2c89198225592f2be9b1a926abdffd
+```
+
 ```powershell
 $env:PYTHONUTF8 = '1'
 $Py = (Resolve-Path '.venv/Scripts/python.exe').Path
 $Day6Root = (Resolve-Path '../K5-L3B-DAY06-2A202604113-DataIngestion').Path
 $E5Model = Join-Path $Day6Root '.local/model-snapshot'
+# Chỉ khi chưa có đúng E5 snapshot: tải 10 file theo revision/checksum của Day 6.
+& $Py (Join-Path $Day6Root 'scripts/fetch_model.py')
 $Pdf = (Resolve-Path '.local/downloads/landsat8-v5.pdf').Path
 $TextModel = Join-Path $env:USERPROFILE '.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730'
 Expand-Archive -LiteralPath 'artifacts/base/qdrant-snapshot.zip' -DestinationPath '.local/base-restored'

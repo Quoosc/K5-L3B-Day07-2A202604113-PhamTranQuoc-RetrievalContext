@@ -8,6 +8,7 @@ Tác giả đã xác nhận kiểm chứng toàn bộ nguồn ngày 16/11/2026, 
 
 ## Dữ liệu và benchmark
 
+- Dependency code Day 6 lấy từ [repo public cá nhân](https://github.com/Quoosc/K5-L3B-DAY06-2A202604113-DataIngestion) tại commit `19a54c590f2c89198225592f2be9b1a926abdffd`. [Provenance](../../artifacts/day6-code-provenance.json) đối chiếu byte Git blob, file đang dùng và hash khóa của cả `embeddings.py`/`store.py`; runbook có lệnh lấy đúng code/model cho máy mới.
 - Corpus là snapshot tài liệu CPython 3.12.10 của Day 6: tám nguồn, 40 đơn vị RST chuẩn hóa và 156 chunk cấu hình B. Trường `page` là **số đơn vị RST**, không phải số trang PDF. Nguồn, license, hash và đối chiếu payload nằm tại [manifest](../../artifacts/base/day6_manifest.json); [chunks](../../artifacts/base/chunks.jsonl) và hai file license được kèm theo.
 - Embedding `intfloat/multilingual-e5-small`, revision `614241f622f53c4eeff9890bdc4f31cfecc418b3`, 384 chiều; query có prefix `query: ` đúng một lần. Qdrant local dùng cosine/exact. Đã so sánh **156/156 payload** và ID giữa collection `lab6_B` với export B; vector mẫu có norm `0.9999999443`. [Gói Qdrant công khai](../../artifacts/base/qdrant-snapshot.zip) được kiểm hash với freeze; không chứa model weights hoặc secret.
 - Agent dùng Qwen2.5 7B Instruct Q4_K_M cục bộ qua llama.cpp b12406, GGUF SHA-256 `2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730`, GPU RTX 3060 Laptop. Không gửi tài liệu sang API bên ngoài; chi phí API 0 USD, chưa tính điện và khấu hao máy.

@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-11-16T05:27:42.141171+00:00",
+  "repository": "https://github.com/Quoosc/K5-L3B-DAY06-PhamTranQuoc-2A202604113-DataIngestion",
+  "private": false,
+  "commit": "19a54c590f2c89198225592f2be9b1a926abdffd",
+  "remote_commit_verified": "19a54c590f2c89198225592f2be9b1a926abdffd",
+  "files": {
+    "src/embeddings.py": {
+      "git_blob_bytes_sha256": "f3039fd1b0b50b294dd74c01b1a9ffbf858a8d255a3b95ed4379d3be466f461e",
+      "working_bytes_sha256": "f3039fd1b0b50b294dd74c01b1a9ffbf858a8d255a3b95ed4379d3be466f461e",
+      "base_lock_sha256": "f3039fd1b0b50b294dd74c01b1a9ffbf858a8d255a3b95ed4379d3be466f461e"
+    },
+    "src/store.py": {
+      "git_blob_bytes_sha256": "619c4442ed4bda8b53b8bf58af89d4edc7c02fe2653fff8b09082825a90f19a7",
+      "working_bytes_sha256": "619c4442ed4bda8b53b8bf58af89d4edc7c02fe2653fff8b09082825a90f19a7",
+      "base_lock_sha256": "619c4442ed4bda8b53b8bf58af89d4edc7c02fe2653fff8b09082825a90f19a7"
+    }
+  },
+  "embedding_model": "intfloat/multilingual-e5-small",
+  "embedding_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "note": "Verified source dependency download location and exact code bytes; model assets remain external and are checked by the release lock."
+}

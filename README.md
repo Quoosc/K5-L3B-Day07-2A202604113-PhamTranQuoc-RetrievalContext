@@ -22,6 +22,8 @@ Hai câu v3 fail là `adv3-test-018` (không chỉ rõ NN/SS) và `adv3-test-020
 
 Cần Python **3.12.10**; dependency pin tại [requirements-lock.txt](requirements-lock.txt). Repo Day 6 cung cấp `src/embeddings.py`, `src/store.py` và E5 `intfloat/multilingual-e5-small`, revision `614241f622f53c4eeff9890bdc4f31cfecc418b3`, 384 chiều. [Manifest/license Day 6](artifacts/base/day6_manifest.json) ghi 8 nguồn CPython 3.12.10, 40 đơn vị RST và 156 chunk B. `page` ở core là đơn vị RST, không phải trang PDF.
 
+Day 6 public tại [repo cá nhân](https://github.com/Quoosc/K5-L3B-DAY06-2A202604113-DataIngestion), pin commit `19a54c590f2c89198225592f2be9b1a926abdffd`. [Runbook](docs/REPRODUCE.md) có lệnh clone/checkout và tải E5; [provenance](artifacts/day6-code-provenance.json) kiểm hai module ngoài repo khớp hash trong freeze.
+
 ```powershell
 py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt --extra-index-url https://download.pytorch.org/whl/cpu
