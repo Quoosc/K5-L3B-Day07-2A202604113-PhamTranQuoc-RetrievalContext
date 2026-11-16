@@ -1,0 +1,13 @@
+{
+  "experiment": "A6 development vision-only diagnostic",
+  "cases": 56,
+  "status_counts": {
+    "abstain": 46,
+    "answered": 9,
+    "error": 1
+  },
+  "answerable_abstentions": 34,
+  "conclusion": "Final vision prompts without conversation history caused excessive refusals, including outputs with a factual answer but status abstain. Retained as failed dev experiment; not an independent test and not used to qualify freeze.",
+  "next_change": "Restore search/open conversation, explicit output examples and source-label metadata; retain original-query fusion and geometric routing.",
+  "code_snapshot": "artifacts/advanced/code-snapshots/a6/snapshot.json"
+}

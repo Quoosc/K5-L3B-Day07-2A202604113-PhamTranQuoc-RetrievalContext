@@ -1,0 +1,132 @@
+{
+  "checked_at": "2026-11-16T04:15:32.894055+00:00",
+  "checkout": "E:/VINAITHUCCHIEN/K5-L3B-Day07-PhamTranQuoc-2A202604113-RetrievalContext/.local/clean-submission-20261116",
+  "checks": [
+    {
+      "name": "unit_tests",
+      "command": [
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-q"
+      ],
+      "exit_code": 0,
+      "output": "----------------------------------------------------------------------\nRan 51 tests in 0.260s\n\nOK\n"
+    },
+    {
+      "name": "base_validate_dev",
+      "command": [
+        "-m",
+        "src.day07",
+        "validate",
+        "--split",
+        "dev"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"split\": \"dev\",\n  \"queries\": 23,\n  \"answerable\": 20,\n  \"unanswerable\": 3,\n  \"evidence_validation\": \"all alternatives resolved\"\n}\n"
+    },
+    {
+      "name": "base_validate_test",
+      "command": [
+        "-m",
+        "src.day07",
+        "validate",
+        "--split",
+        "test"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"split\": \"test\",\n  \"queries\": 7,\n  \"answerable\": 5,\n  \"unanswerable\": 2,\n  \"evidence_validation\": \"all alternatives resolved\"\n}\n"
+    },
+    {
+      "name": "all_benchmark_structures_and_author_record",
+      "command": [
+        "-m",
+        "scripts.validate_submission_benchmarks",
+        "--output",
+        ".local/benchmark-check.json"
+      ],
+      "exit_code": 0,
+      "output": "Validated all six benchmark splits; author source-verification record attached.\n"
+    },
+    {
+      "name": "base_saved_trace_score_D0",
+      "command": [
+        "-m",
+        "src.day07",
+        "score",
+        "--split",
+        "test",
+        "--traces",
+        "artifacts/base/runs/base-test-20261115-v1/D0.jsonl",
+        "--output",
+        ".local/base-D0-metrics.json"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"total_queries\": 7,\n  \"errors_or_missing\": 1,\n  \"hit1\": {\n    \"n\": 5,\n    \"N\": 5,\n    \"rate\": 1.0\n  },\n  \"evidence_hit3\": {\n    \"n\": 5,\n    \"N\": 5,\n    \"rate\": 1.0\n  },\n  \"all_groups_hit3\": {\n    \"n\": 5,\n    \"N\": 5,\n    \"rate\": 1.0\n  },\n  \"context_evidence_rate\": {\n    \"n\": 5,\n    \"N\": 5,\n    \"rate\": 1.0\n  },\n  \"runtime\": {\n    \"median_ms\": 2654.1888000001563,\n    \"p95_ms_nearest_rank\": 2746.318899999096,\n    \"api_cost_usd\": 0.0,\n    \"prompt_tokens\": 11424,\n    \"completion_tokens\": 582\n  }\n}\n"
+    },
+    {
+      "name": "base_saved_trace_score_H0",
+      "command": [
+        "-m",
+        "src.day07",
+        "score",
+        "--split",
+        "test",
+        "--traces",
+        "artifacts/base/runs/base-test-20261115-v1/H0.jsonl",
+        "--output",
+        ".local/base-H0-metrics.json"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"total_queries\": 7,\n  \"errors_or_missing\": 1,\n  \"hit1\": {\n    \"n\": 4,\n    \"N\": 5,\n    \"rate\": 0.8\n  },\n  \"evidence_hit3\": {\n    \"n\": 5,\n    \"N\": 5,\n    \"rate\": 1.0\n  },\n  \"all_groups_hit3\": {\n    \"n\": 5,\n    \"N\": 5,\n    \"rate\": 1.0\n  },\n  \"context_evidence_rate\": {\n    \"n\": 5,\n    \"N\": 5,\n    \"rate\": 1.0\n  },\n  \"runtime\": {\n    \"median_ms\": 2657.2071999999025,\n    \"p95_ms_nearest_rank\": 3140.6289000005927,\n    \"api_cost_usd\": 0.0,\n    \"prompt_tokens\": 11611,\n    \"completion_tokens\": 565\n  }\n}\n"
+    },
+    {
+      "name": "frozen_bytes_survive_git_checkout",
+      "command": [
+        "-c",
+        "from pathlib import Path; from src.day07.__main__ import code_hashes; from src.day07.common import read_json; assert code_hashes(Path('configs/base.json'),Path('artifacts/base/chunks.jsonl'),Path('benchmarks/base'))==read_json('artifacts/base/freeze.json')['hashes']; print('Frozen base source, benchmark and corpus bytes preserved in checkout')"
+      ],
+      "exit_code": 0,
+      "output": "Frozen base source, benchmark and corpus bytes preserved in checkout\n"
+    },
+    {
+      "name": "advanced_release_bytes_and_restored_index",
+      "command": [
+        "-c",
+        "from argparse import Namespace; from pathlib import Path; from scripts.advanced_release import fingerprints; from src.day07.common import read_json; inputs=Namespace(day6_root=Path('E:\\\\VINAITHUCCHIEN\\\\K5-L3B-DAY06-2A202604113-DataIngestion'), model_path=Path('E:\\\\VINAITHUCCHIEN\\\\K5-L3B-DAY06-2A202604113-DataIngestion\\\\.local\\\\model-snapshot'), qdrant=Path('E:\\\\VINAITHUCCHIEN\\\\K5-L3B-Day07-PhamTranQuoc-2A202604113-RetrievalContext\\\\.local\\\\clean-submission-20261116\\\\.local\\\\advanced'), pdf=Path('E:\\\\VINAITHUCCHIEN\\\\K5-L3B-Day07-PhamTranQuoc-2A202604113-RetrievalContext\\\\.local\\\\downloads\\\\landsat8-v5.pdf'), vision_model=Path('E:\\\\VINAITHUCCHIEN\\\\K5-L3B-Day07-PhamTranQuoc-2A202604113-RetrievalContext\\\\.local\\\\downloads\\\\qwen2.5-vl-3b-q4.gguf'), projector=Path('E:\\\\VINAITHUCCHIEN\\\\K5-L3B-Day07-PhamTranQuoc-2A202604113-RetrievalContext\\\\.local\\\\downloads\\\\qwen2.5-vl-3b-mmproj-q8.gguf'), text_model=Path('C:\\\\Users\\\\admin\\\\.ollama\\\\models\\\\blobs\\\\sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730'), config=Path('configs/advanced-v2.json'), chunks=Path('artifacts/advanced/search_chunks-v5.jsonl'), ocr=Path('artifacts/advanced/ocr-regions-v1.jsonl'), benchmark=Path('benchmarks/advanced-v2')); assert fingerprints(inputs)==read_json('artifacts/advanced/freeze-v2.json')['hashes']; print('All advanced code, benchmark, model, PDF and restored index hashes match the pre-test lock')"
+      ],
+      "exit_code": 0,
+      "output": "All advanced code, benchmark, model, PDF and restored index hashes match the pre-test lock\n"
+    },
+    {
+      "name": "base_real_model_dev_smoke",
+      "command": [
+        "-m",
+        "src.day07",
+        "run",
+        "--day6-root",
+        "E:\\VINAITHUCCHIEN\\K5-L3B-DAY06-2A202604113-DataIngestion",
+        "--qdrant",
+        "E:\\VINAITHUCCHIEN\\K5-L3B-Day07-PhamTranQuoc-2A202604113-RetrievalContext\\.local\\clean-submission-20261116\\.local\\base",
+        "--model-path",
+        "E:\\VINAITHUCCHIEN\\K5-L3B-DAY06-2A202604113-DataIngestion\\.local\\model-snapshot",
+        "--config",
+        "D0",
+        "--split",
+        "dev",
+        "--run-id",
+        "clean-source-smoke",
+        "--limit",
+        "1"
+      ],
+      "exit_code": 0,
+      "output": "D0 1/1 b-dev-q01: error\n\nLoading weights:   0%|          | 0/199 [00:00<?, ?it/s]\nLoading weights:  77%|███████▋  | 154/199 [00:00<00:00, 1528.74it/s]\nLoading weights: 100%|██████████| 199/199 [00:00<00:00, 1937.00it/s]\nE:\\VINAITHUCCHIEN\\K5-L3B-DAY06-2A202604113-DataIngestion\\src\\embeddings.py:31: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.\n  self.dimensions = int(self.model.get_sentence_embedding_dimension())\nE:\\VINAITHUCCHIEN\\K5-L3B-DAY06-2A202604113-DataIngestion\\src\\store.py:144: UserWarning: Local mode performs exact (brute-force) search, so `search_params` has no effect, with the exception of `idf`.\n  response = self.client.query_points(\n"
+    }
+  ],
+  "scope": "Clean export of Git index on same machine; existing pinned environment and external models. No claim of an independent clean machine.",
+  "source_verification": "artifacts/source-verification.json",
+  "all_checks_pass": false,
+  "error": "ValueError: Clean checkout model smoke did not produce a valid sourced response"
+}

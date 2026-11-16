@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-15T09:54:32.719797+00:00",
+  "collection": "lab7_landsat_v5",
+  "snippets": 924,
+  "dimensions": 384,
+  "model": "intfloat/multilingual-e5-small",
+  "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "source_elements_sha256": "91ed9c1d543a5c0e68e849725e744268ecf13b494d7923e57f220aea6c32c548",
+  "search_chunks_sha256": "3a1f7aaed472557bb97bf6dcfa20ea48c95e9582094a1d5ee35fda46fd383a03",
+  "api_cost_usd": 0.0,
+  "status": "PARTIAL: text and captions only; visual content is not transcribed",
+  "limitations": [
+    "No visual embeddings, OCR or model-verified descriptions.",
+    "Table candidates retain automatic extraction errors; verify source.",
+    "Empty caption-only regions are not searchable by text."
+  ]
+}

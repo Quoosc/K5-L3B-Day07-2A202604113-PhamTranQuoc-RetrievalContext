@@ -1,0 +1,129 @@
+{
+  "checked_at": "2026-11-16T04:20:11.096225+00:00",
+  "audit_kind": "rubric evidence completeness; not an instructor-awarded grade",
+  "base_groups": [
+    {
+      "rubric_group": "Dữ liệu và benchmark",
+      "maximum_points": 13,
+      "checks": {
+        "base_dev_and_test_validated": true,
+        "author_source_verification": true,
+        "day6_chunks_156": true,
+        "day6_manifest_and_licenses": true
+      },
+      "all_checks_pass": true,
+      "evidence": [
+        "artifacts/base/day6_manifest.json",
+        "benchmarks/base/manifest.json",
+        "artifacts/source-verification.json"
+      ]
+    },
+    {
+      "rubric_group": "Retrieval",
+      "maximum_points": 17,
+      "checks": {
+        "dense_lexical_hybrid": true,
+        "same_dev_cases_all_methods": true,
+        "ranking_and_context_metrics": true
+      },
+      "all_checks_pass": true,
+      "evidence": [
+        "src/day07/retrieval.py",
+        "artifacts/base/submission-metrics.json"
+      ]
+    },
+    {
+      "rubric_group": "Agent và context",
+      "maximum_points": 17,
+      "checks": {
+        "real_model_recorded": true,
+        "tool_trace_all_test_cases": true,
+        "context_review_five_each": true,
+        "safety_and_failure_probe": true
+      },
+      "all_checks_pass": true,
+      "evidence": [
+        "src/day07/agent.py",
+        "src/day07/context.py",
+        "artifacts/base/safety-smoke-v2.jsonl"
+      ]
+    },
+    {
+      "rubric_group": "Đánh giá",
+      "maximum_points": 17,
+      "checks": {
+        "same_seven_test_cases": true,
+        "five_grounded_and_two_absence_each": true,
+        "errors_retained": true,
+        "tool_call_distributions": true
+      },
+      "all_checks_pass": true,
+      "evidence": [
+        "artifacts/base/test-review-D0.jsonl",
+        "artifacts/base/test-review-H0.jsonl",
+        "artifacts/base/submission-metrics.json"
+      ]
+    },
+    {
+      "rubric_group": "Thử nghiệm và cải thiện",
+      "maximum_points": 13,
+      "checks": {
+        "two_improvement_variants": true,
+        "chosen_on_dev": true,
+        "original_dev_review_unchanged": true,
+        "original_code_benchmark_corpus_unchanged": true,
+        "dev_analysis_report": true
+      },
+      "all_checks_pass": true,
+      "evidence": [
+        "configs/base.json",
+        "artifacts/base/dev_review.json",
+        "artifacts/base/freeze.json",
+        "report/individual/2A202604113_PhamTranQuoc.md"
+      ]
+    },
+    {
+      "rubric_group": "Tái lập và báo cáo",
+      "maximum_points": 8,
+      "checks": {
+        "runbook": true,
+        "dependency_locks": true,
+        "base_index_archive": true,
+        "required_files_in_git_index": true,
+        "clean_checkout_checks_pass": true,
+        "repository_public_for_grader": true
+      },
+      "all_checks_pass": true,
+      "evidence": [
+        "docs/REPRODUCE.md",
+        "requirements-lock.txt",
+        "artifacts/base/qdrant-snapshot.zip",
+        "artifacts/clean-checkout-check.json"
+      ]
+    }
+  ],
+  "base_evidence_complete": true,
+  "base_maximum_points": 85,
+  "bonus": {
+    "maximum_points": 15,
+    "status": "not_yet_verified",
+    "all_or_nothing": true
+  },
+  "core_validations": {
+    "dev": {
+      "split": "dev",
+      "queries": 23,
+      "answerable": 20,
+      "unanswerable": 3,
+      "evidence_validation": "all alternatives resolved"
+    },
+    "test": {
+      "split": "test",
+      "queries": 7,
+      "answerable": 5,
+      "unanswerable": 2,
+      "evidence_validation": "all alternatives resolved"
+    }
+  },
+  "note": "Core has no absolute metric threshold. Original test errors and lower H0 score remain disclosed. Final awarded points belong to the instructor."
+}

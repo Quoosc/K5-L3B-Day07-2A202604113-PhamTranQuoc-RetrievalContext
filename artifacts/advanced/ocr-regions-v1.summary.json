@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-15T10:26:04.375650+00:00",
+  "regions": 77,
+  "errors": 0,
+  "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756",
+  "dpi": 200,
+  "elapsed_seconds": 244.4984460000005,
+  "ocr_sha256": "fbd27b8dcfe73fc4df23aeaebb99b79e17987f9ea500db5f096d993d64282225",
+  "scope": "All indexed image/vector candidates",
+  "warning": "OCR is not independently verified and may miss or distort labels, numbers and table structure."
+}

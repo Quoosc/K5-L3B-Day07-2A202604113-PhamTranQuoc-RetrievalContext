@@ -1,0 +1,8 @@
+{
+  "phase": "retriever initialization",
+  "error": "MemoryError while loading the E5 embedding model",
+  "traces_written": 0,
+  "effect": "No case was retried or added in this attempt. The subsequent continuation used a new directory after restarting the local vision server.",
+  "reviewer": "Codex",
+  "recorded_at": "2026-11-16"
+}

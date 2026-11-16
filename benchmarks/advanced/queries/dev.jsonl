@@ -1,0 +1,26 @@
+{"id": "adv-dev-001", "split": "dev", "question": "In Table 1-1, what SSR size and storage organization are given for Landsat 7?"}
+{"id": "adv-dev-002", "split": "dev", "question": "In Table 2-2, what is the OLI performance SNR for OLI Band 2 at Ltypical?"}
+{"id": "adv-dev-003", "split": "dev", "question": "In Table 2-3, what NEΔT is listed for TIRS Band 10 at 240?"}
+{"id": "adv-dev-004", "split": "dev", "question": "In Table A-1, what temperature offset is listed for TIRS Band 10 at 300 K?"}
+{"id": "adv-dev-005", "split": "dev", "question": "In Figure 2-1, which sensor is identified by the arrow at the upper left of the observatory?"}
+{"id": "adv-dev-006", "split": "dev", "question": "In Figure 2-5, which band appears at the top of the odd SCA band stack?"}
+{"id": "adv-dev-007", "split": "dev", "question": "In Figure 2-7, which SCA is shown to the right of SCA-3?"}
+{"id": "adv-dev-008", "split": "dev", "question": "In the Figure 4-1 flow diagram, which processing system follows Radiometric Processing System directly?"}
+{"id": "adv-dev-009", "split": "dev", "question": "In Figure 2-3, approximately what OLI performance SNR does the red Coastal/Aerosol bar show at Ltypical?"}
+{"id": "adv-dev-010", "split": "dev", "question": "In Figure A-2, what do blue dots and gray dots indicate in the lunar-scan panels?"}
+{"id": "adv-dev-011", "split": "dev", "question": "In Figure A-6, approximately what encoder-current value is marked by the yellow limit line?"}
+{"id": "adv-dev-012", "split": "dev", "question": "What are the horizontal and vertical axis labels and units in Figure 4-3?"}
+{"id": "adv-dev-013", "split": "dev", "question": "Using Table 2-1 to identify the Landsat 8 band spanning 0.435–0.451 µm, then Table 2-2, what is that band and its OLI performance SNR at Ltypical?"}
+{"id": "adv-dev-014", "split": "dev", "question": "Using Table 2-1 to identify the Landsat 8 band spanning 0.452–0.512 µm, then Table 2-2, what is that band and its OLI performance SNR at Ltypical?"}
+{"id": "adv-dev-015", "split": "dev", "question": "Using Table 2-1 to identify the Landsat 8 band spanning 0.533–0.590 µm, then Table 2-2, what is that band and its OLI performance SNR at Ltypical?"}
+{"id": "adv-dev-016", "split": "dev", "question": "Using Table 2-1 to identify the Landsat 8 band spanning 0.636–0.673 µm, then Table 2-2, what is that band and its OLI performance SNR at Ltypical?"}
+{"id": "adv-dev-017", "split": "dev", "question": "In the introduction, in what year was Landsat 8 launched?"}
+{"id": "adv-dev-018", "split": "dev", "question": "According to the spacecraft overview, what were the specified design life and fuel-carrying requirement?"}
+{"id": "adv-dev-019", "split": "dev", "question": "What bit depth and dimensions does the QA file have relative to the standard L1T scene?"}
+{"id": "adv-dev-020", "split": "dev", "question": "What does the TIRS SSM encoder convert into digital codes?"}
+{"id": "adv-dev-021", "split": "dev", "question": "What was the Landsat 8 acquisition cost for the fictional Aurora-Reef-2027 campaign?"}
+{"id": "adv-dev-022", "split": "dev", "question": "What exact IP address did the fictional Boreal-Station-X use for Landsat 8 downlink?"}
+{"id": "adv-dev-023", "split": "dev", "question": "What was the cloud percentage of the fictional Cedar-Valley-2028 scene?"}
+{"id": "adv-dev-024", "split": "dev", "question": "Which engineer approved the fictional Delta-Lab-42 TIRS calibration in this handbook?"}
+{"id": "adv-dev-025", "split": "dev", "question": "What was the fictional Elm-Lake-Project processing invoice in dollars?"}
+{"id": "adv-dev-026", "split": "dev", "question": "What is the serial number of the fictional Fjord-Sensor-Z in this handbook?"}

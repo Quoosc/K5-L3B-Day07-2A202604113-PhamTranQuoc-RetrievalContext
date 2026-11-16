@@ -1,0 +1,14 @@
+{
+  "experiment": "A8 complete dev finalizer diagnostic, not an independent test score",
+  "cases": 56,
+  "statuses": {
+    "abstain": 39,
+    "error": 1,
+    "answered": 16
+  },
+  "answerable_false_abstention_count": 27,
+  "final_errors": 1,
+  "conclusion": "The overconservative finalizer rejected true table/text facts and visually observed facts absent from OCR. A9 restores the validated table/text prompts and formats visual observations separately.",
+  "source_trace": "artifacts/advanced/runs/advanced-v2-dev-a8-final/traces.jsonl",
+  "source_snapshot": "artifacts/advanced/code-snapshots/a8/snapshot.json"
+}

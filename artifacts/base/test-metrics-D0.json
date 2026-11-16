@@ -1,0 +1,73 @@
+{
+  "total_queries": 7,
+  "errors_or_missing": 1,
+  "hit1": {
+    "n": 5,
+    "N": 5,
+    "rate": 1.0
+  },
+  "evidence_hit3": {
+    "n": 5,
+    "N": 5,
+    "rate": 1.0
+  },
+  "all_groups_hit3": {
+    "n": 5,
+    "N": 5,
+    "rate": 1.0
+  },
+  "context_evidence_rate": {
+    "n": 5,
+    "N": 5,
+    "rate": 1.0
+  },
+  "cases": [
+    {
+      "query_id": "b-test-01",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": true
+    },
+    {
+      "query_id": "b-test-02",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-test-03",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-test-04",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-test-05",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    }
+  ],
+  "runtime": {
+    "median_ms": 2654.1888000001563,
+    "p95_ms_nearest_rank": 2746.318899999096,
+    "api_cost_usd": 0.0,
+    "prompt_tokens": 11424,
+    "completion_tokens": 582
+  }
+}

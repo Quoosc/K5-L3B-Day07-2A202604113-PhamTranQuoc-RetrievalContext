@@ -1,0 +1,11 @@
+{
+  "id": "A0",
+  "description": "Hybrid E5/TF-IDF search plus deterministic routing of table/figure labels explicitly present in the user question; model selects at most two indexed regions and receives 150 DPI crops.",
+  "candidate_k": 8,
+  "branch_pool": 10,
+  "max_open_regions": 2,
+  "crop_dpi": 150,
+  "temperature": 0,
+  "retry_count": 0,
+  "selection_policy": "Choose on complete dev pass rate and group failures; use latency and cost as tie-breaks. A readiness target of 24/26 does not substitute for independent test."
+}

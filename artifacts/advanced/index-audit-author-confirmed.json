@@ -1,0 +1,17 @@
+{
+  "created_at": "2026-11-16T03:30:51.965624+00:00",
+  "source_verification": "artifacts/source-verification.json",
+  "status": "STRUCTURAL_COVERAGE_COMPLETE_AND_AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
+  "pages": 114,
+  "regions": 852,
+  "missing_pages": [],
+  "missing_regions": [],
+  "automatic_extraction_limits": [
+    "OCR may omit words or merge labels.",
+    "Automatic table headers and merged cells may be misaligned.",
+    "Search snippets do not replace original figure/plot inspection."
+  ],
+  "source_access_policy": "Retain original page and bbox for every region; render the original crop at answer time.",
+  "unindexed_useful_regions_identified": [],
+  "historical_manifests": "Extraction-time PARTIAL/PROVISIONAL manifests are preserved as immutable history; this dated audit is the current source-verification status."
+}

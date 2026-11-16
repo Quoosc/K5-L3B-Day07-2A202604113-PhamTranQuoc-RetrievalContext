@@ -1,0 +1,19 @@
+{
+  "id": "A6",
+  "description": "Original-query fusion, nearest-caption geometry, section navigation, four-region evidence and complete answers.",
+  "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756",
+  "candidate_k": 16,
+  "branch_pool": 30,
+  "max_open_regions": 4,
+  "crop_dpi": 200,
+  "region_text_chars": 8000,
+  "max_output_tokens": 480,
+  "temperature": 0,
+  "retry_count": 0,
+  "timeout_seconds": 180,
+  "runtime": {
+    "vision": {"port": 8086, "alias": "qwen2.5-vl-3b-local", "ctx_size": 16384, "threads": 8, "parallel": 1, "image_min_tokens": 1024, "image_max_tokens": 2048, "device": "Vulkan1", "n_gpu_layers": 99},
+    "text": {"port": 8085, "alias": "qwen2.5-7b-local", "ctx_size": 16384, "threads": 8, "parallel": 1, "device": "Vulkan1", "n_gpu_layers": 22}
+  },
+  "selection_policy": "Complete dev score >=90% with at least one pass in each group; never select on the new holdout. All 56 former cases are development data."
+}

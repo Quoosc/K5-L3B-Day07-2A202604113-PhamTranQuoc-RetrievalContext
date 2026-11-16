@@ -1,0 +1,190 @@
+{
+  "kind": "targeted dev diagnostic; no gold or image pixels supplied",
+  "model": "qwen2.5-7b-local",
+  "ocr_sha256": "fbd27b8dcfe73fc4df23aeaebb99b79e17987f9ea500db5f096d993d64282225",
+  "spatial_code_sha256": "bdc306579a815457c1a1a852f5734d71bf0db835f154a8c4d27f8f48e6e9b628",
+  "ids": [
+    "adv-dev-006",
+    "adv-dev-007",
+    "adv-dev-008"
+  ],
+  "results": [
+    {
+      "query_id": "adv-dev-006",
+      "raw_answer": "{\n  \"status\": \"answered\",\n  \"answer\": \"In Figure 2-5, the band that appears at the top of the odd SCA band stack is [e1]1 - Coastal/Aerosol.\",\n  \"citations\": [\"e1\"]\n}",
+      "position_hints": {
+        "e1": {
+          "hints": [
+            {
+              "anchor": "Odd SCAs",
+              "kind": "ocr_numbered_column_above_label_top_to_bottom",
+              "candidates": [
+                {
+                  "text": "8 - Panchromatic",
+                  "bbox": [
+                    200.53,
+                    555.77,
+                    255.25,
+                    562.61
+                  ]
+                },
+                {
+                  "text": "2 - Blue",
+                  "bbox": [
+                    199.09,
+                    565.49,
+                    227.53,
+                    573.05
+                  ]
+                },
+                {
+                  "text": "1 - Coastal/Aerosol",
+                  "bbox": [
+                    200.53,
+                    575.57,
+                    261.73,
+                    582.41
+                  ]
+                },
+                {
+                  "text": "5 - NIR",
+                  "bbox": [
+                    200.17,
+                    585.65,
+                    225.37,
+                    592.85
+                  ]
+                },
+                {
+                  "text": "4 - Red",
+                  "bbox": [
+                    199.81,
+                    596.09,
+                    226.45,
+                    603.29
+                  ]
+                },
+                {
+                  "text": "3 - Green",
+                  "bbox": [
+                    199.45,
+                    605.45,
+                    232.93,
+                    613.37
+                  ]
+                },
+                {
+                  "text": "7 - SWIR2",
+                  "bbox": [
+                    200.17,
+                    616.25,
+                    235.45,
+                    623.09
+                  ]
+                },
+                {
+                  "text": "6 - SWIR1",
+                  "bbox": [
+                    199.81,
+                    626.33,
+                    235.45,
+                    633.89
+                  ]
+                },
+                {
+                  "text": "9 – Cirrus",
+                  "bbox": [
+                    199.81,
+                    636.41,
+                    231.85,
+                    643.61
+                  ]
+                },
+                {
+                  "text": "12-14- Blind",
+                  "bbox": [
+                    197.29,
+                    647.57,
+                    234.73,
+                    653.69
+                  ]
+                }
+              ]
+            }
+          ],
+          "warning": "OCR geometry can be wrong and does not prove arrow connections or meaning."
+        }
+      },
+      "status": "answered",
+      "answer": "In Figure 2-5, the band that appears at the top of the odd SCA band stack is [e1]1 - Coastal/Aerosol.",
+      "citations": [
+        "e1"
+      ],
+      "citation_registry": {
+        "e1": {
+          "id": "landsat-v5-p020-image-002",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 20,
+          "bbox": [
+            121.33,
+            494.93,
+            487.49,
+            681.39
+          ]
+        }
+      },
+      "format_normalization": []
+    },
+    {
+      "query_id": "adv-dev-007",
+      "raw_answer": "{\n  \"status\": \"abstain\",\n  \"answer\": \"The evidence provided is insufficient to determine which SCA is shown to the right of SCA-3 in Figure 2-7. The OCR text indicates the positions of various SCAs and bands, but it does not provide a clear indication of their relative positions to each other. The OCR text suggests that SCA-1 is to the right of SCA-3, but this is based on the x positions provided, which may not accurately represent the visual layout of the figure. Therefore, without a clear visual reference or additional context, it is not possible to confidently identify the SCA to the right of SCA-3.\",\n  \"citations\": [\"e1\"]\n}",
+      "position_hints": {
+        "e1": {
+          "hints": [
+            {
+              "anchor": "SCA-3",
+              "kind": "ocr_same_row_right_candidates",
+              "candidates": [
+                {
+                  "text": "SCA-1",
+                  "bbox": [
+                    415.8,
+                    379.52,
+                    446.4,
+                    389.96
+                  ]
+                }
+              ]
+            }
+          ],
+          "warning": "OCR geometry can be wrong and does not prove arrow connections or meaning."
+        }
+      },
+      "status": "abstain",
+      "answer": "The evidence provided is insufficient to determine which SCA is shown to the right of SCA-3 in Figure 2-7. The OCR text indicates the positions of various SCAs and bands, but it does not provide a clear indication of their relative positions to each other. The OCR text suggests that SCA-1 is to the right of SCA-3, but this is based on the x positions provided, which may not accurately represent the visual layout of the figure. Therefore, without a clear visual reference or additional context, it is not possible to confidently identify the SCA to the right of SCA-3.",
+      "citations": [],
+      "citation_registry": {},
+      "format_normalization": [
+        "removed unreferenced citations from the abstention"
+      ]
+    },
+    {
+      "query_id": "adv-dev-008",
+      "raw_answer": "{\n  \"status\": \"abstain\",\n  \"answer\": \"The provided OCR text does not clearly indicate which processing system follows the Radiometric Processing System (RPS) directly in the flow diagram. The text mentions RPS but does not specify the next system in the sequence. Therefore, based on the given information, it is not possible to determine the next processing system with certainty.\",\n  \"citations\": [\"e1\"]\n}",
+      "position_hints": {
+        "e1": {
+          "hints": [],
+          "warning": "OCR geometry can be wrong and does not prove arrow connections or meaning."
+        }
+      },
+      "status": "abstain",
+      "answer": "The provided OCR text does not clearly indicate which processing system follows the Radiometric Processing System (RPS) directly in the flow diagram. The text mentions RPS but does not specify the next system in the sequence. Therefore, based on the given information, it is not possible to determine the next processing system with certainty.",
+      "citations": [],
+      "citation_registry": {},
+      "format_normalization": [
+        "removed unreferenced citations from the abstention"
+      ]
+    }
+  ]
+}

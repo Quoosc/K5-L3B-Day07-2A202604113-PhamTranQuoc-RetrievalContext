@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-11-15T09:58:31.782437+00:00",
+  "archive": "qdrant-snapshot.zip",
+  "sha256": "5c2da2d8962487be211ba6517ef4ad820b7292c972772e9249d92b710582353c",
+  "included": [
+    "collection/lab6_A/storage.sqlite",
+    "collection/lab6_B/storage.sqlite",
+    "collection/lab6_storage_probe/storage.sqlite",
+    "meta.json"
+  ],
+  "verified_against_freeze": true,
+  "contents": "Qdrant local collections A/B over public CPython documentation and an empty storage probe; no model weights or secrets.",
+  "source_license": "CPYTHON_LICENSE.txt and CPYTHON_DOCUMENTATION_LICENSE.rst in this directory."
+}

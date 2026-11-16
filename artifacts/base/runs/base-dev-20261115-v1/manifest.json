@@ -1,0 +1,22 @@
+{
+  "run_id": "base-dev-20261115-v1",
+  "started_at": "2026-11-15T09:42:23.958281+00:00",
+  "split": "dev",
+  "configs": [
+    "D0",
+    "L0",
+    "H0",
+    "H1",
+    "H2"
+  ],
+  "model": "qwen2.5-7b-local",
+  "server": "http://127.0.0.1:8085",
+  "mode": "local",
+  "api_cost_usd": 0.0,
+  "query_file_sha256": "da568f405f291f03c80ec0d42344353525894f32761068c84f0644eb5782e38f",
+  "config_sha256": "ea1fe071810a65f61b2b02b948fbed484f105535e2e16647d8e31e41340f9001",
+  "lock_sha256": null,
+  "startup_ms": 11318.09340000018,
+  "retry_policy": "zero retries",
+  "case_count": 23
+}

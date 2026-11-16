@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-11-16T02:38:19.854779+00:00",
+  "source_elements_sha256": "91ed9c1d543a5c0e68e849725e744268ecf13b494d7923e57f220aea6c32c548",
+  "ocr_sha256": "fbd27b8dcfe73fc4df23aeaebb99b79e17987f9ea500db5f096d993d64282225",
+  "description_count": 10,
+  "descriptions_sha256": "909b0b7ec6f5329e3f46b6fd6b205dfe15ed4168c30d6aa98921e8bee91e92bc",
+  "augmented_elements_sha256": "8d00d3f149b2e3fbe2ca927ca5fc8e76e279c6d21c80c1ca4fd53b74e560a0e3",
+  "warning": "Only the ten OCR-empty candidates are described; the remaining visuals need further semantic audit."
+}

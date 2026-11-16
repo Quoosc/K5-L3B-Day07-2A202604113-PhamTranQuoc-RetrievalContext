@@ -1,0 +1,18 @@
+{
+  "run_id": "base-dev-20261115-h3",
+  "started_at": "2026-11-15T09:50:21.887857+00:00",
+  "split": "dev",
+  "configs": [
+    "H3"
+  ],
+  "model": "qwen2.5-7b-local",
+  "server": "http://127.0.0.1:8085",
+  "mode": "local",
+  "api_cost_usd": 0.0,
+  "query_file_sha256": "da568f405f291f03c80ec0d42344353525894f32761068c84f0644eb5782e38f",
+  "config_sha256": "a1414fbf42cbf658866d01020cb944a3206728812a7e18494ca5b933608d3171",
+  "lock_sha256": null,
+  "startup_ms": 24478.975900000478,
+  "retry_policy": "zero retries",
+  "case_count": 23
+}

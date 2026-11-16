@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-11-16T02:28:48.150568+00:00",
+  "split": "dev",
+  "source_trace_sha256": "20d0a3d051d358d6e857b5418a789f46de8244fb1ece4830ffeb351c8ed8d57f",
+  "formatting_code_sha256": "ef418e5141094f3b53e542b2f71d8a7c4c062930017ba0763f790368aff8f8ae",
+  "revalidation_code_sha256": "d5c59d8168022f16be906e03368b0db5092278cbd46265229c3f9c823be4c73b",
+  "model_calls": 0,
+  "note": "Reparses saved raw outputs; original missing drafts/errors remain and semantic support still requires review."
+}

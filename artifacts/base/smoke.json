@@ -1,0 +1,432 @@
+{
+  "query_id": "smoke-01",
+  "question": "In Python 3.12 documentation, what does json.loads deserialize?",
+  "config": "H0",
+  "model": "qwen2.5-7b-local",
+  "scope": {},
+  "events": [
+    {
+      "event": "search",
+      "tool_call_id": "m1gNhDTln6PHGShajaBtoqtrWch3q274",
+      "tool_args": {
+        "query": "json.loads deserializes"
+      },
+      "query": "json.loads deserializes",
+      "scope": {},
+      "method": "hybrid",
+      "results": [
+        {
+          "id": "9cdf01055dfebac1c82b5bafd33f89ee3b41bf8bf70c30660e7c35b1379d13c4",
+          "source_id": "library-json",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+          "page": 1,
+          "text": ">>> import json\n    >>> print(json.dumps({'4': 5, '6': 7}, sort_keys=True, indent=4))\n    {\n        \"4\": 5,\n        \"6\": 7\n    }\n\nDecoding JSON::\n\n    >>> import json\n    >>> json.loads('[\"foo\", {\"bar\":[\"baz\", null, 1.0, 2]}]')\n    ['foo', {'bar': ['baz', None, 1.0, 2]}]\n    >>> json.loads('\"\\\\\"foo\\\\bar\"')\n    '\"foo\\x08ar'\n    >>> from io import StringIO\n    >>> io = StringIO('[\"streaming API\"]')\n    >>> json.load(io)\n    ['streaming API']\n\nSpecializing JSON object decoding::",
+          "metadata": {
+            "section": "json",
+            "document_type": "library",
+            "language": "en",
+            "version": "3.12.10"
+          },
+          "start_offset": 1660,
+          "end_offset": 2140,
+          "token_count": 197,
+          "score": 0.032266458495966696,
+          "method": "hybrid_rrf",
+          "rank": 1,
+          "branch_ranks": {
+            "dense": 3,
+            "lexical": 1
+          }
+        },
+        {
+          "id": "411aabe9a21b2ede48ed4a7cf37a7fb1406decc382215ee60ce92b67425b4ea6",
+          "source_id": "library-json",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+          "page": 1,
+          "text": ">>> import json\n    >>> def as_complex(dct):\n    ...     if '__complex__' in dct:\n    ...         return complex(dct['real'], dct['imag'])\n    ...     return dct\n    ...\n    >>> json.loads('{\"__complex__\": true, \"real\": 1, \"imag\": 2}',\n    ...     object_hook=as_complex)\n    (1+2j)\n    >>> import decimal\n    >>> json.loads('1.1', parse_float=decimal.Decimal)\n    Decimal('1.1')\n\nExtending JSONEncoder::\n\n    >>> import json\n    >>> class ComplexEncoder(json.JSONEncoder):\n    ...     def default(self, obj):\n    ...         if isinstance(obj, complex):\n    ...             return [obj.real, obj.imag]\n    ...         # Let the base class default method raise the TypeError\n    ...         return super().default(obj)\n    ...\n    >>> json.dumps(2 + 1j, cls=ComplexEncoder)\n    '[2.0, 1.0]'\n    >>> ComplexEncoder().encode(2 + 1j)\n    '[2.0, 1.0]'\n    >>> list(ComplexEncoder().iterencode(2 + 1j))\n    ['[2.0', ', 1.0', ']']",
+          "metadata": {
+            "section": "json",
+            "document_type": "library",
+            "language": "en",
+            "version": "3.12.10"
+          },
+          "start_offset": 2146,
+          "end_offset": 3070,
+          "token_count": 306,
+          "score": 0.03128054740957967,
+          "method": "hybrid_rrf",
+          "rank": 2,
+          "branch_ranks": {
+            "dense": 6,
+            "lexical": 2
+          }
+        },
+        {
+          "id": "e9ade049ffdcfe3bf006c5f9679fbe4e7ecaf1493be86a0a7d52d693cbfdb2d1",
+          "source_id": "library-json",
+          "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+          "page": 3,
+          "text": "Function: dumps(obj, *, skipkeys=False, ensure_ascii=True, \\\n\n                    check_circular=True, allow_nan=True, cls=None, \\\n                    indent=None, separators=None, default=None, \\\n                    sort_keys=False, **kw)\n\n   Serialize *obj* to a JSON formatted str using this :ref:`conversion\n   table <py-to-json-table>`.  The arguments have the same meaning as in\n   dump.\n\n   Note:\n\n      Keys in key/value pairs of JSON are always of the type str. When\n      a dictionary is converted into JSON, all the keys of the dictionary are\n      coerced to strings. As a result of this, if a dictionary is converted\n      into JSON and then back into a dictionary, the dictionary may not equal\n      the original one. That is, loads(dumps(x)) != x if x has non-string\n      keys.\n\nFunction: load(fp, *, cls=None, object_hook=None, parse_float=None, \\\n\n                   parse_int=None, parse_constant=None, \\\n                   object_pairs_hook=None, **kw)",
+          "metadata": {
+            "section": "json",
+            "document_type": "library",
+            "language": "en",
+            "version": "3.12.10"
+          },
+          "start_offset": 0,
+          "end_offset": 972,
+          "token_count": 309,
+          "score": 0.01639344262295082,
+          "method": "hybrid_rrf",
+          "rank": 3,
+          "branch_ranks": {
+            "dense": 1
+          }
+        }
+      ],
+      "branches": {
+        "dense": [
+          {
+            "id": "e9ade049ffdcfe3bf006c5f9679fbe4e7ecaf1493be86a0a7d52d693cbfdb2d1",
+            "source_id": "library-json",
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+            "page": 3,
+            "text": "Function: dumps(obj, *, skipkeys=False, ensure_ascii=True, \\\n\n                    check_circular=True, allow_nan=True, cls=None, \\\n                    indent=None, separators=None, default=None, \\\n                    sort_keys=False, **kw)\n\n   Serialize *obj* to a JSON formatted str using this :ref:`conversion\n   table <py-to-json-table>`.  The arguments have the same meaning as in\n   dump.\n\n   Note:\n\n      Keys in key/value pairs of JSON are always of the type str. When\n      a dictionary is converted into JSON, all the keys of the dictionary are\n      coerced to strings. As a result of this, if a dictionary is converted\n      into JSON and then back into a dictionary, the dictionary may not equal\n      the original one. That is, loads(dumps(x)) != x if x has non-string\n      keys.\n\nFunction: load(fp, *, cls=None, object_hook=None, parse_float=None, \\\n\n                   parse_int=None, parse_constant=None, \\\n                   object_pairs_hook=None, **kw)",
+            "metadata": {
+              "section": "json",
+              "document_type": "library",
+              "language": "en",
+              "version": "3.12.10"
+            },
+            "start_offset": 0,
+            "end_offset": 972,
+            "token_count": 309,
+            "score": 0.8875603494535036,
+            "method": "dense",
+            "rank": 1
+          },
+          {
+            "id": "4b946c83bf45005d39b268d26a5ac6b4b3d4b75e1e1c9a4076d724720abdf875",
+            "source_id": "library-json",
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+            "page": 3,
+            "text": "Deserialize *fp* to a Python object\n   using the JSON-to-Python conversion table.\n\n   :param fp:\n      A .read()-supporting text file or binary file\n      containing the JSON document to be deserialized.\n   :type fp: file-like object\n\n   :param cls:\n      If set, a custom JSON decoder.\n      Additional keyword arguments to !load\n      will be passed to the constructor of *cls*.\n      If None (the default), !JSONDecoder is used.\n   :type cls: a JSONDecoder subclass\n\n   :param object_hook:\n      If set, a function that is called with the result of\n      any object literal decoded (a dict).\n      The return value of this function will be used\n      instead of the dict.\n      This feature can be used to implement custom decoders,\n      for example JSON-RPC (https://www.jsonrpc.org) class hinting.\n      Default None.\n   :type object_hook: callable | None",
+            "metadata": {
+              "section": "json",
+              "document_type": "library",
+              "language": "en",
+              "version": "3.12.10"
+            },
+            "start_offset": 977,
+            "end_offset": 1838,
+            "token_count": 234,
+            "score": 0.8795781720084703,
+            "method": "dense",
+            "rank": 2
+          },
+          {
+            "id": "9cdf01055dfebac1c82b5bafd33f89ee3b41bf8bf70c30660e7c35b1379d13c4",
+            "source_id": "library-json",
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+            "page": 1,
+            "text": ">>> import json\n    >>> print(json.dumps({'4': 5, '6': 7}, sort_keys=True, indent=4))\n    {\n        \"4\": 5,\n        \"6\": 7\n    }\n\nDecoding JSON::\n\n    >>> import json\n    >>> json.loads('[\"foo\", {\"bar\":[\"baz\", null, 1.0, 2]}]')\n    ['foo', {'bar': ['baz', None, 1.0, 2]}]\n    >>> json.loads('\"\\\\\"foo\\\\bar\"')\n    '\"foo\\x08ar'\n    >>> from io import StringIO\n    >>> io = StringIO('[\"streaming API\"]')\n    >>> json.load(io)\n    ['streaming API']\n\nSpecializing JSON object decoding::",
+            "metadata": {
+              "section": "json",
+              "document_type": "library",
+              "language": "en",
+              "version": "3.12.10"
+            },
+            "start_offset": 1660,
+            "end_offset": 2140,
+            "token_count": 197,
+            "score": 0.8765735454834448,
+            "method": "dense",
+            "rank": 3
+          },
+          {
+            "id": "f1d55fc0b54eb8b5ebfc37fc6d706a917ae455d90e81da6f53b7e091ebe334d7",
+            "source_id": "tutorial-inputoutput",
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/tutorial/inputoutput.rst",
+            "page": 5,
+            "text": "File objects have some additional methods, such as io.IOBase.isatty and io.IOBase.truncate which are less frequently used; consult the Library Reference for a complete guide to file objects.\n\nSaving structured data with json\n\nStrings can easily be written to and read from a file.  Numbers take a bit more effort, since the io.TextIOBase.read method only returns strings, which will have to be passed to a function like int, which takes a string like '123' and returns its numeric value 123.  When you want to save more complex data types like nested lists and dictionaries, parsing and serializing by hand becomes complicated.\n\nRather than having users constantly writing and debugging code to save complicated data types to files, Python allows you to use the popular data interchange format called `JSON (JavaScript Object Notation) <https://json.org>`_.  The standard module called json can take Python data hierarchies, and convert them to string representations; this process is called serializing.  Reconstructing the data from the string representation is called deserializing.  Between serializing and deserializing, the string representing the object may have been stored in a file or data, or sent over a network connection to some distant machine.\n\nNote:",
+            "metadata": {
+              "section": "inputoutput",
+              "document_type": "tutorial",
+              "language": "en",
+              "version": "3.12.10"
+            },
+            "start_offset": 1864,
+            "end_offset": 3130,
+            "token_count": 296,
+            "score": 0.8654075527356593,
+            "method": "dense",
+            "rank": 4
+          },
+          {
+            "id": "6965f867949d7cb2ba359baba5dbf93c20cd36980047d2ca57b5d632ba25c2c8",
+            "source_id": "library-json",
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+            "page": 4,
+            "text": "* All optional parameters are now keyword-only.\n      * *fp* can now be a binary file.\n        The input encoding should be UTF-8, UTF-16 or UTF-32.\n\n   Version changed: 3.11\n\n      The default *parse_int* of int now limits the maximum length of\n      the integer string via the interpreter's :ref:`integer string\n      conversion length limitation <int_max_str_digits>` to help avoid denial\n      of service attacks.\n\nFunction: loads(s, *, cls=None, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, object_pairs_hook=None, **kw)\n\n   Identical to load, but instead of a file-like object,\n   deserialize *s* (a str, bytes or bytearray\n   instance containing a JSON document) to a Python object using this\n   conversion table.\n\n   Version changed: 3.6\n\n      *s* can now be of type bytes or bytearray. The\n      input encoding should be UTF-8, UTF-16 or UTF-32.\n\n   Version changed: 3.9\n\n      The keyword argument *encoding* has been removed.\n\nEncoders and Decoders",
+            "metadata": {
+              "section": "json",
+              "document_type": "library",
+              "language": "en",
+              "version": "3.12.10"
+            },
+            "start_offset": 6,
+            "end_offset": 994,
+            "token_count": 282,
+            "score": 0.8645044629243086,
+            "method": "dense",
+            "rank": 5
+          },
+          {
+            "id": "411aabe9a21b2ede48ed4a7cf37a7fb1406decc382215ee60ce92b67425b4ea6",
+            "source_id": "library-json",
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+            "page": 1,
+            "text": ">>> import json\n    >>> def as_complex(dct):\n    ...     if '__complex__' in dct:\n    ...         return complex(dct['real'], dct['imag'])\n    ...     return dct\n    ...\n    >>> json.loads('{\"__complex__\": true, \"real\": 1, \"imag\": 2}',\n    ...     object_hook=as_complex)\n    (1+2j)\n    >>> import decimal\n    >>> json.loads('1.1', parse_float=decimal.Decimal)\n    Decimal('1.1')\n\nExtending JSONEncoder::\n\n    >>> import json\n    >>> class ComplexEncoder(json.JSONEncoder):\n    ...     def default(self, obj):\n    ...         if isinstance(obj, complex):\n    ...             return [obj.real, obj.imag]\n    ...         # Let the base class default method raise the TypeError\n    ...         return super().default(obj)\n    ...\n    >>> json.dumps(2 + 1j, cls=ComplexEncoder)\n    '[2.0, 1.0]'\n    >>> ComplexEncoder().encode(2 + 1j)\n    '[2.0, 1.0]'\n    >>> list(ComplexEncoder().iterencode(2 + 1j))\n    ['[2.0', ', 1.0', ']']",
+            "metadata": {
+              "section": "json",
+              "document_type": "library",
+              "language": "en",
+              "version": "3.12.10"
+            },
+            "start_offset": 2146,
+            "end_offset": 3070,
+            "token_count": 306,
+            "score": 0.8625872637710366,
+            "method": "dense",
+            "rank": 6
+          },
+          {
+            "id": "9c2c9dee059c742d5534d0cce508ef6a67e6ee6cfeb9b76991b0d4082b968d89",
+            "source_id": "library-json",
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+            "page": 1,
+            "text": "!json --- JSON encoder and decoder\n\nModule: json\n\n   :synopsis: Encode and decode the JSON format.\n\nModuleauthor: Bob Ippolito <bob@redivi.com>\n\nSectionauthor: Bob Ippolito <bob@redivi.com>\n\n**Source code:** Lib/json/__init__.py\n\nJSON (JavaScript Object Notation) (https://json.org), specified by 7159 (which obsoletes 4627) and by ECMA-404 (https://ecma-international.org/publications-and-standards/standards/ecma-404/), is a lightweight data interchange format inspired by JavaScript (https://en.wikipedia.org/wiki/JavaScript) object literal syntax (although it is not a strict subset of JavaScript [#rfc-errata]_ ).\n\nWarning:\n\n   Be cautious when parsing JSON data from untrusted sources. A malicious\n   JSON string may cause the decoder to consume considerable CPU and memory\n   resources. Limiting the size of data to be parsed is recommended.\n\njson exposes an API familiar to users of the standard library marshal and pickle modules.\n\nEncoding basic Python object hierarchies::",
+            "metadata": {
+              "section": "json",
+              "document_type": "library",
+              "language": "en",
+              "version": "3.12.10"
+            },
+            "start_offset": 0,
+            "end_offset": 983,
+            "token_count": 285,
+            "score": 0.8623695750428007,
+            "method": "dense",
+            "rank": 7
+          },
+          {
+            "id": "34baed3f6fe560263d6d7f6f7cc158af93846d7abe109aa316d5fe4d57db4d73",
+            "source_id": "library-json",
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+            "page": 2,
+            "text": "Note:\n\n   This module's encoders and decoders preserve input and output order by\n   default.  Order is only lost if the underlying containers are unordered.\n\nBasic Usage\n\nFunction: dump(obj, fp, *, skipkeys=False, ensure_ascii=True, \\\n\n                   check_circular=True, allow_nan=True, cls=None, \\\n                   indent=None, separators=None, default=None, \\\n                   sort_keys=False, **kw)\n\n   Serialize *obj* as a JSON formatted stream to *fp* (a .write()-supporting\n   file-like object) using this :ref:`Python-to-JSON conversion table\n   <py-to-json-table>`.\n\n   Note:\n\n      Unlike pickle and marshal, JSON is not a framed protocol,\n      so trying to serialize multiple objects with repeated calls to\n      dump using the same *fp* will result in an invalid JSON file.\n\n   :param object obj:\n      The Python object to be serialized.\n\n   :param fp:\n      The file-like object *obj* will be serialized to.\n      The !json module always produces str objects,\n      not bytes objects,\n      therefore fp.write() must support str input.\n   :type fp: file-like object",
+            "metadata": {
+              "section": "json",
+              "document_type": "library",
+              "language": "en",
+              "version": "3.12.10"
+            },
+            "start_offset": 0,
+            "end_offset": 1088,
+            "token_count": 317,
+            "score": 0.8600412094277813,
+            "method": "dense",
+            "rank": 8
+          },
+          {
+            "id": "fa0a682a432c272ce34445d57f3820b69c605ed87aa5d2fa75a76254a2cb6afd",
+            "source_id": "library-json",
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+            "page": 4,
+            "text": "If *strict* is false (True is the default), then control characters\n   will be allowed inside strings.  Control characters in this context are\n   those with character codes in the 0--31 range, including '\\t' (tab),\n   '\\n', '\\r' and '\\0'.\n\n   If the data being deserialized is not a valid JSON document, a\n   JSONDecodeError will be raised.\n\n   Version changed: 3.6\n\n      All parameters are now keyword-only.\n\n   Method: decode(s)",
+            "metadata": {
+              "section": "json",
+              "document_type": "library",
+              "language": "en",
+              "version": "3.12.10"
+            },
+            "start_offset": 3183,
+            "end_offset": 3614,
+            "token_count": 114,
+            "score": 0.8585428272224525,
+            "method": "dense",
+            "rank": 9
+          },
+          {
+            "id": "e6483df03cf21492e7abfcda95bd20cb5244029a542ed0b4a706e95024bc84cb",
+            "source_id": "library-json",
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+            "page": 1,
+            "text": ">>> import json\n    >>> json.dumps(['foo', {'bar': ('baz', None, 1.0, 2)}])\n    '[\"foo\", {\"bar\": [\"baz\", null, 1.0, 2]}]'\n    >>> print(json.dumps(\"\\\"foo\\bar\"))\n    \"\\\"foo\\bar\"\n    >>> print(json.dumps('\\u1234'))\n    \"\\u1234\"\n    >>> print(json.dumps('\\\\'))\n    \"\\\\\"\n    >>> print(json.dumps({\"c\": 0, \"b\": 0, \"a\": 0}, sort_keys=True))\n    {\"a\": 0, \"b\": 0, \"c\": 0}\n    >>> from io import StringIO\n    >>> io = StringIO()\n    >>> json.dump(['streaming API'], io)\n    >>> io.getvalue()\n    '[\"streaming API\"]'\n\nCompact encoding::\n\n    >>> import json\n    >>> json.dumps([1, 2, 3, {'4': 5, '6': 7}], separators=(',', ':'))\n    '[1,2,3,{\"4\":5,\"6\":7}]'\n\nPretty printing::",
+            "metadata": {
+              "section": "json",
+              "document_type": "library",
+              "language": "en",
+              "version": "3.12.10"
+            },
+            "start_offset": 989,
+            "end_offset": 1654,
+            "token_count": 307,
+            "score": 0.8580341323377343,
+            "method": "dense",
+            "rank": 10
+          }
+        ],
+        "lexical": [
+          {
+            "id": "9cdf01055dfebac1c82b5bafd33f89ee3b41bf8bf70c30660e7c35b1379d13c4",
+            "source_id": "library-json",
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+            "page": 1,
+            "text": ">>> import json\n    >>> print(json.dumps({'4': 5, '6': 7}, sort_keys=True, indent=4))\n    {\n        \"4\": 5,\n        \"6\": 7\n    }\n\nDecoding JSON::\n\n    >>> import json\n    >>> json.loads('[\"foo\", {\"bar\":[\"baz\", null, 1.0, 2]}]')\n    ['foo', {'bar': ['baz', None, 1.0, 2]}]\n    >>> json.loads('\"\\\\\"foo\\\\bar\"')\n    '\"foo\\x08ar'\n    >>> from io import StringIO\n    >>> io = StringIO('[\"streaming API\"]')\n    >>> json.load(io)\n    ['streaming API']\n\nSpecializing JSON object decoding::",
+            "metadata": {
+              "section": "json",
+              "document_type": "library",
+              "language": "en",
+              "version": "3.12.10"
+            },
+            "start_offset": 1660,
+            "end_offset": 2140,
+            "token_count": 197,
+            "score": 0.23850342025838683,
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "411aabe9a21b2ede48ed4a7cf37a7fb1406decc382215ee60ce92b67425b4ea6",
+            "source_id": "library-json",
+            "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+            "page": 1,
+            "text": ">>> import json\n    >>> def as_complex(dct):\n    ...     if '__complex__' in dct:\n    ...         return complex(dct['real'], dct['imag'])\n    ...     return dct\n    ...\n    >>> json.loads('{\"__complex__\": true, \"real\": 1, \"imag\": 2}',\n    ...     object_hook=as_complex)\n    (1+2j)\n    >>> import decimal\n    >>> json.loads('1.1', parse_float=decimal.Decimal)\n    Decimal('1.1')\n\nExtending JSONEncoder::\n\n    >>> import json\n    >>> class ComplexEncoder(json.JSONEncoder):\n    ...     def default(self, obj):\n    ...         if isinstance(obj, complex):\n    ...             return [obj.real, obj.imag]\n    ...         # Let the base class default method raise the TypeError\n    ...         return super().default(obj)\n    ...\n    >>> json.dumps(2 + 1j, cls=ComplexEncoder)\n    '[2.0, 1.0]'\n    >>> ComplexEncoder().encode(2 + 1j)\n    '[2.0, 1.0]'\n    >>> list(ComplexEncoder().iterencode(2 + 1j))\n    ['[2.0', ', 1.0', ']']",
+            "metadata": {
+              "section": "json",
+              "document_type": "library",
+              "language": "en",
+              "version": "3.12.10"
+            },
+            "start_offset": 2146,
+            "end_offset": 3070,
+            "token_count": 306,
+            "score": 0.16398854992294526,
+            "method": "lexical",
+            "rank": 2
+          }
+        ]
+      },
+      "elapsed_ms": 27.065000000220607
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1432,
+    "completion_tokens": 100
+  },
+  "api_cost_usd": 0.0,
+  "context": {
+    "text": "[e1] library-json | RST unit 1 | offset 1660-2140 | https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst\n>>> import json\n    >>> print(json.dumps({'4': 5, '6': 7}, sort_keys=True, indent=4))\n    {\n        \"4\": 5,\n        \"6\": 7\n    }\n\nDecoding JSON::\n\n    >>> import json\n    >>> json.loads('[\"foo\", {\"bar\":[\"baz\", null, 1.0, 2]}]')\n    ['foo', {'bar': ['baz', None, 1.0, 2]}]\n    >>> json.loads('\"\\\\\"foo\\\\bar\"')\n    '\"foo\\x08ar'\n    >>> from io import StringIO\n    >>> io = StringIO('[\"streaming API\"]')\n    >>> json.load(io)\n    ['streaming API']\n\nSpecializing JSON object decoding::\n\n[e2] library-json | RST unit 1 | offset 2146-3070 | https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst\n>>> import json\n    >>> def as_complex(dct):\n    ...     if '__complex__' in dct:\n    ...         return complex(dct['real'], dct['imag'])\n    ...     return dct\n    ...\n    >>> json.loads('{\"__complex__\": true, \"real\": 1, \"imag\": 2}',\n    ...     object_hook=as_complex)\n    (1+2j)\n    >>> import decimal\n    >>> json.loads('1.1', parse_float=decimal.Decimal)\n    Decimal('1.1')\n\nExtending JSONEncoder::\n\n    >>> import json\n    >>> class ComplexEncoder(json.JSONEncoder):\n    ...     def default(self, obj):\n    ...         if isinstance(obj, complex):\n    ...             return [obj.real, obj.imag]\n    ...         # Let the base class default method raise the TypeError\n    ...         return super().default(obj)\n    ...\n    >>> json.dumps(2 + 1j, cls=ComplexEncoder)\n    '[2.0, 1.0]'\n    >>> ComplexEncoder().encode(2 + 1j)\n    '[2.0, 1.0]'\n    >>> list(ComplexEncoder().iterencode(2 + 1j))\n    ['[2.0', ', 1.0', ']']\n\n[e3] library-json | RST unit 3 | offset 0-972 | https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst\nFunction: dumps(obj, *, skipkeys=False, ensure_ascii=True, \\\n\n                    check_circular=True, allow_nan=True, cls=None, \\\n                    indent=None, separators=None, default=None, \\\n                    sort_keys=False, **kw)\n\n   Serialize *obj* to a JSON formatted str using this :ref:`conversion\n   table <py-to-json-table>`.  The arguments have the same meaning as in\n   dump.\n\n   Note:\n\n      Keys in key/value pairs of JSON are always of the type str. When\n      a dictionary is converted into JSON, all the keys of the dictionary are\n      coerced to strings. As a result of this, if a dictionary is converted\n      into JSON and then back into a dictionary, the dictionary may not equal\n      the original one. That is, loads(dumps(x)) != x if x has non-string\n      keys.\n\nFunction: load(fp, *, cls=None, object_hook=None, parse_float=None, \\\n\n                   parse_int=None, parse_constant=None, \\\n                   object_pairs_hook=None, **kw)",
+    "entries": [
+      {
+        "alias": "e1",
+        "id": "9cdf01055dfebac1c82b5bafd33f89ee3b41bf8bf70c30660e7c35b1379d13c4",
+        "source_id": "library-json",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+        "page": 1,
+        "text": ">>> import json\n    >>> print(json.dumps({'4': 5, '6': 7}, sort_keys=True, indent=4))\n    {\n        \"4\": 5,\n        \"6\": 7\n    }\n\nDecoding JSON::\n\n    >>> import json\n    >>> json.loads('[\"foo\", {\"bar\":[\"baz\", null, 1.0, 2]}]')\n    ['foo', {'bar': ['baz', None, 1.0, 2]}]\n    >>> json.loads('\"\\\\\"foo\\\\bar\"')\n    '\"foo\\x08ar'\n    >>> from io import StringIO\n    >>> io = StringIO('[\"streaming API\"]')\n    >>> json.load(io)\n    ['streaming API']\n\nSpecializing JSON object decoding::",
+        "metadata": {
+          "section": "json",
+          "document_type": "library",
+          "language": "en",
+          "version": "3.12.10"
+        },
+        "start_offset": 1660,
+        "end_offset": 2140,
+        "token_count": 197,
+        "score": 0.032266458495966696,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "branch_ranks": {
+          "dense": 3,
+          "lexical": 1
+        }
+      },
+      {
+        "alias": "e2",
+        "id": "411aabe9a21b2ede48ed4a7cf37a7fb1406decc382215ee60ce92b67425b4ea6",
+        "source_id": "library-json",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+        "page": 1,
+        "text": ">>> import json\n    >>> def as_complex(dct):\n    ...     if '__complex__' in dct:\n    ...         return complex(dct['real'], dct['imag'])\n    ...     return dct\n    ...\n    >>> json.loads('{\"__complex__\": true, \"real\": 1, \"imag\": 2}',\n    ...     object_hook=as_complex)\n    (1+2j)\n    >>> import decimal\n    >>> json.loads('1.1', parse_float=decimal.Decimal)\n    Decimal('1.1')\n\nExtending JSONEncoder::\n\n    >>> import json\n    >>> class ComplexEncoder(json.JSONEncoder):\n    ...     def default(self, obj):\n    ...         if isinstance(obj, complex):\n    ...             return [obj.real, obj.imag]\n    ...         # Let the base class default method raise the TypeError\n    ...         return super().default(obj)\n    ...\n    >>> json.dumps(2 + 1j, cls=ComplexEncoder)\n    '[2.0, 1.0]'\n    >>> ComplexEncoder().encode(2 + 1j)\n    '[2.0, 1.0]'\n    >>> list(ComplexEncoder().iterencode(2 + 1j))\n    ['[2.0', ', 1.0', ']']",
+        "metadata": {
+          "section": "json",
+          "document_type": "library",
+          "language": "en",
+          "version": "3.12.10"
+        },
+        "start_offset": 2146,
+        "end_offset": 3070,
+        "token_count": 306,
+        "score": 0.03128054740957967,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "branch_ranks": {
+          "dense": 6,
+          "lexical": 2
+        }
+      },
+      {
+        "alias": "e3",
+        "id": "e9ade049ffdcfe3bf006c5f9679fbe4e7ecaf1493be86a0a7d52d693cbfdb2d1",
+        "source_id": "library-json",
+        "source": "https://raw.githubusercontent.com/python/cpython/v3.12.10/Doc/library/json.rst",
+        "page": 3,
+        "text": "Function: dumps(obj, *, skipkeys=False, ensure_ascii=True, \\\n\n                    check_circular=True, allow_nan=True, cls=None, \\\n                    indent=None, separators=None, default=None, \\\n                    sort_keys=False, **kw)\n\n   Serialize *obj* to a JSON formatted str using this :ref:`conversion\n   table <py-to-json-table>`.  The arguments have the same meaning as in\n   dump.\n\n   Note:\n\n      Keys in key/value pairs of JSON are always of the type str. When\n      a dictionary is converted into JSON, all the keys of the dictionary are\n      coerced to strings. As a result of this, if a dictionary is converted\n      into JSON and then back into a dictionary, the dictionary may not equal\n      the original one. That is, loads(dumps(x)) != x if x has non-string\n      keys.\n\nFunction: load(fp, *, cls=None, object_hook=None, parse_float=None, \\\n\n                   parse_int=None, parse_constant=None, \\\n                   object_pairs_hook=None, **kw)",
+        "metadata": {
+          "section": "json",
+          "document_type": "library",
+          "language": "en",
+          "version": "3.12.10"
+        },
+        "start_offset": 0,
+        "end_offset": 972,
+        "token_count": 309,
+        "score": 0.01639344262295082,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "branch_ranks": {
+          "dense": 1
+        }
+      }
+    ],
+    "decisions": [
+      {
+        "id": "9cdf01055dfebac1c82b5bafd33f89ee3b41bf8bf70c30660e7c35b1379d13c4",
+        "decision": "keep",
+        "alias": "e1"
+      },
+      {
+        "id": "411aabe9a21b2ede48ed4a7cf37a7fb1406decc382215ee60ce92b67425b4ea6",
+        "decision": "keep",
+        "alias": "e2"
+      },
+      {
+        "id": "e9ade049ffdcfe3bf006c5f9679fbe4e7ecaf1493be86a0a7d52d693cbfdb2d1",
+        "decision": "keep",
+        "alias": "e3"
+      }
+    ],
+    "tokens": 780,
+    "budget": 1200,
+    "policy": "rank"
+  },
+  "raw_answer": "{\"status\":\"answered\",\"answer\":\"`json.loads` deserializes a JSON formatted str into a Python object. For example, it can convert JSON arrays and objects into Python lists and dictionaries, respectively. It can also handle more complex scenarios such as custom object decoding and encoding, as shown in the examples provided in the documentation.\",\"citations\":[\"e1\", \"e2\"]}",
+  "status": "error",
+  "answer": "",
+  "citations": [],
+  "stop_reason": "system_or_protocol_error",
+  "error": "ValueError: Citation markers do not match the provided context",
+  "elapsed_ms": 8546.811499999876
+}

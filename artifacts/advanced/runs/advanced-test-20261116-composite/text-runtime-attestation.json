@@ -1,0 +1,8 @@
+{
+    "observed_at_utc":  "2026-11-16T03:03:09.3233624Z",
+    "process_id":  7856,
+    "executable":  "E:\\VINAITHUCCHIEN\\K5-L3B-Day07-PhamTranQuoc-2A202604113-RetrievalContext\\.local\\llama\\llama-server.exe",
+    "executable_sha256":  "68e8cace4369a1f94c25f1f92c62c5e7299b6bf993f3ad802c9bb146c33bea7e",
+    "command_line":  "\"E:\\VINAITHUCCHIEN\\K5-L3B-Day07-PhamTranQuoc-2A202604113-RetrievalContext\\.local\\llama\\llama-server.exe\" -m C:\\Users\\admin\\.ollama\\models\\blobs\\sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730 --host 127.0.0.1 --port 8085 --device Vulkan1 --n-gpu-layers 99 --ctx-size 8192 --threads 8 --parallel 1 --jinja --alias qwen2.5-7b-local ",
+    "note":  "Observed local server process arguments."
+}

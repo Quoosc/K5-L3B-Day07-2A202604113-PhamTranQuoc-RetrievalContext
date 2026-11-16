@@ -1,0 +1,493 @@
+{
+  "total": 30,
+  "passed": 17,
+  "errors_or_missing": 3,
+  "groups": {
+    "table": {
+      "n": 3,
+      "N": 6,
+      "rate": 0.5
+    },
+    "image": {
+      "n": 2,
+      "N": 5,
+      "rate": 0.4
+    },
+    "chart": {
+      "n": 3,
+      "N": 5,
+      "rate": 0.6
+    },
+    "multi_hop": {
+      "n": 0,
+      "N": 4,
+      "rate": 0.0
+    },
+    "text": {
+      "n": 3,
+      "N": 4,
+      "rate": 0.75
+    },
+    "unanswerable": {
+      "n": 6,
+      "N": 6,
+      "rate": 1.0
+    }
+  },
+  "rate": 0.5666666666666667,
+  "required_passes": 27,
+  "meets_90_percent": false,
+  "split": "test",
+  "trace_sha256": "afc7aac475844f660477bea9241339f0ecb22090996345371efaddaed9345af9",
+  "review_sha256": "0e297e7d33ba7b8c5ee1ff657c250f2c1aed8ca03da576e36b53cc4404c3d607",
+  "operations": {
+    "cases": 30,
+    "errors": 3,
+    "vision_protocol_errors": 2,
+    "latency_seconds": {
+      "median": 9.631125249994511,
+      "p95": 20.909874899996794
+    },
+    "prompt_tokens": 242626,
+    "completion_tokens": 5113,
+    "api_cost_usd": 0
+  },
+  "operations_by_group": {
+    "table": {
+      "cases": 6,
+      "errors": 0,
+      "vision_protocol_errors": 0,
+      "latency_seconds": {
+        "median": 10.649780849998933,
+        "p95": 19.68967719998909
+      },
+      "prompt_tokens": 42331,
+      "completion_tokens": 1224,
+      "api_cost_usd": 0
+    },
+    "image": {
+      "cases": 5,
+      "errors": 2,
+      "vision_protocol_errors": 0,
+      "latency_seconds": {
+        "median": 8.134712099999888,
+        "p95": 9.354137799993623
+      },
+      "prompt_tokens": 29802,
+      "completion_tokens": 741,
+      "api_cost_usd": 0
+    },
+    "chart": {
+      "cases": 5,
+      "errors": 0,
+      "vision_protocol_errors": 0,
+      "latency_seconds": {
+        "median": 8.444080800007214,
+        "p95": 19.31747050001286
+      },
+      "prompt_tokens": 42797,
+      "completion_tokens": 774,
+      "api_cost_usd": 0
+    },
+    "multi_hop": {
+      "cases": 4,
+      "errors": 1,
+      "vision_protocol_errors": 1,
+      "latency_seconds": {
+        "median": 12.704392999992706,
+        "p95": 22.992609499997343
+      },
+      "prompt_tokens": 34824,
+      "completion_tokens": 746,
+      "api_cost_usd": 0
+    },
+    "text": {
+      "cases": 4,
+      "errors": 0,
+      "vision_protocol_errors": 0,
+      "latency_seconds": {
+        "median": 10.635400799990748,
+        "p95": 13.332375699988916
+      },
+      "prompt_tokens": 27659,
+      "completion_tokens": 722,
+      "api_cost_usd": 0
+    },
+    "unanswerable": {
+      "cases": 6,
+      "errors": 0,
+      "vision_protocol_errors": 1,
+      "latency_seconds": {
+        "median": 13.204097299996647,
+        "p95": 20.909874899996794
+      },
+      "prompt_tokens": 65213,
+      "completion_tokens": 906,
+      "api_cost_usd": 0
+    }
+  },
+  "cases": [
+    {
+      "query_id": "adv2-test-001",
+      "group": "table",
+      "pass": false,
+      "status": "answered",
+      "failure_type": "wrong_table_row_association",
+      "latency_seconds": 19.68967719998909,
+      "prompt_tokens": 5932,
+      "completion_tokens": 319,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-002",
+      "group": "table",
+      "pass": false,
+      "status": "abstain",
+      "failure_type": "false_abstention",
+      "latency_seconds": 7.590065700002015,
+      "prompt_tokens": 5550,
+      "completion_tokens": 136,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-003",
+      "group": "table",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 9.099593599996297,
+      "prompt_tokens": 7594,
+      "completion_tokens": 142,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-004",
+      "group": "table",
+      "pass": false,
+      "status": "abstain",
+      "failure_type": "false_abstention_field_definition",
+      "latency_seconds": 14.560861900012242,
+      "prompt_tokens": 9507,
+      "completion_tokens": 215,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-005",
+      "group": "table",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 12.19996810000157,
+      "prompt_tokens": 7428,
+      "completion_tokens": 264,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-006",
+      "group": "table",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 8.02313509999658,
+      "prompt_tokens": 6320,
+      "completion_tokens": 148,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-007",
+      "group": "image",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 6.400404800006072,
+      "prompt_tokens": 5451,
+      "completion_tokens": 131,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-008",
+      "group": "image",
+      "pass": false,
+      "status": "error",
+      "failure_type": "invalid_citation_markers",
+      "latency_seconds": 8.134712099999888,
+      "prompt_tokens": 5842,
+      "completion_tokens": 173,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-009",
+      "group": "image",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 8.676565300003858,
+      "prompt_tokens": 5438,
+      "completion_tokens": 169,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-010",
+      "group": "image",
+      "pass": false,
+      "status": "error",
+      "failure_type": "invalid_citation_markers",
+      "latency_seconds": 7.223696800007019,
+      "prompt_tokens": 5420,
+      "completion_tokens": 148,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-011",
+      "group": "image",
+      "pass": false,
+      "status": "answered",
+      "failure_type": "wrong_ui_row_and_labels",
+      "latency_seconds": 9.354137799993623,
+      "prompt_tokens": 7651,
+      "completion_tokens": 120,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-012",
+      "group": "chart",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 19.31747050001286,
+      "prompt_tokens": 17132,
+      "completion_tokens": 156,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-013",
+      "group": "chart",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 8.231061400001636,
+      "prompt_tokens": 6081,
+      "completion_tokens": 130,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-014",
+      "group": "chart",
+      "pass": false,
+      "status": "answered",
+      "failure_type": "wrong_axis_ranges",
+      "latency_seconds": 8.174410899999202,
+      "prompt_tokens": 6702,
+      "completion_tokens": 149,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-015",
+      "group": "chart",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 9.3036808000179,
+      "prompt_tokens": 6711,
+      "completion_tokens": 186,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-016",
+      "group": "chart",
+      "pass": false,
+      "status": "answered",
+      "failure_type": "chart_value_outside_tolerance",
+      "latency_seconds": 8.444080800007214,
+      "prompt_tokens": 6171,
+      "completion_tokens": 153,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-017",
+      "group": "multi_hop",
+      "pass": false,
+      "status": "answered",
+      "failure_type": "wrong_time_scope_and_arithmetic",
+      "latency_seconds": 22.992609499997343,
+      "prompt_tokens": 12758,
+      "completion_tokens": 345,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-018",
+      "group": "multi_hop",
+      "pass": false,
+      "status": "answered",
+      "failure_type": "wrong_table_comparison",
+      "latency_seconds": 12.583103199998732,
+      "prompt_tokens": 9622,
+      "completion_tokens": 167,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-019",
+      "group": "multi_hop",
+      "pass": false,
+      "status": "answered",
+      "failure_type": "incomplete_bit_field",
+      "latency_seconds": 12.82568279998668,
+      "prompt_tokens": 8562,
+      "completion_tokens": 171,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-020",
+      "group": "multi_hop",
+      "pass": false,
+      "status": "error",
+      "failure_type": "invalid_open_region_handles",
+      "latency_seconds": 2.701450799984741,
+      "prompt_tokens": 3882,
+      "completion_tokens": 63,
+      "api_cost_usd": 0,
+      "vision_protocol_error": true
+    },
+    {
+      "query_id": "adv2-test-021",
+      "group": "text",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 9.712174199987203,
+      "prompt_tokens": 5187,
+      "completion_tokens": 185,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-022",
+      "group": "text",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 9.55007630000182,
+      "prompt_tokens": 5466,
+      "completion_tokens": 189,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-023",
+      "group": "text",
+      "pass": false,
+      "status": "answered",
+      "failure_type": "extraneous_unsupported_citation",
+      "latency_seconds": 13.332375699988916,
+      "prompt_tokens": 10049,
+      "completion_tokens": 146,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-024",
+      "group": "text",
+      "pass": true,
+      "status": "answered",
+      "failure_type": null,
+      "latency_seconds": 11.558627399994293,
+      "prompt_tokens": 6957,
+      "completion_tokens": 202,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-025",
+      "group": "unanswerable",
+      "pass": true,
+      "status": "abstain",
+      "failure_type": null,
+      "latency_seconds": 10.627499999987776,
+      "prompt_tokens": 8423,
+      "completion_tokens": 154,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-026",
+      "group": "unanswerable",
+      "pass": true,
+      "status": "abstain",
+      "failure_type": null,
+      "latency_seconds": 14.547024600004079,
+      "prompt_tokens": 11915,
+      "completion_tokens": 143,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-027",
+      "group": "unanswerable",
+      "pass": true,
+      "status": "abstain",
+      "failure_type": null,
+      "latency_seconds": 8.978701999993064,
+      "prompt_tokens": 5551,
+      "completion_tokens": 117,
+      "api_cost_usd": 0,
+      "vision_protocol_error": true
+    },
+    {
+      "query_id": "adv2-test-028",
+      "group": "unanswerable",
+      "pass": true,
+      "status": "abstain",
+      "failure_type": null,
+      "latency_seconds": 11.861169999989215,
+      "prompt_tokens": 9396,
+      "completion_tokens": 157,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-029",
+      "group": "unanswerable",
+      "pass": true,
+      "status": "abstain",
+      "failure_type": null,
+      "latency_seconds": 20.909874899996794,
+      "prompt_tokens": 17776,
+      "completion_tokens": 164,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    },
+    {
+      "query_id": "adv2-test-030",
+      "group": "unanswerable",
+      "pass": true,
+      "status": "abstain",
+      "failure_type": null,
+      "latency_seconds": 17.52798219998658,
+      "prompt_tokens": 12152,
+      "completion_tokens": 171,
+      "api_cost_usd": 0,
+      "vision_protocol_error": false
+    }
+  ],
+  "source_verification": "artifacts/source-verification.json",
+  "latency_note": "Sum of model-stage per-case times, excluding server startup and inter-stage waiting. Local hardware/electricity cost is not measured."
+}

@@ -1,0 +1,2263 @@
+{
+  "created_at": "2026-11-16T02:40:35.577606+00:00",
+  "kind": "three non-benchmark retrieval smoke cases, not answer quality",
+  "chunks_sha256": "d29353f49df01970554d716a74087e0aa80972abfed3965b61b16841777d0a97",
+  "cases": [
+    {
+      "query": "rocket taking off near a launch tower",
+      "expected": "landsat-v5-p009-image-001",
+      "rank": 1,
+      "top5": [
+        "landsat-v5-p009-image-001",
+        "landsat-v5-p079-text-001",
+        "landsat-v5-p113-text-001",
+        "landsat-v5-p070-text-001",
+        "landsat-v5-p113-vector_page-001"
+      ],
+      "result": {
+        "query": "rocket taking off near a launch tower",
+        "method": "hybrid",
+        "results": [
+          {
+            "id": "landsat-v5-p009-image-001#part-001",
+            "evidence_id": "landsat-v5-p009-image-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 9,
+            "printed_label": "1",
+            "bbox": [
+              72.0,
+              130.9,
+              216.3,
+              346.9
+            ],
+            "text": "AI-observed visual description, not independently verified: Photograph of a rocket launching beside a launch tower.\nUnverified OCR:",
+            "metadata": {
+              "element_type": "image",
+              "section": "Section 1"
+            },
+            "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+            "score": 0.03278688524590164,
+            "method": "hybrid_rrf",
+            "rank": 1,
+            "branch_ranks": {
+              "dense": 1,
+              "lexical": 1
+            }
+          },
+          {
+            "id": "landsat-v5-p079-text-001#part-001",
+            "evidence_id": "landsat-v5-p079-text-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 79,
+            "printed_label": "71",
+            "bbox": [
+              72.0,
+              70.8,
+              522.34,
+              128.58
+            ],
+            "text": "threshold, set by the Flight Operations Team (FOT) as a trigger to power off the \nencoder (see Figure A-6). The far right side of the plot shows when the encoder was \npowered off and tested.",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 6"
+            },
+            "warning": null,
+            "score": 0.016129032258064516,
+            "method": "hybrid_rrf",
+            "rank": 2,
+            "branch_ranks": {
+              "lexical": 2
+            }
+          },
+          {
+            "id": "landsat-v5-p113-text-001#part-001",
+            "evidence_id": "landsat-v5-p113-text-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 113,
+            "printed_label": "105",
+            "bbox": [
+              77.64,
+              71.28,
+              519.7,
+              716.82
+            ],
+            "text": "MTL \nLevel 1 Metadata \nNASA \nNational Aeronautics and Space Administration \nNDVI \nNormalized Difference Vegetation Index \nNEΔT \nNoise-equivalent change in temperature \nNED \nNatural Elevation Data \nNEdL \nNoise Equivalent Detector Radiance \nNEOG \nNational Earth Observation Group \nNGA \nNational Geospatial Intelligence Agency \nNIST \nNational Institute for Standards and Technology \nNMAS \nNational Map Accuracy Standards \nNOAA \nNational Oceanic and Atmospheric Administration \nNPOESS \nNational Polar-orbiting Operational Environmental Satellite System \nOBC \nOn-Board Calibrator \nODL \nObject Definition Language \nOIV \nOn-orbit Initialization and Verification \nOLI \nOperational Land Imager \nOSC \nOrbital Sciences Corporation \nPan \nPanchromatic \nPCS \nProcess Control Subsystem \nPDF \nPortable Document Format \nPICS \nPseudo-Invariant Calibration Site \nPIE \nPayload Interface Electronics \nQA \nQuality Assessment \nQAS \nQuality Assessment Subsystem \nQWIP \nQuantum Well Infrared Photodetector \nRBV \nReturn Beam Vidicon \nRF \nRadio Frequency \nRLUT \nResponse Linearity Look-Up Table \nRMSE \nRoot Mean Square Error \nROIC \nRead-Out Integrated Circuit \nRPS \nRadiometric Processing Subsystem \nSCA \nSensor Chip Assemblies \nSEU \nSingle Event Upset \nSiPIN \nSilicon PIN \nSIRU \nScalable Inertial Reference Unit \nSLC \nScan Line Corrector \nSMD \nScience Mission Directorate \nSNR \nSignal-to-Noise Ratio \nSPOT \nSatellite Pour l’Observation de la Terre \nSRTM \nShuttle Radar Topography Mission \nSSM \nScene Select Mechanism/Mirror \nSSR \nSolid State Recorder \nSTF \nSystem Transfer Function \nSWIR",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 6"
+            },
+            "warning": null,
+            "score": 0.016129032258064516,
+            "method": "hybrid_rrf",
+            "rank": 3,
+            "branch_ranks": {
+              "dense": 2
+            }
+          },
+          {
+            "id": "landsat-v5-p070-text-001#part-001",
+            "evidence_id": "landsat-v5-p070-text-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 70,
+            "printed_label": "62",
+            "bbox": [
+              72.0,
+              70.8,
+              543.1,
+              156.18
+            ],
+            "text": "After a successful search, results are presented in a manner that allows users to view a \nbrowse image of the scene, a subset of the metadata file, or the footprint of a scene on \nthe map. To view the available data products, the user clicks the Download Options icon \n(a green arrow) near each scene. A gold icon indicates scenes can be added to a bulk \ndownload order.",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 6"
+            },
+            "warning": null,
+            "score": 0.015873015873015872,
+            "method": "hybrid_rrf",
+            "rank": 4,
+            "branch_ranks": {
+              "lexical": 3
+            }
+          },
+          {
+            "id": "landsat-v5-p113-vector_page-001#part-002",
+            "evidence_id": "landsat-v5-p113-vector_page-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 113,
+            "printed_label": "105",
+            "bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "text": "RBV | Return Beam Vidicon | RF | Radio Frequency | RLUT | Response Linearity Look-Up Table | RMSE | Root Mean Square Error | ROIC | Read-Out Integrated Circuit | RPS | Radiometric Processing Subsystem | SCA | Sensor Chip Assemblies | SEU | Single Event Upset | SiPIN | Silicon PIN | SIRU | Scalable Inertial Reference Unit | SLC | Scan Line Corrector | SMD | Science Mission Directorate | SNR | Signal-to-Noise Ratio | SPOT | Satellite Pour l'Observation de la Terre | SRTM | Shuttle Radar Topography Mission | SSM | Scene Select Mechanism/Mirror | SSR | Solid State Recorder | STF | System Transfer Function | SWIR | Short Wavelength Infrared | TIR | Thermal Infrared | - 105 - | LSDS-1574 | Version 5.0",
+            "metadata": {
+              "element_type": "vector_page",
+              "section": "Section 6"
+            },
+            "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+            "score": 0.015873015873015872,
+            "method": "hybrid_rrf",
+            "rank": 5,
+            "branch_ranks": {
+              "dense": 3
+            }
+          }
+        ],
+        "branches": {
+          "dense": [
+            {
+              "id": "landsat-v5-p009-image-001#part-001",
+              "evidence_id": "landsat-v5-p009-image-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 9,
+              "printed_label": "1",
+              "bbox": [
+                72.0,
+                130.9,
+                216.3,
+                346.9
+              ],
+              "text": "AI-observed visual description, not independently verified: Photograph of a rocket launching beside a launch tower.\nUnverified OCR:",
+              "metadata": {
+                "element_type": "image",
+                "section": "Section 1"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.8713255045503621,
+              "method": "dense",
+              "rank": 1
+            },
+            {
+              "id": "landsat-v5-p113-text-001#part-001",
+              "evidence_id": "landsat-v5-p113-text-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 113,
+              "printed_label": "105",
+              "bbox": [
+                77.64,
+                71.28,
+                519.7,
+                716.82
+              ],
+              "text": "MTL \nLevel 1 Metadata \nNASA \nNational Aeronautics and Space Administration \nNDVI \nNormalized Difference Vegetation Index \nNEΔT \nNoise-equivalent change in temperature \nNED \nNatural Elevation Data \nNEdL \nNoise Equivalent Detector Radiance \nNEOG \nNational Earth Observation Group \nNGA \nNational Geospatial Intelligence Agency \nNIST \nNational Institute for Standards and Technology \nNMAS \nNational Map Accuracy Standards \nNOAA \nNational Oceanic and Atmospheric Administration \nNPOESS \nNational Polar-orbiting Operational Environmental Satellite System \nOBC \nOn-Board Calibrator \nODL \nObject Definition Language \nOIV \nOn-orbit Initialization and Verification \nOLI \nOperational Land Imager \nOSC \nOrbital Sciences Corporation \nPan \nPanchromatic \nPCS \nProcess Control Subsystem \nPDF \nPortable Document Format \nPICS \nPseudo-Invariant Calibration Site \nPIE \nPayload Interface Electronics \nQA \nQuality Assessment \nQAS \nQuality Assessment Subsystem \nQWIP \nQuantum Well Infrared Photodetector \nRBV \nReturn Beam Vidicon \nRF \nRadio Frequency \nRLUT \nResponse Linearity Look-Up Table \nRMSE \nRoot Mean Square Error \nROIC \nRead-Out Integrated Circuit \nRPS \nRadiometric Processing Subsystem \nSCA \nSensor Chip Assemblies \nSEU \nSingle Event Upset \nSiPIN \nSilicon PIN \nSIRU \nScalable Inertial Reference Unit \nSLC \nScan Line Corrector \nSMD \nScience Mission Directorate \nSNR \nSignal-to-Noise Ratio \nSPOT \nSatellite Pour l’Observation de la Terre \nSRTM \nShuttle Radar Topography Mission \nSSM \nScene Select Mechanism/Mirror \nSSR \nSolid State Recorder \nSTF \nSystem Transfer Function \nSWIR",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.8266153766345548,
+              "method": "dense",
+              "rank": 2
+            },
+            {
+              "id": "landsat-v5-p113-vector_page-001#part-002",
+              "evidence_id": "landsat-v5-p113-vector_page-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 113,
+              "printed_label": "105",
+              "bbox": [
+                0.0,
+                0.0,
+                612.0,
+                792.0
+              ],
+              "text": "RBV | Return Beam Vidicon | RF | Radio Frequency | RLUT | Response Linearity Look-Up Table | RMSE | Root Mean Square Error | ROIC | Read-Out Integrated Circuit | RPS | Radiometric Processing Subsystem | SCA | Sensor Chip Assemblies | SEU | Single Event Upset | SiPIN | Silicon PIN | SIRU | Scalable Inertial Reference Unit | SLC | Scan Line Corrector | SMD | Science Mission Directorate | SNR | Signal-to-Noise Ratio | SPOT | Satellite Pour l'Observation de la Terre | SRTM | Shuttle Radar Topography Mission | SSM | Scene Select Mechanism/Mirror | SSR | Solid State Recorder | STF | System Transfer Function | SWIR | Short Wavelength Infrared | TIR | Thermal Infrared | - 105 - | LSDS-1574 | Version 5.0",
+              "metadata": {
+                "element_type": "vector_page",
+                "section": "Section 6"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.8251704668524136,
+              "method": "dense",
+              "rank": 3
+            },
+            {
+              "id": "landsat-v5-p102-text-002#part-002",
+              "evidence_id": "landsat-v5-p102-text-002",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 102,
+              "printed_label": "94",
+              "bbox": [
+                72.0,
+                103.68,
+                541.06,
+                723.0
+              ],
+              "text": "METADATA \n    DATA_TYPE = \"L1TP\" \n    COLLECTION_CATEGORY = \"T1\" \n    ELEVATION_SOURCE = \"GLS2000\" \n    OUTPUT_FORMAT = \"GEOTIFF\" \n    SPACECRAFT_ID = \"LANDSAT_8\" \n    SENSOR_ID = \"OLI_TIRS\" \n    WRS_PATH = 33 \n    WRS_ROW = 28 \n    NADIR_OFFNADIR = \"NADIR\" \n    TARGET_WRS_PATH = 33 \n    TARGET_WRS_ROW = 28 \n    DATE_ACQUIRED = 2018-09-08 \n    SCENE_CENTER_TIME = \"17:35:18.0691869Z\" \n    CORNER_UL_LAT_PRODUCT = 47.09933 \n    CORNER_UL_LON_PRODUCT = -103.71778 \n    CORNER_UR_LAT_PRODUCT = 47.02553 \n    CORNER_UR_LON_PRODUCT = -100.69517 \n    CORNER_LL_LAT_PRODUCT = 45.00187 \n    CORNER_LL_LON_PRODUCT = -103.76543 \n    CORNER_LR_LAT_PRODUCT = 44.93325 \n    CORNER_LR_LON_PRODUCT = -100.85461",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.8234881563014469,
+              "method": "dense",
+              "rank": 4
+            },
+            {
+              "id": "landsat-v5-p013-table_candidate-001#part-002",
+              "evidence_id": "landsat-v5-p013-table_candidate-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 13,
+              "printed_label": "5",
+              "bbox": [
+                72.34,
+                325.2,
+                540.0,
+                480.04
+              ],
+              "text": "\", \"\", \"S-Band 2-Way Doppler\", null, null, \"GPS\", null, null], [\"Orbit\", null, null, \"705 km Sun-sync 98.2° inclination\\n(WRS-2)\", null, null, \"705 km Sun-sync 98.2° inclination\\n(WRS-2)\", null, null], [\"\", \"Crossing Time\", \"\", \"~10:00 AM ± 15 minutes\", null, null, \"~10:00 AM ± 15 minutes\", null, null]]",
+              "metadata": {
+                "element_type": "table_candidate",
+                "section": "1.3.4 Rapid Data Availability"
+              },
+              "warning": "Automatic table candidate; merged headers, units and cells require visual review.",
+              "score": 0.8201238715978518,
+              "method": "dense",
+              "rank": 5
+            },
+            {
+              "id": "landsat-v5-p112-text-001#part-001",
+              "evidence_id": "landsat-v5-p112-text-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 112,
+              "printed_label": "104",
+              "bbox": [
+                77.64,
+                71.28,
+                390.94,
+                716.82
+              ],
+              "text": "GeoTIFF \nGeoreferenced Tagged Image File Format \nGloVis \nGlobal Visualization Viewer \nGLS \nGlobal Land Survey \nGLS2000 \nGlobal Land Survey 2000 \nGN \nGround Network \nGNE \nGround Network Element \nGPS \nGeometric Processing Subsystem \nGSD \nGround Sampling Distance \nGSFC \nGoddard Space Flight Center \nGUI \nGraphical User Interface \nHCA \nHorizontal Collimator Assembly \nHDF \nHierarchical Data Format \nHTTPS \nHypertext Transfer Protocol Secure \nIAS \nImage Assessment System \nIC \nInternational Cooperator \nIGS \nInternational Ground Stations \nJPL \nJet Propulsion Laboratory \nkm \nKilometer \nK \nKelvin \nKPR \nKey Performance Requirements \nL0R \nLevel 0 Reformatted \nL1Gs \nLevel 1 Geometric Systematic \nL1Gt \nLevel 1 Systemic Terrain (Corrected) \nL1R \nLevel 1 Radiometric (Corrected) \nL1T \nLevel 1 Terrain (Corrected) \nL1TP \nLevel 1 Precision Terrain (Corrected) \nL7 \nLandsat 7 \nL8 \nLandsat 8 \nLE90 \nLinear Error 90 Percent \nLOS \nLine of Sight \nLPGS \nLevel 1 Product Generation System \nLSDS \nLand Satellites Data System \nLST \nLand Surface Temperature \nLTAP \nLong-Term Acquisition Plan \nLTAP-8 \nLandsat 8 Long-Term Acquisition Plan \nLtypical \nTypical Spectral Radiance \nLUT \nLookup Table \nm \nMeter \nMbps \nMegabits per second \nMLT \nMean Local Time \nMMS \nMultimission Modular Spacecraft \nMOC \nMission Operation Center \nMOE \nMission Operations Element \nMSS \nMultispectral Scanner \nMTF \nModulation Transfer Function",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.8189633945544698,
+              "method": "dense",
+              "rank": 6
+            },
+            {
+              "id": "landsat-v5-p111-text-002#part-001",
+              "evidence_id": "landsat-v5-p111-text-002",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 111,
+              "printed_label": "103",
+              "bbox": [
+                77.64,
+                104.16,
+                448.42,
+                706.86
+              ],
+              "text": "AAS \nAnomaly Analysis Subsystem \nACS \nAttitude Control System \nADD \nAlgorithm Description Document \nALI \nAdvanced Land Imager \nARB \nAnomaly Review Board \nASCII \nAmerican Standard Code for Information Interchange \nBATC \nBall Aerospace & Technologies Corp. \nBIH \nBureau International De l’Heure \nBPF \nBias Parameter File \nBRDF \nBi-directional Reflectance Distribution Function \nCal/Val \nCalibration/Validation \nCCA \nCloud Cover Assessment \nCCB \nConfiguration Control Board \nCDED \nCanadian Digital Elevation Dataset \nCE \nCircular Error \nCE90 \nCircular Error 90 \nCFMask \nC Function of Mask \nCPF \nCalibration Parameter File \nCR \nChange Request \nCVT \nCalibration and Validation Team \nCVTK \nCalibration Validation Toolkit \nDEM \nDigital Elevation Model \nDFCB \nData Format Control Book \nDMS \nData Management Subsystem \nDN \nDigital Numbers \nDOQ \nDigital Orthophoto Quadrangle \nDPAS \nData Processing and Archiving System \nDTED \nDigital Terrain Elevation Data \nECEF \nEarth-Centered, Earth-Fixed \nECI \nEarth-Centered Inertial \nEE \nEarthExplorer \nEO-1 \nEarth Observing 1 \nEROS \nEarth Resources Observation and Science \nETM+ \nEnhanced Thematic Mapper Plus \nFASCAL \nFacility for Spectroradiometric Calibrations \nFMask \nFunction of Mask \nFOT \nFlight Operations Team \nFOV \nField of View \nFPA \nFocal Plane Array \nFPM \nFocal Plane Module \nGCP \nGround Control Points \nGDAIS \nGeneral Dynamics Advanced Information Systems",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.8174039235821609,
+              "method": "dense",
+              "rank": 7
+            },
+            {
+              "id": "landsat-v5-p112-vector_page-001#part-001",
+              "evidence_id": "landsat-v5-p112-vector_page-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 112,
+              "printed_label": "104",
+              "bbox": [
+                0.0,
+                0.0,
+                612.0,
+                792.0
+              ],
+              "text": "Unverified OCR: GeoTIFF | Georeferenced Tagged Image File Format | GloVis | Global Visualization Viewer | GLS | Global Land Survey | GLS2000 | Global Land Survey 2000 | GN | Ground Network | GNE | Ground Network Element | GPS | Geometric Processing Subsystem | GSD | Ground Sampling Distance | GSFC | Goddard Space Flight Center | GUI | Graphical User Interface | HCA | Horizontal Collimator Assembly | HDF | Hierarchical Data Format | HTTPS | Hypertext Transfer Protocol Secure | IAS | Image Assessment System | IC | International Cooperator | IGS | International Ground Stations | JPL | Jet Propulsion Laboratory | km | Kilometer | K | Kelvin | KPR | Key Performance Requirements | LOR | Level 0 Reformatted | L1Gs | Level 1 Geometric Systematic | L1Gt | Level 1 Systemic Terrain (Corrected) | L1R | Level 1 Radiometric (Corrected) | L1T | Level 1 Terrain (Corrected) | L1TP | Level 1 Precision Terrain (Corrected) | L7 | Landsat 7 | L8 | Landsat 8 | LE90 | Linear Error 90 Percent | LOS | Line of Sight | LPGS |",
+              "metadata": {
+                "element_type": "vector_page",
+                "section": "Section 6"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.8173547354326413,
+              "method": "dense",
+              "rank": 8
+            },
+            {
+              "id": "landsat-v5-p070-text-002#part-001",
+              "evidence_id": "landsat-v5-p070-text-002",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 70,
+              "printed_label": "62",
+              "bbox": [
+                141.96,
+                420.86,
+                473.38,
+                437.59
+              ],
+              "text": "Figure 6-3. EarthExplorer Results - Browse Image Display",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.8157310040669024,
+              "method": "dense",
+              "rank": 9
+            },
+            {
+              "id": "landsat-v5-p006-text-001#part-002",
+              "evidence_id": "landsat-v5-p006-text-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 6,
+              "printed_label": "vi",
+              "bbox": [
+                72.0,
+                70.8,
+                542.02,
+                709.99
+              ],
+              "text": "6.2 \nGlobal Visualization Viewer (GloVis) ............................................................... 63 \n6.3 \nLandsatLook Viewer ....................................................................................... 63 \nAppendix A \nLandsat 8 Known Issues ................................................................... 65 \nA.1 \nTIRS Stray Light .............................................................................................. 65 \nA.2 \nTIRS Scene Select Mechanism (SSM) Encoder Current Anomaly ................. 70 \nA.3 \nLower Truncation Acquisitions ........................................................................ 77 \nA.4 \nStriping and Banding ....................................................................................... 79 \nA.5 \nSCA Overlaps ................................................................................................. 83 \nA.6 \nOversaturation ................................................................................................ 84 \nA.7 \nSingle Event Upsets (SEUs) ........................................................................... 85 \nAppendix B \nObservatory Component Reference Systems ................................. 87 \nB.1 \nObservatory Component Reference Systems ................................................. 87 \nB.2 \nOLI Instrument Line-of-Sight (LOS) Coordinate System ................................. 87 \nB.3 \nTIRS Instrument Coordinate System .............................................................. 88 \nB.4 \nSpacecraft Coordinate System ....................................................................... 88 \nB.5 \nNavigation Reference Coordinate System ...................................................... 89 \nB.6 \nSIRU Coordinate System ................................................................................ 89 \nB.7 \nOrbital Coordinate System .............................................................................. 90 \nB.8 \nECI J2000 Coordinate System ........................................................................ 90 \nB.9 \nECEF Coordinate System ............................................................................... 91 \nB.10 Geodetic Coordinate System ..........................................",
+              "metadata": {
+                "element_type": "text",
+                "section": null
+              },
+              "warning": null,
+              "score": 0.8155686230867005,
+              "method": "dense",
+              "rank": 10
+            }
+          ],
+          "lexical": [
+            {
+              "id": "landsat-v5-p009-image-001#part-001",
+              "evidence_id": "landsat-v5-p009-image-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 9,
+              "printed_label": "1",
+              "bbox": [
+                72.0,
+                130.9,
+                216.3,
+                346.9
+              ],
+              "text": "AI-observed visual description, not independently verified: Photograph of a rocket launching beside a launch tower.\nUnverified OCR:",
+              "metadata": {
+                "element_type": "image",
+                "section": "Section 1"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.44607406807005695,
+              "method": "lexical",
+              "rank": 1
+            },
+            {
+              "id": "landsat-v5-p079-text-001#part-001",
+              "evidence_id": "landsat-v5-p079-text-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 79,
+              "printed_label": "71",
+              "bbox": [
+                72.0,
+                70.8,
+                522.34,
+                128.58
+              ],
+              "text": "threshold, set by the Flight Operations Team (FOT) as a trigger to power off the \nencoder (see Figure A-6). The far right side of the plot shows when the encoder was \npowered off and tested.",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.12888554018839626,
+              "method": "lexical",
+              "rank": 2
+            },
+            {
+              "id": "landsat-v5-p070-text-001#part-001",
+              "evidence_id": "landsat-v5-p070-text-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 70,
+              "printed_label": "62",
+              "bbox": [
+                72.0,
+                70.8,
+                543.1,
+                156.18
+              ],
+              "text": "After a successful search, results are presented in a manner that allows users to view a \nbrowse image of the scene, a subset of the metadata file, or the footprint of a scene on \nthe map. To view the available data products, the user clicks the Download Options icon \n(a green arrow) near each scene. A gold icon indicates scenes can be added to a bulk \ndownload order.",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.11438851605642639,
+              "method": "lexical",
+              "rank": 3
+            },
+            {
+              "id": "landsat-v5-p080-text-026#part-001",
+              "evidence_id": "landsat-v5-p080-text-026",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 80,
+              "printed_label": "72",
+              "bbox": [
+                437.52,
+                659.48,
+                505.2,
+                707.52
+              ],
+              "text": "Path 35 Rows \n13-43 SSM off-\nnadir; OLI only \ndata products",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.1079701092278585,
+              "method": "lexical",
+              "rank": 4
+            },
+            {
+              "id": "landsat-v5-p037-text-010#part-001",
+              "evidence_id": "landsat-v5-p037-text-010",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 37,
+              "printed_label": "29",
+              "bbox": [
+                233.76,
+                247.76,
+                371.99,
+                284.28
+              ],
+              "text": "Provide pre-launch adjustment \nto initial LOS of individual \ndetectors",
+              "metadata": {
+                "element_type": "text",
+                "section": "3.1.4 Operational Radiometric Tasks"
+              },
+              "warning": null,
+              "score": 0.10656319128227192,
+              "method": "lexical",
+              "rank": 5
+            },
+            {
+              "id": "landsat-v5-p037-text-017#part-001",
+              "evidence_id": "landsat-v5-p037-text-017",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 37,
+              "printed_label": "29",
+              "bbox": [
+                233.76,
+                338.0,
+                371.99,
+                374.52
+              ],
+              "text": "Provide pre-launch adjustment \nto initial LOS of individual \ndetectors",
+              "metadata": {
+                "element_type": "text",
+                "section": "3.1.4 Operational Radiometric Tasks"
+              },
+              "warning": null,
+              "score": 0.10656319128227192,
+              "method": "lexical",
+              "rank": 6
+            },
+            {
+              "id": "landsat-v5-p080-text-021#part-001",
+              "evidence_id": "landsat-v5-p080-text-021",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 80,
+              "printed_label": "72",
+              "bbox": [
+                437.52,
+                612.92,
+                510.44,
+                661.08
+              ],
+              "text": "Path 14 Rows \n40-121 SSM off-\nnadir; OLI only \ndata products",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.10449810021099115,
+              "method": "lexical",
+              "rank": 7
+            },
+            {
+              "id": "landsat-v5-p038-text-019#part-001",
+              "evidence_id": "landsat-v5-p038-text-019",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 38,
+              "printed_label": "30",
+              "bbox": [
+                72.0,
+                516.05,
+                543.1,
+                715.02
+              ],
+              "text": "3.2.2 Pre-launch \nOLI Pre-launch \nAn initial OLI geometric model that defined the LOS for the detectors on the focal plane \nwas calculated using the nominal design locations of the detectors and telescope optical \nsystem. This initial or nominal design was then updated using edge and line targets that \nwere projected on to the focal plane through the optical system during prelaunch \nthermal vacuum testing. This model was then considered an as-built pre-launch set of \nLOSs for each detector for which each band for each SCA could be adjusted post-\nlaunch using the IAS geometric characterization and calibration processes. \n \nTIRS Pre-launch \nAn initial TIRS geometric model, consisting of a detector and sensor chip assembly \nwithin the focal plane along with the optics of the telescope, was determined based on \nits assembly through instrument and component design and final integration to the",
+              "metadata": {
+                "element_type": "text",
+                "section": "3.2.2 Pre-launch"
+              },
+              "warning": null,
+              "score": 0.10003662649838443,
+              "method": "lexical",
+              "rank": 8
+            },
+            {
+              "id": "landsat-v5-p080-vector_page-001#part-003",
+              "evidence_id": "landsat-v5-p080-vector_page-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 80,
+              "printed_label": "72",
+              "bbox": [
+                0.0,
+                0.0,
+                612.0,
+                792.0
+              ],
+              "text": "OLI & | April 30, 2015 - | 1,2015 | N/A | May 18,2015 | imaging stopped | TIRS | May 18, 2015 | (23:57:34 | in preparation | UTC) | for TIRS side- | swap | Path 14 Rows | OLI & | January 30, | 40-121 SSM off- | TIRS (see | N/A | N/A | N/A | 2015 | nadir; OLI only | notes) | data products | Path 35 Rows | OLI & | February 2, | 13-43 SSM off- | TIRS (see | N/A | N/A | N/A | 2015 | nadir; OLI only | notes) | data products | - 72 - | LSDS-1574 | Version 5.0",
+              "metadata": {
+                "element_type": "vector_page",
+                "section": "Section 6"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.09909261126443739,
+              "method": "lexical",
+              "rank": 9
+            },
+            {
+              "id": "landsat-v5-p081-text-030#part-001",
+              "evidence_id": "landsat-v5-p081-text-030",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 81,
+              "printed_label": "73",
+              "bbox": [
+                78.6,
+                338.0,
+                505.81,
+                398.54
+              ],
+              "text": "Path 21 Rows \n28-50 SSM off-\nnadir; OLI-only \ndata products \nMarch 2, 2015",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.09686586641764164,
+              "method": "lexical",
+              "rank": 10
+            }
+          ]
+        },
+        "reference_routing": [],
+        "raw_ranking": [
+          {
+            "id": "landsat-v5-p009-image-001#part-001",
+            "evidence_id": "landsat-v5-p009-image-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 9,
+            "printed_label": "1",
+            "bbox": [
+              72.0,
+              130.9,
+              216.3,
+              346.9
+            ],
+            "text": "AI-observed visual description, not independently verified: Photograph of a rocket launching beside a launch tower.\nUnverified OCR:",
+            "metadata": {
+              "element_type": "image",
+              "section": "Section 1"
+            },
+            "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+            "score": 0.03278688524590164,
+            "method": "hybrid_rrf",
+            "rank": 1,
+            "branch_ranks": {
+              "dense": 1,
+              "lexical": 1
+            }
+          },
+          {
+            "id": "landsat-v5-p079-text-001#part-001",
+            "evidence_id": "landsat-v5-p079-text-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 79,
+            "printed_label": "71",
+            "bbox": [
+              72.0,
+              70.8,
+              522.34,
+              128.58
+            ],
+            "text": "threshold, set by the Flight Operations Team (FOT) as a trigger to power off the \nencoder (see Figure A-6). The far right side of the plot shows when the encoder was \npowered off and tested.",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 6"
+            },
+            "warning": null,
+            "score": 0.016129032258064516,
+            "method": "hybrid_rrf",
+            "rank": 2,
+            "branch_ranks": {
+              "lexical": 2
+            }
+          },
+          {
+            "id": "landsat-v5-p113-text-001#part-001",
+            "evidence_id": "landsat-v5-p113-text-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 113,
+            "printed_label": "105",
+            "bbox": [
+              77.64,
+              71.28,
+              519.7,
+              716.82
+            ],
+            "text": "MTL \nLevel 1 Metadata \nNASA \nNational Aeronautics and Space Administration \nNDVI \nNormalized Difference Vegetation Index \nNEΔT \nNoise-equivalent change in temperature \nNED \nNatural Elevation Data \nNEdL \nNoise Equivalent Detector Radiance \nNEOG \nNational Earth Observation Group \nNGA \nNational Geospatial Intelligence Agency \nNIST \nNational Institute for Standards and Technology \nNMAS \nNational Map Accuracy Standards \nNOAA \nNational Oceanic and Atmospheric Administration \nNPOESS \nNational Polar-orbiting Operational Environmental Satellite System \nOBC \nOn-Board Calibrator \nODL \nObject Definition Language \nOIV \nOn-orbit Initialization and Verification \nOLI \nOperational Land Imager \nOSC \nOrbital Sciences Corporation \nPan \nPanchromatic \nPCS \nProcess Control Subsystem \nPDF \nPortable Document Format \nPICS \nPseudo-Invariant Calibration Site \nPIE \nPayload Interface Electronics \nQA \nQuality Assessment \nQAS \nQuality Assessment Subsystem \nQWIP \nQuantum Well Infrared Photodetector \nRBV \nReturn Beam Vidicon \nRF \nRadio Frequency \nRLUT \nResponse Linearity Look-Up Table \nRMSE \nRoot Mean Square Error \nROIC \nRead-Out Integrated Circuit \nRPS \nRadiometric Processing Subsystem \nSCA \nSensor Chip Assemblies \nSEU \nSingle Event Upset \nSiPIN \nSilicon PIN \nSIRU \nScalable Inertial Reference Unit \nSLC \nScan Line Corrector \nSMD \nScience Mission Directorate \nSNR \nSignal-to-Noise Ratio \nSPOT \nSatellite Pour l’Observation de la Terre \nSRTM \nShuttle Radar Topography Mission \nSSM \nScene Select Mechanism/Mirror \nSSR \nSolid State Recorder \nSTF \nSystem Transfer Function \nSWIR",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 6"
+            },
+            "warning": null,
+            "score": 0.016129032258064516,
+            "method": "hybrid_rrf",
+            "rank": 3,
+            "branch_ranks": {
+              "dense": 2
+            }
+          },
+          {
+            "id": "landsat-v5-p070-text-001#part-001",
+            "evidence_id": "landsat-v5-p070-text-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 70,
+            "printed_label": "62",
+            "bbox": [
+              72.0,
+              70.8,
+              543.1,
+              156.18
+            ],
+            "text": "After a successful search, results are presented in a manner that allows users to view a \nbrowse image of the scene, a subset of the metadata file, or the footprint of a scene on \nthe map. To view the available data products, the user clicks the Download Options icon \n(a green arrow) near each scene. A gold icon indicates scenes can be added to a bulk \ndownload order.",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 6"
+            },
+            "warning": null,
+            "score": 0.015873015873015872,
+            "method": "hybrid_rrf",
+            "rank": 4,
+            "branch_ranks": {
+              "lexical": 3
+            }
+          },
+          {
+            "id": "landsat-v5-p113-vector_page-001#part-002",
+            "evidence_id": "landsat-v5-p113-vector_page-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 113,
+            "printed_label": "105",
+            "bbox": [
+              0.0,
+              0.0,
+              612.0,
+              792.0
+            ],
+            "text": "RBV | Return Beam Vidicon | RF | Radio Frequency | RLUT | Response Linearity Look-Up Table | RMSE | Root Mean Square Error | ROIC | Read-Out Integrated Circuit | RPS | Radiometric Processing Subsystem | SCA | Sensor Chip Assemblies | SEU | Single Event Upset | SiPIN | Silicon PIN | SIRU | Scalable Inertial Reference Unit | SLC | Scan Line Corrector | SMD | Science Mission Directorate | SNR | Signal-to-Noise Ratio | SPOT | Satellite Pour l'Observation de la Terre | SRTM | Shuttle Radar Topography Mission | SSM | Scene Select Mechanism/Mirror | SSR | Solid State Recorder | STF | System Transfer Function | SWIR | Short Wavelength Infrared | TIR | Thermal Infrared | - 105 - | LSDS-1574 | Version 5.0",
+            "metadata": {
+              "element_type": "vector_page",
+              "section": "Section 6"
+            },
+            "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+            "score": 0.015873015873015872,
+            "method": "hybrid_rrf",
+            "rank": 5,
+            "branch_ranks": {
+              "dense": 3
+            }
+          }
+        ],
+        "limitations": "Visual search may use captions, page text, unverified OCR or AI-observed descriptions; visual facts require separate source review."
+      }
+    },
+    {
+      "query": "grayscale image with a red rectangle and red arrow",
+      "expected": "landsat-v5-p091-image-001",
+      "rank": 4,
+      "top5": [
+        "landsat-v5-p083-image-001",
+        "landsat-v5-p061-image-001",
+        "landsat-v5-p070-text-001",
+        "landsat-v5-p091-image-001",
+        "landsat-v5-p073-text-003"
+      ],
+      "result": {
+        "query": "grayscale image with a red rectangle and red arrow",
+        "method": "hybrid",
+        "results": [
+          {
+            "id": "landsat-v5-p083-image-001#part-001",
+            "evidence_id": "landsat-v5-p083-image-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 83,
+            "printed_label": "75",
+            "bbox": [
+              73.5,
+              73.5,
+              541.5,
+              300.55
+            ],
+            "text": "Figure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nFigure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nAI-observed visual description, not independently verified: Two side-by-side images, one colored and one pale grayscale, each with a red rectangle.\nUnverified OCR:",
+            "metadata": {
+              "element_type": "image",
+              "section": "Section 6"
+            },
+            "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+            "score": 0.03278688524590164,
+            "method": "hybrid_rrf",
+            "rank": 1,
+            "branch_ranks": {
+              "dense": 1,
+              "lexical": 1
+            }
+          },
+          {
+            "id": "landsat-v5-p061-image-001#part-001",
+            "evidence_id": "landsat-v5-p061-image-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 61,
+            "printed_label": "53",
+            "bbox": [
+              131.25,
+              73.5,
+              480.0,
+              411.75
+            ],
+            "text": "Figure 4-4. Landsat 8 Quality Band\nFigure 4-4. Landsat 8 Quality Band\nAI-observed visual description, not independently verified: Tilted grayscale rectangular image on a black background with light and dark areas.\nUnverified OCR:",
+            "metadata": {
+              "element_type": "image",
+              "section": "4.2.3 Quality Assessment Band"
+            },
+            "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+            "score": 0.031054405392392875,
+            "method": "hybrid_rrf",
+            "rank": 2,
+            "branch_ranks": {
+              "dense": 2,
+              "lexical": 7
+            }
+          },
+          {
+            "id": "landsat-v5-p070-text-001#part-001",
+            "evidence_id": "landsat-v5-p070-text-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 70,
+            "printed_label": "62",
+            "bbox": [
+              72.0,
+              70.8,
+              543.1,
+              156.18
+            ],
+            "text": "After a successful search, results are presented in a manner that allows users to view a \nbrowse image of the scene, a subset of the metadata file, or the footprint of a scene on \nthe map. To view the available data products, the user clicks the Download Options icon \n(a green arrow) near each scene. A gold icon indicates scenes can be added to a bulk \ndownload order.",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 6"
+            },
+            "warning": null,
+            "score": 0.030536130536130537,
+            "method": "hybrid_rrf",
+            "rank": 3,
+            "branch_ranks": {
+              "dense": 6,
+              "lexical": 5
+            }
+          },
+          {
+            "id": "landsat-v5-p091-image-001#part-001",
+            "evidence_id": "landsat-v5-p091-image-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 91,
+            "printed_label": "83",
+            "bbox": [
+              87.75,
+              230.59,
+              524.25,
+              532.09
+            ],
+            "text": "Figure A-12. SCA Overlap Visible in Band 9\nA.5 SCA Overlaps \nBoth OLI and TIRS are designed with discrete SCAs, which have some detectors \noverlapping the adjacent SCAs. This causes a small region between each SCA to be \nviewed by multiple detectors. The imagery for this region is created by averaging over \nthe detectors viewing each pixel. In some situations, this can cause an artifact that \nresembles banding, but it is in fixed locations and often transient, depending on the \nunderlying terrain. \n \nSCA overlap artifacts are most visible over high clouds, as the detectors on each SCA \nview a slightly different area of each cloud. Figure A-12 shows an example of this.\nFigure A-12. SCA Overlap Visible in Band 9\nFigure A-12 displays the SCA overlap artifact observed in Band 9 (cirrus band) in \nLandsat 8 Path 14 Row 36 (acquired April 1, 2014), where high clouds were visible at \nthe boundary between two SCAs.  \n \nSCA overlaps are commonly seen in TIRS imagery because of contributions from the \nstray light artifact.\nAI-observed visual description, not independently verified: High-contrast grayscale image with a red rectangle and a red arrow.\nUnverified OCR:",
+            "metadata": {
+              "element_type": "image",
+              "section": "Section 6"
+            },
+            "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+            "score": 0.016129032258064516,
+            "method": "hybrid_rrf",
+            "rank": 4,
+            "branch_ranks": {
+              "lexical": 2
+            }
+          },
+          {
+            "id": "landsat-v5-p073-text-003#part-002",
+            "evidence_id": "landsat-v5-p073-text-003",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 73,
+            "printed_label": "65",
+            "bbox": [
+              72.0,
+              322.13,
+              540.46,
+              647.94
+            ],
+            "text": "-1 was acquired over Lake Superior. The image shows that the \nuniformity appeared to change as the TIRS instrument scanned along track from \nnortheast to southwest across the lake. This banding change is indicated in Figure A-1 \nby red arrows.",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 6"
+            },
+            "warning": null,
+            "score": 0.015873015873015872,
+            "method": "hybrid_rrf",
+            "rank": 5,
+            "branch_ranks": {
+              "lexical": 3
+            }
+          }
+        ],
+        "branches": {
+          "dense": [
+            {
+              "id": "landsat-v5-p083-image-001#part-001",
+              "evidence_id": "landsat-v5-p083-image-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 83,
+              "printed_label": "75",
+              "bbox": [
+                73.5,
+                73.5,
+                541.5,
+                300.55
+              ],
+              "text": "Figure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nFigure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nAI-observed visual description, not independently verified: Two side-by-side images, one colored and one pale grayscale, each with a red rectangle.\nUnverified OCR:",
+              "metadata": {
+                "element_type": "image",
+                "section": "Section 6"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.8325008984529096,
+              "method": "dense",
+              "rank": 1
+            },
+            {
+              "id": "landsat-v5-p061-image-001#part-001",
+              "evidence_id": "landsat-v5-p061-image-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 61,
+              "printed_label": "53",
+              "bbox": [
+                131.25,
+                73.5,
+                480.0,
+                411.75
+              ],
+              "text": "Figure 4-4. Landsat 8 Quality Band\nFigure 4-4. Landsat 8 Quality Band\nAI-observed visual description, not independently verified: Tilted grayscale rectangular image on a black background with light and dark areas.\nUnverified OCR:",
+              "metadata": {
+                "element_type": "image",
+                "section": "4.2.3 Quality Assessment Band"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.8305664096960353,
+              "method": "dense",
+              "rank": 2
+            },
+            {
+              "id": "landsat-v5-p075-image-001#part-002",
+              "evidence_id": "landsat-v5-p075-image-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 75,
+              "printed_label": "67",
+              "bbox": [
+                126.0,
+                73.5,
+                485.06,
+                348.75
+              ],
+              "text": "in the left graph of \nFigure A-3. The graph on the right of Figure A-3 shows the results after accounting for \nthis average radiance error, which is the calibration adjustment that was implemented \nfor reprocessing in February 2014. As described above, this adjustment minimizes the \napparent bias, but does not change the variance in the data resulting from stray light. \nAdditionally, colder scenes tend to be overcorrected due to this bias adjustment. The \nvariability in the offset, as shown in Table A-1, is about twice as large in Band 11 as \nBand 10, and Band 10 is about twice as large as Landsat 7 ETM+ thermal band\nUnverified OCR: 50 | 50 | band10 | band11 | Gray dots indicate a scanned | lunar position that did not | 40 | 40 | produce ghosts | 30 | 30 | V | Blue dots indicate a scanned | lunar position that did | produce ghosts | 20 | 20 | ● | 10 | 我 | 10 | Angle [Deg] | Angle [Deg] | 0 | 0 | -10 | -10 | -20 | -20 | -30 | -30 | -40 | -40 | -50 | -50 | -20 | -10 | 0 | 10 | 20 | -20 | -10 | 0 | 10 | 20 | 5 | Ang",
+              "metadata": {
+                "element_type": "image",
+                "section": "Section 6"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.8296535114522615,
+              "method": "dense",
+              "rank": 3
+            },
+            {
+              "id": "landsat-v5-p009-image-001#part-001",
+              "evidence_id": "landsat-v5-p009-image-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 9,
+              "printed_label": "1",
+              "bbox": [
+                72.0,
+                130.9,
+                216.3,
+                346.9
+              ],
+              "text": "AI-observed visual description, not independently verified: Photograph of a rocket launching beside a launch tower.\nUnverified OCR:",
+              "metadata": {
+                "element_type": "image",
+                "section": "Section 1"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.8294574551542595,
+              "method": "dense",
+              "rank": 4
+            },
+            {
+              "id": "landsat-v5-p070-text-002#part-001",
+              "evidence_id": "landsat-v5-p070-text-002",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 70,
+              "printed_label": "62",
+              "bbox": [
+                141.96,
+                420.86,
+                473.38,
+                437.59
+              ],
+              "text": "Figure 6-3. EarthExplorer Results - Browse Image Display",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.8287407439319194,
+              "method": "dense",
+              "rank": 5
+            },
+            {
+              "id": "landsat-v5-p070-text-001#part-001",
+              "evidence_id": "landsat-v5-p070-text-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 70,
+              "printed_label": "62",
+              "bbox": [
+                72.0,
+                70.8,
+                543.1,
+                156.18
+              ],
+              "text": "After a successful search, results are presented in a manner that allows users to view a \nbrowse image of the scene, a subset of the metadata file, or the footprint of a scene on \nthe map. To view the available data products, the user clicks the Download Options icon \n(a green arrow) near each scene. A gold icon indicates scenes can be added to a bulk \ndownload order.",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.8228892885273258,
+              "method": "dense",
+              "rank": 6
+            },
+            {
+              "id": "landsat-v5-p005-text-001#part-001",
+              "evidence_id": "landsat-v5-p005-text-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 5,
+              "printed_label": "v",
+              "bbox": [
+                72.0,
+                70.15,
+                145.8,
+                93.0
+              ],
+              "text": "Contents",
+              "metadata": {
+                "element_type": "text",
+                "section": null
+              },
+              "warning": null,
+              "score": 0.8224822670551711,
+              "method": "dense",
+              "rank": 7
+            },
+            {
+              "id": "landsat-v5-p061-text-002#part-001",
+              "evidence_id": "landsat-v5-p061-text-002",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 61,
+              "printed_label": "53",
+              "bbox": [
+                72.0,
+                450.6,
+                535.42,
+                494.58
+              ],
+              "text": "The QA image can be stretched to emphasize the light (\"1\") and dark (\"0\") pixels for a \nquick view of general quality conditions. In the image above, the lighter pixels are likely \nto be affected by snow or clouds.",
+              "metadata": {
+                "element_type": "text",
+                "section": "4.2.3 Quality Assessment Band"
+              },
+              "warning": null,
+              "score": 0.8221078514537392,
+              "method": "dense",
+              "rank": 8
+            },
+            {
+              "id": "landsat-v5-p104-text-001#part-001",
+              "evidence_id": "landsat-v5-p104-text-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 104,
+              "printed_label": "96",
+              "bbox": [
+                72.0,
+                69.71,
+                417.6,
+                715.44
+              ],
+              "text": "GROUP = IMAGE_ATTRIBUTES \n    CLOUD_COVER = 28.71 \n    CLOUD_COVER_LAND = 28.71 \n    IMAGE_QUALITY_OLI = 9 \n    IMAGE_QUALITY_TIRS = 9 \n    TIRS_SSM_MODEL = \"FINAL\" \n    TIRS_SSM_POSITION_STATUS = \"ESTIMATED\" \n    TIRS_STRAY_LIGHT_CORRECTION_SOURCE = \"TIRS\" \n    ROLL_ANGLE = -0.001 \n    SUN_AZIMUTH = 153.64775365 \n    SUN_ELEVATION = 46.63860470 \n    EARTH_SUN_DISTANCE = 1.0074499 \n    SATURATION_BAND_1 = \"N\" \n    SATURATION_BAND_2 = \"N\" \n    SATURATION_BAND_3 = \"N\" \n    SATURATION_BAND_4 = \"N\" \n    SATURATION_BAND_5 = \"N\" \n    SATURATION_BAND_6 = \"N\" \n    SATURATION_BAND_7 = \"N\" \n    SATURATION_BAND_8 = \"N\" \n    SATURATION_BAND_9 = \"N\" \n    GROUND_CONTROL_POINTS_VERSION = 4 \n    GROUND_CONTROL_POINTS_MODEL = 369 \n    GEOMETRIC_RMSE_MODEL = 7.067 \n    GEOMETRIC_RMSE_MODEL_Y = 4.980 \n    GEOMETRIC_RMSE_MODEL_X = 5.015 \n    GROUND_CONTROL_POINTS_VERIFY = 160 \n    GEOMETRIC_RMSE_VERIFY = 4.368 \n    TRUNCATION_",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.8218669953673388,
+              "method": "dense",
+              "rank": 9
+            },
+            {
+              "id": "landsat-v5-p113-text-001#part-001",
+              "evidence_id": "landsat-v5-p113-text-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 113,
+              "printed_label": "105",
+              "bbox": [
+                77.64,
+                71.28,
+                519.7,
+                716.82
+              ],
+              "text": "MTL \nLevel 1 Metadata \nNASA \nNational Aeronautics and Space Administration \nNDVI \nNormalized Difference Vegetation Index \nNEΔT \nNoise-equivalent change in temperature \nNED \nNatural Elevation Data \nNEdL \nNoise Equivalent Detector Radiance \nNEOG \nNational Earth Observation Group \nNGA \nNational Geospatial Intelligence Agency \nNIST \nNational Institute for Standards and Technology \nNMAS \nNational Map Accuracy Standards \nNOAA \nNational Oceanic and Atmospheric Administration \nNPOESS \nNational Polar-orbiting Operational Environmental Satellite System \nOBC \nOn-Board Calibrator \nODL \nObject Definition Language \nOIV \nOn-orbit Initialization and Verification \nOLI \nOperational Land Imager \nOSC \nOrbital Sciences Corporation \nPan \nPanchromatic \nPCS \nProcess Control Subsystem \nPDF \nPortable Document Format \nPICS \nPseudo-Invariant Calibration Site \nPIE \nPayload Interface Electronics \nQA \nQuality Assessment \nQAS \nQuality Assessment Subsystem \nQWIP \nQuantum Well Infrared Photodetector \nRBV \nReturn Beam Vidicon \nRF \nRadio Frequency \nRLUT \nResponse Linearity Look-Up Table \nRMSE \nRoot Mean Square Error \nROIC \nRead-Out Integrated Circuit \nRPS \nRadiometric Processing Subsystem \nSCA \nSensor Chip Assemblies \nSEU \nSingle Event Upset \nSiPIN \nSilicon PIN \nSIRU \nScalable Inertial Reference Unit \nSLC \nScan Line Corrector \nSMD \nScience Mission Directorate \nSNR \nSignal-to-Noise Ratio \nSPOT \nSatellite Pour l’Observation de la Terre \nSRTM \nShuttle Radar Topography Mission \nSSM \nScene Select Mechanism/Mirror \nSSR \nSolid State Recorder \nSTF \nSystem Transfer Function \nSWIR",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.8214132811632088,
+              "method": "dense",
+              "rank": 10
+            }
+          ],
+          "lexical": [
+            {
+              "id": "landsat-v5-p083-image-001#part-001",
+              "evidence_id": "landsat-v5-p083-image-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 83,
+              "printed_label": "75",
+              "bbox": [
+                73.5,
+                73.5,
+                541.5,
+                300.55
+              ],
+              "text": "Figure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nFigure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nAI-observed visual description, not independently verified: Two side-by-side images, one colored and one pale grayscale, each with a red rectangle.\nUnverified OCR:",
+              "metadata": {
+                "element_type": "image",
+                "section": "Section 6"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.2652881855074953,
+              "method": "lexical",
+              "rank": 1
+            },
+            {
+              "id": "landsat-v5-p091-image-001#part-001",
+              "evidence_id": "landsat-v5-p091-image-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 91,
+              "printed_label": "83",
+              "bbox": [
+                87.75,
+                230.59,
+                524.25,
+                532.09
+              ],
+              "text": "Figure A-12. SCA Overlap Visible in Band 9\nA.5 SCA Overlaps \nBoth OLI and TIRS are designed with discrete SCAs, which have some detectors \noverlapping the adjacent SCAs. This causes a small region between each SCA to be \nviewed by multiple detectors. The imagery for this region is created by averaging over \nthe detectors viewing each pixel. In some situations, this can cause an artifact that \nresembles banding, but it is in fixed locations and often transient, depending on the \nunderlying terrain. \n \nSCA overlap artifacts are most visible over high clouds, as the detectors on each SCA \nview a slightly different area of each cloud. Figure A-12 shows an example of this.\nFigure A-12. SCA Overlap Visible in Band 9\nFigure A-12 displays the SCA overlap artifact observed in Band 9 (cirrus band) in \nLandsat 8 Path 14 Row 36 (acquired April 1, 2014), where high clouds were visible at \nthe boundary between two SCAs.  \n \nSCA overlaps are commonly seen in TIRS imagery because of contributions from the \nstray light artifact.\nAI-observed visual description, not independently verified: High-contrast grayscale image with a red rectangle and a red arrow.\nUnverified OCR:",
+              "metadata": {
+                "element_type": "image",
+                "section": "Section 6"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.2250344798022912,
+              "method": "lexical",
+              "rank": 2
+            },
+            {
+              "id": "landsat-v5-p073-text-003#part-002",
+              "evidence_id": "landsat-v5-p073-text-003",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 73,
+              "printed_label": "65",
+              "bbox": [
+                72.0,
+                322.13,
+                540.46,
+                647.94
+              ],
+              "text": "-1 was acquired over Lake Superior. The image shows that the \nuniformity appeared to change as the TIRS instrument scanned along track from \nnortheast to southwest across the lake. This banding change is indicated in Figure A-1 \nby red arrows.",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.16047933378566728,
+              "method": "lexical",
+              "rank": 3
+            },
+            {
+              "id": "landsat-v5-p037-text-027#part-001",
+              "evidence_id": "landsat-v5-p037-text-027",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 37,
+              "printed_label": "29",
+              "bbox": [
+                77.64,
+                581.0,
+                207.11,
+                606.0
+              ],
+              "text": "Image-to-Image Registration \nAssessment",
+              "metadata": {
+                "element_type": "text",
+                "section": "3.1.4 Operational Radiometric Tasks"
+              },
+              "warning": null,
+              "score": 0.1332017633436499,
+              "method": "lexical",
+              "rank": 4
+            },
+            {
+              "id": "landsat-v5-p070-text-001#part-001",
+              "evidence_id": "landsat-v5-p070-text-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 70,
+              "printed_label": "62",
+              "bbox": [
+                72.0,
+                70.8,
+                543.1,
+                156.18
+              ],
+              "text": "After a successful search, results are presented in a manner that allows users to view a \nbrowse image of the scene, a subset of the metadata file, or the footprint of a scene on \nthe map. To view the available data products, the user clicks the Download Options icon \n(a green arrow) near each scene. A gold icon indicates scenes can be added to a bulk \ndownload order.",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.12916440008092375,
+              "method": "lexical",
+              "rank": 5
+            },
+            {
+              "id": "landsat-v5-p020-image-002#part-001",
+              "evidence_id": "landsat-v5-p020-image-002",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 20,
+              "printed_label": "12",
+              "bbox": [
+                121.33,
+                494.93,
+                487.49,
+                681.39
+              ],
+              "text": "Figure 2-5. Odd/Even SCA Band Arrangement\nFigure 2-4. OLI Focal Plane\nFigure 2-5. Odd/Even SCA Band Arrangement\nUnverified OCR: SCA2 | SCA4 | SCA6 | SCA8 | SCA10 | SCA12 | SCA14 | Along Track | Direction | (descending) | 8 - Panchromatic | 12-14- Blind | 2 - Blue | 9 – Cirrus | 1 - Coastal/Aerosol | 6 - SWIR1 | 5 - NIR | 7 - SWIR2 | 4 - Red | 3 - Green | 3 - Green | 4 - Red | 7 - SWIR2 | 5 - NIR | 6 - SWIR1 | 1 - Coastal/Aerosol | 9 – Cirrus | 2 - Blue | 12-14- Blind | 8 - Panchromatic | Odd SCAs | Even SCAs",
+              "metadata": {
+                "element_type": "image",
+                "section": "Section 2"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.12217805576348,
+              "method": "lexical",
+              "rank": 6
+            },
+            {
+              "id": "landsat-v5-p061-image-001#part-001",
+              "evidence_id": "landsat-v5-p061-image-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 61,
+              "printed_label": "53",
+              "bbox": [
+                131.25,
+                73.5,
+                480.0,
+                411.75
+              ],
+              "text": "Figure 4-4. Landsat 8 Quality Band\nFigure 4-4. Landsat 8 Quality Band\nAI-observed visual description, not independently verified: Tilted grayscale rectangular image on a black background with light and dark areas.\nUnverified OCR:",
+              "metadata": {
+                "element_type": "image",
+                "section": "4.2.3 Quality Assessment Band"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.11578536638298918,
+              "method": "lexical",
+              "rank": 7
+            },
+            {
+              "id": "landsat-v5-p044-image-001#part-001",
+              "evidence_id": "landsat-v5-p044-image-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 44,
+              "printed_label": "36",
+              "bbox": [
+                212.25,
+                72.0,
+                399.88,
+                371.6
+              ],
+              "text": "Figure 3-1. Simulated OLI Image of the Lake Pontchartrain Causeway\nFigure 3-1. Simulated OLI Image of the Lake Pontchartrain Causeway\nAI-observed visual description, not independently verified: Dark grayscale image with one narrow, nearly vertical bright streak.\nUnverified OCR:",
+              "metadata": {
+                "element_type": "image",
+                "section": "3.2.10.1 Ground Control Points (GCPs)"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.1139693346204791,
+              "method": "lexical",
+              "rank": 8
+            },
+            {
+              "id": "landsat-v5-p056-text-002#part-001",
+              "evidence_id": "landsat-v5-p056-text-002",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 56,
+              "printed_label": "48",
+              "bbox": [
+                72.0,
+                206.81,
+                541.65,
+                433.38
+              ],
+              "text": "4.1.4.2 \nProduct Format \nThe L8 data product delivered to users is packaged as Georeferenced Tagged Image \nFile Format (GeoTIFF) (a standard, public-domain image format based on Adobe's \nTIFF), which is a self-describing format developed to exchange raster images. The \nGeoTIFF format includes geographic or cartographic information embedded within the \nimagery that can be used to position the image in a geographic information display. \nEach L8 band is presented as a 16-bit grayscale image. Specifically, GeoTIFF defines a \nset of TIFF tags, which describes cartographic and geodetic information associated with \ngeographic TIFF imagery. GeoTIFF is a means for tying a raster image to a known \nmodel space or map projection and for describing those projections. A metadata format \nprovides geographic information to associate with the image data. However, the TIFF \nfile structure allows both the metadata and the image data to be encoded into the same \nfile. \n \nFor details on GeoTIFF format, please download the GeoTIFF Format Specification \n(PDF) or visit http://trac.osgeo.org/geotiff/.",
+              "metadata": {
+                "element_type": "text",
+                "section": "4.1.4 Data Products"
+              },
+              "warning": null,
+              "score": 0.10817647156384463,
+              "method": "lexical",
+              "rank": 9
+            },
+            {
+              "id": "landsat-v5-p089-image-001#part-001",
+              "evidence_id": "landsat-v5-p089-image-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 89,
+              "printed_label": "81",
+              "bbox": [
+                73.5,
+                73.5,
+                540.75,
+                540.75
+              ],
+              "text": "Figure A-10. Striping and Banding Observed in Band 2\nFigure A-10. Striping and Banding Observed in Band 2\nFigure A-10 displays the striping and banding observed in Band 2 (Blue band) in \nLandsat 8 Path 75 Row 88 (acquired May 11, 2013), which is over clear, calm ocean \nwater. \n \nStriping and Banding also affect TIRS imagery, as seen in Figure A-11.\nAI-observed visual description, not independently verified: Grayscale image with nearly vertical light and dark bands.\nUnverified OCR:",
+              "metadata": {
+                "element_type": "image",
+                "section": "Section 6"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.10104649971686411,
+              "method": "lexical",
+              "rank": 10
+            }
+          ]
+        },
+        "reference_routing": [],
+        "raw_ranking": [
+          {
+            "id": "landsat-v5-p083-image-001#part-001",
+            "evidence_id": "landsat-v5-p083-image-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 83,
+            "printed_label": "75",
+            "bbox": [
+              73.5,
+              73.5,
+              541.5,
+              300.55
+            ],
+            "text": "Figure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nFigure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nAI-observed visual description, not independently verified: Two side-by-side images, one colored and one pale grayscale, each with a red rectangle.\nUnverified OCR:",
+            "metadata": {
+              "element_type": "image",
+              "section": "Section 6"
+            },
+            "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+            "score": 0.03278688524590164,
+            "method": "hybrid_rrf",
+            "rank": 1,
+            "branch_ranks": {
+              "dense": 1,
+              "lexical": 1
+            }
+          },
+          {
+            "id": "landsat-v5-p061-image-001#part-001",
+            "evidence_id": "landsat-v5-p061-image-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 61,
+            "printed_label": "53",
+            "bbox": [
+              131.25,
+              73.5,
+              480.0,
+              411.75
+            ],
+            "text": "Figure 4-4. Landsat 8 Quality Band\nFigure 4-4. Landsat 8 Quality Band\nAI-observed visual description, not independently verified: Tilted grayscale rectangular image on a black background with light and dark areas.\nUnverified OCR:",
+            "metadata": {
+              "element_type": "image",
+              "section": "4.2.3 Quality Assessment Band"
+            },
+            "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+            "score": 0.031054405392392875,
+            "method": "hybrid_rrf",
+            "rank": 2,
+            "branch_ranks": {
+              "dense": 2,
+              "lexical": 7
+            }
+          },
+          {
+            "id": "landsat-v5-p070-text-001#part-001",
+            "evidence_id": "landsat-v5-p070-text-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 70,
+            "printed_label": "62",
+            "bbox": [
+              72.0,
+              70.8,
+              543.1,
+              156.18
+            ],
+            "text": "After a successful search, results are presented in a manner that allows users to view a \nbrowse image of the scene, a subset of the metadata file, or the footprint of a scene on \nthe map. To view the available data products, the user clicks the Download Options icon \n(a green arrow) near each scene. A gold icon indicates scenes can be added to a bulk \ndownload order.",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 6"
+            },
+            "warning": null,
+            "score": 0.030536130536130537,
+            "method": "hybrid_rrf",
+            "rank": 3,
+            "branch_ranks": {
+              "dense": 6,
+              "lexical": 5
+            }
+          },
+          {
+            "id": "landsat-v5-p091-image-001#part-001",
+            "evidence_id": "landsat-v5-p091-image-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 91,
+            "printed_label": "83",
+            "bbox": [
+              87.75,
+              230.59,
+              524.25,
+              532.09
+            ],
+            "text": "Figure A-12. SCA Overlap Visible in Band 9\nA.5 SCA Overlaps \nBoth OLI and TIRS are designed with discrete SCAs, which have some detectors \noverlapping the adjacent SCAs. This causes a small region between each SCA to be \nviewed by multiple detectors. The imagery for this region is created by averaging over \nthe detectors viewing each pixel. In some situations, this can cause an artifact that \nresembles banding, but it is in fixed locations and often transient, depending on the \nunderlying terrain. \n \nSCA overlap artifacts are most visible over high clouds, as the detectors on each SCA \nview a slightly different area of each cloud. Figure A-12 shows an example of this.\nFigure A-12. SCA Overlap Visible in Band 9\nFigure A-12 displays the SCA overlap artifact observed in Band 9 (cirrus band) in \nLandsat 8 Path 14 Row 36 (acquired April 1, 2014), where high clouds were visible at \nthe boundary between two SCAs.  \n \nSCA overlaps are commonly seen in TIRS imagery because of contributions from the \nstray light artifact.\nAI-observed visual description, not independently verified: High-contrast grayscale image with a red rectangle and a red arrow.\nUnverified OCR:",
+            "metadata": {
+              "element_type": "image",
+              "section": "Section 6"
+            },
+            "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+            "score": 0.016129032258064516,
+            "method": "hybrid_rrf",
+            "rank": 4,
+            "branch_ranks": {
+              "lexical": 2
+            }
+          },
+          {
+            "id": "landsat-v5-p073-text-003#part-002",
+            "evidence_id": "landsat-v5-p073-text-003",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 73,
+            "printed_label": "65",
+            "bbox": [
+              72.0,
+              322.13,
+              540.46,
+              647.94
+            ],
+            "text": "-1 was acquired over Lake Superior. The image shows that the \nuniformity appeared to change as the TIRS instrument scanned along track from \nnortheast to southwest across the lake. This banding change is indicated in Figure A-1 \nby red arrows.",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 6"
+            },
+            "warning": null,
+            "score": 0.015873015873015872,
+            "method": "hybrid_rrf",
+            "rank": 5,
+            "branch_ranks": {
+              "lexical": 3
+            }
+          }
+        ],
+        "limitations": "Visual search may use captions, page text, unverified OCR or AI-observed descriptions; visual facts require separate source review."
+      }
+    },
+    {
+      "query": "two side by side color and grayscale images marked with red boxes",
+      "expected": "landsat-v5-p083-image-001",
+      "rank": 1,
+      "top5": [
+        "landsat-v5-p083-image-001",
+        "landsat-v5-p066-text-003",
+        "landsat-v5-p005-text-001",
+        "landsat-v5-p004-text-002",
+        "landsat-v5-p027-text-025"
+      ],
+      "result": {
+        "query": "two side by side color and grayscale images marked with red boxes",
+        "method": "hybrid",
+        "results": [
+          {
+            "id": "landsat-v5-p083-image-001#part-001",
+            "evidence_id": "landsat-v5-p083-image-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 83,
+            "printed_label": "75",
+            "bbox": [
+              73.5,
+              73.5,
+              541.5,
+              300.55
+            ],
+            "text": "Figure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nFigure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nAI-observed visual description, not independently verified: Two side-by-side images, one colored and one pale grayscale, each with a red rectangle.\nUnverified OCR:",
+            "metadata": {
+              "element_type": "image",
+              "section": "Section 6"
+            },
+            "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+            "score": 0.03252247488101534,
+            "method": "hybrid_rrf",
+            "rank": 1,
+            "branch_ranks": {
+              "dense": 2,
+              "lexical": 1
+            }
+          },
+          {
+            "id": "landsat-v5-p066-text-003#part-001",
+            "evidence_id": "landsat-v5-p066-text-003",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 66,
+            "printed_label": "58",
+            "bbox": [
+              182.16,
+              304.96,
+              399.37,
+              319.22
+            ],
+            "text": "Bit \nDescription \nColor",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 5"
+            },
+            "warning": null,
+            "score": 0.0315136476426799,
+            "method": "hybrid_rrf",
+            "rank": 2,
+            "branch_ranks": {
+              "dense": 5,
+              "lexical": 2
+            }
+          },
+          {
+            "id": "landsat-v5-p005-text-001#part-001",
+            "evidence_id": "landsat-v5-p005-text-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 5,
+            "printed_label": "v",
+            "bbox": [
+              72.0,
+              70.15,
+              145.8,
+              93.0
+            ],
+            "text": "Contents",
+            "metadata": {
+              "element_type": "text",
+              "section": null
+            },
+            "warning": null,
+            "score": 0.01639344262295082,
+            "method": "hybrid_rrf",
+            "rank": 3,
+            "branch_ranks": {
+              "dense": 1
+            }
+          },
+          {
+            "id": "landsat-v5-p004-text-002#part-001",
+            "evidence_id": "landsat-v5-p004-text-002",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 4,
+            "printed_label": "iv",
+            "bbox": [
+              126.48,
+              105.05,
+              188.5,
+              122.23
+            ],
+            "text": "Document",
+            "metadata": {
+              "element_type": "text",
+              "section": null
+            },
+            "warning": null,
+            "score": 0.015873015873015872,
+            "method": "hybrid_rrf",
+            "rank": 4,
+            "branch_ranks": {
+              "dense": 3
+            }
+          },
+          {
+            "id": "landsat-v5-p027-text-025#part-001",
+            "evidence_id": "landsat-v5-p027-text-025",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 27,
+            "printed_label": "19",
+            "bbox": [
+              77.64,
+              677.96,
+              177.73,
+              691.56
+            ],
+            "text": "Side-slither maneuver",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 3"
+            },
+            "warning": null,
+            "score": 0.015873015873015872,
+            "method": "hybrid_rrf",
+            "rank": 5,
+            "branch_ranks": {
+              "lexical": 3
+            }
+          }
+        ],
+        "branches": {
+          "dense": [
+            {
+              "id": "landsat-v5-p005-text-001#part-001",
+              "evidence_id": "landsat-v5-p005-text-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 5,
+              "printed_label": "v",
+              "bbox": [
+                72.0,
+                70.15,
+                145.8,
+                93.0
+              ],
+              "text": "Contents",
+              "metadata": {
+                "element_type": "text",
+                "section": null
+              },
+              "warning": null,
+              "score": 0.8411887056156342,
+              "method": "dense",
+              "rank": 1
+            },
+            {
+              "id": "landsat-v5-p083-image-001#part-001",
+              "evidence_id": "landsat-v5-p083-image-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 83,
+              "printed_label": "75",
+              "bbox": [
+                73.5,
+                73.5,
+                541.5,
+                300.55
+              ],
+              "text": "Figure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nFigure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nAI-observed visual description, not independently verified: Two side-by-side images, one colored and one pale grayscale, each with a red rectangle.\nUnverified OCR:",
+              "metadata": {
+                "element_type": "image",
+                "section": "Section 6"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.8294757714796557,
+              "method": "dense",
+              "rank": 2
+            },
+            {
+              "id": "landsat-v5-p004-text-002#part-001",
+              "evidence_id": "landsat-v5-p004-text-002",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 4,
+              "printed_label": "iv",
+              "bbox": [
+                126.48,
+                105.05,
+                188.5,
+                122.23
+              ],
+              "text": "Document",
+              "metadata": {
+                "element_type": "text",
+                "section": null
+              },
+              "warning": null,
+              "score": 0.8246861899066931,
+              "method": "dense",
+              "rank": 3
+            },
+            {
+              "id": "landsat-v5-p004-text-003#part-001",
+              "evidence_id": "landsat-v5-p004-text-003",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 4,
+              "printed_label": "iv",
+              "bbox": [
+                227.16,
+                105.05,
+                289.18,
+                122.23
+              ],
+              "text": "Document",
+              "metadata": {
+                "element_type": "text",
+                "section": null
+              },
+              "warning": null,
+              "score": 0.8246861899066931,
+              "method": "dense",
+              "rank": 4
+            },
+            {
+              "id": "landsat-v5-p066-text-003#part-001",
+              "evidence_id": "landsat-v5-p066-text-003",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 66,
+              "printed_label": "58",
+              "bbox": [
+                182.16,
+                304.96,
+                399.37,
+                319.22
+              ],
+              "text": "Bit \nDescription \nColor",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 5"
+              },
+              "warning": null,
+              "score": 0.8237391845553449,
+              "method": "dense",
+              "rank": 5
+            },
+            {
+              "id": "landsat-v5-p004-text-007#part-001",
+              "evidence_id": "landsat-v5-p004-text-007",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 4,
+              "printed_label": "iv",
+              "bbox": [
+                342.72,
+                118.85,
+                372.1,
+                136.03
+              ],
+              "text": "Date",
+              "metadata": {
+                "element_type": "text",
+                "section": null
+              },
+              "warning": null,
+              "score": 0.8212858956427309,
+              "method": "dense",
+              "rank": 6
+            },
+            {
+              "id": "landsat-v5-p082-text-002#part-001",
+              "evidence_id": "landsat-v5-p082-text-002",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 82,
+              "printed_label": "74",
+              "bbox": [
+                287.76,
+                82.84,
+                356.52,
+                97.1
+              ],
+              "text": "Reprocessing",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.8199676257211214,
+              "method": "dense",
+              "rank": 7
+            },
+            {
+              "id": "landsat-v5-p080-text-003#part-001",
+              "evidence_id": "landsat-v5-p080-text-003",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 80,
+              "printed_label": "72",
+              "bbox": [
+                287.76,
+                496.84,
+                356.52,
+                511.1
+              ],
+              "text": "Reprocessing",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.8199676151107212,
+              "method": "dense",
+              "rank": 8
+            },
+            {
+              "id": "landsat-v5-p081-text-002#part-001",
+              "evidence_id": "landsat-v5-p081-text-002",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 81,
+              "printed_label": "73",
+              "bbox": [
+                287.76,
+                82.84,
+                356.52,
+                97.1
+              ],
+              "text": "Reprocessing",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.8199676151107212,
+              "method": "dense",
+              "rank": 9
+            },
+            {
+              "id": "landsat-v5-p087-vector_page-001#part-003",
+              "evidence_id": "landsat-v5-p087-vector_page-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 87,
+              "printed_label": "79",
+              "bbox": [
+                0.0,
+                0.0,
+                612.0,
+                792.0
+              ],
+              "text": "269: Path 42 Rows 001-037 | 10/28-DOY 301: Path 42 | 9/28-DOY 271: Path 40 Rows 001-003 | 10/30-DOY 303: Path 40 | November 2019 | December 2019 | 12/1-DOY 335: Path 40 | 11/4-DOY 308: Path 43 | 12/6-DOY 340: Path 43 | 11/6-DOY 310: Path 41 | 12/8-DOY 342: Path 41 | 11/13-DOY 317: Path 42 | 12/15-DOY 349: Path 42 | 11/15-DOY 319: Path 40 | 12/17-DOY 351: Path 40 | 11/20-DOY 324; Path 43 | 12/22-DOY 356: Path 43 | 11/22-DOY 326: Path 41 | 12/24-DOY 358: Path 41 | 11/29-DOY 333: Path 42 | 12/31-DOY 365: Path 42 | A.4 Striping and Banding | Striping is a phenomenon that appears as columns of consistently lighter or darker | pixels in a single band of radiometrically corrected data. Banding is a similar | phenomenon, but it occurs across multiple contiguous columns. Both are often caused | by incorrect calibration of detectors with respect to one another. These effects in OLl | imagery are less than 4 DN in its 12-",
+              "metadata": {
+                "element_type": "vector_page",
+                "section": "Section 6"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.8178126978593492,
+              "method": "dense",
+              "rank": 10
+            }
+          ],
+          "lexical": [
+            {
+              "id": "landsat-v5-p083-image-001#part-001",
+              "evidence_id": "landsat-v5-p083-image-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 83,
+              "printed_label": "75",
+              "bbox": [
+                73.5,
+                73.5,
+                541.5,
+                300.55
+              ],
+              "text": "Figure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nFigure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nAI-observed visual description, not independently verified: Two side-by-side images, one colored and one pale grayscale, each with a red rectangle.\nUnverified OCR:",
+              "metadata": {
+                "element_type": "image",
+                "section": "Section 6"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.3891001578900153,
+              "method": "lexical",
+              "rank": 1
+            },
+            {
+              "id": "landsat-v5-p066-text-003#part-001",
+              "evidence_id": "landsat-v5-p066-text-003",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 66,
+              "printed_label": "58",
+              "bbox": [
+                182.16,
+                304.96,
+                399.37,
+                319.22
+              ],
+              "text": "Bit \nDescription \nColor",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 5"
+              },
+              "warning": null,
+              "score": 0.2748610854370135,
+              "method": "lexical",
+              "rank": 2
+            },
+            {
+              "id": "landsat-v5-p027-text-025#part-001",
+              "evidence_id": "landsat-v5-p027-text-025",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 27,
+              "printed_label": "19",
+              "bbox": [
+                77.64,
+                677.96,
+                177.73,
+                691.56
+              ],
+              "text": "Side-slither maneuver",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 3"
+              },
+              "warning": null,
+              "score": 0.2716918752572787,
+              "method": "lexical",
+              "rank": 3
+            },
+            {
+              "id": "landsat-v5-p080-vector_page-001#part-001",
+              "evidence_id": "landsat-v5-p080-vector_page-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 80,
+              "printed_label": "72",
+              "bbox": [
+                0.0,
+                0.0,
+                612.0,
+                792.0
+              ],
+              "text": "Unverified OCR: In January 2015, the FOT and subject matter experts conducted numerous tests in an | effort to determine the cause of the SSM encoder current anomaly. A number of options | were evaluated, with two being the best options: 1) Remaining on the A-side electronics | and using a new but not fully tested operations concept for the sensor; or 2) Switching | to the redundant B-side electronics and continuing with the existing pre-anomaly | operations concept. Switching to the redundant electronics provides the quickest path to | a full return to normal operations with minimal risk, providing the best quality science | data along with the potential for an extended mission life. | After extensive investigations and testing, the TIRS electronics were switched from the | primary A-side to redundant B-side on March 2, 2015. OLl imaging was suspended for 2 | orbits while the switch was performed. TIRS imaging was suspended while TIRS B-side | commissioning and checkout activities were completed. On March 9, 2015, TIRS | resumed normal operational imaging using the B-side electronics (with a fully functional | SSM encoder). On March 13, 2015, processing of TIRS data resumed, with revised | CPF files established following the switch to the B-side electronics. | On April 30, 2015, reprocessing started for L8 scenes acquired from December 19, | 2014, to March 13, 2015, to repopula",
+              "metadata": {
+                "element_type": "vector_page",
+                "section": "Section 6"
+              },
+              "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+              "score": 0.23004324416726468,
+              "method": "lexical",
+              "rank": 4
+            },
+            {
+              "id": "landsat-v5-p080-text-001#part-001",
+              "evidence_id": "landsat-v5-p080-text-001",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 80,
+              "printed_label": "72",
+              "bbox": [
+                72.0,
+                70.8,
+                543.1,
+                487.38
+              ],
+              "text": "In January 2015, the FOT and subject matter experts conducted numerous tests in an \neffort to determine the cause of the SSM encoder current anomaly. A number of options \nwere evaluated, with two being the best options: 1) Remaining on the A-side electronics \nand using a new but not fully tested operations concept for the sensor; or 2) Switching \nto the redundant B-side electronics and continuing with the existing pre-anomaly \noperations concept. Switching to the redundant electronics provides the quickest path to \na full return to normal operations with minimal risk, providing the best quality science \ndata along with the potential for an extended mission life.  \n \nAfter extensive investigations and testing, the TIRS electronics were switched from the \nprimary A-side to redundant B-side on March 2, 2015. OLI imaging was suspended for 2 \norbits while the switch was performed. TIRS imaging was suspended while TIRS B-side \ncommissioning and checkout activities were completed. On March 9, 2015, TIRS \nresumed normal operational imaging using the B-side electronics (with a fully functional \nSSM encoder). On March 13, 2015, processing of TIRS data resumed, with revised \nCPF files established following the switch to the B-side electronics.  \n \nOn April 30, 2015, reprocessing started for L8 scenes acquired from December 19, \n2014, to March 13, 2015, to repopulate the TIRS data using SSM position estimates \nderived from image measurements where necessary. Some TIRS data for a number of \nscenes were not processed due to non-",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.21797238531255403,
+              "method": "lexical",
+              "rank": 5
+            },
+            {
+              "id": "landsat-v5-p081-text-034#part-001",
+              "evidence_id": "landsat-v5-p081-text-034",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 81,
+              "printed_label": "73",
+              "bbox": [
+                437.53,
+                390.2,
+                509.06,
+                449.77
+              ],
+              "text": "No TIRS or OLI \ndata acquired \ndue to TIRS \nside-swap \nactivities",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.20109841476888474,
+              "method": "lexical",
+              "rank": 6
+            },
+            {
+              "id": "landsat-v5-p080-text-016#part-001",
+              "evidence_id": "landsat-v5-p080-text-016",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 80,
+              "printed_label": "72",
+              "bbox": [
+                437.52,
+                531.92,
+                513.6,
+                614.52
+              ],
+              "text": "Several lost \nTIRS scenes in \nthe period; TIRS \nimaging stopped \nin preparation \nfor TIRS side-\nswap",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.15181175284721968,
+              "method": "lexical",
+              "rank": 7
+            },
+            {
+              "id": "landsat-v5-p081-text-015#part-001",
+              "evidence_id": "landsat-v5-p081-text-015",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 81,
+              "printed_label": "73",
+              "bbox": [
+                437.52,
+                117.92,
+                513.6,
+                200.52
+              ],
+              "text": "Several lost \nTIRS scenes in \nthe period; TIRS \nimaging stopped \nin preparation \nfor TIRS side-\nswap",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.15181175284721968,
+              "method": "lexical",
+              "rank": 8
+            },
+            {
+              "id": "landsat-v5-p081-text-055#part-001",
+              "evidence_id": "landsat-v5-p081-text-055",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 81,
+              "printed_label": "73",
+              "bbox": [
+                83.64,
+                604.4,
+                511.32,
+                699.5
+              ],
+              "text": "B-side, nominal \nSSM; without \nTIRS calibration \nparameters \nMarch 7 \n(00:00:00 \nUTC) - April",
+              "metadata": {
+                "element_type": "text",
+                "section": "Section 6"
+              },
+              "warning": null,
+              "score": 0.13779078805542266,
+              "method": "lexical",
+              "rank": 9
+            },
+            {
+              "id": "landsat-v5-p045-text-002#part-001",
+              "evidence_id": "landsat-v5-p045-text-002",
+              "source_id": "LSDS-1574-v5.0",
+              "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+              "page": 45,
+              "printed_label": "37",
+              "bbox": [
+                72.0,
+                620.81,
+                539.74,
+                709.38
+              ],
+              "text": "3.2.10.2 Reference Images \nTwo types of reference images are used by the geometric super-site calibration \noperations described above. The first type includes previously generated L8 Level 1 \nproducts used in the image-to-image registration assessment process. These reference \nimages were generated by processing L0R data through the IAS Level 1 processing \nsoftware after launch and are not discussed further here. The second type of reference",
+              "metadata": {
+                "element_type": "text",
+                "section": "3.2.10.2 Reference Images"
+              },
+              "warning": null,
+              "score": 0.13138357649715848,
+              "method": "lexical",
+              "rank": 10
+            }
+          ]
+        },
+        "reference_routing": [],
+        "raw_ranking": [
+          {
+            "id": "landsat-v5-p083-image-001#part-001",
+            "evidence_id": "landsat-v5-p083-image-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 83,
+            "printed_label": "75",
+            "bbox": [
+              73.5,
+              73.5,
+              541.5,
+              300.55
+            ],
+            "text": "Figure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nFigure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly\nAI-observed visual description, not independently verified: Two side-by-side images, one colored and one pale grayscale, each with a red rectangle.\nUnverified OCR:",
+            "metadata": {
+              "element_type": "image",
+              "section": "Section 6"
+            },
+            "warning": "Visual candidates may use captions, page text, unverified OCR or AI-observed descriptions; inspect the original region.",
+            "score": 0.03252247488101534,
+            "method": "hybrid_rrf",
+            "rank": 1,
+            "branch_ranks": {
+              "dense": 2,
+              "lexical": 1
+            }
+          },
+          {
+            "id": "landsat-v5-p066-text-003#part-001",
+            "evidence_id": "landsat-v5-p066-text-003",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 66,
+            "printed_label": "58",
+            "bbox": [
+              182.16,
+              304.96,
+              399.37,
+              319.22
+            ],
+            "text": "Bit \nDescription \nColor",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 5"
+            },
+            "warning": null,
+            "score": 0.0315136476426799,
+            "method": "hybrid_rrf",
+            "rank": 2,
+            "branch_ranks": {
+              "dense": 5,
+              "lexical": 2
+            }
+          },
+          {
+            "id": "landsat-v5-p005-text-001#part-001",
+            "evidence_id": "landsat-v5-p005-text-001",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 5,
+            "printed_label": "v",
+            "bbox": [
+              72.0,
+              70.15,
+              145.8,
+              93.0
+            ],
+            "text": "Contents",
+            "metadata": {
+              "element_type": "text",
+              "section": null
+            },
+            "warning": null,
+            "score": 0.01639344262295082,
+            "method": "hybrid_rrf",
+            "rank": 3,
+            "branch_ranks": {
+              "dense": 1
+            }
+          },
+          {
+            "id": "landsat-v5-p004-text-002#part-001",
+            "evidence_id": "landsat-v5-p004-text-002",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 4,
+            "printed_label": "iv",
+            "bbox": [
+              126.48,
+              105.05,
+              188.5,
+              122.23
+            ],
+            "text": "Document",
+            "metadata": {
+              "element_type": "text",
+              "section": null
+            },
+            "warning": null,
+            "score": 0.015873015873015872,
+            "method": "hybrid_rrf",
+            "rank": 4,
+            "branch_ranks": {
+              "dense": 3
+            }
+          },
+          {
+            "id": "landsat-v5-p027-text-025#part-001",
+            "evidence_id": "landsat-v5-p027-text-025",
+            "source_id": "LSDS-1574-v5.0",
+            "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+            "page": 27,
+            "printed_label": "19",
+            "bbox": [
+              77.64,
+              677.96,
+              177.73,
+              691.56
+            ],
+            "text": "Side-slither maneuver",
+            "metadata": {
+              "element_type": "text",
+              "section": "Section 3"
+            },
+            "warning": null,
+            "score": 0.015873015873015872,
+            "method": "hybrid_rrf",
+            "rank": 5,
+            "branch_ranks": {
+              "lexical": 3
+            }
+          }
+        ],
+        "limitations": "Visual search may use captions, page text, unverified OCR or AI-observed descriptions; visual facts require separate source review."
+      }
+    }
+  ]
+}

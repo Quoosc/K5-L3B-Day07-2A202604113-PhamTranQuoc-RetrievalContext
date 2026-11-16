@@ -1,0 +1,43 @@
+{
+  "total": 26,
+  "passed": 6,
+  "errors_or_missing": 9,
+  "groups": {
+    "table": {
+      "n": 1,
+      "N": 4,
+      "rate": 0.25
+    },
+    "image": {
+      "n": 0,
+      "N": 4,
+      "rate": 0.0
+    },
+    "chart": {
+      "n": 3,
+      "N": 4,
+      "rate": 0.75
+    },
+    "multi_hop": {
+      "n": 0,
+      "N": 4,
+      "rate": 0.0
+    },
+    "text": {
+      "n": 1,
+      "N": 4,
+      "rate": 0.25
+    },
+    "unanswerable": {
+      "n": 1,
+      "N": 6,
+      "rate": 0.16666666666666666
+    }
+  },
+  "rate": 0.23076923076923078,
+  "required_passes": 24,
+  "meets_90_percent": false,
+  "run_id": "advanced-dev-20261115-a0",
+  "reviewer": "Codex (AI source review; no independent human review)",
+  "note": "Strict binary review; every failure and error remains in the denominator."
+}

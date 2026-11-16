@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-11-16T02:40:39.205271+00:00",
+  "base_manifest": "artifacts/advanced/search_manifest-v5.json",
+  "base_manifest_sha256": "f10a3f30c87f842b4c87716f4d57306976cee5119e445cd3f4e610e92f61ca6b",
+  "source_elements": "artifacts/advanced/elements-described-v1.jsonl",
+  "source_elements_sha256": "8d00d3f149b2e3fbe2ca927ca5fc8e76e279c6d21c80c1ca4fd53b74e560a0e3",
+  "descriptions": "artifacts/advanced/visual-descriptions-v1.jsonl",
+  "descriptions_sha256": "909b0b7ec6f5329e3f46b6fd6b205dfe15ed4168c30d6aa98921e8bee91e92bc",
+  "builder_code_snapshot": "artifacts/advanced/code-snapshots/a1/advanced_retrieval.py",
+  "builder_code_sha256": "0287471b3fe181529fdb7be8080de2fb51336ae40cd8e2f67ba9baef53b53d3b",
+  "snippets": 995,
+  "supplement": "The ten OCR-empty image regions also have qualitative AI-observed descriptions. The original builder manifest is preserved verbatim; its text/caption/OCR status does not mention this additional input.",
+  "limitations": "AI-generated observations are not independently verified or authoritative evidence and cover only ten visual regions. No advanced dev/test result was available when this supplement was created; later A4/A5 dev runs used this index."
+}

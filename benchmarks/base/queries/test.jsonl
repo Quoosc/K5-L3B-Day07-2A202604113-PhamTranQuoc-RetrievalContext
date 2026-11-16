@@ -1,0 +1,7 @@
+{"id": "b-test-01", "split": "test", "question": "In the documented example, what key order does json.dumps produce for {\"c\": 0, \"b\": 0, \"a\": 0} when sort_keys=True?", "scope": {}}
+{"id": "b-test-02", "split": "test", "question": "For PureWindowsPath, which of c:/a/b and /a/b is absolute, and what is the documented condition?", "scope": {}}
+{"id": "b-test-03", "split": "test", "question": "What does IOBase.flush() do on read-only and non-blocking streams?", "scope": {}}
+{"id": "b-test-04", "split": "test", "question": "What does list.index(x) return, and what happens when no item equals x?", "scope": {}}
+{"id": "b-test-05", "split": "test", "question": "Which input types does json.loads accept, and which encodings are documented for byte input?", "scope": {}}
+{"id": "b-test-m01", "split": "test", "question": "On what date did the fictional Sapphire-Ledger project migrate its file paths to pathlib, according to these documents?", "scope": {}}
+{"id": "b-test-m02", "split": "test", "question": "Which API endpoint receives the fictional Lakewood-Observatory 2027 data after json.loads, according to these documents?", "scope": {}}

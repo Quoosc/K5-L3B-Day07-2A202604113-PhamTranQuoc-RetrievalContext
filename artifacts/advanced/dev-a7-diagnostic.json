@@ -1,0 +1,6 @@
+{
+  "experiment": "A7 partial development prompt probe",
+  "cases": 6,
+  "copied_example_answers": 5,
+  "conclusion": "Explicit JSON examples were copied literally. This failed probe does not qualify a freeze and is not a test score. A8 separates natural-language perception from structured finalization."
+}

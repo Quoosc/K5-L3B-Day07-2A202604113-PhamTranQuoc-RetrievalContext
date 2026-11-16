@@ -1,0 +1,15 @@
+{
+  "created_at": "2026-11-16T02:27:16.369698+00:00",
+  "kind": "offline-dev-refinement-pilot",
+  "split": "dev",
+  "source_trace_sha256": {
+    "artifacts\\advanced\\runs\\advanced-dev-20261115-a1\\traces.jsonl": "6f108aeda5db6b20874d7e14ec2a6c4b9da271f79598d6851b054c9cba56f2fe",
+    "artifacts\\advanced\\runs\\advanced-dev-20261115-a1-continuation-v2\\traces.jsonl": "f6392cb85d106f5ac87a70d003ccbb3affbee32e98a40517cf38fc17bcc6ea6b"
+  },
+  "query_sha256": "dad775a261dae26a8fd98ddff7371537d331f2ada4e2c315ac2ab051cd1eec3a",
+  "element_sha256": "91ed9c1d543a5c0e68e849725e744268ecf13b494d7923e57f220aea6c32c548",
+  "refiner_code_sha256": "85b146466ae1c48805fea6daffd7ad48660050cf809a9b3c4c75b5b6e90e2c5a",
+  "refiner_model": "qwen2.5-7b-local",
+  "refiner_model_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "note": "No gold supplied. Text model sees unverified OCR/table extracts and the vision draft, not image pixels. A missing/timeout draft remains an error. Not an independent end-to-end test run."
+}

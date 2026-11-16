@@ -1,0 +1,19 @@
+{
+  "started_at": "2026-11-16T02:20:39.502895+00:00",
+  "original": "artifacts\\advanced\\runs\\advanced-dev-20261115-a1",
+  "original_trace_sha256": "6f108aeda5db6b20874d7e14ec2a6c4b9da271f79598d6851b054c9cba56f2fe",
+  "index_manifest_sha256": "95dfde2ff9fdf00479fce2a03689e70743363d90f7c5b65598e3f0d45b39022f",
+  "search_chunks_sha256": "0ecc6ea0ac4c9fb879d0b8de0f323b1b40775143278e3566b4ddaa698aec48b3",
+  "qdrant_collection_sha256": "270201f4830f8824c02026de901756a120594c9bf4f68db89b3b1ea239a78072",
+  "continuation_code_sha256": "c48ed5bde4a146222fe7680b3f41484838c638d0cb4b1ebad02578c80c4ee9b8",
+  "input_checks": {
+    "query_sha256": "dad775a261dae26a8fd98ddff7371537d331f2ada4e2c315ac2ab051cd1eec3a",
+    "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756",
+    "ocr_sha256": "fbd27b8dcfe73fc4df23aeaebb99b79e17987f9ea500db5f096d993d64282225",
+    "projector_sha256": "980c9b2f78c04e6cff93d277ada09e768394f112d75db3b4e9dea8a69f9fb904",
+    "model_sha256": "d02fe9b69ad8cadbbd228e387667af66612c44bed29ffc8eb1e7caf9ac486c12"
+  },
+  "original_count": 15,
+  "total_count": 26,
+  "note": "Only the missing suffix is run; original errors and earlier answers are retained without retry."
+}

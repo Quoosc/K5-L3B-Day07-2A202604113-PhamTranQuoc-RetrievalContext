@@ -1,0 +1,36 @@
+{
+  "configuration": "D0",
+  "split": "test",
+  "reviewer": "Codex (AI-assisted; not human-verified)",
+  "cases": 7,
+  "errors": 1,
+  "context_grades": {
+    "2": 5
+  },
+  "grounded_grades": {
+    "0": 1,
+    "2": 4
+  },
+  "grounded_mean_all_answerable": 1.6,
+  "citation_support": {
+    "n": 4,
+    "N": 9
+  },
+  "answer_citation_coverage": {
+    "n": 4,
+    "N": 4
+  },
+  "abstention": {
+    "n": 2,
+    "N": 2
+  },
+  "false_abstention": {
+    "n": 0,
+    "N": 5
+  },
+  "tool_use_successful": {
+    "n": 6,
+    "N": 6
+  },
+  "review_path": "artifacts/base/test-review-D0.jsonl"
+}

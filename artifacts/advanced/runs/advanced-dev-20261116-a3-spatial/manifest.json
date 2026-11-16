@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-16T02:43:19.964842+00:00",
+  "split": "dev",
+  "kind": "offline-dev-spatial-tool-pilot",
+  "input_trace_sha256": "7c8342a62b65b3ba739cc23c82c182270e6dd2ad5c74ffa04ed5aa53fa8a8557",
+  "ocr_sha256": "fbd27b8dcfe73fc4df23aeaebb99b79e17987f9ea500db5f096d993d64282225",
+  "spatial_code_sha256": "32b095966a857dc6841ebc8a01edeadc039025257960c905171993d99c8f560a",
+  "script_sha256": "1a5f5ae4fecc9e74b64848909d999940722f7911db99b7a30830a211f679c65b",
+  "model_calls": 0,
+  "note": "No gold or new model calls. A unique OCR geometry lookup may replace an answer; each change requires source review and this is not a test run."
+}

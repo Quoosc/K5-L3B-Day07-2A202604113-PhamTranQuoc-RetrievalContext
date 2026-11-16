@@ -1,0 +1,34 @@
+{
+  "started_at": "2026-11-15T10:28:15.333513+00:00",
+  "run_id": "advanced-dev-20261115-a1",
+  "split": "dev",
+  "model": "qwen2.5-vl-3b-local",
+  "config": {
+    "id": "A1",
+    "description": "Caption routing, schema-constrained actions, OCR and extracted table rows plus local vision crops.",
+    "candidate_k": 8,
+    "branch_pool": 10,
+    "max_open_regions": 2,
+    "crop_dpi": 150,
+    "schema_mode": true,
+    "include_table_text": true,
+    "use_ocr": true,
+    "temperature": 0,
+    "retry_count": 0,
+    "selection_policy": "Choose on complete dev pass rate and group failures; use latency and cost as tie-breaks. A readiness target of 24/26 does not substitute for independent test."
+  },
+  "model_sha256": "d02fe9b69ad8cadbbd228e387667af66612c44bed29ffc8eb1e7caf9ac486c12",
+  "projector_sha256": "980c9b2f78c04e6cff93d277ada09e768394f112d75db3b4e9dea8a69f9fb904",
+  "query_sha256": "dad775a261dae26a8fd98ddff7371537d331f2ada4e2c315ac2ab051cd1eec3a",
+  "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756",
+  "lock_sha256": null,
+  "ocr_sha256": "fbd27b8dcfe73fc4df23aeaebb99b79e17987f9ea500db5f096d993d64282225",
+  "ocr_error_count": 0,
+  "code_sha256": {
+    "src/day07/advanced_agent.py": "dc0ae47274a4ba41081534802b72e70c02c5b04fe2f471ca4fd4d0822bb9d1f8",
+    "src/day07/advanced_retrieval.py": "0287471b3fe181529fdb7be8080de2fb51336ae40cd8e2f67ba9baef53b53d3b",
+    "src/day07/agent.py": "3377fa1fec5ea751fe815c655d3f525f8f651287fc76c782f3788bd4cff924a3",
+    "scripts/run_advanced.py": "ee8a32b2b9dbb106421ffb9066f3f94b7549d2a28b8762c69171138d5fc2d423"
+  },
+  "note": "Candidate search uses source text, captions and unverified OCR when supplied; no gold is supplied to the model."
+}

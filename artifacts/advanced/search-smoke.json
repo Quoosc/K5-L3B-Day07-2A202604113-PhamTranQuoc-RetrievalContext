@@ -1,0 +1,606 @@
+{
+  "query": "Illustration of Landsat 8 Observatory Figure 2-1",
+  "method": "hybrid",
+  "results": [
+    {
+      "id": "landsat-v5-p016-image-001#part-001",
+      "evidence_id": "landsat-v5-p016-image-001",
+      "source_id": "LSDS-1574-v5.0",
+      "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+      "page": 16,
+      "printed_label": "8",
+      "bbox": [
+        333.0,
+        105.75,
+        539.95,
+        356.3
+      ],
+      "text": "Figure 2-1. Illustration of \nLandsat 8 Observatory",
+      "metadata": {
+        "element_type": "image",
+        "section": "Section 2"
+      },
+      "warning": "Image region is indexed by nearby page captions only; its visual content is not transcribed or verified.",
+      "score": 0.03278688524590164,
+      "method": "hybrid_rrf",
+      "rank": 1,
+      "branch_ranks": {
+        "dense": 1,
+        "lexical": 1
+      }
+    },
+    {
+      "id": "landsat-v5-p016-text-002#part-001",
+      "evidence_id": "landsat-v5-p016-text-002",
+      "source_id": "LSDS-1574-v5.0",
+      "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+      "page": 16,
+      "printed_label": "8",
+      "bbox": [
+        373.8,
+        367.82,
+        517.18,
+        398.35
+      ],
+      "text": "Figure 2-1. Illustration of \nLandsat 8 Observatory",
+      "metadata": {
+        "element_type": "text",
+        "section": "Section 2"
+      },
+      "warning": null,
+      "score": 0.03225806451612903,
+      "method": "hybrid_rrf",
+      "rank": 2,
+      "branch_ranks": {
+        "dense": 2,
+        "lexical": 2
+      }
+    },
+    {
+      "id": "landsat-v5-p013-text-013#part-001",
+      "evidence_id": "landsat-v5-p013-text-013",
+      "source_id": "LSDS-1574-v5.0",
+      "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+      "page": 13,
+      "printed_label": "5",
+      "bbox": [
+        90.24,
+        491.42,
+        524.98,
+        508.15
+      ],
+      "text": "Table 1-1. Comparison of Landsat 7 and Landsat 8 Observatory Capabilities",
+      "metadata": {
+        "element_type": "text",
+        "section": "1.3.2  System Capabilities"
+      },
+      "warning": null,
+      "score": 0.031009615384615385,
+      "method": "hybrid_rrf",
+      "rank": 3,
+      "branch_ranks": {
+        "dense": 5,
+        "lexical": 4
+      }
+    },
+    {
+      "id": "landsat-v5-p007-text-002#part-001",
+      "evidence_id": "landsat-v5-p007-text-002",
+      "source_id": "LSDS-1574-v5.0",
+      "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+      "page": 7,
+      "printed_label": "vii",
+      "bbox": [
+        72.0,
+        151.08,
+        542.02,
+        719.46
+      ],
+      "text": "Figure 1-1. Continuity of Multispectral Data Coverage Provided by Landsat Missions ... 4 \nFigure 2-1. Illustration of Landsat 8 Observatory ............................................................ 8 \nFigure 2-2. OLI Instrument .............................................................................................. 9 \nFigure 2-3. OLI Signal-to-Noise (SNR) Performance at Ltypical ................................... 11 \nFigure 2-4. OLI Focal Plane .......................................................................................... 12 \nFigure 2-5. Odd/Even SCA Band Arrangement ............................................................. 12 \nFigure 2-6. TIRS Instrument with Earthshield Deployed................................................ 13 \nFigure 2-7. TIRS Focal Plane ........................................................................................ 14 \nFigure 2-8. TIRS Optical Sensor Unit ............................................................................ 15 \nFigure 3-1. Simulated OLI Image of the Lake Pontchartrain Causeway ........................ 36 \nFigure 4-1. LPGS Standard Product Data Flow ............................................................ 45 \nFigure 4-2. Level 1 Product Ground Swath and Scene Size ......................................... 47 \nFigure 4-3. Spectral Bands and Wavelengths for Landsat Sensors .............................. 50 \nFigure 4-4. Landsat 8 Quality Band ............................................................................... 53 \nFigure 5-1. Landsat Look Quality Image ....................................................................... 59 \nFigure 6-1. EarthExplorer Interface ............................................................................... 61 \nFigure 6-2. EarthExplorer Landsat Level 1 Datasets ..................................................... 61 \nFigure 6-3. EarthExplorer Results - Browse Image Display .......................................... 62 \nFigure 6-4.",
+      "metadata": {
+        "element_type": "text",
+        "section": null
+      },
+      "warning": null,
+      "score": 0.015873015873015872,
+      "method": "hybrid_rrf",
+      "rank": 4,
+      "branch_ranks": {
+        "lexical": 3
+      }
+    },
+    {
+      "id": "landsat-v5-p067-image-001#part-001",
+      "evidence_id": "landsat-v5-p067-image-001",
+      "source_id": "LSDS-1574-v5.0",
+      "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+      "page": 67,
+      "printed_label": "59",
+      "bbox": [
+        131.25,
+        73.5,
+        480.0,
+        411.75
+      ],
+      "text": "Figure 5-1. Landsat Look Quality Image",
+      "metadata": {
+        "element_type": "image",
+        "section": "Section 5"
+      },
+      "warning": "Image region is indexed by nearby page captions only; its visual content is not transcribed or verified.",
+      "score": 0.015873015873015872,
+      "method": "hybrid_rrf",
+      "rank": 5,
+      "branch_ranks": {
+        "dense": 3
+      }
+    }
+  ],
+  "branches": {
+    "dense": [
+      {
+        "id": "landsat-v5-p016-image-001#part-001",
+        "evidence_id": "landsat-v5-p016-image-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 16,
+        "printed_label": "8",
+        "bbox": [
+          333.0,
+          105.75,
+          539.95,
+          356.3
+        ],
+        "text": "Figure 2-1. Illustration of \nLandsat 8 Observatory",
+        "metadata": {
+          "element_type": "image",
+          "section": "Section 2"
+        },
+        "warning": "Image region is indexed by nearby page captions only; its visual content is not transcribed or verified.",
+        "score": 0.9528240674113091,
+        "method": "dense",
+        "rank": 1
+      },
+      {
+        "id": "landsat-v5-p016-text-002#part-001",
+        "evidence_id": "landsat-v5-p016-text-002",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 16,
+        "printed_label": "8",
+        "bbox": [
+          373.8,
+          367.82,
+          517.18,
+          398.35
+        ],
+        "text": "Figure 2-1. Illustration of \nLandsat 8 Observatory",
+        "metadata": {
+          "element_type": "text",
+          "section": "Section 2"
+        },
+        "warning": null,
+        "score": 0.9528240674113091,
+        "method": "dense",
+        "rank": 2
+      },
+      {
+        "id": "landsat-v5-p067-image-001#part-001",
+        "evidence_id": "landsat-v5-p067-image-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 67,
+        "printed_label": "59",
+        "bbox": [
+          131.25,
+          73.5,
+          480.0,
+          411.75
+        ],
+        "text": "Figure 5-1. Landsat Look Quality Image",
+        "metadata": {
+          "element_type": "image",
+          "section": "Section 5"
+        },
+        "warning": "Image region is indexed by nearby page captions only; its visual content is not transcribed or verified.",
+        "score": 0.883603544149477,
+        "method": "dense",
+        "rank": 3
+      },
+      {
+        "id": "landsat-v5-p067-text-001#part-001",
+        "evidence_id": "landsat-v5-p067-text-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 67,
+        "printed_label": "59",
+        "bbox": [
+          193.92,
+          425.06,
+          424.66,
+          441.79
+        ],
+        "text": "Figure 5-1. Landsat Look Quality Image",
+        "metadata": {
+          "element_type": "text",
+          "section": "Section 5"
+        },
+        "warning": null,
+        "score": 0.883603544149477,
+        "method": "dense",
+        "rank": 4
+      },
+      {
+        "id": "landsat-v5-p013-text-013#part-001",
+        "evidence_id": "landsat-v5-p013-text-013",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 13,
+        "printed_label": "5",
+        "bbox": [
+          90.24,
+          491.42,
+          524.98,
+          508.15
+        ],
+        "text": "Table 1-1. Comparison of Landsat 7 and Landsat 8 Observatory Capabilities",
+        "metadata": {
+          "element_type": "text",
+          "section": "1.3.2  System Capabilities"
+        },
+        "warning": null,
+        "score": 0.8813264599823262,
+        "method": "dense",
+        "rank": 5
+      },
+      {
+        "id": "landsat-v5-p061-image-001#part-001",
+        "evidence_id": "landsat-v5-p061-image-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 61,
+        "printed_label": "53",
+        "bbox": [
+          131.25,
+          73.5,
+          480.0,
+          411.75
+        ],
+        "text": "Figure 4-4. Landsat 8 Quality Band",
+        "metadata": {
+          "element_type": "image",
+          "section": "4.2.3 Quality Assessment Band"
+        },
+        "warning": "Image region is indexed by nearby page captions only; its visual content is not transcribed or verified.",
+        "score": 0.8811563519878443,
+        "method": "dense",
+        "rank": 6
+      },
+      {
+        "id": "landsat-v5-p061-text-001#part-001",
+        "evidence_id": "landsat-v5-p061-text-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 61,
+        "printed_label": "53",
+        "bbox": [
+          207.24,
+          425.06,
+          407.98,
+          441.79
+        ],
+        "text": "Figure 4-4. Landsat 8 Quality Band",
+        "metadata": {
+          "element_type": "text",
+          "section": "4.2.3 Quality Assessment Band"
+        },
+        "warning": null,
+        "score": 0.8811563519878443,
+        "method": "dense",
+        "rank": 7
+      },
+      {
+        "id": "landsat-v5-p086-image-001#part-001",
+        "evidence_id": "landsat-v5-p086-image-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 86,
+        "printed_label": "78",
+        "bbox": [
+          73.5,
+          73.5,
+          541.44,
+          404.85
+        ],
+        "text": "Figure A-8. Landsat 8 Oversaturated Pixels Acquired with Lower 12 Bits",
+        "metadata": {
+          "element_type": "image",
+          "section": "Section 6"
+        },
+        "warning": "Image region is indexed by nearby page captions only; its visual content is not transcribed or verified.",
+        "score": 0.8806492306003613,
+        "method": "dense",
+        "rank": 8
+      },
+      {
+        "id": "landsat-v5-p086-text-001#part-001",
+        "evidence_id": "landsat-v5-p086-text-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 86,
+        "printed_label": "78",
+        "bbox": [
+          101.52,
+          417.62,
+          513.7,
+          434.35
+        ],
+        "text": "Figure A-8. Landsat 8 Oversaturated Pixels Acquired with Lower 12 Bits",
+        "metadata": {
+          "element_type": "text",
+          "section": "Section 6"
+        },
+        "warning": null,
+        "score": 0.8806492306003613,
+        "method": "dense",
+        "rank": 9
+      },
+      {
+        "id": "landsat-v5-p086-vector_page-001#part-001",
+        "evidence_id": "landsat-v5-p086-vector_page-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 86,
+        "printed_label": "78",
+        "bbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "text": "Figure A-8. Landsat 8 Oversaturated Pixels Acquired with Lower 12 Bits",
+        "metadata": {
+          "element_type": "vector_page",
+          "section": "Section 6"
+        },
+        "warning": "Page-level candidate for vector graphics; not a verified figure or chart boundary.",
+        "score": 0.8806492306003613,
+        "method": "dense",
+        "rank": 10
+      }
+    ],
+    "lexical": [
+      {
+        "id": "landsat-v5-p016-image-001#part-001",
+        "evidence_id": "landsat-v5-p016-image-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 16,
+        "printed_label": "8",
+        "bbox": [
+          333.0,
+          105.75,
+          539.95,
+          356.3
+        ],
+        "text": "Figure 2-1. Illustration of \nLandsat 8 Observatory",
+        "metadata": {
+          "element_type": "image",
+          "section": "Section 2"
+        },
+        "warning": "Image region is indexed by nearby page captions only; its visual content is not transcribed or verified.",
+        "score": 1.0,
+        "method": "lexical",
+        "rank": 1
+      },
+      {
+        "id": "landsat-v5-p016-text-002#part-001",
+        "evidence_id": "landsat-v5-p016-text-002",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 16,
+        "printed_label": "8",
+        "bbox": [
+          373.8,
+          367.82,
+          517.18,
+          398.35
+        ],
+        "text": "Figure 2-1. Illustration of \nLandsat 8 Observatory",
+        "metadata": {
+          "element_type": "text",
+          "section": "Section 2"
+        },
+        "warning": null,
+        "score": 1.0,
+        "method": "lexical",
+        "rank": 2
+      },
+      {
+        "id": "landsat-v5-p007-text-002#part-001",
+        "evidence_id": "landsat-v5-p007-text-002",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 7,
+        "printed_label": "vii",
+        "bbox": [
+          72.0,
+          151.08,
+          542.02,
+          719.46
+        ],
+        "text": "Figure 1-1. Continuity of Multispectral Data Coverage Provided by Landsat Missions ... 4 \nFigure 2-1. Illustration of Landsat 8 Observatory ............................................................ 8 \nFigure 2-2. OLI Instrument .............................................................................................. 9 \nFigure 2-3. OLI Signal-to-Noise (SNR) Performance at Ltypical ................................... 11 \nFigure 2-4. OLI Focal Plane .......................................................................................... 12 \nFigure 2-5. Odd/Even SCA Band Arrangement ............................................................. 12 \nFigure 2-6. TIRS Instrument with Earthshield Deployed................................................ 13 \nFigure 2-7. TIRS Focal Plane ........................................................................................ 14 \nFigure 2-8. TIRS Optical Sensor Unit ............................................................................ 15 \nFigure 3-1. Simulated OLI Image of the Lake Pontchartrain Causeway ........................ 36 \nFigure 4-1. LPGS Standard Product Data Flow ............................................................ 45 \nFigure 4-2. Level 1 Product Ground Swath and Scene Size ......................................... 47 \nFigure 4-3. Spectral Bands and Wavelengths for Landsat Sensors .............................. 50 \nFigure 4-4. Landsat 8 Quality Band ............................................................................... 53 \nFigure 5-1. Landsat Look Quality Image ....................................................................... 59 \nFigure 6-1. EarthExplorer Interface ............................................................................... 61 \nFigure 6-2. EarthExplorer Landsat Level 1 Datasets ..................................................... 61 \nFigure 6-3. EarthExplorer Results - Browse Image Display .......................................... 62 \nFigure 6-4.",
+        "metadata": {
+          "element_type": "text",
+          "section": null
+        },
+        "warning": null,
+        "score": 0.5022530426954832,
+        "method": "lexical",
+        "rank": 3
+      },
+      {
+        "id": "landsat-v5-p013-text-013#part-001",
+        "evidence_id": "landsat-v5-p013-text-013",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 13,
+        "printed_label": "5",
+        "bbox": [
+          90.24,
+          491.42,
+          524.98,
+          508.15
+        ],
+        "text": "Table 1-1. Comparison of Landsat 7 and Landsat 8 Observatory Capabilities",
+        "metadata": {
+          "element_type": "text",
+          "section": "1.3.2  System Capabilities"
+        },
+        "warning": null,
+        "score": 0.4629098818900696,
+        "method": "lexical",
+        "rank": 4
+      },
+      {
+        "id": "landsat-v5-p077-image-001#part-001",
+        "evidence_id": "landsat-v5-p077-image-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 77,
+        "printed_label": "69",
+        "bbox": [
+          73.5,
+          73.5,
+          558.0,
+          384.0
+        ],
+        "text": "Figure A-4. Stray Light Source of a Single TIRS Detector Illustration",
+        "metadata": {
+          "element_type": "image",
+          "section": "Section 6"
+        },
+        "warning": "Image region is indexed by nearby page captions only; its visual content is not transcribed or verified.",
+        "score": 0.3528933669541044,
+        "method": "lexical",
+        "rank": 5
+      },
+      {
+        "id": "landsat-v5-p077-text-001#part-001",
+        "evidence_id": "landsat-v5-p077-text-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 77,
+        "printed_label": "69",
+        "bbox": [
+          114.0,
+          396.62,
+          501.34,
+          413.35
+        ],
+        "text": "Figure A-4. Stray Light Source of a Single TIRS Detector Illustration",
+        "metadata": {
+          "element_type": "text",
+          "section": "Section 6"
+        },
+        "warning": null,
+        "score": 0.3528933669541044,
+        "method": "lexical",
+        "rank": 6
+      },
+      {
+        "id": "landsat-v5-p013-vector_page-001#part-001",
+        "evidence_id": "landsat-v5-p013-vector_page-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 13,
+        "printed_label": "5",
+        "bbox": [
+          0.0,
+          0.0,
+          612.0,
+          792.0
+        ],
+        "text": "The L8 Observatory offers many improvements over its predecessor, L7. See Table 1-1 \nfor a high-level comparison of L7 and L8 Observatory capabilities. The following \nsubsections contain further details.\nTable 1-1. Comparison of Landsat 7 and Landsat 8 Observatory Capabilities",
+        "metadata": {
+          "element_type": "vector_page",
+          "section": "1.3.4 Rapid Data Availability"
+        },
+        "warning": "Page-level candidate for vector graphics; not a verified figure or chart boundary.",
+        "score": 0.334994235076623,
+        "method": "lexical",
+        "rank": 7
+      },
+      {
+        "id": "landsat-v5-p017-image-001#part-001",
+        "evidence_id": "landsat-v5-p017-image-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 17,
+        "printed_label": "9",
+        "bbox": [
+          73.25,
+          402.12,
+          335.64,
+          579.13
+        ],
+        "text": "Figure 2-2. OLI Instrument",
+        "metadata": {
+          "element_type": "image",
+          "section": "Section 2"
+        },
+        "warning": "Image region is indexed by nearby page captions only; its visual content is not transcribed or verified.",
+        "score": 0.3325672923017688,
+        "method": "lexical",
+        "rank": 8
+      },
+      {
+        "id": "landsat-v5-p017-text-003#part-001",
+        "evidence_id": "landsat-v5-p017-text-003",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 17,
+        "printed_label": "9",
+        "bbox": [
+          129.96,
+          590.9,
+          282.7,
+          607.63
+        ],
+        "text": "Figure 2-2. OLI Instrument",
+        "metadata": {
+          "element_type": "text",
+          "section": "Section 2"
+        },
+        "warning": null,
+        "score": 0.3325672923017688,
+        "method": "lexical",
+        "rank": 9
+      },
+      {
+        "id": "landsat-v5-p016-text-001#part-001",
+        "evidence_id": "landsat-v5-p016-text-001",
+        "source_id": "LSDS-1574-v5.0",
+        "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+        "page": 16,
+        "printed_label": "8",
+        "bbox": [
+          72.0,
+          70.15,
+          336.36,
+          93.0
+        ],
+        "text": "Section 2 \nObservatory Overview",
+        "metadata": {
+          "element_type": "text",
+          "section": "Section 2"
+        },
+        "warning": null,
+        "score": 0.31451383323268595,
+        "method": "lexical",
+        "rank": 10
+      }
+    ]
+  },
+  "limitations": "Image candidates are searchable by page caption only; visual facts require separate review."
+}

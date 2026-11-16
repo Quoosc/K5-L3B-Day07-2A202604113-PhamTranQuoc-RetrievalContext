@@ -1,0 +1,53 @@
+{
+  "total": 26,
+  "passed": 25,
+  "errors_or_missing": 0,
+  "groups": {
+    "table": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "image": {
+      "n": 3,
+      "N": 4,
+      "rate": 0.75
+    },
+    "chart": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "multi_hop": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "text": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "unanswerable": {
+      "n": 6,
+      "N": 6,
+      "rate": 1.0
+    }
+  },
+  "rate": 0.9615384615384616,
+  "required_passes": 24,
+  "meets_90_percent": true,
+  "run_id": "advanced-dev-20261116-a5-final",
+  "reviewer": "Codex (AI source review; no independent human review)",
+  "vision_stage_errors": 6,
+  "vision_stage_timeouts": 0,
+  "latency_seconds": {
+    "median": 6.166073900007177,
+    "p95": 9.362120900012087,
+    "note": "Sum of per-case stage times; excludes startup and waiting between stages."
+  },
+  "vision_prompt_tokens": 171578,
+  "refiner_prompt_tokens": 23469,
+  "api_cost_usd": 0.0,
+  "note": "Complete staged dev run; intermediate vision protocol errors are recorded separately. Review is AI-assisted and absence/index audit remains provisional."
+}

@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-16T02:31:32.375049+00:00",
+  "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756",
+  "ocr_sha256": "fbd27b8dcfe73fc4df23aeaebb99b79e17987f9ea500db5f096d993d64282225",
+  "pages_scanned": 114,
+  "ocr_regions_scanned": 77,
+  "ocr_empty_regions": 10,
+  "entities": 12,
+  "entities_found_in_text_or_ocr": 0,
+  "warning": "Literal matching and imperfect OCR do not replace visual or semantic absence review."
+}

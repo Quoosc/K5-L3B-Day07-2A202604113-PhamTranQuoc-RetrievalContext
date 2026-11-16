@@ -1,0 +1,18 @@
+{
+  "query_id": "advanced-smoke-outside-benchmark",
+  "question": "In Figure 2-1 of the handbook, what label points to the central blue body of the spacecraft?",
+  "model": "qwen2.5-vl-3b-local",
+  "status": "error",
+  "events": [],
+  "usage": {
+    "prompt_tokens": 140,
+    "completion_tokens": 57
+  },
+  "api_cost_usd": 0.0,
+  "answer": "",
+  "citations": [],
+  "stop_reason": "system_or_protocol_error",
+  "error": "ValueError: Model did not call search exactly once",
+  "elapsed_ms": 951.7608000005566,
+  "synthetic_not_benchmark": true
+}

@@ -1,0 +1,130 @@
+{
+  "checked_at": "2026-11-16T03:57:33.311479+00:00",
+  "source_verification": {
+    "schema_version": 1,
+    "confirmed_at": "2026-11-16T03:30:51.965624+00:00",
+    "author": "Phạm Trấn Quốc",
+    "student_id": "2A202604113",
+    "confirmation_method": "Explicit author statement in the task conversation",
+    "statement_verbatim": "tôi xác nhận với bạn là tôi đã kiểm chứng tất cả các nguồn trên",
+    "scope": [
+      "CPython 3.12.10 Day 6 corpus and base benchmark source evidence",
+      "Landsat 8 Data Users Handbook v5.0, all indexed source regions",
+      "Existing advanced benchmark answers, source locators and absence audits"
+    ],
+    "status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
+    "limits": "Confirms source verification. Does not change model outputs, verdicts, test independence or the instructor grade.",
+    "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756"
+  },
+  "benchmarks": {
+    "base": {
+      "splits": {
+        "dev": {
+          "structural_validation": {
+            "split": "dev",
+            "queries": 23,
+            "answerable": 20,
+            "unanswerable": 3,
+            "evidence_validation": "all alternatives resolved"
+          },
+          "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
+          "source_verification_record": "artifacts/source-verification.json"
+        },
+        "test": {
+          "structural_validation": {
+            "split": "test",
+            "queries": 7,
+            "answerable": 5,
+            "unanswerable": 2,
+            "evidence_validation": "all alternatives resolved"
+          },
+          "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
+          "source_verification_record": "artifacts/source-verification.json"
+        }
+      },
+      "fact_overlap": []
+    },
+    "advanced": {
+      "splits": {
+        "dev": {
+          "structural_validation": {
+            "split": "dev",
+            "total": 26,
+            "groups": {
+              "table": 4,
+              "image": 4,
+              "chart": 4,
+              "multi_hop": 4,
+              "text": 4,
+              "unanswerable": 6
+            },
+            "locator_status": "structural match only; source and semantic audit still required",
+            "absence_status": "provisional; extracted text scan is not a full visual absence audit"
+          },
+          "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
+          "source_verification_record": "artifacts/source-verification.json"
+        },
+        "test": {
+          "structural_validation": {
+            "split": "test",
+            "total": 30,
+            "groups": {
+              "table": 6,
+              "image": 5,
+              "chart": 5,
+              "multi_hop": 4,
+              "text": 4,
+              "unanswerable": 6
+            },
+            "locator_status": "structural match only; source and semantic audit still required",
+            "absence_status": "provisional; extracted text scan is not a full visual absence audit"
+          },
+          "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
+          "source_verification_record": "artifacts/source-verification.json"
+        }
+      },
+      "fact_overlap": []
+    },
+    "advanced-v2": {
+      "splits": {
+        "dev": {
+          "structural_validation": {
+            "split": "dev",
+            "total": 56,
+            "groups": {
+              "table": 10,
+              "image": 9,
+              "chart": 9,
+              "multi_hop": 8,
+              "text": 8,
+              "unanswerable": 12
+            },
+            "locator_status": "structural match only; source and semantic audit still required",
+            "absence_status": "provisional; extracted text scan is not a full visual absence audit"
+          },
+          "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
+          "source_verification_record": "artifacts/source-verification.json"
+        },
+        "test": {
+          "structural_validation": {
+            "split": "test",
+            "total": 30,
+            "groups": {
+              "table": 6,
+              "image": 5,
+              "chart": 5,
+              "multi_hop": 4,
+              "text": 4,
+              "unanswerable": 6
+            },
+            "locator_status": "structural match only; source and semantic audit still required",
+            "absence_status": "provisional; extracted text scan is not a full visual absence audit"
+          },
+          "source_verification_status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
+          "source_verification_record": "artifacts/source-verification.json"
+        }
+      },
+      "fact_overlap": []
+    }
+  }
+}

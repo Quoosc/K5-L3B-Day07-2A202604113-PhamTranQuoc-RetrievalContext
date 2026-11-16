@@ -1,0 +1,43 @@
+{
+  "total": 26,
+  "passed": 21,
+  "errors_or_missing": 1,
+  "groups": {
+    "table": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "image": {
+      "n": 1,
+      "N": 4,
+      "rate": 0.25
+    },
+    "chart": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "multi_hop": {
+      "n": 2,
+      "N": 4,
+      "rate": 0.5
+    },
+    "text": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "unanswerable": {
+      "n": 6,
+      "N": 6,
+      "rate": 1.0
+    }
+  },
+  "rate": 0.8076923076923077,
+  "required_passes": 24,
+  "meets_90_percent": false,
+  "run_id": "advanced-dev-20261116-a3-policy-v2",
+  "reviewer": "Codex (AI source review; no independent human review)",
+  "note": "Dev-only policy pilot reuses earlier vision/refiner results; four single-table questions were newly evaluated with a text model. No independent end-to-end test. Absence audit remains provisional."
+}

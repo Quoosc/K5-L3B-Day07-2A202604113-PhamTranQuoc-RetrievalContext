@@ -1,0 +1,878 @@
+{
+  "created_at": "2026-11-16T03:58:26.886951+00:00",
+  "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756",
+  "pdf_pages_scanned": 114,
+  "ocr_regions_scanned": 77,
+  "cases": [
+    {
+      "query_id": "adv2-test-025",
+      "reason": "Instrument descriptions and appendices describe OLI hardware but do not give its manufacturer hardware serial number.",
+      "scans": [
+        {
+          "term": "serial",
+          "hits": [
+            {
+              "pdf_page": 48,
+              "kind": "pdf_text",
+              "excerpt": " the ordered image.    Through the course of the mission, a serial collection of CPFs is generated and made  available for download. CPFs are replaced when improved c"
+            },
+            {
+              "pdf_page": 48,
+              "kind": "ocr_region",
+              "excerpt": " of the ordered image. Through the course of the mission, a serial collection of CPFs is generated and made available for download. CPFs are replaced when improved ca"
+            }
+          ]
+        },
+        {
+          "term": "serial number",
+          "hits": []
+        },
+        {
+          "term": "OLI",
+          "hits": [
+            {
+              "pdf_page": 3,
+              "kind": "pdf_text",
+              "excerpt": "ry,  including the spacecraft, the Operational Land Imager (OLI) and Thermal Infrared  Sensor (TIRS) instruments, and the L8 concept of operations  • Section 3 inc"
+            },
+            {
+              "pdf_page": 5,
+              "kind": "pdf_text",
+              "excerpt": ".......................... 8  2.2  Operational Land Imager (OLI) ......................................................................... 9  2.3  Thermal Infrared"
+            },
+            {
+              "pdf_page": 6,
+              "kind": "pdf_text",
+              "excerpt": ".................................................. 54  5.1  OLI and TIRS at Sensor Spectral Radiance.................................................... 54  5.2  O"
+            },
+            {
+              "pdf_page": 7,
+              "kind": "pdf_text",
+              "excerpt": "............................................ 8  Figure 2-2. OLI Instrument ........................................................................................"
+            },
+            {
+              "pdf_page": 8,
+              "kind": "pdf_text",
+              "excerpt": "t 8 Observatory Capabilities ................ 5  Table 2-1. OLI and TIRS Spectral Bands Compared to ETM+ Spectral Bands ............ 10  Table 2-2. OLI Specified a"
+            },
+            {
+              "pdf_page": 10,
+              "kind": "pdf_text",
+              "excerpt": "n: Data from the two sensors, the  Operational Land Imager (OLI) and the Thermal Infrared Sensor (TIRS), are  calibrated to better than 5 percent uncertainty in te"
+            },
+            {
+              "pdf_page": 12,
+              "kind": "pdf_text",
+              "excerpt": " Ball Aerospace &  Technologies Corp. (BATC) to develop the OLI and with Orbital Sciences Corporation to  build the spacecraft; NASA GSFC built the TIRS. NASA was "
+            },
+            {
+              "pdf_page": 13,
+              "kind": "pdf_text",
+              "excerpt": "  3.14 Terabit, file-based  Sensor Type  ETM+, Whisk-Broom  OLI / TIRS, Pushbroom   Compression  No  ~2:1 Variable Rice Compression  Image D/L  X-Band GXA × 3  X-B"
+            },
+            {
+              "pdf_page": 14,
+              "kind": "pdf_text",
+              "excerpt": " the current L8 Observatory,  including the spacecraft, the OLI instrument, the TIRS instrument, and the L8  concept of operations  • Section 3 includes an overvie"
+            },
+            {
+              "pdf_page": 16,
+              "kind": "pdf_text",
+              "excerpt": "USGS EROS archive.     L8 carries a two-sensor payload: the OLI, built  by BATC, and the TIRS, built by NASA GSFC.  Both the OLI and TIRS sensors simultaneously  i"
+            },
+            {
+              "pdf_page": 17,
+              "kind": "pdf_text",
+              "excerpt": " 700 scenes per day.    The L8 Observatory initially stores OLI and TIRS data on board in an SSR. The MOC  commands the Observatory to transmit the stored data to "
+            },
+            {
+              "pdf_page": 18,
+              "kind": "pdf_text",
+              "excerpt": "  - 10 -  LSDS-1574  Version 5.0  The OLI sensor collects image data for 9 shortwave spectral bands over a 190 km  swath with a 30 meter (m) "
+            },
+            {
+              "pdf_page": 19,
+              "kind": "pdf_text",
+              "excerpt": " - 11 -  LSDS-1574  Version 5.0  Ltypical SNR  ETM +  Band  OLI  Band  ETM+   Performance  OLI  Requirement  OLI  Performance  N/A  1  N/A  130  238  1  2  40  130"
+            },
+            {
+              "pdf_page": 20,
+              "kind": "pdf_text",
+              "excerpt": "  - 12 -  LSDS-1574  Version 5.0    Figure 2-4. OLI Focal Plane  Each SCA consists of rows of detectors, a Read-Out Integrated Circuit (ROIC), and a  n"
+            },
+            {
+              "pdf_page": 21,
+              "kind": "pdf_text",
+              "excerpt": "inal operations.  2.3  Thermal Infrared Sensor (TIRS)  Like OLI, TIRS is a push-broom sensor employing a  focal plane with long arrays of photosensitive  detectors"
+            },
+            {
+              "pdf_page": 23,
+              "kind": "pdf_text",
+              "excerpt": "and attitude control, communications, and data  storage for OLI and TIRS. The spacecraft consists of the mechanical subsystem  (primary structure and deployable me"
+            },
+            {
+              "pdf_page": 24,
+              "kind": "pdf_text",
+              "excerpt": "y when to capture, store, and transmit  image data from the OLI and TIRS. The daily command load covers the subsequent 72  hours of operations, with the commands f"
+            },
+            {
+              "pdf_page": 26,
+              "kind": "pdf_text",
+              "excerpt": "on describes the instrument calibration activities for the  OLI and TIRS from development and preflight testing, through OIV, and into nominal  mission operations,"
+            },
+            {
+              "pdf_page": 27,
+              "kind": "pdf_text",
+              "excerpt": "tions,  edge response, and modulation  transfer function    OLI On-Orbit Activities      Integration time sweeps of solar  diffuser  Characterize detector linearit"
+            },
+            {
+              "pdf_page": 28,
+              "kind": "pdf_text",
+              "excerpt": "ant Calibration Sites  Monitoring of temporal stability  of OLI and TIRS instruments  Monitoring trends in Pseudo- Invariant Calibration Site (PICS)  responses ind"
+            },
+            {
+              "pdf_page": 29,
+              "kind": "pdf_text",
+              "excerpt": " level.  These collects allow an on-orbit assessment of the OLI detector electronics’ linearity.   Two extended (60-second) diffuser collects were performed during"
+            },
+            {
+              "pdf_page": 30,
+              "kind": "pdf_text",
+              "excerpt": "FOV, banding 1, banding 2, and streaking as defined  in the OLI Requirements Document), all artifacts affecting the radiometric  accuracy of the data, and SCA disc"
+            },
+            {
+              "pdf_page": 31,
+              "kind": "pdf_text",
+              "excerpt": "ciprocity between the two.    BATC, the manufacturer of the OLI, used a heliostat to facilitate the Sun as a calibration  source for pre-launch testing. The helios"
+            },
+            {
+              "pdf_page": 32,
+              "kind": "pdf_text",
+              "excerpt": " also being captured.    Similar to the approach taken with OLI, a wide-field collimator and a set of fixed  geometric patterns were scanned across the focal plane"
+            },
+            {
+              "pdf_page": 33,
+              "kind": "pdf_text",
+              "excerpt": "and ghosting.  • Stability - characterizing the response of OLI to the solar diffusers, stim lamps,  and lunar acquisition, and TIRS to the OBC for assessing the t"
+            },
+            {
+              "pdf_page": 34,
+              "kind": "pdf_text",
+              "excerpt": "l image scans, performed over two consecutive  orbits. Each OLI and TIRS SCA is scanned across the Moon, with one scan repeated in  both orbits to provide a check "
+            },
+            {
+              "pdf_page": 35,
+              "kind": "pdf_text",
+              "excerpt": " provide a check on continuity of the observations. As with OLI, the TIRS lunar  acquisitions are performed when the Earth-Sun-Moon configuration provides lunar  p"
+            },
+            {
+              "pdf_page": 36,
+              "kind": "pdf_text",
+              "excerpt": "terization)  3. Assessment of the accuracy of multitemporal OLI image-to-image registration  (Image-to-Image Registration Characterization)  4. Assessment the accu"
+            },
+            {
+              "pdf_page": 37,
+              "kind": "pdf_text",
+              "excerpt": "rpose  How This is Used to Develop  Calibration Parameters  OLI Preflight Activity      Initial LOS directions for  detectors using design locations  Establish nom"
+            },
+            {
+              "pdf_page": 38,
+              "kind": "pdf_text",
+              "excerpt": "Calibration Parameters  Band Alignment Calibration  Adjusts OLI LOS parameters  based on band-to-band  registration assessment  Allows for adjustment of the OLI  L"
+            },
+            {
+              "pdf_page": 39,
+              "kind": "pdf_text",
+              "excerpt": "ometric characterization and calibration  processes.  3.2.3 OLI Geodetic Accuracy Assessment  The purpose of the geodetic accuracy assessment is to ensure that the"
+            },
+            {
+              "pdf_page": 40,
+              "kind": "pdf_text",
+              "excerpt": "art of the standard Level 1 product generation flow.  3.2.6 OLI Internal Geometric Characterization and Calibration  OLI internal geometric accuracy refers to inte"
+            },
+            {
+              "pdf_page": 41,
+              "kind": "pdf_text",
+              "excerpt": "s the internal geometric  fidelity of the images.  3.2.6.2  OLI Focal Plane Calibration  The OLI focal plane calibration is intended to detect and measure systemat"
+            },
+            {
+              "pdf_page": 42,
+              "kind": "pdf_text",
+              "excerpt": "cy with which TIRS data can be  registered to corresponding OLI data and to an absolute ground coordinate system.  This accuracy is dependent primarily on accurate"
+            },
+            {
+              "pdf_page": 43,
+              "kind": "pdf_text",
+              "excerpt": ", and a variant of this adapted algorithm will be used  for OLI spatial characterization. A method for using lunar scans to characterize ALI  spatial performance w"
+            },
+            {
+              "pdf_page": 44,
+              "kind": "pdf_text",
+              "excerpt": "goal is to make L8 products that are  Figure 3-1. Simulated OLI Image of the Lake Pontchartrain Causeway   "
+            },
+            {
+              "pdf_page": 45,
+              "kind": "pdf_text",
+              "excerpt": "ause the primary purpose of these points is to ensure  good OLI-to-reference image registration, the absolute accuracy of these points, though  believed to be bett"
+            },
+            {
+              "pdf_page": 46,
+              "kind": "pdf_text",
+              "excerpt": "source. These  images are used to provide the reference for OLI focal plane calibration as described  above. These reference images are the subject of the remainde"
+            },
+            {
+              "pdf_page": 47,
+              "kind": "pdf_text",
+              "excerpt": "d errors below 0.1 panchromatic pixels at the edges  of the OLI FOV. An accuracy of 30 m (one sigma) is acceptable. For product generation  purposes, it is also de"
+            },
+            {
+              "pdf_page": 48,
+              "kind": "pdf_text",
+              "excerpt": "cc.nn  L  Constant for Landsat  C  Sensor (C = combined for OLI and TIRS)  08  Satellite numerical representation  CPF  Three-letter CPF designator  _  CPF designa"
+            },
+            {
+              "pdf_page": 50,
+              "kind": "pdf_text",
+              "excerpt": "iles  The bias model calibration algorithms operate on each OLI shutter collect and each  TIRS deep space collect to generate bias model parameters for each imagin"
+            },
+            {
+              "pdf_page": 51,
+              "kind": "pdf_text",
+              "excerpt": "  L  Constant representing Landsat  C  Sensor (C = Combined OLI and TIRS)  NN  Satellite numerical representation (08 =  Landsat 8, 09 = Landsat 09)  RLUT  Respons"
+            },
+            {
+              "pdf_page": 52,
+              "kind": "pdf_text",
+              "excerpt": "hemeris and attitude data, in  addition to knowledge of the OLI and TIRS instruments and L8 satellite geometry, to  relate locations in image space (band, detector"
+            },
+            {
+              "pdf_page": 54,
+              "kind": "pdf_text",
+              "excerpt": "d track processing anomalies.  4.1.3 Ancillary Data  The L8 OLI and TIRS geometric correction algorithms are applied to the wideband (data  contained in Level 0R ("
+            },
+            {
+              "pdf_page": 56,
+              "kind": "pdf_text",
+              "excerpt": " LSDS-1574  Version 5.0  are all 16-bit GeoTIFF images. The OLI bands are Bands 1-9. The TIRS bands are  designated as Bands 10 and 11.     The QA image is a 16-bi"
+            },
+            {
+              "pdf_page": 57,
+              "kind": "pdf_text",
+              "excerpt": " SNF = Standard number of video frames in a scene [7001 for OLI, 2621 for TIRS]  ANF = Actual number of frames in the scene/interval  NDF = Number of dropped frame"
+            },
+            {
+              "pdf_page": 58,
+              "kind": "pdf_text",
+              "excerpt": "nstruments represent an evolutionary advance in technology. OLI builds upon  Landsat heritage and technologies demonstrated by the ALI. As such, OLI is a push- bro"
+            },
+            {
+              "pdf_page": 59,
+              "kind": "pdf_text",
+              "excerpt": "e standard  Level 1 product consists of 13 files, including OLI Bands 1-9 (one file per band), TIR  Bands 10 & 11 (one file per band), a product-specific metadata "
+            },
+            {
+              "pdf_page": 62,
+              "kind": "pdf_text",
+              "excerpt": "n 5.0  Section 5  Conversion of DNs to Physical Units  5.1  OLI and TIRS at Sensor Spectral Radiance  Images are processed in units of absolute radiance using 32-b"
+            },
+            {
+              "pdf_page": 64,
+              "kind": "pdf_text",
+              "excerpt": "wnload that will extract the bit-packed information  in the OLI QA band for easy interpretation. Details are provided at  https://www.usgs.gov/land-resources/nli/l"
+            },
+            {
+              "pdf_page": 73,
+              "kind": "pdf_text",
+              "excerpt": "ted shift, and  dropped scan lines, are not possible on the OLI and TIRS instruments. Other artifacts  such as coherent noise and memory effect exist only at very "
+            },
+            {
+              "pdf_page": 79,
+              "kind": "pdf_text",
+              "excerpt": "int forward, standard Level 1 data products contained valid OLI data (even  though cloud cover assessment scores and associated attributes in the quality  assuranc"
+            },
+            {
+              "pdf_page": 80,
+              "kind": "pdf_text",
+              "excerpt": "m the  primary A-side to redundant B-side on March 2, 2015. OLI imaging was suspended for 2  orbits while the switch was performed. TIRS imaging was suspended whil"
+            },
+            {
+              "pdf_page": 81,
+              "kind": "pdf_text",
+              "excerpt": "otes  December 19,  2014 – March  1, 2015  (23:57:34  UTC)  OLI &  TIRS  N/A  April 30, 2015 -  May 18, 2015  May 18,2015  Several lost  TIRS scenes in  the period"
+            },
+            {
+              "pdf_page": 82,
+              "kind": "pdf_text",
+              "excerpt": "otes  December 19,  2014 – March  1, 2015  (23:57:34  UTC)  OLI &  TIRS  N/A  April 30, 2015 -  May 18, 2015  May 18,2015  Several lost  TIRS scenes in  the period"
+            },
+            {
+              "pdf_page": 83,
+              "kind": "pdf_text",
+              "excerpt": "    - 75 -  LSDS-1574  Version 5.0    Figure A-7. OLI (left) and TIRS (right) Images Showing Mode Change Anomaly   Second Instance – November 1, 2015    "
+            },
+            {
+              "pdf_page": 84,
+              "kind": "pdf_text",
+              "excerpt": "ement trend. These scenes have a higher  uncertainty in the OLI/TIRS band alignment, which likely results in OLI/TIRS  band misregistration: starting at ~60-90 m, "
+            },
+            {
+              "pdf_page": 85,
+              "kind": "pdf_text",
+              "excerpt": "wer Truncation Acquisitions  The detectors of the Landsat 8 OLI can register 14 bits of data. However, only the upper  or lower 12 bits are transmitted from the sp"
+            },
+            {
+              "pdf_page": 87,
+              "kind": "pdf_text",
+              "excerpt": " of detectors with respect to one another. These effects in OLI  imagery are less than 4 DN in its 12-bit dynamic range, or less than 0.5 percent of the  radiance "
+            },
+            {
+              "pdf_page": 90,
+              "kind": "pdf_text",
+              "excerpt": "tric processing removes most of the banding and striping in OLI and  TIRS imagery. The CPF used during Level 1 processing provides the parameters for  corrections."
+            },
+            {
+              "pdf_page": 91,
+              "kind": "pdf_text",
+              "excerpt": "    - 83 -  LSDS-1574  Version 5.0  A.5 SCA Overlaps  Both OLI and TIRS are designed with discrete SCAs, which have some detectors  overlapping the adjacent SCAs."
+            },
+            {
+              "pdf_page": 93,
+              "kind": "pdf_text",
+              "excerpt": "1574  Version 5.0    Figure A-14. Oversaturation Example in OLI SWIR Bands 6 & 7  Oversaturation artifacts are typically rare but are repeatable artifacts that nor"
+            },
+            {
+              "pdf_page": 94,
+              "kind": "pdf_text",
+              "excerpt": "    - 86 -  LSDS-1574  Version 5.0    SEUs appear in OLI as single-frame bright spots that may affect several detectors in a  line. The electronics design i"
+            },
+            {
+              "pdf_page": 95,
+              "kind": "pdf_text",
+              "excerpt": "m a detector and sample time into a  ground position.   B.2 OLI Instrument Line-of-Sight (LOS) Coordinate System   The OLI LOS coordinate system is used to define "
+            },
+            {
+              "pdf_page": 96,
+              "kind": "pdf_text",
+              "excerpt": "mulation allows TIRS LOS construction to be very similar to OLI. This is  described in detail below, in the TIRS LOS Model Creation algorithm.     The TIRS coordin"
+            },
+            {
+              "pdf_page": 97,
+              "kind": "pdf_text",
+              "excerpt": "sensors (star trackers and SIRU), and  instrument payloads (OLI and TIRS). The spacecraft coordinate system is nominally the  same as the navigation reference syst"
+            },
+            {
+              "pdf_page": 109,
+              "kind": "pdf_text",
+              "excerpt": "ic Cross Calibration of Landsat 8 Operational Land  Imager (OLI) and L7 Enhanced Thematic Mapper Plus (ETM+).\" Remote  Sensing 6, no. 12 (2014): 12619-12638.    Mo"
+            },
+            {
+              "pdf_page": 110,
+              "kind": "pdf_text",
+              "excerpt": "sat Missions Website: https://usgs.gov/landsat    Landsat 8 OLI and TIRS Calibration Notices: https://www.usgs.gov/land- resources/nli/landsat/landsat-8-oli-and-ti"
+            },
+            {
+              "pdf_page": 113,
+              "kind": "pdf_text",
+              "excerpt": "on Language  OIV  On-orbit Initialization and Verification  OLI  Operational Land Imager  OSC  Orbital Sciences Corporation  Pan  Panchromatic  PCS  Process Contro"
+            },
+            {
+              "pdf_page": 12,
+              "kind": "ocr_region",
+              "excerpt": "te Sensor Swath Bits VNIR SWIR TIR 30 30m 30m 30m 30 30 30m OLI 30m L8 185km 12 15m TIRS 100m 100m 30m 30m 30m 30m 30m 30m 60m Landsat 7 ETM+ 185km 8 15m MSS 185km"
+            },
+            {
+              "pdf_page": 13,
+              "kind": "ocr_region",
+              "excerpt": "ased 3.14 Terabit, file-based Sensor Type ETM+, Whisk-Broom OLI / TIRS, Pushbroom Compression No ~2:1 Variable Rice Compression Image D/L X-Band GXA × 3 X-Band Ear"
+            },
+            {
+              "pdf_page": 16,
+              "kind": "ocr_region",
+              "excerpt": "TIRS OLI Spacecraft Bus Solar Panel"
+            },
+            {
+              "pdf_page": 18,
+              "kind": "ocr_region",
+              "excerpt": "Landsat-7 ETM+ Bands (μm) Landsat-8 OLI and TIRS Bands (μm) 30 m Coastal/Aerosol 0.435 - 0.451 Band 1 Band 1 30 m Blue 0.441 - 0.514 30 m B"
+            },
+            {
+              "pdf_page": 19,
+              "kind": "ocr_region",
+              "excerpt": "OLI Signal-to-Noise Performance at Ltypical 400 350 300 250 SNR 200 150 100 50 Coastal/Aerosol Blue Gre"
+            },
+            {
+              "pdf_page": 19,
+              "kind": "ocr_region",
+              "excerpt": "Ltypical SNR ETM + OLI ETM+ OLI OLI Band Band Performance Requirement Performance N/A 1 N/A 130 238 1 2 40 130 364 2 3 41 "
+            },
+            {
+              "pdf_page": 26,
+              "kind": "ocr_region",
+              "excerpt": "ion describes the instrument calibration activities for the OLI and TIRS from development and preflight testing, through OIV, and into nominal mission operations, "
+            },
+            {
+              "pdf_page": 27,
+              "kind": "ocr_region",
+              "excerpt": "al plane transfer function at multiple temperature settings OLI On-Orbit Activities Integration time sweeps of solar Potentially update linearization Characterize "
+            },
+            {
+              "pdf_page": 28,
+              "kind": "ocr_region",
+              "excerpt": "sponses indicates a need for Invariant Calibration Sites of OLI and TIRS instruments absolute radiometric calibration updates TIRS On-Orbit Activities Integration "
+            },
+            {
+              "pdf_page": 37,
+              "kind": "ocr_region",
+              "excerpt": " How This is Used to Develop Purpose Calibration Parameters OLI Preflight Activity Establish nominal focal plane Gives nominal detector focal Initial LOS direction"
+            },
+            {
+              "pdf_page": 38,
+              "kind": "ocr_region",
+              "excerpt": "s is Used to Develop Purpose Calibration Parameters Adjusts OLI LOS parameters Allows for adjustment of the OLI Band Alignment Calibration based on band-to-band LO"
+            },
+            {
+              "pdf_page": 48,
+              "kind": "ocr_region",
+              "excerpt": "dd²_cc.nn L Constant for Landsat C Sensor (C = combined for OLI and TIRS) 08 Satellite numerical representation CPF Three-letter CPF designator CPF designator / st"
+            },
+            {
+              "pdf_page": 50,
+              "kind": "ocr_region",
+              "excerpt": "Files The bias model calibration algorithms operate on each OLI shutter collect and each TiRS deep space collect to generate bias model parameters for each imaging"
+            },
+            {
+              "pdf_page": 51,
+              "kind": "ocr_region",
+              "excerpt": "n.h5 L Constant representing Landsat C Sensor (C = Combined OLI and TIRS) Satellite numerical representation (08 = NN Landsat 8, 09 = Landsat 09) RLUT Response Lin"
+            },
+            {
+              "pdf_page": 58,
+              "kind": "ocr_region",
+              "excerpt": "1001 (%) Atmospheric Transmission 9 OLI/ TIRS/ 2 3 4 6 OLI-2 TIRS-2 10 11 8 4 5 ETM+ 6 8 2 3 4 5 TM 6 2* 4% MSS 400 900 1400 1900 2400 1000"
+            },
+            {
+              "pdf_page": 59,
+              "kind": "ocr_region",
+              "excerpt": "te standard Level 1 product consists of 13 files, including OLI Bands 1-9 (one file per band), TIR Bands 10 & 11 (one file per band), a product-specific metadata f"
+            },
+            {
+              "pdf_page": 63,
+              "kind": "ocr_region",
+              "excerpt": "Landsat 8 OLI, OLI/TIRS Collection 1 QA band bits; Read from RIGHT to LEFT, starting with Bit 0 Cumulative Sum 65"
+            },
+            {
+              "pdf_page": 64,
+              "kind": "ocr_region",
+              "excerpt": "ownload that will extract the bit-packed information in the OLI QA band for easy interpretation. Details are provided at https://www.usgs.gov/land-resources/nli/la"
+            },
+            {
+              "pdf_page": 69,
+              "kind": "ocr_region",
+              "excerpt": "Landsat Collection 1 Level-1  Landsat 8 OLI/TIRS C1 Level-1 Landsat 7 ETM+ C1 Level-1 Landsat 4-5 TM C1 Level-1 Landsat 1-5 MSS C1 Level-1"
+            },
+            {
+              "pdf_page": 70,
+              "kind": "ocr_region",
+              "excerpt": "er 76 Philadelphia Wayne Philadelph Cherry Hill Data Set L8 OLI/TIRS Click here to export your results » + umberland uchanan eForest Berkeley Springs Hac Wilmingto"
+            },
+            {
+              "pdf_page": 71,
+              "kind": "ocr_region",
+              "excerpt": "Map data © Open StreetMap contributors, USGS/EROS Landsat 8 OLI/TIRS C1Level-1LC08_L1TP_028030_20180905_20180912_01_T1 Spatial Interaction Find scenes over the cen"
+            },
+            {
+              "pdf_page": 72,
+              "kind": "ocr_region",
+              "excerpt": "ess▼ 2 Ottawa Montreal Sensors Huron Lake Toronto Landsat 8 OLI (2013-present) Landsat 7 ETM+ (1999-present) GREAT PLAINS Chicago Detroit Landsat 4-5 TM (1982-2011"
+            },
+            {
+              "pdf_page": 80,
+              "kind": "ocr_region",
+              "excerpt": "es acquired when TiRS was well outside the field of view of OLI (due to an off nadir SSM) were produced as OLl-only products. The reprocessing effort completed on "
+            },
+            {
+              "pdf_page": 81,
+              "kind": "ocr_region",
+              "excerpt": "t December 19, TIRS scenes in 2014 – March the period; TIRS OLI & April 30, 2015 - 1,2015 N/A May 18,2015 imaging stopped TIRS May 18, 2015 (23:57:34 in preparatio"
+            },
+            {
+              "pdf_page": 82,
+              "kind": "ocr_region",
+              "excerpt": "t December 19, TIRS scenes in 2014 – March the period; TIRS OLI & April 30, 2015 - 1,2015 N/A May 18,2015 imaging stopped TIRS May 18, 2015 (23:57:34 in preparatio"
+            },
+            {
+              "pdf_page": 93,
+              "kind": "ocr_region",
+              "excerpt": "OLI Bands 4,3,2 (RGB) Band 10 (Thermal) Band 7 (SWIR2) Band 6 (SWIR1)"
+            },
+            {
+              "pdf_page": 95,
+              "kind": "ocr_region",
+              "excerpt": "  Band 2 • Band 3 4.0E-03  Band 4 • Band 5 • Band 6 0.0E+00 OLI X (Along-Tra ck) • Band T ■ Band 8 X • Band 9 4.0E-03 8.0E-03 1.2E-02 1.6E-02"
+            },
+            {
+              "pdf_page": 110,
+              "kind": "ocr_region",
+              "excerpt": "andsat Missions Website: https://usgs.gov/landsat Landsat 8 OLI and TIRS Calibration Notices:https://www.usgs.gov/land- resources/nli/landsat/landsat-8-oli-and-tir"
+            },
+            {
+              "pdf_page": 113,
+              "kind": "ocr_region",
+              "excerpt": "ition Language OIV On-orbit Initialization and Verification OLI Operational Land Imager OSC Orbital Sciences Corporation Pan Panchromatic PCS Process Control Subsy"
+            }
+          ]
+        }
+      ],
+      "review_status": "Source-specific absence rationale recorded; full-source verification confirmed by author."
+    },
+    {
+      "query_id": "adv2-test-026",
+      "reason": "Access sections provide website URLs, not server IP addresses; a URL is not a numeric IP address.",
+      "scans": [
+        {
+          "term": "IP address",
+          "hits": []
+        },
+        {
+          "term": "EarthExplorer",
+          "hits": [
+            {
+              "pdf_page": 6,
+              "kind": "pdf_text",
+              "excerpt": ".................................................. 60  6.1  EarthExplorer (EE) .......................................................................................... 60 "
+            },
+            {
+              "pdf_page": 7,
+              "kind": "pdf_text",
+              "excerpt": "........................................... 59  Figure 6-1. EarthExplorer Interface ............................................................................... 61  Figur"
+            },
+            {
+              "pdf_page": 14,
+              "kind": "pdf_text",
+              "excerpt": "rough the User Portal (UP). All users must register through EarthExplorer (EE) at  https://ers.cr.usgs.gov/register/.     All products are accessible via the Internet for do"
+            },
+            {
+              "pdf_page": 68,
+              "kind": "pdf_text",
+              "excerpt": "to provide more details about step-by-step processes.  6.1  EarthExplorer (EE)  EE is the primary search interface accessing aerial, mapping, elevation, and satellite  data "
+            },
+            {
+              "pdf_page": 69,
+              "kind": "pdf_text",
+              "excerpt": "  - 61 -  LSDS-1574  Version 5.0    Figure 6-1. EarthExplorer Interface  The Search Criteria tab options allow users to select the geographic area of interest by"
+            },
+            {
+              "pdf_page": 70,
+              "kind": "pdf_text",
+              "excerpt": "es can be added to a bulk  download order.      Figure 6-3. EarthExplorer Results - Browse Image Display  The Show Result Controls section (located above the results listing"
+            },
+            {
+              "pdf_page": 71,
+              "kind": "pdf_text",
+              "excerpt": "e List are sent to the Cart, which forwards the request to  EarthExplorer and prompts users to login. The data can then be downloaded  individually or added to a bulk downlo"
+            },
+            {
+              "pdf_page": 85,
+              "kind": "pdf_text",
+              "excerpt": "d in lower truncation mode are available for download  from EarthExplorer, and while most cloud free acquisitions will not be affected by the  lower truncation mode setting,"
+            },
+            {
+              "pdf_page": 110,
+              "kind": "pdf_text",
+              "excerpt": "s/nli/landsat/landsat-8-oli-and-tirs-calibration-notices    EarthExplorer: https://earthexplorer.usgs.gov     GloVis: https://glovis.usgs.gov    LandsatLook Viewer: https://"
+            },
+            {
+              "pdf_page": 111,
+              "kind": "pdf_text",
+              "excerpt": "th-Centered, Earth-Fixed  ECI  Earth-Centered Inertial  EE  EarthExplorer  EO-1  Earth Observing 1  EROS  Earth Resources Observation and Science  ETM+  Enhanced Thematic Ma"
+            },
+            {
+              "pdf_page": 69,
+              "kind": "ocr_region",
+              "excerpt": "EarthExplorer -Home Page Expires In 1:59:56 Home Save Criteria Load Favorite  Manage Criteria Item Basket (0) Lin"
+            },
+            {
+              "pdf_page": 110,
+              "kind": "ocr_region",
+              "excerpt": "rces/nli/landsat/landsat-8-oli-and-tirs-calibration-notices EarthExplorer: https://earthexplorer.usgs.gov GloVis:https://glovis.usgs.gov LandsatLook Viewer:https://landsatlo"
+            },
+            {
+              "pdf_page": 111,
+              "kind": "ocr_region",
+              "excerpt": " Earth-Centered, Earth-Fixed ECI Earth-Centered Inertial EE EarthExplorer EO-1 Earth Observing 1 EROS Earth Resources Observation and Science ETM+ Enhanced Thematic Mapper P"
+            }
+          ]
+        }
+      ],
+      "review_status": "Source-specific absence rationale recorded; full-source verification confirmed by author."
+    },
+    {
+      "query_id": "adv2-test-027",
+      "reason": "Operations and access descriptions contain no 2018 electricity invoice or annual electricity expenditure.",
+      "scans": [
+        {
+          "term": "electricity",
+          "hits": []
+        },
+        {
+          "term": "invoice",
+          "hits": []
+        },
+        {
+          "term": "EROS",
+          "hits": [
+            {
+              "pdf_page": 2,
+              "kind": "pdf_text",
+              "excerpt": "U.S. Geological Survey                                      EROS   Sioux Falls, South Dakota KAREN ZANTER Digitally signed by KAREN ZANTER  Date: 2019.11.26 15:17:1"
+            },
+            {
+              "pdf_page": 3,
+              "kind": "pdf_text",
+              "excerpt": "nce Office at the Earth Resources Observation and  Science (EROS) Center in Sioux Falls, SD, and the National Aeronautics and Space  Administration (NASA) Landsat P"
+            },
+            {
+              "pdf_page": 9,
+              "kind": "pdf_text",
+              "excerpt": " Products: L8 data products are available through the USGS  EROS at no charge.  "
+            },
+            {
+              "pdf_page": 12,
+              "kind": "pdf_text",
+              "excerpt": "ntains the L8 data archive.     The Landsat Project at USGS EROS manages the overall L8 mission operations. In this  capacity, USGS EROS directs on-orbit flight ope"
+            },
+            {
+              "pdf_page": 14,
+              "kind": "pdf_text",
+              "excerpt": "n to the Solid State  Recorder (SSR) and downlinked to USGS EROS for inclusion in the USGS Landsat  archive. No unique data are held at the IGSs. For updated inform"
+            },
+            {
+              "pdf_page": 16,
+              "kind": "pdf_text",
+              "excerpt": "brings back  an unprecedented number of images to the  USGS EROS archive.     L8 carries a two-sensor payload: the OLI, built  by BATC, and the TIRS, built by NASA "
+            },
+            {
+              "pdf_page": 17,
+              "kind": "pdf_text",
+              "excerpt": "everal stations, and these stations forward the data to the EROS Center. The  GN also includes IGS (referred to as International Cooperators (ICs)) operated under  "
+            },
+            {
+              "pdf_page": 25,
+              "kind": "pdf_text",
+              "excerpt": "SFC. The Data Processing and Archiving System (DPAS) at the EROS Center  ingests, processes, and archives all L8 science and Mission Data returned from the  Observa"
+            },
+            {
+              "pdf_page": 52,
+              "kind": "pdf_text",
+              "excerpt": "n  4.1.1 Overview  The geometric algorithms used by LPGS at EROS were originally developed for the L8  IAS. The overall purpose of the IAS geometric algorithms is t"
+            },
+            {
+              "pdf_page": 59,
+              "kind": "pdf_text",
+              "excerpt": "are acquired per day across the globe  and sent to the USGS EROS Center for storage, archive, and processing. All of these  scenes are processed to a standard Level"
+            },
+            {
+              "pdf_page": 69,
+              "kind": "pdf_text",
+              "excerpt": " Data Set tab lists all categories of data held in the USGS EROS Archives. The  Landsat section of this tab lists all Landsat datasets, which are organized by colle"
+            },
+            {
+              "pdf_page": 111,
+              "kind": "pdf_text",
+              "excerpt": "tered Inertial  EE  EarthExplorer  EO-1  Earth Observing 1  EROS  Earth Resources Observation and Science  ETM+  Enhanced Thematic Mapper Plus  FASCAL  Facility for"
+            },
+            {
+              "pdf_page": 59,
+              "kind": "ocr_region",
+              "excerpt": " are acquired per day across the globe and sent to the USGS EROS Center for storage, archive, and processing. All of these scenes are processed to a standard Level "
+            },
+            {
+              "pdf_page": 71,
+              "kind": "ocr_region",
+              "excerpt": "hell Leaflet | Map data © Open StreetMap contributors, USGS/EROS Landsat 8 OLI/TIRS C1Level-1LC08_L1TP_028030_20180905_20180912_01_T1 Spatial Interaction Find scene"
+            },
+            {
+              "pdf_page": 111,
+              "kind": "ocr_region",
+              "excerpt": "h-Centered Inertial EE EarthExplorer EO-1 Earth Observing 1 EROS Earth Resources Observation and Science ETM+ Enhanced Thematic Mapper Plus FASCAL Facility for Spec"
+            }
+          ]
+        }
+      ],
+      "review_status": "Source-specific absence rationale recorded; full-source verification confirmed by author."
+    },
+    {
+      "query_id": "adv2-test-028",
+      "reason": "BPF generation and naming are described; no named signatory or approval record for this date is given.",
+      "scans": [
+        {
+          "term": "approval",
+          "hits": []
+        },
+        {
+          "term": "signed",
+          "hits": [
+            {
+              "pdf_page": 2,
+              "kind": "pdf_text",
+              "excerpt": "    EROS   Sioux Falls, South Dakota KAREN ZANTER Digitally signed by KAREN ZANTER  Date: 2019.11.26 15:17:11 -06'00' VAUGHN IHLEN Digitally signed by VAUGHN  IHLEN  "
+            }
+          ]
+        },
+        {
+          "term": "Bias Parameter",
+          "hits": [
+            {
+              "pdf_page": 6,
+              "kind": "pdf_text",
+              "excerpt": "................................................ 39  3.3.2  Bias Parameter Files................................................................................ 42  3.3.3  Re"
+            },
+            {
+              "pdf_page": 8,
+              "kind": "pdf_text",
+              "excerpt": " ........................................... 40  Table 3-4. Bias Parameter File Naming Convention ..................................................... 42  Table 3-5. Respons"
+            },
+            {
+              "pdf_page": 47,
+              "kind": "pdf_text",
+              "excerpt": " CPF, the Response  Linearity Look-Up Table (RLUT), and the Bias Parameter File (BPF), which are stamped  with effectivity dates and bundled with L0R products.   3.3.1 Calibr"
+            },
+            {
+              "pdf_page": 50,
+              "kind": "pdf_text",
+              "excerpt": "ameters\"    Version = 5  END_GROUP = FILE_ATTRIBUTES  3.3.2 Bias Parameter Files  The bias model calibration algorithms operate on each OLI shutter collect and each  TIRS dee"
+            },
+            {
+              "pdf_page": 111,
+              "kind": "pdf_text",
+              "excerpt": "hnologies Corp.  BIH  Bureau International De l’Heure  BPF  Bias Parameter File  BRDF  Bi-directional Reflectance Distribution Function  Cal/Val  Calibration/Validation  CCA "
+            },
+            {
+              "pdf_page": 50,
+              "kind": "ocr_region",
+              "excerpt": "e parameters' Version = 5 END GROUP = FILE ATTRIBUTES 3.3.2 Bias Parameter Files The bias model calibration algorithms operate on each OLI shutter collect and each TiRS deep "
+            },
+            {
+              "pdf_page": 111,
+              "kind": "ocr_region",
+              "excerpt": " Technologies Corp. BIH Bureau International De I'Heure BPF Bias Parameter File BRDF Bi-directional Reflectance Distribution Function Cal/Val Calibration/Validation CCA Cloud"
+            }
+          ]
+        }
+      ],
+      "review_status": "Source-specific absence rationale recorded; full-source verification confirmed by author."
+    },
+    {
+      "query_id": "adv2-test-029",
+      "reason": "CPF naming/content and archive access are documented, but no SHA-256 checksum is supplied for the requested file.",
+      "scans": [
+        {
+          "term": "SHA",
+          "hits": []
+        },
+        {
+          "term": "checksum",
+          "hits": []
+        },
+        {
+          "term": "Calibration Parameter",
+          "hits": [
+            {
+              "pdf_page": 3,
+              "kind": "pdf_text",
+              "excerpt": "ion of the Observatory component reference  systems and the Calibration Parameter File (CPF)  • Section 4 includes a comprehensive description of Level 1 products and product  gener"
+            },
+            {
+              "pdf_page": 6,
+              "kind": "pdf_text",
+              "excerpt": "  - vi -  LSDS-1574  Version 5.0  3.3.1  Calibration Parameter File ....................................................................... 39  3.3.2  Bias Parame"
+            },
+            {
+              "pdf_page": 8,
+              "kind": "pdf_text",
+              "excerpt": ", Their Purpose, and How Measurements  are Used in Building Calibration Parameter Files ................................................... 20  Table 3-2. Summary of Geometric Chara"
+            },
+            {
+              "pdf_page": 28,
+              "kind": "pdf_text",
+              "excerpt": ", Their Purpose, and How  Measurements are Used in Building Calibration Parameter Files  3.1.1 Instrument Characterization and Calibration  3.1.1.1  Description of Calibration Data "
+            },
+            {
+              "pdf_page": 47,
+              "kind": "pdf_text",
+              "excerpt": "th effectivity dates and bundled with L0R products.   3.3.1 Calibration Parameter File  The CVT updates the CPF at least every three months. Updates were more frequent  during early"
+            },
+            {
+              "pdf_page": 48,
+              "kind": "pdf_text",
+              "excerpt": "  Version number for this file (starts with 00)  Table 3-3. Calibration Parameter File Naming Convention  For example, if the IAS created four CPFs at three-month intervals, and upd"
+            },
+            {
+              "pdf_page": 110,
+              "kind": "pdf_text",
+              "excerpt": "el-1-data-format-control-book      LSDS-810. Landsat 8 (L8) Calibration Parameter File (CPF) Data Format Control Book  (DFCB):  https://www.usgs.gov/media/files/landsat-8-calibratio"
+            },
+            {
+              "pdf_page": 111,
+              "kind": "pdf_text",
+              "excerpt": "  CE90  Circular Error 90  CFMask  C Function of Mask  CPF  Calibration Parameter File  CR  Change Request  CVT  Calibration and Validation Team  CVTK  Calibration Validation Toolki"
+            },
+            {
+              "pdf_page": 28,
+              "kind": "ocr_region",
+              "excerpt": "s, Their Purpose, and How Measurements are Used in Building Calibration Parameter Files 3.1.1Instrument Characterization and Calibration 3.1.1.1Description of Calibration Data Colle"
+            },
+            {
+              "pdf_page": 48,
+              "kind": "ocr_region",
+              "excerpt": "nn Version number for this file (starts with 00) Table 3-3. Calibration Parameter File Naming Convention For example, if the IAS created four CPFs at three-month intervals, and upda"
+            },
+            {
+              "pdf_page": 110,
+              "kind": "ocr_region",
+              "excerpt": "8-level-1-data-format-control-book LSDS-810. Landsat 8 (L8) Calibration Parameter File (CPF) Data Format Control Book (DFCB): https://www.usgs.gov/media/files/landsat-8-calibration-"
+            },
+            {
+              "pdf_page": 111,
+              "kind": "ocr_region",
+              "excerpt": " Error CE90 Circular Error 90 CFMask C Function of Mask CPF Calibration Parameter File CR Change Request CVT Calibration and Validation Team CVTK Calibration Validation Toolkit DEM "
+            }
+          ]
+        }
+      ],
+      "review_status": "Source-specific absence rationale recorded; full-source verification confirmed by author."
+    },
+    {
+      "query_id": "adv2-test-030",
+      "reason": "This version does not state a 2025 Landsat 9 Level 2 annual subscription price; Landsat 8 no-charge access is not that requested fact.",
+      "scans": [
+        {
+          "term": "subscription",
+          "hits": []
+        },
+        {
+          "term": "2025",
+          "hits": []
+        },
+        {
+          "term": "Landsat 9",
+          "hits": [
+            {
+              "pdf_page": 86,
+              "kind": "pdf_text",
+              "excerpt": "port the possibility of downloading all 14 bits of data for Landsat 9. Data to support  two studies were acquired: 1) a night interval through the western United States "
+            },
+            {
+              "pdf_page": 86,
+              "kind": "ocr_region",
+              "excerpt": "port the possibility of downloading all 14 bits of data for Landsat 9. Data to support two studies were acquired: 1) a night interval through the western United States o"
+            }
+          ]
+        }
+      ],
+      "review_status": "Source-specific absence rationale recorded; full-source verification confirmed by author."
+    }
+  ],
+  "source_verification": "artifacts/source-verification.json",
+  "limitation": "Literal scans support navigation and are not a mathematical proof of semantic absence. Original-source verification and the specific missing attribute, rather than top-k retrieval failure, justify each negative."
+}

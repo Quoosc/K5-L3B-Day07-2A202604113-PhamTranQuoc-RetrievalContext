@@ -1,0 +1,30 @@
+{"id": "adv2-test-001", "split": "test", "question": "In Table 3-1, what purpose and calibration-parameter use are listed for integration time sweeps with blackbody and deep space?"}
+{"id": "adv2-test-002", "split": "test", "question": "In Table 3-2, what assessment is used by Band Alignment Calibration, and which instrument parameters are adjusted?"}
+{"id": "adv2-test-003", "split": "test", "question": "In Table 3-3, what does the Cc field represent, and what is its starting value?"}
+{"id": "adv2-test-004", "split": "test", "question": "In Table 3-4, distinguish HH1 from MM1 in the effective starting timestamp."}
+{"id": "adv2-test-005", "split": "test", "question": "Decode the acquisition date and processing date of the example LC08_L1GT_029030_20151209_20160131_01_T1 in Table 4-1."}
+{"id": "adv2-test-006", "split": "test", "question": "Which bit numbers identify Cloud Shadow and Cirrus respectively in Table 5-4?"}
+{"id": "adv2-test-007", "split": "test", "question": "In Figure 2-2, name the two electronics assemblies labeled along the bottom base of the OLI instrument."}
+{"id": "adv2-test-008", "split": "test", "question": "In the enlarged scene in Figure 4-2, what row number is shown and what are its labeled horizontal and vertical dimensions?"}
+{"id": "adv2-test-009", "split": "test", "question": "In Figure A-4, what do the dotted arc outside the right edge of the image and the small central highlighted point represent?"}
+{"id": "adv2-test-010", "split": "test", "question": "In Figure B-6, which axis points upward, and which label identifies distance above the ellipsoid along the slanted line?"}
+{"id": "adv2-test-011", "split": "test", "question": "In the Figure 6-1 interface screenshot, which two top tabs appear between Search Criteria and Results?"}
+{"id": "adv2-test-012", "split": "test", "question": "In Figure 2-3, approximately what SNR is shown by the blue OLI Requirement bar for the Pan band?"}
+{"id": "adv2-test-013", "split": "test", "question": "In Figure 4-3, approximately what wavelength in nm is at the center of OLI Band 9 in the top sensor row?"}
+{"id": "adv2-test-014", "split": "test", "question": "In the Band 11 panel of Figure A-2, what are the displayed horizontal and vertical angular-axis ranges, including units?"}
+{"id": "adv2-test-015", "split": "test", "question": "Read the yellow annotation in the right panel of Figure A-3: what radiance amounts were removed for B10 and B11, with units?"}
+{"id": "adv2-test-016", "split": "test", "question": "Approximately what encoder-current value does the green trace show at the leftmost March 1, 2013 date in Figure A-6? Use the plotted scale without assuming an unstated current unit."}
+{"id": "adv2-test-017", "split": "test", "question": "Combine the orbit duration in Section 2.1 with the Bias Parameter File generation interval in Section 3.3.2. Approximately how many BPF generation intervals fit in one orbit? Show the two source numbers."}
+{"id": "adv2-test-018", "split": "test", "question": "Compare the starting nn file-version numbers in Table 3-3 (CPF) and Table 3-5 (RLUT). What does each start at?"}
+{"id": "adv2-test-019", "split": "test", "question": "Using Table 5-1 and Table 5-4, distinguish the bit positions for Snow/Ice Confidence in the Level 1 QA band from Snow/Ice in the LandsatLook quality image."}
+{"id": "adv2-test-020", "split": "test", "question": "Using the approximate Landsat 7 and Landsat 8 scenes/day in Table 1-1 and the approximately 950 MB Level 1 product size in Section 6, estimate the additional daily download volume for Landsat 8. Assume one 950 MB product per scene and decimal GB (1000 MB); show the calculation."}
+{"id": "adv2-test-021", "split": "test", "question": "According to Section 6.1, what must a user complete before downloading data products through EarthExplorer, and what is required for some website functions?"}
+{"id": "adv2-test-022", "split": "test", "question": "Which algorithm does the Landsat 8 Cloud Cover Assessment system use in Section 4.1.4.3, and name two bright-target types over which it may have difficulties?"}
+{"id": "adv2-test-023", "split": "test", "question": "What date-range condition must a Calibration Parameter File satisfy to process an ordered image, according to Section 3.3?"}
+{"id": "adv2-test-024", "split": "test", "question": "According to Section B.8, where is the origin of the ECI J2000 coordinate system, and toward what does its Z-axis point?"}
+{"id": "adv2-test-025", "split": "test", "question": "What manufacturer hardware serial number for the Landsat 8 OLI instrument is reported in this handbook?"}
+{"id": "adv2-test-026", "split": "test", "question": "What exact numeric IP address for the EarthExplorer production web server is listed in this handbook?"}
+{"id": "adv2-test-027", "split": "test", "question": "What was the USGS EROS Center annual electricity bill in US dollars for 2018, as reported in this handbook?"}
+{"id": "adv2-test-028", "split": "test", "question": "Which engineer personally signed the Bias Parameter File approval on November 1, 2019, according to this handbook?"}
+{"id": "adv2-test-029", "split": "test", "question": "What cryptographic SHA-256 checksum does this handbook give for the original July 2013 Calibration Parameter File?"}
+{"id": "adv2-test-030", "split": "test", "question": "What annual subscription price in US dollars for Landsat 9 Level 2 products in 2025 is specified in this 2019 handbook?"}

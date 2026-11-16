@@ -1,0 +1,9 @@
+{
+  "experiment": "A7 development prompt diagnostic; explicit answer example was copied literally by the 3B vision model",
+  "files": {
+    "src/day07/multimodal_v2.py": "aa12c2090524f6b8dcb0835762c6263079ea3f757e261fdf972fc15440b0aacd",
+    "src/day07/chart_geometry.py": "58a1d3fd038fe729dcba53795c9056a3ffb6d355480e7d84d9605b7a5e74869a",
+    "configs/advanced-v2.json": "d3ccad5101f24f139376385e410ca918bfd54bcfbf4906e09c28bd617e320eaa",
+    "scripts/advanced_release.py": "4847ebfc7b1902f6867dc48e043d9bf4bc76758947313022224a54b72eeed63a"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "total": 30,
+  "passed": 24,
+  "errors_or_missing": 0,
+  "groups": {
+    "table": {
+      "n": 6,
+      "N": 6,
+      "rate": 1.0
+    },
+    "image": {
+      "n": 3,
+      "N": 5,
+      "rate": 0.6
+    },
+    "chart": {
+      "n": 3,
+      "N": 5,
+      "rate": 0.6
+    },
+    "multi_hop": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "text": {
+      "n": 2,
+      "N": 4,
+      "rate": 0.5
+    },
+    "unanswerable": {
+      "n": 6,
+      "N": 6,
+      "rate": 1.0
+    }
+  },
+  "rate": 0.8,
+  "required_passes": 27,
+  "meets_90_percent": false,
+  "run_id": "advanced-test-20261116-final",
+  "reviewer": "Codex (AI source review; no independent human review)",
+  "vision_stage_errors": 5,
+  "vision_stage_timeouts": 0,
+  "latency_seconds": {
+    "median": 6.104111250009737,
+    "p95": 9.916014400005224,
+    "note": "Sum of per-case stage times; excludes server startup and waiting between stages."
+  },
+  "vision_prompt_tokens": 190294,
+  "refiner_prompt_tokens": 23939,
+  "api_cost_usd": 0.0,
+  "note": "Frozen pipeline, all 30 cases included; source/absence review is AI-assisted and requires independent confirmation."
+}

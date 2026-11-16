@@ -1,0 +1,42 @@
+{
+  "frozen_at": "2026-11-15T09:55:20.642286+00:00",
+  "baseline": "D0",
+  "chosen": "H0",
+  "model": "qwen2.5-7b-local",
+  "model_sha256": "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "selection_policy": "Maximize dev grounded grade 2 plus correct abstentions, counting errors as failures; then context evidence rate, hit@3, hit@1, lower p95, lower cost, configuration ID.",
+  "dev_review_sha256": "947e1afaeeb779c1c137c747bd05780922704372d171c875faecac0ad11b74e8",
+  "hashes": {
+    "src/day07/__init__.py": "57b3f8672ebf0f2cde5e7bcd8ad96ebfd9b72e54a6b91583d46f1680d943ee92",
+    "src/day07/__main__.py": "786737423bdcd46b6b259349d5435ff9fa4b00c917fc3b4a0097e53cde3eac58",
+    "src/day07/common.py": "b53946ebb71a25faebd6cfeaf4aa8c83d9d4aa8675035b4bb6b5e383ffa9d8fb",
+    "src/day07/day6.py": "660de046591d566f69ff0fb76022ae80aa4922a9829750a0bac3ae91d06da529",
+    "src/day07/retrieval.py": "000430a686b8ff49721423aac71ef5b430bf8e593784eebbc69c45774a430fe4",
+    "src/day07/context.py": "18419c62817dadea4cad55dd840ba9072d18f28fcf01536b3fdc2ccaed1ba299",
+    "src/day07/agent.py": "3377fa1fec5ea751fe815c655d3f525f8f651287fc76c782f3788bd4cff924a3",
+    "src/day07/evaluation.py": "71ac7e201dbfb779bc571c4c720b53a557959e1bb142f995ad7f89bc52088f70",
+    "configs/base.json": "a1414fbf42cbf658866d01020cb944a3206728812a7e18494ca5b933608d3171",
+    "artifacts/base/chunks.jsonl": "3ce64360d719144d787cd3704d578b6edc340c6ab8f1a505589384b45d1d5d1c",
+    "benchmarks/base/queries/dev.jsonl": "da568f405f291f03c80ec0d42344353525894f32761068c84f0644eb5782e38f",
+    "benchmarks/base/queries/test.jsonl": "5adfbf1651284412d4d00fe5153d22b5d605795a48439766445d86fd8fe79f5c",
+    "benchmarks/base/gold/dev.jsonl": "3dd994ad32d0907e2b47c636ff168436b21f5197fa5d79721e3e7bbb2677e25f",
+    "benchmarks/base/gold/test.jsonl": "8d35c0636589aa3e6254772a9484da782b0e4710f8a3f6c1eaf6ac8001bd2fa4"
+  },
+  "external_hashes": {
+    "day6/src/embeddings.py": "f3039fd1b0b50b294dd74c01b1a9ffbf858a8d255a3b95ed4379d3be466f461e",
+    "day6/src/store.py": "619c4442ed4bda8b53b8bf58af89d4edc7c02fe2653fff8b09082825a90f19a7",
+    "qdrant/meta.json": "7358ca792c0cdf7d6e414e7eb8ba5c1292a30fcaeae5b8394aae0e0bf107301b",
+    "embedding/1_Pooling/config.json": "987f7a67a38fa564c849bb5d277c52ab9088a84368fc0be31a354125aebb12a0",
+    "embedding/config.json": "69137736cab8b8903a07fe8afaafdda25aac55415a12a55d1bffa9f581abf959",
+    "embedding/model.safetensors": "1a55775f53449dac10a2bcbc312469fac40b96d53198c407081a831f81c98477",
+    "embedding/modules.json": "c6e29747481e8b5dd2b58401966aeac910de39092f90cda9a704b1545f902b04",
+    "embedding/README.md": "0038de97aee16258cecbad7ffda4b4febd6953e747a00e0ddbc8e6ed241e9c1c",
+    "embedding/sentence_bert_config.json": "948201d8329907aae938fa62f9ceeed53f5694dacc2b87b9f3b78b37ee986529",
+    "embedding/sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "embedding/special_tokens_map.json": "d05497f1da52c5e09554c0cd874037a083e1dc1b9cfd48034d1c717f1afc07a7",
+    "embedding/tokenizer.json": "0b44a9d7b51c3c62626640cda0e2c2f70fdacdc25bbbd68038369d14ebdf4c39",
+    "embedding/tokenizer_config.json": "a1d6bc8734a6f635dc158508bef000f8e2e5a759c7d92f984b2c86e5ff53425b",
+    "qdrant/lab6_B/storage.sqlite": "d24f3658eefa6d9578216615d3223f60484e4ef11b148c24574814cffe123bb9"
+  },
+  "notes": "Frozen before test; the model server and backend must match the recorded identity."
+}

@@ -1,0 +1,383 @@
+{
+  "adv2-dev-dev-001": {
+    "pass": true,
+    "reason": "The cited Table 1-1 Landsat 7 SSR row states both 378 Gbits and block-based organization.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-002": {
+    "pass": true,
+    "reason": "The OLI Band 2 row and OLI Performance column give 364; the finalizer corrected the visual draft's column/row error.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-003": {
+    "pass": true,
+    "reason": "The cited TIRS Band 10 row at 240 gives NEΔT 0.069.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-004": {
+    "pass": true,
+    "reason": "The source gives Band 10 temperature offset -2.1 ±0.8 K at 300 K; all values and the condition are retained.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-005": {
+    "pass": true,
+    "reason": "The original observatory image labels the upper-left sensor TIRS; the image-reader observation and final citation agree.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-006": {
+    "pass": true,
+    "reason": "The odd-SCA stack's uppermost row is 8 - Panchromatic. The OCR positional tool cites that original stack.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-007": {
+    "pass": true,
+    "reason": "The focal-plane layout shows SCA-1 to the right of SCA-3; the cited image contains this relation.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-008": {
+    "pass": true,
+    "reason": "The flow diagram connects Radiometric Processing System directly to Geometric Processing System (GPS).",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-009": {
+    "pass": true,
+    "reason": "Original-page pixel measurement of the red Coastal/Aerosol bar is approximately 238 SNR, within the declared ±20. The cited registered vector-page region contains the original Figure 2-3, an equivalent supporting locator.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-010": {
+    "pass": true,
+    "reason": "The original lunar-scan annotation says blue positions produced ghosts and gray positions did not. Both meanings are preserved.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-011": {
+    "pass": true,
+    "reason": "The original plot's yellow limit is at 80 on the encoder-current axis, within the predeclared ±1.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-012": {
+    "pass": true,
+    "reason": "The source plot labels wavelength in nm horizontally and atmospheric transmission in percent vertically; the answer includes both axes and units.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-013": {
+    "pass": true,
+    "reason": "Table 2-1 maps 0.435–0.451 µm to Band 1; Table 2-2 gives its performance SNR 238. Both required original regions are cited.",
+    "citation_support": {
+      "e2": true,
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-014": {
+    "pass": true,
+    "reason": "Table 2-1 maps 0.452–0.512 µm to Band 2; Table 2-2 gives its performance SNR 364. Both required original regions are cited.",
+    "citation_support": {
+      "e2": true,
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-015": {
+    "pass": true,
+    "reason": "Table 2-1 maps 0.533–0.590 µm to Band 3; Table 2-2 gives its performance SNR 302. Both required original regions are cited.",
+    "citation_support": {
+      "e2": true,
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-016": {
+    "pass": true,
+    "reason": "Table 2-1 maps 0.636–0.673 µm to Band 4; Table 2-2 gives its performance SNR 227. Both required original regions are cited.",
+    "citation_support": {
+      "e2": true,
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-017": {
+    "pass": true,
+    "reason": "The cited introduction explicitly says Launched in 2013 for Landsat 8, distinguishing Landsat 7's 1999 date.",
+    "citation_support": {
+      "e2": true
+    }
+  },
+  "adv2-dev-dev-018": {
+    "pass": true,
+    "reason": "The cited mission-objectives paragraph states 5-year design life and 10 years of fuel consumables; both durations are retained.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-019": {
+    "pass": true,
+    "reason": "The QA discussion states 16-bit and same dimensions as the standard L1T scene. The second source explicitly corroborates QA's 16-bit mask representation.",
+    "citation_support": {
+      "e1": true,
+      "e2": true
+    },
+    "citation_reasons": {
+      "e1": "Supports both bit depth and scene dimensions.",
+      "e2": "Corroborates the 16-bit QA mask part of the answer."
+    }
+  },
+  "adv2-dev-dev-020": {
+    "pass": true,
+    "reason": "The SSM encoder paragraph states conversion of angular positions representing SSM orientation into digital codes.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-dev-021": {
+    "pass": true,
+    "reason": "Clearly declines to provide an unsupported campaign acquisition cost and introduces no invented cost or other fact.",
+    "citation_support": {}
+  },
+  "adv2-dev-dev-022": {
+    "pass": true,
+    "reason": "Declines to invent the requested fictional-station IP address.",
+    "citation_support": {}
+  },
+  "adv2-dev-dev-023": {
+    "pass": true,
+    "reason": "Declines to invent the requested fictional-scene cloud percentage.",
+    "citation_support": {}
+  },
+  "adv2-dev-dev-024": {
+    "pass": true,
+    "reason": "Declines to name an unsupported calibration approver.",
+    "citation_support": {}
+  },
+  "adv2-dev-dev-025": {
+    "pass": true,
+    "reason": "Declines to invent an unsupported processing-invoice amount.",
+    "citation_support": {}
+  },
+  "adv2-dev-dev-026": {
+    "pass": true,
+    "reason": "Declines to invent an unsupported sensor serial number.",
+    "citation_support": {}
+  },
+  "adv2-dev-test-001": {
+    "pass": true,
+    "reason": "The Landsat 8 SSR row states 3.14 Terabit, file-based; both requested items are retained.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-002": {
+    "pass": false,
+    "reason": "Final JSON citation markers do not agree with the declared source aliases; the system error remains a failure.",
+    "citation_support": {},
+    "failure_type": "invalid_citation_markers"
+  },
+  "adv2-dev-test-003": {
+    "pass": true,
+    "reason": "The cited Table 2-3 Band 11 row at 280 gives NE?T 0.059.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-004": {
+    "pass": true,
+    "reason": "The original Band 11 offset row at 300 K gives -4.4 ?1.75 K; value, uncertainty and condition are retained.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-005": {
+    "pass": false,
+    "reason": "The answer gives the Band 6 range 1.566?1.651 ?m for Band 5. Original Band 5 is 0.851?0.879 ?m; citation does not support the claimed row association.",
+    "citation_support": {
+      "e1": false
+    },
+    "failure_type": "table_row_misalignment"
+  },
+  "adv2-dev-test-006": {
+    "pass": true,
+    "reason": "The cited Landsat 8 Image D/L cell states X-Band Earth Coverage.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-007": {
+    "pass": true,
+    "reason": "The observatory diagram labels the lower-right component Solar Panel.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-008": {
+    "pass": true,
+    "reason": "The even-SCA stack has Bands 12?14 Blind at its top, as reported by the positional OCR tool.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-009": {
+    "pass": false,
+    "reason": "The model refuses the answer because its observation omitted the specific types. The original source shows Nadir and spaceview baffles; the answerable case fails.",
+    "citation_support": {},
+    "failure_type": "false_abstention_incomplete_visual_identification"
+  },
+  "adv2-dev-test-010": {
+    "pass": true,
+    "reason": "The original TIRS cutaway labels the bottom component Focal Plane Array (FPA).",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-011": {
+    "pass": true,
+    "reason": "The original LOS diagram identifies the lower SCA as SCA-C / SCA02.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-012": {
+    "pass": true,
+    "reason": "Source-pixel measurement is 203 SNR versus original NIR approximately 204, within the predeclared absolute tolerance 20. The cited full-page vector region contains Figure 2-3.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-013": {
+    "pass": true,
+    "reason": "Source-pixel measurement is 164 SNR versus original Cirrus approximately 165, within the predeclared absolute tolerance 20. The cited full-page vector region contains Figure 2-3.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-014": {
+    "pass": true,
+    "reason": "The red limit line is at encoder-current 85, within the predeclared absolute tolerance 1.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-015": {
+    "pass": false,
+    "reason": "The answer names instrument labels TIRS-2 and TIRS-3 instead of the thermal band numbers 10 and 11 shown in the original spectral chart.",
+    "citation_support": {
+      "e1": false
+    },
+    "failure_type": "instrument_label_confused_with_band_number"
+  },
+  "adv2-dev-test-016": {
+    "pass": true,
+    "reason": "The left scatter panel legend shows Band 11 as red squares; only the correct left panel is cited.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-017": {
+    "pass": true,
+    "reason": "Original Table 2-1 maps 0.851?0.879 ?m to OLI Band 5 and Table 2-2 gives performance SNR 204; both are cited.",
+    "citation_support": {
+      "e2": true,
+      "e1": true
+    }
+  },
+  "adv2-dev-test-018": {
+    "pass": true,
+    "reason": "Original Table 2-1 maps 1.566?1.651 ?m to OLI Band 6 and Table 2-2 gives performance SNR 265; both are cited.",
+    "citation_support": {
+      "e2": true,
+      "e1": true
+    }
+  },
+  "adv2-dev-test-019": {
+    "pass": true,
+    "reason": "Original Table 2-1 maps 2.107?2.294 ?m to OLI Band 7 and Table 2-2 gives performance SNR 334; both are cited.",
+    "citation_support": {
+      "e2": true,
+      "e1": true
+    }
+  },
+  "adv2-dev-test-020": {
+    "pass": true,
+    "reason": "Original Table 2-1 maps 0.503?0.676 ?m to OLI Band 8 and Table 2-2 gives performance SNR 149; both are cited.",
+    "citation_support": {
+      "e2": true,
+      "e1": true
+    }
+  },
+  "adv2-dev-test-021": {
+    "pass": true,
+    "reason": "The cited Global Survey Mission paragraph explicitly states once every 16 days.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-022": {
+    "pass": true,
+    "reason": "The cited source explicitly gives 4096 levels for 12-bit and 256 for previous 8-bit instruments; both requested values are present.",
+    "citation_support": {
+      "e2": true
+    }
+  },
+  "adv2-dev-test-023": {
+    "pass": true,
+    "reason": "The cited QA paragraph supports lower NDVI and later apparent green-up/peak-maturity timing, covering the complete answer.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-024": {
+    "pass": true,
+    "reason": "The actual anomaly-discovery paragraph on PDF page 78 gives December 19, 2014; the retrieval miss in v1 has been resolved.",
+    "citation_support": {
+      "e1": true
+    }
+  },
+  "adv2-dev-test-025": {
+    "pass": true,
+    "reason": "Declines to invent a fictional-project acquisition date and does not repeat the visual draft hallucination.",
+    "citation_support": {}
+  },
+  "adv2-dev-test-026": {
+    "pass": true,
+    "reason": "Declines to supply an unsupported fictional-station password.",
+    "citation_support": {}
+  },
+  "adv2-dev-test-027": {
+    "pass": true,
+    "reason": "Declines to invent a fictional product QA value and does not repeat the visual draft hallucination.",
+    "citation_support": {}
+  },
+  "adv2-dev-test-028": {
+    "pass": true,
+    "reason": "Declines to invent the leader of an unsupported fictional calibration team.",
+    "citation_support": {}
+  },
+  "adv2-dev-test-029": {
+    "pass": true,
+    "reason": "Declines to invent a fictional archive storage price.",
+    "citation_support": {}
+  },
+  "adv2-dev-test-030": {
+    "pass": true,
+    "reason": "Declines to invent a fictional receiver IP address.",
+    "citation_support": {}
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "created_at": "2026-11-15T10:14:02.141520+00:00",
+  "description": "Five preselected dev queries; all required gold-region IDs in top 8. Structural retrieval check only, not answer quality.",
+  "runs": {
+    "dev-search-pilot.json": {
+      "n": 3,
+      "N": 5,
+      "cases": [
+        {
+          "query_id": "adv-dev-001",
+          "group_ranks": [
+            null
+          ],
+          "all_groups_found": false
+        },
+        {
+          "query_id": "adv-dev-005",
+          "group_ranks": [
+            1
+          ],
+          "all_groups_found": true
+        },
+        {
+          "query_id": "adv-dev-009",
+          "group_ranks": [
+            4
+          ],
+          "all_groups_found": true
+        },
+        {
+          "query_id": "adv-dev-013",
+          "group_ranks": [
+            1,
+            null
+          ],
+          "all_groups_found": false
+        },
+        {
+          "query_id": "adv-dev-017",
+          "group_ranks": [
+            1
+          ],
+          "all_groups_found": true
+        }
+      ]
+    },
+    "dev-search-pilot-v2.json": {
+      "n": 4,
+      "N": 5,
+      "cases": [
+        {
+          "query_id": "adv-dev-001",
+          "group_ranks": [
+            4
+          ],
+          "all_groups_found": true
+        },
+        {
+          "query_id": "adv-dev-005",
+          "group_ranks": [
+            2
+          ],
+          "all_groups_found": true
+        },
+        {
+          "query_id": "adv-dev-009",
+          "group_ranks": [
+            5
+          ],
+          "all_groups_found": true
+        },
+        {
+          "query_id": "adv-dev-013",
+          "group_ranks": [
+            5,
+            null
+          ],
+          "all_groups_found": false
+        },
+        {
+          "query_id": "adv-dev-017",
+          "group_ranks": [
+            1
+          ],
+          "all_groups_found": true
+        }
+      ]
+    },
+    "dev-search-pilot-v3.json": {
+      "n": 5,
+      "N": 5,
+      "cases": [
+        {
+          "query_id": "adv-dev-001",
+          "group_ranks": [
+            1
+          ],
+          "all_groups_found": true
+        },
+        {
+          "query_id": "adv-dev-005",
+          "group_ranks": [
+            1
+          ],
+          "all_groups_found": true
+        },
+        {
+          "query_id": "adv-dev-009",
+          "group_ranks": [
+            1
+          ],
+          "all_groups_found": true
+        },
+        {
+          "query_id": "adv-dev-013",
+          "group_ranks": [
+            1,
+            2
+          ],
+          "all_groups_found": true
+        },
+        {
+          "query_id": "adv-dev-017",
+          "group_ranks": [
+            1
+          ],
+          "all_groups_found": true
+        }
+      ]
+    }
+  }
+}

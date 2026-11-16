@@ -1,0 +1,15 @@
+* text=auto eol=lf whitespace=cr-at-eol
+*.md whitespace=cr-at-eol,-blank-at-eol
+# Preserve exact bytes for checksummed experiment inputs, across Windows/Linux.
+src/day07/** -text -eol
+scripts/** -text -eol
+configs/** -text -eol
+benchmarks/** -text -eol
+artifacts/** -text -eol
+requirements*.txt -text -eol
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.sqlite binary

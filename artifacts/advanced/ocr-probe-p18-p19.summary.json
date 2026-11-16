@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-15T10:21:49.524475+00:00",
+  "regions": 3,
+  "errors": 0,
+  "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756",
+  "dpi": 200,
+  "elapsed_seconds": 10.578668999999536,
+  "ocr_sha256": "442e0bfb05edab91de3c94653c060e9d72c7432ce53d18c88bce91018ffefc34",
+  "scope": "Probe pages [18, 19]",
+  "warning": "OCR is not independently verified and may miss or distort labels, numbers and table structure."
+}

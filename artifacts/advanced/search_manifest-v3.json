@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-11-15T10:12:58.298749+00:00",
+  "collection": "lab7_landsat_v5",
+  "snippets": 924,
+  "dimensions": 384,
+  "model": "intfloat/multilingual-e5-small",
+  "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "source_elements_sha256": "91ed9c1d543a5c0e68e849725e744268ecf13b494d7923e57f220aea6c32c548",
+  "search_chunks_sha256": "84e5ece13e1d27fc9117363044591af407456b67141dbde8482f6ab8cfdf5963",
+  "api_cost_usd": 0.0,
+  "caption_policy": "Nearest page caption below/near an image or table region; not derived from questions.",
+  "status": "PARTIAL: text and captions only; visual content is not transcribed",
+  "limitations": [
+    "No visual embeddings, OCR or model-verified descriptions.",
+    "Table candidates retain automatic extraction errors; verify source.",
+    "Empty caption-only regions are not searchable by text."
+  ]
+}

@@ -1,0 +1,23 @@
+{"id": "b-dev-q01", "split": "dev", "question": "How do str() and repr() differ in their intended audience when displaying a value?", "scope": {}}
+{"id": "b-dev-q02", "split": "dev", "question": "Using the tutorial guidance, why use a with statement for a file when processing might raise an exception?", "scope": {}}
+{"id": "b-dev-q03", "split": "dev", "question": "What seek positions are valid for a text-mode file, and what happens if another offset is used?", "scope": {}}
+{"id": "b-dev-q04", "split": "dev", "question": "Will an except clause for a derived exception class also catch instances of its base class?", "scope": {}}
+{"id": "b-dev-q06", "split": "dev", "question": "In the tutorial, which collection is recommended for a queue, and why is a list inefficient at its front?", "scope": {}}
+{"id": "b-dev-q07", "split": "dev", "question": "How do I create an empty set, and why would empty braces be wrong for that purpose?", "scope": {}}
+{"id": "b-dev-q09", "split": "dev", "question": "What ordering does list(d) use for dictionary keys, and how can I obtain sorted keys instead?", "scope": {}}
+{"id": "b-dev-q10", "split": "dev", "question": "According to the library reference, can repeated json.dump calls to the same file be used to build a valid JSON file of multiple objects?", "scope": {}}
+{"id": "b-dev-q11", "split": "dev", "question": "Which JSON encoder option lets non-ASCII characters appear directly rather than as escaped sequences?", "scope": {}}
+{"id": "b-dev-q13", "split": "dev", "question": "When both JSON decoding callbacks object_hook and object_pairs_hook are supplied, which one takes precedence?", "scope": {}}
+{"id": "b-dev-q15", "split": "dev", "question": "Which pathlib class can manipulate Windows paths on Unix without making filesystem calls?", "scope": {}}
+{"id": "b-dev-q16", "split": "dev", "question": "When constructing a pathlib path from segments, what happens to earlier segments if a later segment is absolute?", "scope": {}}
+{"id": "b-dev-q18", "split": "dev", "question": "Why does pathlib preserve double-dot components and leading double slashes instead of simplifying them like single dots?", "scope": {}}
+{"id": "b-dev-q20", "split": "dev", "question": "What exception results from writing str to a binary stream or bytes to a text stream?", "scope": {}}
+{"id": "b-dev-q21", "split": "dev", "question": "From the library reference, how should I explicitly request UTF-8 or the current locale encoding when opening text files?", "scope": {}}
+{"id": "b-dev-q24", "split": "dev", "question": "What makes an instance of a user-defined class false in a Boolean context by default?", "scope": {}}
+{"id": "b-dev-q25", "split": "dev", "question": "Does Python integer floor division round toward zero or negative infinity, and what is (-1)//2?", "scope": {}}
+{"id": "b-dev-q27", "split": "dev", "question": "When raising a new exception with 'from None', is the old exception deleted or still available for debugging?", "scope": {}}
+{"id": "b-dev-q28", "split": "dev", "question": "What base class should application-defined exceptions normally inherit from, instead of inheriting directly from BaseException?", "scope": {}}
+{"id": "b-dev-q30", "split": "dev", "question": "What happens if generator code directly or indirectly raises StopIteration rather than returning normally?", "scope": {}}
+{"id": "b-dev-m01", "split": "dev", "question": "According to these Python docs, what is the configured timeout of the fictional Acme-Lab07 JSON service?", "scope": {}}
+{"id": "b-dev-m02", "split": "dev", "question": "Which office city maintains the custom Northstar-Pathlib extension described in these documents?", "scope": {}}
+{"id": "b-dev-m03", "split": "dev", "question": "What benchmark latency in milliseconds does this documentation report for json.loads on the fictional Orion-Lab-X7 machine?", "scope": {}}

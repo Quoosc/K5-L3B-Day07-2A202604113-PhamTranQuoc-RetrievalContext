@@ -1,0 +1,622 @@
+{
+  "query_id": "advanced-smoke-outside-benchmark",
+  "question": "In Figure 2-1 of the handbook, what label points to the central blue body of the spacecraft?",
+  "model": "qwen2.5-vl-3b-local",
+  "status": "error",
+  "events": [
+    {
+      "event": "search",
+      "tool_args": {
+        "action": "search",
+        "query": "Figure 2-1 central blue body spacecraft"
+      },
+      "results": [
+        {
+          "id": "landsat-v5-p016-image-001#part-001",
+          "evidence_id": "landsat-v5-p016-image-001",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 16,
+          "printed_label": "8",
+          "bbox": [
+            333.0,
+            105.75,
+            539.95,
+            356.3
+          ],
+          "text": "Figure 2-1. Illustration of \nLandsat 8 Observatory\nFigure 2-1. Illustration of \nLandsat 8 Observatory",
+          "metadata": {
+            "element_type": "image",
+            "section": "Section 2"
+          },
+          "warning": "Image region is indexed by nearby page captions only; its visual content is not transcribed or verified.",
+          "score": 0.0,
+          "method": "caption_reference",
+          "route": "Figure 2-1",
+          "rank": 1
+        },
+        {
+          "id": "landsat-v5-p017-text-003#part-001",
+          "evidence_id": "landsat-v5-p017-text-003",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 17,
+          "printed_label": "9",
+          "bbox": [
+            129.96,
+            590.9,
+            282.7,
+            607.63
+          ],
+          "text": "Figure 2-2. OLI Instrument",
+          "metadata": {
+            "element_type": "text",
+            "section": "Section 2"
+          },
+          "warning": null,
+          "score": 0.03200204813108039,
+          "method": "hybrid_rrf",
+          "rank": 2,
+          "branch_ranks": {
+            "dense": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "id": "landsat-v5-p016-text-002#part-001",
+          "evidence_id": "landsat-v5-p016-text-002",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 16,
+          "printed_label": "8",
+          "bbox": [
+            373.8,
+            367.82,
+            517.18,
+            398.35
+          ],
+          "text": "Figure 2-1. Illustration of \nLandsat 8 Observatory",
+          "metadata": {
+            "element_type": "text",
+            "section": "Section 2"
+          },
+          "warning": null,
+          "score": 0.03057889822595705,
+          "method": "hybrid_rrf",
+          "rank": 3,
+          "branch_ranks": {
+            "dense": 3,
+            "lexical": 8
+          }
+        },
+        {
+          "id": "landsat-v5-p007-text-002#part-001",
+          "evidence_id": "landsat-v5-p007-text-002",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 7,
+          "printed_label": "vii",
+          "bbox": [
+            72.0,
+            151.08,
+            542.02,
+            719.46
+          ],
+          "text": "Figure 1-1. Continuity of Multispectral Data Coverage Provided by Landsat Missions ... 4 \nFigure 2-1. Illustration of Landsat 8 Observatory ............................................................ 8 \nFigure 2-2. OLI Instrument .............................................................................................. 9 \nFigure 2-3. OLI Signal-to-Noise (SNR) Performance at Ltypical ................................... 11 \nFigure 2-4. OLI Focal Plane .......................................................................................... 12 \nFigure 2-5. Odd/Even SCA Band Arrangement ............................................................. 12 \nFigure 2-6. TIRS Instrument with Earthshield Deployed................................................ 13 \nFigure 2-7. TIRS Focal Plane ........................................................................................ 14 \nFigure 2-8. TIRS Optical Sensor Unit ............................................................................ 15 \nFigure 3-1. Simulated OLI Image of the Lake Pontchartrain Causeway ........................ 36 \nFigure 4-1. LPGS Standard Product Data Flow ............................................................ 45 \nFigure 4-2. Level 1 Product Ground Swath and Scene Size ......................................... 47 \nFigure 4-3. Spectral Bands and Wavelengths for Landsat Sensors .............................. 50 \nFigure 4-4. Landsat 8 Quality Band ............................................................................... 53 \nFigure 5-1. Landsat Look Quality Image ....................................................................... 59 \nFigure 6-1. EarthExplorer Interface ............................................................................... 61 \nFigure 6-2. EarthExplorer Landsat Level 1 Datasets ..................................................... 61 \nFigure 6-3. EarthExplorer Results - Browse Image Display .......................................... 62 \nFigure 6-4.",
+          "metadata": {
+            "element_type": "text",
+            "section": null
+          },
+          "warning": null,
+          "score": 0.01639344262295082,
+          "method": "hybrid_rrf",
+          "rank": 4,
+          "branch_ranks": {
+            "lexical": 1
+          }
+        },
+        {
+          "id": "landsat-v5-p098-text-002#part-001",
+          "evidence_id": "landsat-v5-p098-text-002",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 98,
+          "printed_label": "90",
+          "bbox": [
+            197.28,
+            519.14,
+            417.94,
+            535.87
+          ],
+          "text": "Figure B-3. Orbital Coordinate System",
+          "metadata": {
+            "element_type": "text",
+            "section": "Section 6"
+          },
+          "warning": null,
+          "score": 0.01639344262295082,
+          "method": "hybrid_rrf",
+          "rank": 5,
+          "branch_ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "id": "landsat-v5-p017-image-001#part-001",
+          "evidence_id": "landsat-v5-p017-image-001",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 17,
+          "printed_label": "9",
+          "bbox": [
+            73.25,
+            402.12,
+            335.64,
+            579.13
+          ],
+          "text": "Figure 2-2. OLI Instrument\nFigure 2-2. OLI Instrument",
+          "metadata": {
+            "element_type": "image",
+            "section": "Section 2"
+          },
+          "warning": "Image region is indexed by nearby page captions only; its visual content is not transcribed or verified.",
+          "score": 0.016129032258064516,
+          "method": "hybrid_rrf",
+          "rank": 6,
+          "branch_ranks": {
+            "lexical": 2
+          }
+        },
+        {
+          "id": "landsat-v5-p020-text-001#part-001",
+          "evidence_id": "landsat-v5-p020-text-001",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 20,
+          "printed_label": "12",
+          "bbox": [
+            228.96,
+            249.62,
+            386.38,
+            266.35
+          ],
+          "text": "Figure 2-4. OLI Focal Plane",
+          "metadata": {
+            "element_type": "text",
+            "section": "Section 2"
+          },
+          "warning": null,
+          "score": 0.015625,
+          "method": "hybrid_rrf",
+          "rank": 7,
+          "branch_ranks": {
+            "dense": 4
+          }
+        },
+        {
+          "id": "landsat-v5-p096-text-001#part-002",
+          "evidence_id": "landsat-v5-p096-text-001",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 96,
+          "printed_label": "88",
+          "bbox": [
+            72.0,
+            70.25,
+            542.98,
+            368.46
+          ],
+          "text": "TIRS coordinate system nominally parallel to the spacecraft coordinate \nsystem, with the difference being due to residual misalignment between the TIRS and \nthe spacecraft body.",
+          "metadata": {
+            "element_type": "text",
+            "section": "Section 6"
+          },
+          "warning": null,
+          "score": 0.015625,
+          "method": "hybrid_rrf",
+          "rank": 8,
+          "branch_ranks": {
+            "lexical": 4
+          }
+        }
+      ],
+      "reference_routing": [
+        "landsat-v5-p016-image-001"
+      ],
+      "raw_ranking": [
+        {
+          "id": "landsat-v5-p017-text-003#part-001",
+          "evidence_id": "landsat-v5-p017-text-003",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 17,
+          "printed_label": "9",
+          "bbox": [
+            129.96,
+            590.9,
+            282.7,
+            607.63
+          ],
+          "text": "Figure 2-2. OLI Instrument",
+          "metadata": {
+            "element_type": "text",
+            "section": "Section 2"
+          },
+          "warning": null,
+          "score": 0.03200204813108039,
+          "method": "hybrid_rrf",
+          "rank": 1,
+          "branch_ranks": {
+            "dense": 2,
+            "lexical": 3
+          }
+        },
+        {
+          "id": "landsat-v5-p016-text-002#part-001",
+          "evidence_id": "landsat-v5-p016-text-002",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 16,
+          "printed_label": "8",
+          "bbox": [
+            373.8,
+            367.82,
+            517.18,
+            398.35
+          ],
+          "text": "Figure 2-1. Illustration of \nLandsat 8 Observatory",
+          "metadata": {
+            "element_type": "text",
+            "section": "Section 2"
+          },
+          "warning": null,
+          "score": 0.03057889822595705,
+          "method": "hybrid_rrf",
+          "rank": 2,
+          "branch_ranks": {
+            "dense": 3,
+            "lexical": 8
+          }
+        },
+        {
+          "id": "landsat-v5-p007-text-002#part-001",
+          "evidence_id": "landsat-v5-p007-text-002",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 7,
+          "printed_label": "vii",
+          "bbox": [
+            72.0,
+            151.08,
+            542.02,
+            719.46
+          ],
+          "text": "Figure 1-1. Continuity of Multispectral Data Coverage Provided by Landsat Missions ... 4 \nFigure 2-1. Illustration of Landsat 8 Observatory ............................................................ 8 \nFigure 2-2. OLI Instrument .............................................................................................. 9 \nFigure 2-3. OLI Signal-to-Noise (SNR) Performance at Ltypical ................................... 11 \nFigure 2-4. OLI Focal Plane .......................................................................................... 12 \nFigure 2-5. Odd/Even SCA Band Arrangement ............................................................. 12 \nFigure 2-6. TIRS Instrument with Earthshield Deployed................................................ 13 \nFigure 2-7. TIRS Focal Plane ........................................................................................ 14 \nFigure 2-8. TIRS Optical Sensor Unit ............................................................................ 15 \nFigure 3-1. Simulated OLI Image of the Lake Pontchartrain Causeway ........................ 36 \nFigure 4-1. LPGS Standard Product Data Flow ............................................................ 45 \nFigure 4-2. Level 1 Product Ground Swath and Scene Size ......................................... 47 \nFigure 4-3. Spectral Bands and Wavelengths for Landsat Sensors .............................. 50 \nFigure 4-4. Landsat 8 Quality Band ............................................................................... 53 \nFigure 5-1. Landsat Look Quality Image ....................................................................... 59 \nFigure 6-1. EarthExplorer Interface ............................................................................... 61 \nFigure 6-2. EarthExplorer Landsat Level 1 Datasets ..................................................... 61 \nFigure 6-3. EarthExplorer Results - Browse Image Display .......................................... 62 \nFigure 6-4.",
+          "metadata": {
+            "element_type": "text",
+            "section": null
+          },
+          "warning": null,
+          "score": 0.01639344262295082,
+          "method": "hybrid_rrf",
+          "rank": 3,
+          "branch_ranks": {
+            "lexical": 1
+          }
+        },
+        {
+          "id": "landsat-v5-p098-text-002#part-001",
+          "evidence_id": "landsat-v5-p098-text-002",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 98,
+          "printed_label": "90",
+          "bbox": [
+            197.28,
+            519.14,
+            417.94,
+            535.87
+          ],
+          "text": "Figure B-3. Orbital Coordinate System",
+          "metadata": {
+            "element_type": "text",
+            "section": "Section 6"
+          },
+          "warning": null,
+          "score": 0.01639344262295082,
+          "method": "hybrid_rrf",
+          "rank": 4,
+          "branch_ranks": {
+            "dense": 1
+          }
+        },
+        {
+          "id": "landsat-v5-p017-image-001#part-001",
+          "evidence_id": "landsat-v5-p017-image-001",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 17,
+          "printed_label": "9",
+          "bbox": [
+            73.25,
+            402.12,
+            335.64,
+            579.13
+          ],
+          "text": "Figure 2-2. OLI Instrument\nFigure 2-2. OLI Instrument",
+          "metadata": {
+            "element_type": "image",
+            "section": "Section 2"
+          },
+          "warning": "Image region is indexed by nearby page captions only; its visual content is not transcribed or verified.",
+          "score": 0.016129032258064516,
+          "method": "hybrid_rrf",
+          "rank": 5,
+          "branch_ranks": {
+            "lexical": 2
+          }
+        },
+        {
+          "id": "landsat-v5-p020-text-001#part-001",
+          "evidence_id": "landsat-v5-p020-text-001",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 20,
+          "printed_label": "12",
+          "bbox": [
+            228.96,
+            249.62,
+            386.38,
+            266.35
+          ],
+          "text": "Figure 2-4. OLI Focal Plane",
+          "metadata": {
+            "element_type": "text",
+            "section": "Section 2"
+          },
+          "warning": null,
+          "score": 0.015625,
+          "method": "hybrid_rrf",
+          "rank": 6,
+          "branch_ranks": {
+            "dense": 4
+          }
+        },
+        {
+          "id": "landsat-v5-p096-text-001#part-002",
+          "evidence_id": "landsat-v5-p096-text-001",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 96,
+          "printed_label": "88",
+          "bbox": [
+            72.0,
+            70.25,
+            542.98,
+            368.46
+          ],
+          "text": "TIRS coordinate system nominally parallel to the spacecraft coordinate \nsystem, with the difference being due to residual misalignment between the TIRS and \nthe spacecraft body.",
+          "metadata": {
+            "element_type": "text",
+            "section": "Section 6"
+          },
+          "warning": null,
+          "score": 0.015625,
+          "method": "hybrid_rrf",
+          "rank": 7,
+          "branch_ranks": {
+            "lexical": 4
+          }
+        },
+        {
+          "id": "landsat-v5-p096-text-003#part-001",
+          "evidence_id": "landsat-v5-p096-text-003",
+          "source_id": "LSDS-1574-v5.0",
+          "source": "https://www.usgs.gov/media/files/landsat-8-data-users-handbook",
+          "page": 96,
+          "printed_label": "88",
+          "bbox": [
+            72.0,
+            649.13,
+            535.66,
+            712.74
+          ],
+          "text": "B.4 Spacecraft Coordinate System  \nThe spacecraft coordinate system is the spacecraft-body-fixed coordinate system used \nto relate the locations and orientations of the various spacecraft components to one \nanother and to the OLI and TIRS instruments. It is defined with the +Z axis in the Earth-",
+          "metadata": {
+            "element_type": "text",
+            "section": "Section 6"
+          },
+          "warning": null,
+          "score": 0.015384615384615385,
+          "method": "hybrid_rrf",
+          "rank": 8,
+          "branch_ranks": {
+            "lexical": 5
+          }
+        }
+      ]
+    },
+    {
+      "event": "open_region",
+      "tool_args": {
+        "action": "open_region",
+        "handles": [
+          "r1",
+          "r6"
+        ]
+      },
+      "resolved_evidence_ids": [
+        "landsat-v5-p016-image-001",
+        "landsat-v5-p017-image-001"
+      ],
+      "opened": [
+        {
+          "alias": "e1",
+          "evidence_id": "landsat-v5-p016-image-001",
+          "pdf_page": 16,
+          "printed_label": "8",
+          "bbox": [
+            333.0,
+            105.75,
+            539.95,
+            356.3
+          ],
+          "image_sha256": "560944fa0aaf3bcac9d58808335b21a9036b9a58226b843706027f33c11bd17b",
+          "dpi": 150
+        },
+        {
+          "alias": "e2",
+          "evidence_id": "landsat-v5-p017-image-001",
+          "pdf_page": 17,
+          "printed_label": "9",
+          "bbox": [
+            73.25,
+            402.12,
+            335.64,
+            579.13
+          ],
+          "image_sha256": "96d8dfb14ebd21da065c56c691e23705baca79d0a4097d80fbc2c125551dbaf2",
+          "dpi": 150
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5142,
+    "completion_tokens": 91
+  },
+  "api_cost_usd": 0.0,
+  "tool_protocol": "model-generated JSON actions; no native tool API",
+  "raw_search_action": "{\n  \"action\": \"search\",\n  \"query\": \"Figure 2-1 central blue body spacecraft\"\n}",
+  "search_context": [
+    {
+      "handle": "r1",
+      "evidence_id": "landsat-v5-p016-image-001",
+      "pdf_page": 16,
+      "bbox": [
+        333.0,
+        105.75,
+        539.95,
+        356.3
+      ],
+      "element_type": "image",
+      "text": "Figure 2-1. Illustration of \nLandsat 8 Observatory\nFigure 2-1. Illustration of \nLandsat 8 Observatory",
+      "score": 0.0,
+      "rank": 1
+    },
+    {
+      "handle": "r2",
+      "evidence_id": "landsat-v5-p017-text-003",
+      "pdf_page": 17,
+      "bbox": [
+        129.96,
+        590.9,
+        282.7,
+        607.63
+      ],
+      "element_type": "text",
+      "text": "Figure 2-2. OLI Instrument",
+      "score": 0.03200204813108039,
+      "rank": 2
+    },
+    {
+      "handle": "r3",
+      "evidence_id": "landsat-v5-p016-text-002",
+      "pdf_page": 16,
+      "bbox": [
+        373.8,
+        367.82,
+        517.18,
+        398.35
+      ],
+      "element_type": "text",
+      "text": "Figure 2-1. Illustration of \nLandsat 8 Observatory",
+      "score": 0.03057889822595705,
+      "rank": 3
+    },
+    {
+      "handle": "r4",
+      "evidence_id": "landsat-v5-p007-text-002",
+      "pdf_page": 7,
+      "bbox": [
+        72.0,
+        151.08,
+        542.02,
+        719.46
+      ],
+      "element_type": "text",
+      "text": "Figure 1-1. Continuity of Multispectral Data Coverage Provided by Landsat Missions ... 4 \nFigure 2-1. Illustration of Landsat 8 Observatory ............................................................ 8 \nFigure 2-2. OLI Instrument .............................................................................................. 9 \nFigure 2-3. OLI Signal-to-Noise (SNR) Performance at Ltypical ................................... 11 \nFigure 2-4. OLI Focal Plane .......................................................................................... 12 \nFigure 2-5. Odd/Even SCA Band Arrangement ....",
+      "score": 0.01639344262295082,
+      "rank": 4
+    },
+    {
+      "handle": "r5",
+      "evidence_id": "landsat-v5-p098-text-002",
+      "pdf_page": 98,
+      "bbox": [
+        197.28,
+        519.14,
+        417.94,
+        535.87
+      ],
+      "element_type": "text",
+      "text": "Figure B-3. Orbital Coordinate System",
+      "score": 0.01639344262295082,
+      "rank": 5
+    },
+    {
+      "handle": "r6",
+      "evidence_id": "landsat-v5-p017-image-001",
+      "pdf_page": 17,
+      "bbox": [
+        73.25,
+        402.12,
+        335.64,
+        579.13
+      ],
+      "element_type": "image",
+      "text": "Figure 2-2. OLI Instrument\nFigure 2-2. OLI Instrument",
+      "score": 0.016129032258064516,
+      "rank": 6
+    },
+    {
+      "handle": "r7",
+      "evidence_id": "landsat-v5-p020-text-001",
+      "pdf_page": 20,
+      "bbox": [
+        228.96,
+        249.62,
+        386.38,
+        266.35
+      ],
+      "element_type": "text",
+      "text": "Figure 2-4. OLI Focal Plane",
+      "score": 0.015625,
+      "rank": 7
+    },
+    {
+      "handle": "r8",
+      "evidence_id": "landsat-v5-p096-text-001",
+      "pdf_page": 96,
+      "bbox": [
+        72.0,
+        70.25,
+        542.98,
+        368.46
+      ],
+      "element_type": "text",
+      "text": "TIRS coordinate system nominally parallel to the spacecraft coordinate \nsystem, with the difference being due to residual misalignment between the TIRS and \nthe spacecraft body.",
+      "score": 0.015625,
+      "rank": 8
+    }
+  ],
+  "raw_open_action": "{\n  \"action\": \"open_region\",\n  \"handles\": [\"r1\", \"r6\"]\n}",
+  "final_instruction": "Answer the original question using only the opened regions. Return exactly JSON {\"status\":\"answered\" or \"abstain\",\"answer\":\"...\",\"citations\":[\"e1\",...]}. Example: {\"status\":\"answered\",\"answer\":\"The value is 7 [e1].\",\"citations\":[\"e1\"]}. Every factual claim must contain a bracketed citation such as [e1] in the answer text itself. If evidence is insufficient, abstain without guessing.",
+  "raw_answer": "{\n  \"status\": \"answered\",\n  \"answer\": \"The central blue body of the spacecraft is labeled as 'Spacecraft Bus' in the image.\",\n  \"citations\": [\"e1\"]\n}",
+  "answer": "",
+  "citations": [],
+  "stop_reason": "system_or_protocol_error",
+  "error": "ValueError: Citation markers do not match the provided context",
+  "elapsed_ms": 4012.863899999502,
+  "synthetic_not_benchmark": true
+}

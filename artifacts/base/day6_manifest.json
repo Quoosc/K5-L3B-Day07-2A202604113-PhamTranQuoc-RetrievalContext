@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-11-15T09:39:53.401915+00:00",
+  "collection": "lab6_B",
+  "chunk_count": 156,
+  "qdrant_payloads_equal_chunk_export": true,
+  "measured_vector_dimension": 384,
+  "sample_vector_norm": 0.9999999443302516,
+  "distance": "cosine",
+  "source_page_semantics": "RST unit, not PDF page",
+  "model": "intfloat/multilingual-e5-small",
+  "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "query_prefix": "query: ",
+  "document_prefix": "passage: ",
+  "source": "CPython documentation 3.12.10",
+  "hashes": {
+    "chunks": "3ce64360d719144d787cd3704d578b6edc340c6ab8f1a505589384b45d1d5d1c",
+    "pages": "00ed526c1de45d2d96c957ce0105a074d53ccad50d12402a4db49e9773e5fbea",
+    "source_manifest": "b8c1812089f30bb427ab10a1b8176889e53e2db1c715cc924f39c148ebe53cc4",
+    "day6_run_manifest": "256e159a319e48d0a1968c21dd3e37c4be4038d01b9bb3e75c3d5746d664f84d",
+    "day6_model_download_manifest": "7d46e5c3a09d3b4ecb860e38ee9281fdeac0d4abbf1065da0cb6ab5f10877423",
+    "day6_config_freeze": "38dcfd0e9a0dd84493f74695e5988a520c3fe33d091466a51eef8b23f45639a9"
+  },
+  "day6_selection": "B"
+}

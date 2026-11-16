@@ -1,0 +1,30 @@
+{"id": "adv-test-001", "split": "test", "question": "In Table 1-1, what SSR size and storage organization are given for Landsat 8?"}
+{"id": "adv-test-002", "split": "test", "question": "In Table 2-2, what is the OLI performance SNR for OLI Band 7 at Ltypical?"}
+{"id": "adv-test-003", "split": "test", "question": "In Table 2-3, what NEΔT is listed for TIRS Band 11 at 280?"}
+{"id": "adv-test-004", "split": "test", "question": "In Table A-1, what temperature offset is listed for TIRS Band 11 at 300 K?"}
+{"id": "adv-test-005", "split": "test", "question": "In Table 2-1, what wavelength range is listed for Landsat 8 OLI Band 5?"}
+{"id": "adv-test-006", "split": "test", "question": "What image downlink coverage is listed for Landsat 8 in Table 1-1?"}
+{"id": "adv-test-007", "split": "test", "question": "In Figure 2-1, what component is labeled at the lower right of the spacecraft bus?"}
+{"id": "adv-test-008", "split": "test", "question": "In Figure 2-5, what is at the top of the even SCA band stack?"}
+{"id": "adv-test-009", "split": "test", "question": "In Figure 2-8, which baffle is shown on the left and which on the right?"}
+{"id": "adv-test-010", "split": "test", "question": "In Figure A-5, what component is labeled at the bottom of the TIRS cutaway?"}
+{"id": "adv-test-011", "split": "test", "question": "In Figure B-2, which SCA is drawn below the upper SCA-A and SCA-B row?"}
+{"id": "adv-test-012", "split": "test", "question": "In Figure 2-3, approximately what OLI performance SNR does the red NIR bar show at Ltypical?"}
+{"id": "adv-test-013", "split": "test", "question": "In Figure 2-3, approximately what OLI performance SNR does the red Cirrus bar show?"}
+{"id": "adv-test-014", "split": "test", "question": "In Figure A-6, approximately what encoder-current value is marked by the red limit line?"}
+{"id": "adv-test-015", "split": "test", "question": "In Figure 4-3, which two TIRS bands are displayed at thermal wavelengths beyond 10,000 nm?"}
+{"id": "adv-test-016", "split": "test", "question": "In the left panel of Figure A-3, what marker and color represent Band 11?"}
+{"id": "adv-test-017", "split": "test", "question": "Using Table 2-1 to identify the Landsat 8 band spanning 0.851–0.879 µm, then Table 2-2, what is that band and its OLI performance SNR at Ltypical?"}
+{"id": "adv-test-018", "split": "test", "question": "Using Table 2-1 to identify the Landsat 8 band spanning 1.566–1.651 µm, then Table 2-2, what is that band and its OLI performance SNR at Ltypical?"}
+{"id": "adv-test-019", "split": "test", "question": "Using Table 2-1 to identify the Landsat 8 band spanning 2.107–2.294 µm, then Table 2-2, what is that band and its OLI performance SNR at Ltypical?"}
+{"id": "adv-test-020", "split": "test", "question": "Using Table 2-1 to identify the Landsat 8 band spanning 0.503–0.676 µm, then Table 2-2, what is that band and its OLI performance SNR at Ltypical?"}
+{"id": "adv-test-021", "split": "test", "question": "According to the Global Survey Mission description, how often does the world come within view of Landsat 8 sensors?"}
+{"id": "adv-test-022", "split": "test", "question": "How many potential gray levels does the document associate with 12-bit and previous 8-bit instruments?"}
+{"id": "adv-test-023", "split": "test", "question": "What effect does cloud contamination have on NDVI values according to the QA-band discussion?"}
+{"id": "adv-test-024", "split": "test", "question": "On what date was the first TIRS SSM anomaly discovered, according to Appendix A.2?"}
+{"id": "adv-test-025", "split": "test", "question": "What Landsat 8 acquisition date is reported for the fictional Granite-Research-2029 project?"}
+{"id": "adv-test-026", "split": "test", "question": "What was the telemetry password for the fictional Harbor-Node-Q ground station?"}
+{"id": "adv-test-027", "split": "test", "question": "What QA value is listed for the fictional Indigo-Scene-88 product?"}
+{"id": "adv-test-028", "split": "test", "question": "Which operator led the fictional Juniper-Team-7 calibration in the handbook?"}
+{"id": "adv-test-029", "split": "test", "question": "What storage price is reported for the fictional Kestrel-Archive-2030 dataset?"}
+{"id": "adv-test-030", "split": "test", "question": "What IP address is given for the fictional Lumen-Station-9 Landsat receiver?"}

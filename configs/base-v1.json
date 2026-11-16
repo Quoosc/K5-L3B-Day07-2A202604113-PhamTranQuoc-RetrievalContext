@@ -1,0 +1,11 @@
+{
+  "selection_policy": "Maximize dev grounded grade 2 plus correct abstentions, counting errors as failures; then context evidence rate, hit@3, hit@1, lower p95, lower cost, configuration ID.",
+  "cache_policy": "One local model process; sequential queries, no retries; report cold start separately.",
+  "configurations": [
+    {"id":"D0","method":"dense","candidate_k":3,"context_budget":1200,"packer":"rank","max_output_tokens":320},
+    {"id":"L0","method":"lexical","candidate_k":3,"context_budget":1200,"packer":"rank","max_output_tokens":320},
+    {"id":"H0","method":"hybrid","candidate_k":3,"pool":10,"context_budget":1200,"packer":"rank","max_output_tokens":320},
+    {"id":"H1","method":"hybrid","candidate_k":6,"pool":10,"context_budget":1200,"packer":"rank","max_output_tokens":320},
+    {"id":"H2","method":"hybrid","candidate_k":3,"pool":10,"context_budget":1200,"packer":"coverage","max_output_tokens":320}
+  ]
+}

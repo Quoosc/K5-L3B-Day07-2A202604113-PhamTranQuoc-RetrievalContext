@@ -1,0 +1,67 @@
+{
+  "created_at": "2026-11-16T03:30:51.965624+00:00",
+  "source_verification": "artifacts/source-verification.json",
+  "note": "Historical labels retain their original AI reviewer; author confirmation is a separate, dated source-verification record. Verdicts have not been upgraded.",
+  "files": [
+    {
+      "original": "artifacts/base/test-review-D0.jsonl",
+      "original_sha256": "164f090f9e0060e2b49d1c6f095d4672d4301b359473cecf9b03d3040b5582e1",
+      "author_confirmed_copy": "artifacts/reviews/author-confirmed-v1/base-test-review-D0.jsonl",
+      "cases": 7
+    },
+    {
+      "original": "artifacts/base/test-review-H0.jsonl",
+      "original_sha256": "54fe1c78743a3766162ce3a865845b4e174788cbb111d82090d00a3ab70e2d2c",
+      "author_confirmed_copy": "artifacts/reviews/author-confirmed-v1/base-test-review-H0.jsonl",
+      "cases": 7
+    },
+    {
+      "original": "artifacts/advanced/dev-review-a0.jsonl",
+      "original_sha256": "d666231d8affb764965325b55e725fd18c4db88d06dda770b8a1068a277f0deb",
+      "author_confirmed_copy": "artifacts/reviews/author-confirmed-v1/advanced-dev-review-a0.jsonl",
+      "cases": 26
+    },
+    {
+      "original": "artifacts/advanced/dev-review-a1.jsonl",
+      "original_sha256": "660fac5754bd353bcead8a131e0fa2adb63637318aa12f917ee4ea3b2ad29aae",
+      "author_confirmed_copy": "artifacts/reviews/author-confirmed-v1/advanced-dev-review-a1.jsonl",
+      "cases": 26
+    },
+    {
+      "original": "artifacts/advanced/dev-review-a2-parser-v2.jsonl",
+      "original_sha256": "514b957e7ed17846ec936841d288b82a16affc4d1486f2ab17d3432d53a5c1d8",
+      "author_confirmed_copy": "artifacts/reviews/author-confirmed-v1/advanced-dev-review-a2-parser-v2.jsonl",
+      "cases": 26
+    },
+    {
+      "original": "artifacts/advanced/dev-review-a2-refiner.jsonl",
+      "original_sha256": "9781b3db64ca6660b6c5b2f08baef01dd94d66ed555a80944a6298d911977514",
+      "author_confirmed_copy": "artifacts/reviews/author-confirmed-v1/advanced-dev-review-a2-refiner.jsonl",
+      "cases": 26
+    },
+    {
+      "original": "artifacts/advanced/dev-review-a3-policy.jsonl",
+      "original_sha256": "1f6d53148a85a8548149dcf222d0c34808cdeff020756962e3802cfac3e623d2",
+      "author_confirmed_copy": "artifacts/reviews/author-confirmed-v1/advanced-dev-review-a3-policy.jsonl",
+      "cases": 26
+    },
+    {
+      "original": "artifacts/advanced/dev-review-a4-final.jsonl",
+      "original_sha256": "5326e95b6a9e45863a80c7c5348b584121501644be84e3594023b1ea9318d932",
+      "author_confirmed_copy": "artifacts/reviews/author-confirmed-v1/advanced-dev-review-a4-final.jsonl",
+      "cases": 26
+    },
+    {
+      "original": "artifacts/advanced/dev-review-a5-final.jsonl",
+      "original_sha256": "f67311540418f556b3911830be9e3e7ad47492c24d31e8d51b82fae535cf7dfa",
+      "author_confirmed_copy": "artifacts/reviews/author-confirmed-v1/advanced-dev-review-a5-final.jsonl",
+      "cases": 26
+    },
+    {
+      "original": "artifacts/advanced/test-review-composite.jsonl",
+      "original_sha256": "96a13ef3b9ee1a2a17fbc1c58abad083f903883ae758ff6c8f237acab402ea56",
+      "author_confirmed_copy": "artifacts/reviews/author-confirmed-v1/advanced-test-review-composite.jsonl",
+      "cases": 30
+    }
+  ]
+}

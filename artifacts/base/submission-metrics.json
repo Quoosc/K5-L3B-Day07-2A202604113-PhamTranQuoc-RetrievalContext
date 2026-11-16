@@ -1,0 +1,538 @@
+{
+  "created_at": "2026-11-16T03:42:04.496402+00:00",
+  "source_verification": "artifacts/source-verification.json",
+  "chosen": "H0",
+  "dev": {
+    "D0": {
+      "operations": {
+        "cases": 23,
+        "status_distribution": {
+          "answered": 19,
+          "abstain": 4
+        },
+        "retrieval_tool_call_distribution_all": {
+          "1": 23
+        },
+        "retrieval_tool_call_distribution_successful": {
+          "1": 23
+        },
+        "retrieval_tool_call_distribution_errors": {},
+        "latency_seconds": {
+          "median": 2.5315577000001213,
+          "p95": 3.5106426000002102
+        },
+        "prompt_tokens": 37727,
+        "completion_tokens": 2007,
+        "api_cost_usd": 0.0
+      },
+      "source_review": {
+        "selection_score": 17,
+        "grounded_0_1_2": {
+          "2": 14,
+          "0": 5,
+          "1": 1
+        },
+        "correct_abstentions": 3,
+        "context_rate": 0.9,
+        "hit3": 0.9,
+        "hit1": 0.85,
+        "p95_ms": 3510.64260000021,
+        "api_cost_usd": 0.0
+      },
+      "trace_sha256": {
+        "artifacts/base/runs/base-dev-20261115-v1/D0-parser-v3.jsonl": "24faa5df1e0200d9bb7f7efba090b589b61b4db3a984a0b9e9b96437b5c752ed"
+      }
+    },
+    "L0": {
+      "operations": {
+        "cases": 23,
+        "status_distribution": {
+          "answered": 20,
+          "abstain": 3
+        },
+        "retrieval_tool_call_distribution_all": {
+          "1": 23
+        },
+        "retrieval_tool_call_distribution_successful": {
+          "1": 23
+        },
+        "retrieval_tool_call_distribution_errors": {},
+        "latency_seconds": {
+          "median": 3.0668256000008114,
+          "p95": 4.623622699999942
+        },
+        "prompt_tokens": 37683,
+        "completion_tokens": 2096,
+        "api_cost_usd": 0.0
+      },
+      "source_review": {
+        "selection_score": 17,
+        "grounded_0_1_2": {
+          "1": 1,
+          "0": 5,
+          "2": 14
+        },
+        "correct_abstentions": 3,
+        "context_rate": 0.9,
+        "hit3": 0.9,
+        "hit1": 0.55,
+        "p95_ms": 4623.622699999942,
+        "api_cost_usd": 0.0
+      },
+      "trace_sha256": {
+        "artifacts/base/runs/base-dev-20261115-v1/L0-parser-v3.jsonl": "836e3c2e6b9e6960c1d33127583513e538c66beda5d32c017c4d3c2bf135cc7e"
+      }
+    },
+    "H0": {
+      "operations": {
+        "cases": 23,
+        "status_distribution": {
+          "answered": 20,
+          "abstain": 2,
+          "error": 1
+        },
+        "retrieval_tool_call_distribution_all": {
+          "1": 23
+        },
+        "retrieval_tool_call_distribution_successful": {
+          "1": 22
+        },
+        "retrieval_tool_call_distribution_errors": {
+          "1": 1
+        },
+        "latency_seconds": {
+          "median": 3.832296800000222,
+          "p95": 5.768474999999853
+        },
+        "prompt_tokens": 37812,
+        "completion_tokens": 2041,
+        "api_cost_usd": 0.0
+      },
+      "source_review": {
+        "selection_score": 17,
+        "grounded_0_1_2": {
+          "1": 1,
+          "0": 4,
+          "2": 15
+        },
+        "correct_abstentions": 2,
+        "context_rate": 0.95,
+        "hit3": 0.95,
+        "hit1": 0.7,
+        "p95_ms": 5768.474999999853,
+        "api_cost_usd": 0.0
+      },
+      "trace_sha256": {
+        "artifacts/base/runs/base-dev-20261115-v1/H0-parser-v3.jsonl": "0665d7b11e9c332b5683097ac0b2cf288e9166f79bfefc78feb4e05c0e79bf9b"
+      }
+    },
+    "H1": {
+      "operations": {
+        "cases": 23,
+        "status_distribution": {
+          "answered": 20,
+          "abstain": 2,
+          "error": 1
+        },
+        "retrieval_tool_call_distribution_all": {
+          "1": 23
+        },
+        "retrieval_tool_call_distribution_successful": {
+          "1": 22
+        },
+        "retrieval_tool_call_distribution_errors": {
+          "1": 1
+        },
+        "latency_seconds": {
+          "median": 4.132069199999933,
+          "p95": 7.042361199999505
+        },
+        "prompt_tokens": 43709,
+        "completion_tokens": 1993,
+        "api_cost_usd": 0.0
+      },
+      "source_review": {
+        "selection_score": 17,
+        "grounded_0_1_2": {
+          "2": 15,
+          "0": 5
+        },
+        "correct_abstentions": 2,
+        "context_rate": 0.95,
+        "hit3": 0.95,
+        "hit1": 0.7,
+        "p95_ms": 7042.361199999505,
+        "api_cost_usd": 0.0
+      },
+      "trace_sha256": {
+        "artifacts/base/runs/base-dev-20261115-v1/H1-parser-v3.jsonl": "125c1cd8a16423282b722f209cf847ddf9c14d85e8ae98cd4429e48d7e16df16"
+      }
+    },
+    "H2": {
+      "operations": {
+        "cases": 23,
+        "status_distribution": {
+          "answered": 20,
+          "abstain": 2,
+          "error": 1
+        },
+        "retrieval_tool_call_distribution_all": {
+          "1": 23
+        },
+        "retrieval_tool_call_distribution_successful": {
+          "1": 22
+        },
+        "retrieval_tool_call_distribution_errors": {
+          "1": 1
+        },
+        "latency_seconds": {
+          "median": 4.464859099999558,
+          "p95": 5.906673600000431
+        },
+        "prompt_tokens": 37812,
+        "completion_tokens": 1892,
+        "api_cost_usd": 0.0
+      },
+      "source_review": {
+        "selection_score": 17,
+        "grounded_0_1_2": {
+          "1": 3,
+          "0": 2,
+          "2": 15
+        },
+        "correct_abstentions": 2,
+        "context_rate": 0.95,
+        "hit3": 0.95,
+        "hit1": 0.7,
+        "p95_ms": 5906.673600000431,
+        "api_cost_usd": 0.0
+      },
+      "trace_sha256": {
+        "artifacts/base/runs/base-dev-20261115-v1/H2-parser-v3.jsonl": "abb0546595af3c98ff42f11cbcdba80c95ec59cb6dd970b7304fb0b621ac848a"
+      }
+    },
+    "H3": {
+      "operations": {
+        "cases": 23,
+        "status_distribution": {
+          "answered": 19,
+          "error": 2,
+          "abstain": 2
+        },
+        "retrieval_tool_call_distribution_all": {
+          "1": 23
+        },
+        "retrieval_tool_call_distribution_successful": {
+          "1": 21
+        },
+        "retrieval_tool_call_distribution_errors": {
+          "1": 2
+        },
+        "latency_seconds": {
+          "median": 7.401752300000226,
+          "p95": 11.343605099999877
+        },
+        "prompt_tokens": 69749,
+        "completion_tokens": 3473,
+        "api_cost_usd": 0.0
+      },
+      "source_review": {
+        "selection_score": 16,
+        "grounded_0_1_2": {
+          "1": 1,
+          "0": 5,
+          "2": 14
+        },
+        "correct_abstentions": 2,
+        "context_rate": 0.95,
+        "hit3": 0.95,
+        "hit1": 0.7,
+        "p95_ms": 11343.605099999877,
+        "api_cost_usd": 0.0
+      },
+      "trace_sha256": {
+        "artifacts/base/runs/base-dev-20261115-h3/H3-parser-v3.jsonl": "3036a2e7b3a39fc46417eb13cdc36304b46beb99da9af80dbbedc153072d7566"
+      }
+    }
+  },
+  "test": {
+    "D0": {
+      "operations": {
+        "cases": 7,
+        "status_distribution": {
+          "error": 1,
+          "answered": 4,
+          "abstain": 2
+        },
+        "retrieval_tool_call_distribution_all": {
+          "1": 7
+        },
+        "retrieval_tool_call_distribution_successful": {
+          "1": 6
+        },
+        "retrieval_tool_call_distribution_errors": {
+          "1": 1
+        },
+        "latency_seconds": {
+          "median": 2.6541888000001563,
+          "p95": 2.746318899999096
+        },
+        "prompt_tokens": 11424,
+        "completion_tokens": 582,
+        "api_cost_usd": 0.0
+      },
+      "source_review": {
+        "configuration": "D0",
+        "split": "test",
+        "reviewer": "Codex (AI-assisted; not human-verified)",
+        "cases": 7,
+        "errors": 1,
+        "context_grades": {
+          "2": 5
+        },
+        "grounded_grades": {
+          "0": 1,
+          "2": 4
+        },
+        "grounded_mean_all_answerable": 1.6,
+        "citation_support": {
+          "n": 4,
+          "N": 9
+        },
+        "answer_citation_coverage": {
+          "n": 4,
+          "N": 4
+        },
+        "abstention": {
+          "n": 2,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 0,
+          "N": 5
+        },
+        "tool_use_successful": {
+          "n": 6,
+          "N": 6
+        },
+        "review_path": "artifacts/base/test-review-D0.jsonl"
+      },
+      "retrieval_context": {
+        "total_queries": 7,
+        "errors_or_missing": 1,
+        "hit1": {
+          "n": 5,
+          "N": 5,
+          "rate": 1.0
+        },
+        "evidence_hit3": {
+          "n": 5,
+          "N": 5,
+          "rate": 1.0
+        },
+        "all_groups_hit3": {
+          "n": 5,
+          "N": 5,
+          "rate": 1.0
+        },
+        "context_evidence_rate": {
+          "n": 5,
+          "N": 5,
+          "rate": 1.0
+        },
+        "cases": [
+          {
+            "query_id": "b-test-01",
+            "hit1": true,
+            "hit3": true,
+            "all_groups_hit3": true,
+            "context_all_groups": true,
+            "missing_or_error": true
+          },
+          {
+            "query_id": "b-test-02",
+            "hit1": true,
+            "hit3": true,
+            "all_groups_hit3": true,
+            "context_all_groups": true,
+            "missing_or_error": false
+          },
+          {
+            "query_id": "b-test-03",
+            "hit1": true,
+            "hit3": true,
+            "all_groups_hit3": true,
+            "context_all_groups": true,
+            "missing_or_error": false
+          },
+          {
+            "query_id": "b-test-04",
+            "hit1": true,
+            "hit3": true,
+            "all_groups_hit3": true,
+            "context_all_groups": true,
+            "missing_or_error": false
+          },
+          {
+            "query_id": "b-test-05",
+            "hit1": true,
+            "hit3": true,
+            "all_groups_hit3": true,
+            "context_all_groups": true,
+            "missing_or_error": false
+          }
+        ],
+        "runtime": {
+          "median_ms": 2654.1888000001563,
+          "p95_ms_nearest_rank": 2746.318899999096,
+          "api_cost_usd": 0.0,
+          "prompt_tokens": 11424,
+          "completion_tokens": 582
+        }
+      },
+      "trace_sha256": "5d04ac15276b14b1b145aa5c2e45c5f3184479e80e37c7ebb27c40aedc6a6a92"
+    },
+    "H0": {
+      "operations": {
+        "cases": 7,
+        "status_distribution": {
+          "error": 1,
+          "answered": 4,
+          "abstain": 2
+        },
+        "retrieval_tool_call_distribution_all": {
+          "1": 7
+        },
+        "retrieval_tool_call_distribution_successful": {
+          "1": 6
+        },
+        "retrieval_tool_call_distribution_errors": {
+          "1": 1
+        },
+        "latency_seconds": {
+          "median": 2.6572071999999025,
+          "p95": 3.1406289000005927
+        },
+        "prompt_tokens": 11611,
+        "completion_tokens": 565,
+        "api_cost_usd": 0.0
+      },
+      "source_review": {
+        "configuration": "H0",
+        "split": "test",
+        "reviewer": "Codex (AI-assisted; not human-verified)",
+        "cases": 7,
+        "errors": 1,
+        "context_grades": {
+          "2": 5
+        },
+        "grounded_grades": {
+          "0": 2,
+          "2": 3
+        },
+        "grounded_mean_all_answerable": 1.2,
+        "citation_support": {
+          "n": 3,
+          "N": 6
+        },
+        "answer_citation_coverage": {
+          "n": 4,
+          "N": 4
+        },
+        "abstention": {
+          "n": 2,
+          "N": 2
+        },
+        "false_abstention": {
+          "n": 0,
+          "N": 5
+        },
+        "tool_use_successful": {
+          "n": 6,
+          "N": 6
+        },
+        "review_path": "artifacts/base/test-review-H0.jsonl"
+      },
+      "retrieval_context": {
+        "total_queries": 7,
+        "errors_or_missing": 1,
+        "hit1": {
+          "n": 4,
+          "N": 5,
+          "rate": 0.8
+        },
+        "evidence_hit3": {
+          "n": 5,
+          "N": 5,
+          "rate": 1.0
+        },
+        "all_groups_hit3": {
+          "n": 5,
+          "N": 5,
+          "rate": 1.0
+        },
+        "context_evidence_rate": {
+          "n": 5,
+          "N": 5,
+          "rate": 1.0
+        },
+        "cases": [
+          {
+            "query_id": "b-test-01",
+            "hit1": true,
+            "hit3": true,
+            "all_groups_hit3": true,
+            "context_all_groups": true,
+            "missing_or_error": true
+          },
+          {
+            "query_id": "b-test-02",
+            "hit1": true,
+            "hit3": true,
+            "all_groups_hit3": true,
+            "context_all_groups": true,
+            "missing_or_error": false
+          },
+          {
+            "query_id": "b-test-03",
+            "hit1": true,
+            "hit3": true,
+            "all_groups_hit3": true,
+            "context_all_groups": true,
+            "missing_or_error": false
+          },
+          {
+            "query_id": "b-test-04",
+            "hit1": false,
+            "hit3": true,
+            "all_groups_hit3": true,
+            "context_all_groups": true,
+            "missing_or_error": false
+          },
+          {
+            "query_id": "b-test-05",
+            "hit1": true,
+            "hit3": true,
+            "all_groups_hit3": true,
+            "context_all_groups": true,
+            "missing_or_error": false
+          }
+        ],
+        "runtime": {
+          "median_ms": 2657.2071999999025,
+          "p95_ms_nearest_rank": 3140.6289000005927,
+          "api_cost_usd": 0.0,
+          "prompt_tokens": 11611,
+          "completion_tokens": 565
+        }
+      },
+      "trace_sha256": "fa1e51337d1c1160f4de256e749b73d1a529c7419cdad137a3f59ad9134544ae"
+    }
+  },
+  "measurement_notes": [
+    "No model was rerun to generate this summary.",
+    "All query statuses retained; tool-call distribution includes errors separately.",
+    "API cost excludes local hardware and electricity.",
+    "Semantic grades are the original source-reviewed labels, not inferred from matching IDs."
+  ]
+}

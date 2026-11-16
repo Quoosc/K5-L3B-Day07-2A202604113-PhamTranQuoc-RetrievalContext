@@ -1,0 +1,18 @@
+{
+  "run_id": "clean-source-smoke",
+  "started_at": "2026-11-16T04:17:54.328878+00:00",
+  "split": "dev",
+  "configs": [
+    "D0"
+  ],
+  "model": "qwen2.5-7b-local",
+  "server": "http://127.0.0.1:8085",
+  "mode": "local",
+  "api_cost_usd": 0.0,
+  "query_file_sha256": "4f4af7006098eee697b93d7ed55d41f5a611d2eff6aef1f15d80f6d0dbd922de",
+  "config_sha256": "a1414fbf42cbf658866d01020cb944a3206728812a7e18494ca5b933608d3171",
+  "lock_sha256": null,
+  "startup_ms": 20713.59040000243,
+  "retry_policy": "zero retries",
+  "case_count": 1
+}

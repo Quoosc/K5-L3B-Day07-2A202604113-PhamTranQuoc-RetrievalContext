@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "confirmed_at": "2026-11-16T03:30:51.965624+00:00",
+  "author": "Phạm Trấn Quốc",
+  "student_id": "2A202604113",
+  "confirmation_method": "Explicit author statement in the task conversation",
+  "statement_verbatim": "tôi xác nhận với bạn là tôi đã kiểm chứng tất cả các nguồn trên",
+  "scope": [
+    "CPython 3.12.10 Day 6 corpus and base benchmark source evidence",
+    "Landsat 8 Data Users Handbook v5.0, all indexed source regions",
+    "Existing advanced benchmark answers, source locators and absence audits"
+  ],
+  "status": "AUTHOR_SOURCE_VERIFICATION_CONFIRMED",
+  "limits": "Confirms source verification. Does not change model outputs, verdicts, test independence or the instructor grade.",
+  "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756"
+}

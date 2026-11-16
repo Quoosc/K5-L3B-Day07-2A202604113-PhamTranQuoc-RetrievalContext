@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-11-16T03:03:42.598657+00:00",
+  "code_benchmark_pdf_ocr_match": true,
+  "composite_components_match": true,
+  "day6_e5_restored_qdrant_projector_match": true,
+  "vision_model_match": true,
+  "text_model_match": true,
+  "scope": "Restored archive and hashes checked on current machine; runtime flags require attestation and no clean-machine reproduction was performed."
+}

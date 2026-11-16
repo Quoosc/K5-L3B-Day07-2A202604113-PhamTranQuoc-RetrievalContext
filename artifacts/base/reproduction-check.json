@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-11-15T10:08:25.843582+00:00",
+  "code_benchmark_corpus_match": true,
+  "day6_model_and_restored_qdrant_match": true,
+  "server_model_match": true,
+  "test_rerun": false,
+  "scope": "Local restored archive and current machine only; not an independent clean-machine reproduction."
+}

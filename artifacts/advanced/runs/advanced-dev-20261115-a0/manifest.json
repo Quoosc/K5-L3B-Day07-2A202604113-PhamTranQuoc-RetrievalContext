@@ -1,0 +1,21 @@
+{
+  "started_at": "2026-11-15T10:17:35.006817+00:00",
+  "run_id": "advanced-dev-20261115-a0",
+  "split": "dev",
+  "model": "qwen2.5-vl-3b-local",
+  "config": {
+    "id": "A0",
+    "description": "Hybrid E5/TF-IDF search plus deterministic routing of table/figure labels explicitly present in the user question; model selects at most two indexed regions and receives 150 DPI crops.",
+    "candidate_k": 8,
+    "branch_pool": 10,
+    "max_open_regions": 2,
+    "crop_dpi": 150,
+    "temperature": 0,
+    "retry_count": 0,
+    "selection_policy": "Choose on complete dev pass rate and group failures; use latency and cost as tie-breaks. A readiness target of 24/26 does not substitute for independent test."
+  },
+  "query_sha256": "dad775a261dae26a8fd98ddff7371537d331f2ada4e2c315ac2ab051cd1eec3a",
+  "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756",
+  "lock_sha256": null,
+  "note": "Candidate search is text/caption-only; no gold is supplied to the model."
+}

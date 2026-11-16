@@ -1,0 +1,43 @@
+{
+  "total": 26,
+  "passed": 17,
+  "errors_or_missing": 2,
+  "groups": {
+    "table": {
+      "n": 2,
+      "N": 4,
+      "rate": 0.5
+    },
+    "image": {
+      "n": 0,
+      "N": 4,
+      "rate": 0.0
+    },
+    "chart": {
+      "n": 3,
+      "N": 4,
+      "rate": 0.75
+    },
+    "multi_hop": {
+      "n": 2,
+      "N": 4,
+      "rate": 0.5
+    },
+    "text": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "unanswerable": {
+      "n": 6,
+      "N": 6,
+      "rate": 1.0
+    }
+  },
+  "rate": 0.6538461538461539,
+  "required_passes": 24,
+  "meets_90_percent": false,
+  "run_id": "advanced-dev-20261116-a2-parser-v2",
+  "reviewer": "Codex (AI source review; no independent human review)",
+  "note": "Dev-only reparse of the same A2 raw responses, no additional model calls. Refusals use declared abstention status; absence audits remain provisional. Not an independent end-to-end run or an advanced test."
+}

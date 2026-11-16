@@ -1,0 +1,193 @@
+{
+  "total_queries": 23,
+  "errors_or_missing": 1,
+  "hit1": {
+    "n": 11,
+    "N": 20,
+    "rate": 0.55
+  },
+  "evidence_hit3": {
+    "n": 18,
+    "N": 20,
+    "rate": 0.9
+  },
+  "all_groups_hit3": {
+    "n": 18,
+    "N": 20,
+    "rate": 0.9
+  },
+  "context_evidence_rate": {
+    "n": 18,
+    "N": 20,
+    "rate": 0.9
+  },
+  "cases": [
+    {
+      "query_id": "b-dev-q01",
+      "hit1": false,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q02",
+      "hit1": false,
+      "hit3": false,
+      "all_groups_hit3": false,
+      "context_all_groups": false,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q03",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q04",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q06",
+      "hit1": false,
+      "hit3": false,
+      "all_groups_hit3": false,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q07",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q09",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": true
+    },
+    {
+      "query_id": "b-dev-q10",
+      "hit1": false,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q11",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q13",
+      "hit1": false,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q15",
+      "hit1": false,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q16",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": false,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q18",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q20",
+      "hit1": false,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q21",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q24",
+      "hit1": false,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q25",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q27",
+      "hit1": false,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q28",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    },
+    {
+      "query_id": "b-dev-q30",
+      "hit1": true,
+      "hit3": true,
+      "all_groups_hit3": true,
+      "context_all_groups": true,
+      "missing_or_error": false
+    }
+  ],
+  "runtime": {
+    "median_ms": 3066.8256000008114,
+    "p95_ms_nearest_rank": 4623.622699999942,
+    "api_cost_usd": 0.0,
+    "prompt_tokens": 37683,
+    "completion_tokens": 2096
+  }
+}

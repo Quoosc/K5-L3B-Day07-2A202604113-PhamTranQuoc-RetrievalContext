@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-11-16T02:46:46.373080+00:00",
+  "split": "dev",
+  "kind": "offline-dev-spectral-tool-pilot",
+  "input_trace_sha256": "2beaa40645758cbb55a80f268f3bdd763fd8c2ad9852b6f687f684337715087b",
+  "ocr_sha256": "fbd27b8dcfe73fc4df23aeaebb99b79e17987f9ea500db5f096d993d64282225",
+  "join_code_sha256": "be5322c1ef5fc329f925327a735db68c5ddc1156d17446f1f8b6ccb353460fee",
+  "script_sha256": "380d824e43a947d8bf1ae3e2abbc4be2ea184765eaa54281ae0bf440bb4ef90c",
+  "model_calls": 0,
+  "note": "No gold or new model calls. A unique OCR range/table-row lookup may replace an answer; any original timeout remains an error. Both source regions require review."
+}

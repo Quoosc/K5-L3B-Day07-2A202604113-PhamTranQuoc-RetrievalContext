@@ -1,0 +1,19 @@
+{
+  "run_id": "base-test-20261115-v1",
+  "started_at": "2026-11-15T09:56:02.005359+00:00",
+  "split": "test",
+  "configs": [
+    "D0",
+    "H0"
+  ],
+  "model": "qwen2.5-7b-local",
+  "server": "http://127.0.0.1:8085",
+  "mode": "local",
+  "api_cost_usd": 0.0,
+  "query_file_sha256": "5adfbf1651284412d4d00fe5153d22b5d605795a48439766445d86fd8fe79f5c",
+  "config_sha256": "a1414fbf42cbf658866d01020cb944a3206728812a7e18494ca5b933608d3171",
+  "lock_sha256": "f1d75311ede905d8d7c521813748eb00f6c8475a5e9f00b101afbaf705d3b2b3",
+  "startup_ms": 20270.33349999965,
+  "retry_policy": "zero retries",
+  "case_count": 7
+}

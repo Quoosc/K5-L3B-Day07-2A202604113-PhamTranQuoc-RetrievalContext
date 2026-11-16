@@ -1,0 +1,44 @@
+{
+  "total": 26,
+  "passed": 25,
+  "errors_or_missing": 0,
+  "groups": {
+    "table": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "image": {
+      "n": 3,
+      "N": 4,
+      "rate": 0.75
+    },
+    "chart": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "multi_hop": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "text": {
+      "n": 4,
+      "N": 4,
+      "rate": 1.0
+    },
+    "unanswerable": {
+      "n": 6,
+      "N": 6,
+      "rate": 1.0
+    }
+  },
+  "rate": 0.9615384615384616,
+  "required_passes": 24,
+  "meets_90_percent": true,
+  "run_id": "advanced-dev-20261116-a4-final",
+  "reviewer": "Codex (AI source review; no independent human review)",
+  "vision_stage_errors": 6,
+  "note": "Fresh vision/refiner dev outputs, followed by policy and deterministic tools developed on dev. Intermediate vision protocol errors are recorded separately and may be recovered; this is not a frozen end-to-end test and absence audit remains provisional."
+}

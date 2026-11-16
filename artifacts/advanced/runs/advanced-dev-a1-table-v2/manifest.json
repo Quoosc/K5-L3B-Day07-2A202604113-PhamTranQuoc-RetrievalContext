@@ -1,0 +1,25 @@
+{
+  "started_at": "2026-11-15T10:24:45.073457+00:00",
+  "run_id": "advanced-dev-a1-table-v2",
+  "split": "dev",
+  "model": "qwen2.5-vl-3b-local",
+  "config": {
+    "id": "A1",
+    "description": "Caption routing, schema-constrained actions, OCR and extracted table rows plus local vision crops.",
+    "candidate_k": 8,
+    "branch_pool": 10,
+    "max_open_regions": 2,
+    "crop_dpi": 150,
+    "schema_mode": true,
+    "include_table_text": true,
+    "use_ocr": true,
+    "temperature": 0,
+    "retry_count": 0,
+    "selection_policy": "Choose on complete dev pass rate and group failures; use latency and cost as tie-breaks. A readiness target of 24/26 does not substitute for independent test."
+  },
+  "query_sha256": "dad775a261dae26a8fd98ddff7371537d331f2ada4e2c315ac2ab051cd1eec3a",
+  "pdf_sha256": "baf10fd32ebbc5d21a509869e2879f5ef23f0d275d8bddc01462ed02d18bc756",
+  "lock_sha256": null,
+  "ocr_sha256": "442e0bfb05edab91de3c94653c060e9d72c7432ce53d18c88bce91018ffefc34",
+  "note": "Candidate search is text/caption-only; no gold is supplied to the model."
+}
