@@ -33,6 +33,8 @@ Thay phần trong `< >` bằng tên và địa chỉ thật. Nộp link theo hư
 
 ## Trạng thái bài cá nhân
 
+Đã hoàn thiện và kiểm chứng lệnh khởi động/dừng server cơ bản, chờ sẵn sàng và chuyển sang V3: [runbook](docs/REPRODUCE.md), [biên bản kiểm tra](artifacts/runbook-server-check.json).
+
 Phần cơ bản có đủ bằng chứng cho sáu nhóm rubric tối đa **85 điểm**; test nâng cao v3 đạt **28/30 = 93.33%**, vượt ngưỡng 90% để xét đủ **15 điểm bonus**. Hồ sơ đáp ứng các điều kiện cho mức tối đa **100 điểm** theo tự audit; điểm chính thức do giảng viên quyết định.
 
 Báo cáo: [2A202604113_PhamTranQuoc.md](report/individual/2A202604113_PhamTranQuoc.md). [Review chốt bài](report/individual/REVIEW_DAY07_2A202604113.md) và [audit](artifacts/submission-audit.json) liên kết từng bằng chứng. Nguồn đã được tác giả xác nhận; không có mục chờ xác nhận lại. Repo cá nhân public; thao tác gửi link lên kênh nộp của lớp nằm ngoài repo.

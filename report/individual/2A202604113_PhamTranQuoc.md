@@ -227,6 +227,8 @@ Median **4.65 s**, p95 **10.80 s**; 38,970 prompt token, 2,277 completion token;
 
 ## Tái lập, nguồn và trạng thái nộp
 
+Sau review bổ sung, hướng dẫn khởi động server cơ bản đã được viết đầy đủ trong runbook: context 4096, port 8085, model alias, GPU layers, threads/parallel và `--jinja`. Hàm chờ kiểm `/health` cùng alias/context; các block dừng process và chuyển sang V3 context 16384 được chạy kiểm thực tế trong [biên bản](../../artifacts/runbook-server-check.json). Bổ sung này hoàn thiện tài liệu tái lập; code, benchmark, freeze và điểm test 28/30 giữ nguyên.
+
 [Runbook đầy đủ](../../docs/REPRODUCE.md) gồm prerequisite, phục hồi Qdrant, model/hash, dev, review, freeze, test và score. [Checkout sạch](../../artifacts/clean-checkout-check.json) vượt qua **10 kiểm tra** cho phiên bản cuối: 61 unit test, validator cả tám split, tái tổng hợp trace cơ bản và đầy đủ test v3, checksum core/catalog/model/PDF/DB sau Git checkout, và một lượt native-tool model dev smoke. Đây là checkout nguồn sạch trên cùng máy, dùng môi trường dependency đã pin và model bên ngoài; không tự nhận đã thử trên máy khác hoặc venv mới hoàn toàn.
 
 Smoke đầu cho câu dev dài tái hiện JSON bị cắt; [biên bản](../../artifacts/clean-checkout-first-attempt.json) và [trace](../../artifacts/clean-checkout-first-attempt-trace.jsonl) được giữ. Smoke cơ bản lịch sử kiểm tra transport/structure trả về abstain có cấu trúc; không tính đó là một câu trả lời đúng hoặc thay kết quả benchmark. `.gitattributes` bảo toàn byte của đầu vào đã băm khi checkout qua Windows/Linux; Git chấp nhận CRLF của hiện vật đã khóa và hard line-break Markdown.

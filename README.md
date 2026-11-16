@@ -47,6 +47,8 @@ Get-FileHash -Algorithm SHA256 .local/downloads/landsat8-v5.pdf
 
 ## Chạy và tái lập
 
+Trước khi chạy agent, thực hiện các block khởi động server trong [runbook](docs/REPRODUCE.md): **cơ bản dùng context 4096 / GPU layers 99**, **V3 dùng context 16384 / GPU layers 22**. Cả hai dùng port 8085; chờ `Server ready` và dừng process của giai đoạn trước khi chuyển. Runbook có đầy đủ lệnh khởi động, kiểm `/health` cùng alias/context và dừng server cho từng phần.
+
 [Runbook](docs/REPRODUCE.md) có toàn bộ lệnh phục hồi index, chạy dev, ghi review, freeze, chạy full test, score và kiểm checkout. Đích output mới, không ghi đè artifact đã nộp. Cần đúng model/PDF/runtime/hash khi dùng lock đã nộp; thay phần cứng hoặc code thì chạy dev/freeze riêng.
 
 Snapshot [core](artifacts/base/qdrant-snapshot.zip) đối chiếu 156/156 payload; [catalog v7](artifacts/advanced/qdrant-v7-snapshot.zip) đối chiếu 941/941 payload. [Thiết kế v3](docs/CATALOG_V3.md) mô tả curation nguồn, retrieval và giới hạn. Runtime không nhận gold. Citation phải đúng nội dung/vùng; ID hợp lệ không tự bảo đảm hỗ trợ câu trả lời.

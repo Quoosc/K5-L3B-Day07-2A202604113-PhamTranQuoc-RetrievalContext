@@ -41,9 +41,56 @@ $CatalogQdrant = (Resolve-Path '.local/catalog-restored').Path
 
 Đích giải nén phải chưa tồn tại. Không có writer khác mở cùng Qdrant local. Snapshot đã đối chiếu payload với export; xây lại SQLite từ đầu có thể có hash byte khác dù cùng nội dung.
 
+Định nghĩa hàm chờ server trong cùng phiên PowerShell. Hàm kiểm đúng process vừa tạo, chờ `/health` tối đa 180 giây và báo lỗi nếu process thoát. Dùng cho cả cơ bản và V3.
+
+<!-- server-readiness -->
+```powershell
+function Wait-LabServer {
+    param([int]$ServerProcessId, [int]$ExpectedContext)
+    $deadline = (Get-Date).AddSeconds(180)
+    while ((Get-Date) -lt $deadline) {
+        if (-not (Get-Process -Id $ServerProcessId -ErrorAction SilentlyContinue)) {
+            throw 'Model server exited. Inspect the .local server logs.'
+        }
+        $ready = $null
+        try { $ready = Invoke-RestMethod 'http://127.0.0.1:8085/health' -TimeoutSec 3 -ErrorAction Stop } catch {}
+        if ($ready.status -eq 'ok') {
+            $props = Invoke-RestMethod 'http://127.0.0.1:8085/props' -TimeoutSec 5 -ErrorAction Stop
+            if ($props.model_alias -ne 'qwen2.5-7b-local' -or
+                $props.default_generation_settings.n_ctx -ne $ExpectedContext) {
+                throw 'The active model alias or context size differs from the requested server.'
+            }
+            Write-Output "Server ready: PID $ServerProcessId, context $ExpectedContext"
+            return
+        }
+        Start-Sleep -Seconds 1
+    }
+    throw 'Model server readiness timed out; inspect the .local server logs.'
+}
+```
+
 ## Cơ bản: dev → review → freeze → test → tổng hợp
 
-Khởi động server text đúng lệnh phần cơ bản trong README: context 4096, model alias `qwen2.5-7b-local`, nhiệt độ request 0. Dùng `run-id` và đường dẫn output mới; không ghi đè bài đã nộp.
+Khởi động llama.cpp b12406 bằng lệnh đầy đủ dưới đây: context **4096**, port **8085**, alias `qwen2.5-7b-local`, Vulkan1, GPU layers 99, threads 8, parallel 1 và `--jinja`. Nhiệt độ 0 được runner đặt trong từng request. Đặt binary/DLL của bản Windows Vulkan tại `.local/llama/`; `$TextModel` đã khai báo ở bước chuẩn bị. Kiểm `--list-devices` nếu máy dùng GPU khác; ghi rõ thay đổi phần cứng khi tái lập.
+
+<!-- base-server-start -->
+```powershell
+$ErrorActionPreference = 'Stop'
+$Llama = (Resolve-Path '.local/llama/llama-server.exe').Path
+$TextModel = (Resolve-Path -LiteralPath $TextModel).Path
+if (Get-NetTCPConnection -LocalPort 8085 -State Listen -ErrorAction SilentlyContinue) {
+    throw 'Port 8085 is occupied. Stop the server you own before starting this stage.'
+}
+$BaseArguments = @('-m', ('"' + $TextModel + '"'), '--host', '127.0.0.1', '--port', '8085',
+    '--alias', 'qwen2.5-7b-local', '--ctx-size', '4096', '--threads', '8', '--parallel', '1',
+    '--device', 'Vulkan1', '--n-gpu-layers', '99', '--jinja')
+$BaseProcess = Start-Process -FilePath $Llama -ArgumentList $BaseArguments -PassThru -WindowStyle Hidden `
+    -RedirectStandardOutput '.local/base-server.out.log' -RedirectStandardError '.local/base-server.err.log'
+$BaseServerPid = $BaseProcess.Id
+Wait-LabServer -ServerProcessId $BaseServerPid -ExpectedContext 4096
+```
+
+Sau khi xuất hiện `Server ready`, chạy dev/test. Dùng `run-id` và đường dẫn output mới; không ghi đè bài đã nộp.
 
 ```powershell
 & $Py -m src.day07 run --day6-root $Day6Root --qdrant $Qdrant --model-path $E5Model --config D0,L0,H0,H1,H2,H3 --split dev --run-id reproduce-dev
@@ -63,16 +110,36 @@ Lệnh freeze đầy đủ (chỉ dùng nhãn khớp đúng run và lựa chọn
 
 Muốn chạy lại đúng pipeline đã nộp, dùng `artifacts/base/freeze.json`. Test đã công bố không được dùng để chọn lại cấu hình; rerun chỉ là tái lập, không chọn kết quả đẹp hơn thay kết quả gốc. Năm câu answerable và hai câu thiếu đều phải được chấm cho cả D0 và H0; lỗi vẫn nằm trong mẫu số. Metrics bổ sung của các trace gốc nằm tại `artifacts/base/submission-metrics.json`.
 
+Khi hoàn tất cơ bản, dừng đúng process đã tạo và đợi nó thoát trước khi dùng lại port 8085 cho V3. Chạy bước này cả khi chỉ làm phần cơ bản.
+
+<!-- base-server-stop -->
+```powershell
+$BaseProcess.Refresh()
+if (-not $BaseProcess.HasExited) {
+    $BaseProcess.Kill()
+    $BaseProcess.WaitForExit()
+}
+```
+
 ## Nâng cao hiện tại v3: catalog nguồn → native agent → freeze → test
 
 Xem [thiết kế và giới hạn](CATALOG_V3.md). V3 chỉ cần text model 7B, không cần tải vision weights/projector. 86 câu cũ làm dev; test mới đủ 30 câu và không dùng để chọn cấu hình. Không chạy builder lên benchmark/catalog đã tồn tại. Snapshot giữ byte DB khớp lock; rebuild tạo DB tương đương về nội dung có thể có hash SQLite khác và cần freeze riêng.
 
-Khởi động server text với đúng cấu hình v3: context 16.384, GPU layers 22, Vulkan1, threads 8, parallel 1. Helper chạy nền và trả PID do nó tạo. Không chạy hai server trùng port; chờ `/health` sẵn sàng trước runner.
+Khởi động server text với đúng cấu hình v3: context **16.384**, GPU layers **22**, Vulkan1, threads 8, parallel 1. Helper chạy nền và trả PID do nó tạo. Nếu chạy V3 trực tiếp, vẫn thực hiện phần chuẩn bị và định nghĩa `Wait-LabServer` ở trên; không cần chạy server cơ bản. Nếu vừa chạy cơ bản, thực hiện block dừng server trước.
+
+<!-- catalog-server-start -->
+```powershell
+$ErrorActionPreference = 'Stop'
+if (Get-NetTCPConnection -LocalPort 8085 -State Listen -ErrorAction SilentlyContinue) {
+    throw 'Port 8085 is occupied. Finish and stop the previous server before starting V3.'
+}
+$CatalogPid = & ./scripts/start_model_server.ps1 -Stage text -ModelPath $TextModel -ConfigPath configs/catalog-v3.json -LogPrefix .local/my-catalog-server
+$CatalogProcess = Get-Process -Id $CatalogPid -ErrorAction Stop
+Wait-LabServer -ServerProcessId $CatalogPid -ExpectedContext 16384
+```
 
 ```powershell
 $CatalogCommon = @('--day6-root', $Day6Root, '--model-path', $E5Model, '--qdrant', $CatalogQdrant, '--pdf', $Pdf, '--text-model', $TextModel)
-$CatalogPid = & ./scripts/start_model_server.ps1 -Stage text -ModelPath $TextModel -ConfigPath configs/catalog-v3.json -LogPrefix .local/my-catalog-server
-Invoke-RestMethod 'http://127.0.0.1:8085/health'
 # Kiểm lại toàn bộ điểm đã nộp, không gọi model:
 & $Py -m scripts.catalog_release score --split dev --traces artifacts/advanced/runs/catalog-a12-dev/traces.jsonl --reviews artifacts/advanced/v3-dev-review.jsonl --output .local/submitted-v3-dev-score.json
 & $Py -m scripts.catalog_release score --split test --traces artifacts/advanced/runs/catalog-v3-test/traces.jsonl --reviews artifacts/advanced/v3-test-review.jsonl --output .local/submitted-v3-test-score.json
@@ -90,7 +157,17 @@ Khi phát triển một phiên bản mới, chạy đủ dev và chấm output m
 & $Py -m scripts.catalog_release run @CatalogCommon --split test --lock .local/my-v3-freeze.json --output artifacts/advanced/runs/my-v3-test
 & $Py -m scripts.write_source_review --queries benchmarks/advanced-v3/queries/test.jsonl --gold benchmarks/advanced-v3/gold/test.jsonl --traces artifacts/advanced/runs/my-v3-test/traces.jsonl --annotations .local/my-v3-test-annotations.json --output .local/my-v3-test-review.jsonl
 & $Py -m scripts.catalog_release score --split test --traces artifacts/advanced/runs/my-v3-test/traces.jsonl --reviews .local/my-v3-test-review.jsonl --output .local/my-v3-test-score.json
-Stop-Process -Id $CatalogPid
+```
+
+Sau khi chạy xong V3 (tái lập test đã nộp hoặc toàn bộ quy trình dev/test), dừng server:
+
+<!-- catalog-server-stop -->
+```powershell
+$CatalogProcess.Refresh()
+if (-not $CatalogProcess.HasExited) {
+    $CatalogProcess.Kill()
+    $CatalogProcess.WaitForExit()
+}
 ```
 
 Test chạy toàn bộ 30 câu, không có `--limit`; `--dev-ids` bị cấm trên test. Nếu thay phần cứng/runtime, source hoặc code, cần chạy dev và freeze mới; không sửa lock cũ để vượt kiểm hash. Nếu chỉnh từ kết quả test, phải tạo một holdout hoàn toàn mới trước lượt đo chính thức tiếp theo.

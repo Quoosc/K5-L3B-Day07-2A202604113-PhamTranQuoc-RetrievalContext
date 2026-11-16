@@ -1,0 +1,38 @@
+{
+    "checked_at":  "2026-11-16T05:33:44.1120814Z",
+    "scope":  "Executed the exact marked PowerShell blocks from docs/REPRODUCE.md on the current machine: base start/readiness/stop, then V3 start/readiness/stop. No benchmark rerun or verdict change.",
+    "runbook_sha256":  "ab416760a6efdc95f9a2109ba6e282c392defca5f5e858499743dde9fec09d6b",
+    "checks":  [
+                   {
+                       "block":  "server-readiness",
+                       "passed":  true
+                   },
+                   {
+                       "block":  "base-server-start",
+                       "passed":  true,
+                       "alias":  "qwen2.5-7b-local",
+                       "context":  4096,
+                       "command_line":  "\"E:\\VINAITHUCCHIEN\\K5-L3B-Day07-PhamTranQuoc-2A202604113-RetrievalContext\\.local\\llama\\llama-server.exe\" -m \"C:\\Users\\admin\\.ollama\\models\\blobs\\sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730\" --host 127.0.0.1 --port 8085 --alias qwen2.5-7b-local --ctx-size 4096 --threads 8 --parallel 1 --device Vulkan1 --n-gpu-layers 99 --jinja ",
+                       "model_sha256":  "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730"
+                   },
+                   {
+                       "block":  "base-server-stop",
+                       "passed":  true,
+                       "port_8085_released":  true
+                   },
+                   {
+                       "block":  "catalog-server-start",
+                       "passed":  true,
+                       "alias":  "qwen2.5-7b-local",
+                       "context":  16384,
+                       "command_line":  "\"E:\\VINAITHUCCHIEN\\K5-L3B-Day07-PhamTranQuoc-2A202604113-RetrievalContext\\.local\\llama\\llama-server.exe\" -m \"C:\\Users\\admin\\.ollama\\models\\blobs\\sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730\" --host 127.0.0.1 --port 8085 --alias qwen2.5-7b-local --ctx-size 16384 --threads 8 --parallel 1 --device Vulkan1 --n-gpu-layers 22 --jinja ",
+                       "model_sha256":  "2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730"
+                   },
+                   {
+                       "block":  "catalog-server-stop",
+                       "passed":  true,
+                       "port_8085_released":  true
+                   }
+               ],
+    "all_checks_pass":  true
+}
